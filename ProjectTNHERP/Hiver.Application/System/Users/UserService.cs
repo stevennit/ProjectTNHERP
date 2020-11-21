@@ -19,17 +19,14 @@ namespace Hiver.Application.System.Users
     {
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        private readonly RoleManager<AppRole> _roleManager;
         private readonly IConfiguration _config;
 
         public UserService(UserManager<AppUser> userManager,
             SignInManager<AppUser> signInManager,
-            RoleManager<AppRole> roleManager,
             IConfiguration config)
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            _roleManager = roleManager;
             _config = config;
         }
 
@@ -43,13 +40,11 @@ namespace Hiver.Application.System.Users
             {
                 return new ApiErrorResult<string>("Đăng nhập không đúng");
             }
-            var roles = await _userManager.GetRolesAsync(user);
 
             var claims = new[]
             {
                 new Claim(ClaimTypes.Email,user.Email),
                 new Claim(ClaimTypes.GivenName,user.FirstName),
-                new Claim(ClaimTypes.Role, string.Join(";",roles)),
                 new Claim(ClaimTypes.Name, request.UserName)
             };
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Tokens:Key"]));
@@ -86,6 +81,7 @@ namespace Hiver.Application.System.Users
                 return new ApiErrorResult<UserVm>("User không tồn tại");
             }
             var roles = await _userManager.GetRolesAsync(user);
+
             var userVm = new UserVm()
             {
                 Email = user.Email,
