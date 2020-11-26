@@ -93,21 +93,21 @@ namespace Hiver.Data.Extensions
                     Id = 1,
                     Controller = "User",
                     Action = "Index",
-                    IdAppUser = new Guid("69BD714F-9576-45BA-B5B7-F00649BE00DE"),
+                    IdAppUser = "admin",
                 }, 
                 new AppRoleController
                 {
                     Id = 2,
-                    Controller = "Home",
+                    Controller = "User",
                     Action = "Index",
-                    IdAppUser = new Guid("A3335A51-C19B-4EC8-9DEC-39EF33E69BF7"),
+                    IdAppUser = "admin",
                 },
                 new AppRoleController
                 {
                     Id = 3,
                     Controller = "Home",
                     Action = "Index",
-                    IdAppUser = new Guid("69BD714F-9576-45BA-B5B7-F00649BE00DE"),
+                    IdAppUser = "user",
                 }
             );
 

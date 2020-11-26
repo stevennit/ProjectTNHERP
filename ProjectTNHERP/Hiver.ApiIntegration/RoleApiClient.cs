@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Hiver.ApiIntegration
@@ -17,6 +18,11 @@ namespace Hiver.ApiIntegration
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
+
+        public RoleApiClient()
+        {
+
+        }
 
         public RoleApiClient(IHttpClientFactory httpClientFactory,
                    IHttpContextAccessor httpContextAccessor,
@@ -41,6 +47,22 @@ namespace Hiver.ApiIntegration
                 return new ApiSuccessResult<List<RoleVm>>(myDeserializedObjList);
             }
             return JsonConvert.DeserializeObject<ApiErrorResult<List<RoleVm>>>(body);
+        }
+
+        public async Task<ApiResult<bool>> roleCheck(RoleCheckVm rolcheckRequest)
+        {
+            var json = JsonConvert.SerializeObject(rolcheckRequest);
+            var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            var response = await client.PostAsync("/api/users/authenticate", httpContent);
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(await response.Content.ReadAsStringAsync());
+            }
+
+            return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(await response.Content.ReadAsStringAsync());
         }
     }
 }

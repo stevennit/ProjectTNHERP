@@ -38,7 +38,7 @@ namespace Hiver.Data.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "AppRoleControllerGroup",
+                name: "AppRoleControllerGroups",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -50,7 +50,7 @@ namespace Hiver.Data.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_AppRoleControllerGroup", x => x.Id);
+                    table.PrimaryKey("PK_AppRoleControllerGroups", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -61,7 +61,7 @@ namespace Hiver.Data.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Controller = table.Column<string>(nullable: false),
                     Action = table.Column<string>(nullable: false),
-                    IdAppUser = table.Column<Guid>(nullable: false),
+                    IdAppUser = table.Column<string>(nullable: false),
                     Description = table.Column<string>(maxLength: 200, nullable: true)
                 },
                 constraints: table =>
@@ -177,7 +177,7 @@ namespace Hiver.Data.Migrations
                 });
 
             migrationBuilder.InsertData(
-                table: "AppRoleControllerGroup",
+                table: "AppRoleControllerGroups",
                 columns: new[] { "Id", "Action", "Controller", "Description", "IdRole" },
                 values: new object[,]
                 {
@@ -192,9 +192,9 @@ namespace Hiver.Data.Migrations
                 columns: new[] { "Id", "Action", "Controller", "Description", "IdAppUser" },
                 values: new object[,]
                 {
-                    { 3, "Index", "Home", null, new Guid("69bd714f-9576-45ba-b5b7-f00649be00de") },
-                    { 2, "Index", "Home", null, new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7") },
-                    { 1, "Index", "User", null, new Guid("69bd714f-9576-45ba-b5b7-f00649be00de") }
+                    { 3, "Index", "Home", null, "user" },
+                    { 2, "Index", "User", null, "admin" },
+                    { 1, "Index", "User", null, "admin" }
                 });
 
             migrationBuilder.InsertData(
@@ -202,11 +202,11 @@ namespace Hiver.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"), "c8c4d7a8-125b-4c6e-8661-a146a9e8d352", "Nhân Sự", "Nhansu", "Cấp 2" },
-                    { new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"), "6f161636-ee12-4639-a90b-58224a5f69bf", "Kho", "Kho", "Cấp 2" },
-                    { new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"), "f1908745-a5ae-4189-92c3-4a3ade5d1918", "Mua hàng", "MuaHang", "Cấp 2" },
-                    { new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"), "d947d4ff-ce24-4b3f-bfbd-78c09aa642e4", "BanHang", "BanHang", "Cấp 2" },
-                    { new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"), "a8118ade-f9e6-4747-8519-e1d03244694f", "Administrator role", "Administrator", "Cấp 1" }
+                    { new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"), "ef8db382-a78a-44d4-9789-fa9ea9776bc6", "Nhân Sự", "Nhansu", "Cấp 2" },
+                    { new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"), "f5ac0144-3028-4a9d-bfc3-8bd3cb4bcd13", "Kho", "Kho", "Cấp 2" },
+                    { new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"), "14e5514a-9207-4819-95a2-7ea2dadb90af", "Mua hàng", "MuaHang", "Cấp 2" },
+                    { new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"), "cf63041f-820a-401d-8726-34ad1b447ce6", "BanHang", "BanHang", "Cấp 2" },
+                    { new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"), "69c6070f-9996-496e-98d8-dea2d67db87e", "Administrator role", "Administrator", "Cấp 1" }
                 });
 
             migrationBuilder.InsertData(
@@ -214,9 +214,9 @@ namespace Hiver.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Dob", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"), 0, "154a0c4c-f954-47d9-a9b2-db904d62b811", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "it@gmail.com", true, "Nguyễn", "It", false, null, "it@gmail.com", "it", "AQAAAAEAACcQAAAAEG0avp7TI7Mee7TFwsRlPjGlrDWO+sgTJROX51iDXytWGxzQ2cW+ncU8iOC4Vd/xVg==", null, false, "", false, "it" },
-                    { new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"), 0, "41cb2951-4f67-4dd3-af8b-04d58968a24e", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@gmail.com", true, "Nguyễn", "Admin", false, null, "admin@gmail.com", "admin", "AQAAAAEAACcQAAAAEFzpsLXVLCOe7xHWFO2aZYyLRGWR3UQ4bu5c5v9qi3NZzlzJFk841USm3g67ZE9ITA==", null, false, "", false, "admin" },
-                    { new Guid("171f3098-762c-4b02-85c5-a687f6601de4"), 0, "b740119b-65dc-4348-8994-e9a2371a0787", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "kho@gmail.com", true, "Nguyễn", "Kho", false, null, "kho@gmail.com", "kho", "AQAAAAEAACcQAAAAELE17/+dFlvBDHSj5lsjvD71OfOSBMz9XJkciEhGQaDc3/oUUuEHUb5+C4gqHOX5XQ==", null, false, "", false, "kho" }
+                    { new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"), 0, "7d47075d-4557-4723-a4d2-2963eec85a49", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "it@gmail.com", true, "Nguyễn", "It", false, null, "it@gmail.com", "it", "AQAAAAEAACcQAAAAEOEw8hZkMJ1nQjj9REcE8Ej7l2F/jvcSzfxVQTeNQgyPWTvzBAyOqeQeyzCkY4D7xg==", null, false, "", false, "it" },
+                    { new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"), 0, "bbe4b421-dc71-4d8c-a558-cff3aeec9815", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@gmail.com", true, "Nguyễn", "Admin", false, null, "admin@gmail.com", "admin", "AQAAAAEAACcQAAAAEKqYquZcscdKshlpNhSLDJ620uCIDyp5vUMcCF6h6mbxRiLEKUv1Ws0MgcCwrpau+g==", null, false, "", false, "admin" },
+                    { new Guid("171f3098-762c-4b02-85c5-a687f6601de4"), 0, "e51e8d6f-ef8f-42c8-a341-25fce209484f", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "kho@gmail.com", true, "Nguyễn", "Kho", false, null, "kho@gmail.com", "kho", "AQAAAAEAACcQAAAAEJ7uBzjhFWY6I3JmpchhemxWKOz35rydIaLdQw2DuRSo/ceXb0MLEoNhS3vfVVW/tg==", null, false, "", false, "kho" }
                 });
         }
 
@@ -229,7 +229,7 @@ namespace Hiver.Data.Migrations
                 name: "AppRoleClaims");
 
             migrationBuilder.DropTable(
-                name: "AppRoleControllerGroup");
+                name: "AppRoleControllerGroups");
 
             migrationBuilder.DropTable(
                 name: "AppRoleControllers");

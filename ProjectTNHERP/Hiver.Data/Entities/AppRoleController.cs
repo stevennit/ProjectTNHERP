@@ -10,7 +10,7 @@ namespace Hiver.Data.Entities
         public int Id { get; set; }
         public string Controller { get; set; }
         public string Action { get; set; }
-        public Guid IdAppUser { get; set; }
+        public string IdAppUser { get; set; }
         public string Description { get; set; }
     }
 }

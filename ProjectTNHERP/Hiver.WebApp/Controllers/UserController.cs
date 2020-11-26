@@ -18,7 +18,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Hiver.WebApp.Controllers
 {
-    [CustomAttributes.Authorize]
+    [CustomAttributes.AuthorizeActionFilter]
     public class UserController : BaseController
     {
         private readonly IUserApiClient _userApiClient;

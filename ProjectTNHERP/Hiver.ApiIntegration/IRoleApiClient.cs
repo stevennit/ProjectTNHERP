@@ -10,5 +10,8 @@ namespace Hiver.ApiIntegration
     public interface IRoleApiClient
     {
         Task<ApiResult<List<RoleVm>>> GetAll();
+
+
+        Task<ApiResult<bool>> roleCheck(RoleCheckVm rolcheckRequest);
     }
 }

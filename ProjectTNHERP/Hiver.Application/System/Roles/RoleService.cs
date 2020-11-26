@@ -1,4 +1,7 @@
-﻿using Hiver.Data.Entities;
+﻿using Hiver.Data.EF;
+using Hiver.Data.Entities;
+using Hiver.Utilities.Exceptions;
+using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -13,10 +16,12 @@ namespace Hiver.Application.System.Roles
     public class RoleService : IRoleService
     {
         private readonly RoleManager<AppRole> _roleManager;
+        private readonly HiverDbContext _context;
 
-        public RoleService(RoleManager<AppRole> roleManager)
+        public RoleService(RoleManager<AppRole> roleManager, HiverDbContext context)
         {
             _roleManager = roleManager;
+            _context = context;
         }
 
         public async Task<List<RoleVm>> GetAll()
@@ -30,6 +35,19 @@ namespace Hiver.Application.System.Roles
                 }).ToListAsync();
 
             return roles;
+        }
+
+        public async Task<ApiResult<bool>> roleCheck(RoleCheckVm request)
+        {
+            var rel = await _context.AppRoleControllers.Where(x => x.Controller == request.Controller &&
+                x.Action == request.Action && x.IdAppUser == request.IdAppUser).FirstOrDefaultAsync();
+
+            if (rel == null)
+            {
+                return new ApiErrorResult<bool>($"Bạn không có quyền truy cập vào tài khoản này");
+            }
+
+            return new ApiSuccessResult<bool>();
         }
     }
 }
