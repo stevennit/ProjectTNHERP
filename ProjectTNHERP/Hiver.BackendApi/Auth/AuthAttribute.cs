@@ -1,4 +1,5 @@
 ﻿using Hiver.Application.System.Roles;
+using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
@@ -12,37 +13,39 @@ namespace Hiver.BackendApi.Auth
 {
     public class AuthAttribute : ActionFilterAttribute
     {
-        // IRoleService _roleService;
-        //public AuthAttribute(IRoleService roleService)
-        //{
-
-        //}
-        public override void OnActionExecuting(ActionExecutingContext filterContext)
+        private readonly IRoleService _roleService;
+        public AuthAttribute(IRoleService roleService)
         {
-
-            LogDetails(filterContext);
+            _roleService = roleService;
         }
-
-        private void LogDetails(ActionExecutingContext filterContext)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
             // Get name
-            string nameUser = filterContext.HttpContext.User.Claims.Where(c => c.Type == ClaimTypes.Name).Select(c => c.Value).FirstOrDefault();
+            string nameUser = context.HttpContext.User.Claims.Where(c => c.Type == ClaimTypes.Name).Select(c => c.Value).FirstOrDefault();
 
             // Get Name Controller and Name Action 
-            string nameController = (string)filterContext.RouteData.Values["Controller"];
-            string nameAction = (string)filterContext.RouteData.Values["Action"];
+            string nameController = (string)context.RouteData.Values["Controller"];
+            string nameAction = (string)context.RouteData.Values["Action"];
 
-            
-
-            RoleCheckVm request = new RoleCheckVm()
-            { 
+            var request = new RoleCheckVm()
+            {
                 AppUser = nameUser,
                 Controller = nameController,
                 Action = nameAction
             };
-            
-            RoleService roleService = new RoleService(request);
 
+            var res = _roleService.roleCheck(request);
+
+            if (res.Result == true)
+            {
+                base.OnActionExecuting(context);
+            }
+            else
+            {
+                context.Result = new BadRequestObjectResult(new ApiErrorResult<bool>("Bạn không có quyền truy cập"));
+                return;
+            }
+                
         }
     }
 }

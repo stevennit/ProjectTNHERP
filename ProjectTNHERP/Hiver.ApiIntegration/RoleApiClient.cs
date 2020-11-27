@@ -19,11 +19,6 @@ namespace Hiver.ApiIntegration
         private readonly IConfiguration _configuration;
         private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public RoleApiClient()
-        {
-
-        }
-
         public RoleApiClient(IHttpClientFactory httpClientFactory,
                    IHttpContextAccessor httpContextAccessor,
                     IConfiguration configuration)
@@ -49,14 +44,14 @@ namespace Hiver.ApiIntegration
             return JsonConvert.DeserializeObject<ApiErrorResult<List<RoleVm>>>(body);
         }
 
-        public async Task<ApiResult<bool>> roleCheck(RoleCheckVm rolcheckRequest)
+        public async Task<ApiResult<bool>> roleCheck(string nameUser)
         {
-            var json = JsonConvert.SerializeObject(rolcheckRequest);
+            var json = JsonConvert.SerializeObject(nameUser);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            var response = await client.PostAsync("/api/users/authenticate", httpContent);
+            var response = await client.PostAsync("/api/Roles/RoleCheck", httpContent);
             if (response.IsSuccessStatusCode)
             {
                 return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(await response.Content.ReadAsStringAsync());

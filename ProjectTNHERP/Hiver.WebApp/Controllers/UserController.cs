@@ -18,7 +18,6 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Hiver.WebApp.Controllers
 {
-    //[CustomAttributes.AuthorizeActionFilter]
     public class UserController : BaseController
     {
         private readonly IUserApiClient _userApiClient;
@@ -44,7 +43,15 @@ namespace Hiver.WebApp.Controllers
                 PageIndex = pageIndex,
                 PageSize = pageSize
             };
+
             var data = await _userApiClient.GetUsersPagings(request);
+
+            if (data.ResultObj == null)
+            {
+                ModelState.AddModelError("", data.Message);
+                return View();
+            }
+
             ViewBag.Keyword = keyword;
             if (TempData["result"] != null)
             {

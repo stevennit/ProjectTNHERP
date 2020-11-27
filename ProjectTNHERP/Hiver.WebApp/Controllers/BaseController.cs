@@ -14,6 +14,11 @@ namespace Hiver.WebApp.Controllers
     [Authorize]
     public class BaseController : Controller
     {
+
+        public BaseController()
+        {
+        }
+
         public override void OnActionExecuting(ActionExecutingContext context)
         {
            
@@ -21,7 +26,7 @@ namespace Hiver.WebApp.Controllers
             if (sessions == null)
             {
                 context.Result = new RedirectToActionResult("Index", "Login", null);
-            }
+            } 
             base.OnActionExecuting(context);
         }
     }

@@ -27,11 +27,11 @@ namespace Hiver.BackendApi.Controllers
         }
 
 
-        [HttpPost]
-        public async Task<IActionResult> RoleCheck([FromBody]RoleCheckVm request)
-        {
-            var rel = await _roleService.roleCheck(request);
-            return Ok(rel);
-        }
+        //[HttpPost]
+        //public async Task<IActionResult> RoleCheck([FromBody]RoleCheckVm request)
+        //{
+        //    var rel = await _roleService.roleCheck(request);
+        //    return Ok(rel);
+        //}
     }
 }

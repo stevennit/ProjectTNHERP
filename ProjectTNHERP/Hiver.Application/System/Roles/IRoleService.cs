@@ -11,6 +11,6 @@ namespace Hiver.Application.System.Roles
     {
         Task<List<RoleVm>> GetAll();
 
-        Task<ApiResult<bool>> roleCheck(RoleCheckVm request);
+        Task<bool> roleCheck(RoleCheckVm request);
     }
 }

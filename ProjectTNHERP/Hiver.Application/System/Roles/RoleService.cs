@@ -18,13 +18,6 @@ namespace Hiver.Application.System.Roles
         private readonly RoleManager<AppRole> _roleManager;
         private readonly HiverDbContext _context;
 
-        public RoleService(RoleCheckVm request)
-        {
-            var rel =  _context.AppRoleControllers.Where(x => x.Controller == request.Controller &&
-                x.Action == request.Action && x.AppUser == request.AppUser).SingleOrDefault();
-        }
-
-
 
         public RoleService(RoleManager<AppRole> roleManager, HiverDbContext context)
         {
@@ -45,17 +38,19 @@ namespace Hiver.Application.System.Roles
             return roles;
         }
 
-        public async Task<ApiResult<bool>> roleCheck(RoleCheckVm request)
+        public async Task<bool> roleCheck(RoleCheckVm request)
         {
-            var rel = await _context.AppRoleControllers.Where(x => x.Controller == request.Controller &&
-                x.Action == request.Action && x.AppUser == request.AppUser).FirstAsync();
+            var rel = await _context.AppRoleControllers.SingleOrDefaultAsync(x => x.Controller == request.Controller &&
+                x.Action == request.Action && x.AppUser == request.AppUser);
 
             if (rel == null)
             {
-                return new ApiErrorResult<bool>($"Bạn không có quyền truy cập vào tài khoản này");
+                return false;
             }
 
-            return new ApiSuccessResult<bool>();
+            return true;
         }
+
+        
     }
 }
