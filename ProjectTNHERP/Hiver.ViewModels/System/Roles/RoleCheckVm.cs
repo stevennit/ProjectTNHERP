@@ -8,6 +8,6 @@ namespace Hiver.ViewModels.System.Roles
     {
         public string Controller { get; set; }
         public string Action { get; set; }
-        public string IdAppUser { get; set; }
+        public string AppUser { get; set; }
     }
 }

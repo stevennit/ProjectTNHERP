@@ -18,6 +18,14 @@ namespace Hiver.Application.System.Roles
         private readonly RoleManager<AppRole> _roleManager;
         private readonly HiverDbContext _context;
 
+        public RoleService(RoleCheckVm request)
+        {
+            var rel =  _context.AppRoleControllers.Where(x => x.Controller == request.Controller &&
+                x.Action == request.Action && x.AppUser == request.AppUser).SingleOrDefault();
+        }
+
+
+
         public RoleService(RoleManager<AppRole> roleManager, HiverDbContext context)
         {
             _roleManager = roleManager;
@@ -40,7 +48,7 @@ namespace Hiver.Application.System.Roles
         public async Task<ApiResult<bool>> roleCheck(RoleCheckVm request)
         {
             var rel = await _context.AppRoleControllers.Where(x => x.Controller == request.Controller &&
-                x.Action == request.Action && x.IdAppUser == request.IdAppUser).FirstOrDefaultAsync();
+                x.Action == request.Action && x.AppUser == request.AppUser).FirstAsync();
 
             if (rel == null)
             {

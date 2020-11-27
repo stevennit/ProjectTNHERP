@@ -1,4 +1,5 @@
 ﻿using Hiver.Application.System.Roles;
+using Hiver.BackendApi.Auth;
 using Hiver.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -26,7 +27,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
 
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> RoleCheck([FromBody]RoleCheckVm request)
         {
             var rel = await _roleService.roleCheck(request);

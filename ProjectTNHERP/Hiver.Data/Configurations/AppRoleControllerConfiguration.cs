@@ -21,7 +21,7 @@ namespace Hiver.Data.Configurations
 
             builder.Property(x => x.Controller).IsRequired();
             builder.Property(x => x.Action).IsRequired();
-            builder.Property(x => x.IdAppUser).IsRequired();
+            builder.Property(x => x.AppUser).IsRequired();
 
         }
     }

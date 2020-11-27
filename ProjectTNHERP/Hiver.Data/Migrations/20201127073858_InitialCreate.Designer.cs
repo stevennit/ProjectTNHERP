@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hiver.Data.Migrations
 {
     [DbContext(typeof(HiverDbContext))]
-    [Migration("20201126155204_InitialCreate")]
+    [Migration("20201127073858_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -88,7 +88,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "69c6070f-9996-496e-98d8-dea2d67db87e",
+                            ConcurrencyStamp = "798137e9-1f6c-4481-a014-a878f087075c",
                             Description = "Administrator role",
                             Name = "Administrator",
                             NormalizedName = "Cấp 1"
@@ -96,7 +96,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
-                            ConcurrencyStamp = "cf63041f-820a-401d-8726-34ad1b447ce6",
+                            ConcurrencyStamp = "10ed008d-1c96-4c77-910d-06c2b107d849",
                             Description = "BanHang",
                             Name = "BanHang",
                             NormalizedName = "Cấp 2"
@@ -104,7 +104,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
-                            ConcurrencyStamp = "14e5514a-9207-4819-95a2-7ea2dadb90af",
+                            ConcurrencyStamp = "257912a8-511e-4c1a-bb15-8b66d2bcf132",
                             Description = "Mua hàng",
                             Name = "MuaHang",
                             NormalizedName = "Cấp 2"
@@ -112,7 +112,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
-                            ConcurrencyStamp = "f5ac0144-3028-4a9d-bfc3-8bd3cb4bcd13",
+                            ConcurrencyStamp = "fbb658d6-8eea-4e01-9379-f68e07114685",
                             Description = "Kho",
                             Name = "Kho",
                             NormalizedName = "Cấp 2"
@@ -120,7 +120,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
-                            ConcurrencyStamp = "ef8db382-a78a-44d4-9789-fa9ea9776bc6",
+                            ConcurrencyStamp = "6b84de06-6254-4c83-8297-6e90ec7ff96c",
                             Description = "Nhân Sự",
                             Name = "Nhansu",
                             NormalizedName = "Cấp 2"
@@ -140,6 +140,10 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("AppUser")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Controller")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -147,10 +151,6 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(200)")
                         .HasMaxLength(200);
-
-                    b.Property<string>("IdAppUser")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -161,22 +161,22 @@ namespace Hiver.Data.Migrations
                         {
                             Id = 1,
                             Action = "Index",
-                            Controller = "User",
-                            IdAppUser = "admin"
+                            AppUser = "admin",
+                            Controller = "User"
                         },
                         new
                         {
                             Id = 2,
                             Action = "Index",
-                            Controller = "User",
-                            IdAppUser = "admin"
+                            AppUser = "admin",
+                            Controller = "User"
                         },
                         new
                         {
                             Id = 3,
                             Action = "Index",
-                            Controller = "Home",
-                            IdAppUser = "user"
+                            AppUser = "it",
+                            Controller = "Home"
                         });
                 });
 
@@ -304,7 +304,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bbe4b421-dc71-4d8c-a558-cff3aeec9815",
+                            ConcurrencyStamp = "023dedd4-3f2f-4bb9-9d52-bf8965fa35b8",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -313,7 +313,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKqYquZcscdKshlpNhSLDJ620uCIDyp5vUMcCF6h6mbxRiLEKUv1Ws0MgcCwrpau+g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEChMh44s/vFPOi9aexEWsb3mfVdlGavmvHNHm4G33Z0JmSWv9ayDHkot6erpFdyuqw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -323,7 +323,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7d47075d-4557-4723-a4d2-2963eec85a49",
+                            ConcurrencyStamp = "755a13a4-3eca-497b-bacf-85217bb0ed33",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -332,7 +332,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOEw8hZkMJ1nQjj9REcE8Ej7l2F/jvcSzfxVQTeNQgyPWTvzBAyOqeQeyzCkY4D7xg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGhc93cgRrMlUFBmsJVNOwsyZTricIYgnhkLdjdNv1myiIXY6zRBkV4du3xvqs9JOw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -342,7 +342,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e51e8d6f-ef8f-42c8-a341-25fce209484f",
+                            ConcurrencyStamp = "ae7e2616-384e-4a3d-8955-a7b3a5cafa61",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -351,7 +351,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEJ7uBzjhFWY6I3JmpchhemxWKOz35rydIaLdQw2DuRSo/ceXb0MLEoNhS3vfVVW/tg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEApRPcoql+ZZZ+h5WvdknA5sC0RNpwf17TCInsWAaoSNWyM/nFgX4KDlOeuBNA8t+g==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,

@@ -18,7 +18,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Hiver.WebApp.Controllers
 {
-    [CustomAttributes.AuthorizeActionFilter]
+    //[CustomAttributes.AuthorizeActionFilter]
     public class UserController : BaseController
     {
         private readonly IUserApiClient _userApiClient;
@@ -35,7 +35,7 @@ namespace Hiver.WebApp.Controllers
         }
 
 
-        [Route("Tai-khoan")]
+        //[Route("Tai-khoan")]
         public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 10)
         {
             var request = new GetUserPagingRequest()
@@ -53,7 +53,7 @@ namespace Hiver.WebApp.Controllers
             return View(data.ResultObj);
         }
 
-        [Route("Tai-khoan/{id?}")]
+        //[Route("Tai-khoan/{id?}")]
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {

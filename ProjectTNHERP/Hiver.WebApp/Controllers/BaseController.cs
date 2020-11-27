@@ -14,7 +14,6 @@ namespace Hiver.WebApp.Controllers
     [Authorize]
     public class BaseController : Controller
     {
-        readonly IRoleApiClient roleApiClient;
         public override void OnActionExecuting(ActionExecutingContext context)
         {
            
@@ -22,10 +21,6 @@ namespace Hiver.WebApp.Controllers
             if (sessions == null)
             {
                 context.Result = new RedirectToActionResult("Index", "Login", null);
-            }
-            else
-            {
-               
             }
             base.OnActionExecuting(context);
         }

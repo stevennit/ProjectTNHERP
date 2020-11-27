@@ -307,19 +307,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Drive Google\\Project\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+      "projectUniqueName": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
       "projectName": "Hiver.ViewModels",
-      "projectPath": "D:\\Drive Google\\Project\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
-      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\Drive Google\\Project\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
+      "projectPath": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -332,7 +332,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -344,7 +343,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "FluentValidation.AspNetCore": {
             "target": "Package",
@@ -373,7 +371,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

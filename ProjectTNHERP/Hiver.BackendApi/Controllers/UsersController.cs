@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Hiver.Application.System.Users;
+using Hiver.BackendApi.Auth;
 using Hiver.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -10,6 +11,7 @@ namespace Hiver.BackendApi.Controllers
     [Route("api/[controller]")]
     [ApiController]
     [Authorize]
+
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -36,7 +38,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpPost]
-        [AllowAnonymous]
+        [AuthAttribute]
         public async Task<IActionResult> Register([FromBody]RegisterRequest request)
         {
             if (!ModelState.IsValid)
@@ -50,6 +52,7 @@ namespace Hiver.BackendApi.Controllers
             return Ok(result);
         }
 
+        [AuthAttribute]
         //PUT: http://localhost/api/users/id
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(Guid id, [FromBody]UserUpdateRequest request)
@@ -66,6 +69,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpPut("{id}/roles")]
+        [AuthAttribute]
         public async Task<IActionResult> RoleAssign(Guid id, [FromBody]RoleAssignRequest request)
         {
             if (!ModelState.IsValid)
@@ -81,6 +85,7 @@ namespace Hiver.BackendApi.Controllers
 
         //http://localhost/api/users/paging?pageIndex=1&pageSize=10&keyword=
         [HttpGet("paging")]
+        [AuthAttribute]
         public async Task<IActionResult> GetAllPaging([FromQuery]GetUserPagingRequest request)
         {
             var products = await _userService.GetUsersPaging(request);
@@ -88,6 +93,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpGet("{id}")]
+        [AuthAttribute]
         public async Task<IActionResult> GetById(Guid id)
         {
             var user = await _userService.GetById(id);
@@ -95,6 +101,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpDelete("{id}")]
+        [AuthAttribute]
         public async Task<IActionResult> Delete(Guid id)
         {
             var result = await _userService.Delete(id);
