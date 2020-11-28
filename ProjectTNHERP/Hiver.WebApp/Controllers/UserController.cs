@@ -93,9 +93,11 @@ namespace Hiver.WebApp.Controllers
         public async Task<IActionResult> Edit(Guid id)
         {
             var result = await _userApiClient.GetById(id);
+
             if (result.IsSuccessed)
             {
                 var user = result.ResultObj;
+
                 var updateRequest = new UserUpdateRequest()
                 {
                     Dob = user.Dob,
@@ -105,6 +107,7 @@ namespace Hiver.WebApp.Controllers
                     PhoneNumber = user.PhoneNumber,
                     Id = id
                 };
+
                 return View(updateRequest);
             }
             return RedirectToAction("Error", "Home");

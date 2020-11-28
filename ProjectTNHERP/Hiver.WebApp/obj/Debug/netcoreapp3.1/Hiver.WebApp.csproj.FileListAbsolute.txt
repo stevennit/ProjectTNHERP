@@ -834,3 +834,5 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\staticwebassets\Hiver.WebApp.StaticWebAssets.xml
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.genruntimeconfig.cache
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Permission\_NoPermission.cshtml.g.cs
+E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Navigation\_Header.cshtml.g.cs
+E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Navigation\_MenuMain.cshtml.g.cs
