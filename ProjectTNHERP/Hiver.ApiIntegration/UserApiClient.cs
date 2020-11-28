@@ -82,8 +82,11 @@ namespace Hiver.ApiIntegration
             var response = await client.GetAsync($"/api/users/paging?pageIndex=" +
                 $"{request.PageIndex}&pageSize={request.PageSize}&keyword={request.Keyword}");
             var body = await response.Content.ReadAsStringAsync();
-            var users = JsonConvert.DeserializeObject<ApiSuccessResult<PagedResult<UserVm>>>(body);
-            return users;
+
+            if (response.IsSuccessStatusCode)
+                return JsonConvert.DeserializeObject<ApiSuccessResult<PagedResult<UserVm>>>(body);
+
+            return JsonConvert.DeserializeObject<ApiErrorResult<PagedResult<UserVm>>>(body);
         }
 
         public async Task<ApiResult<bool>> RegisterUser(RegisterRequest registerRequest)
@@ -95,7 +98,9 @@ namespace Hiver.ApiIntegration
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var response = await client.PostAsync($"/api/users", httpContent);
+
             var result = await response.Content.ReadAsStringAsync();
+
             if (response.IsSuccessStatusCode)
                 return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(result);
 

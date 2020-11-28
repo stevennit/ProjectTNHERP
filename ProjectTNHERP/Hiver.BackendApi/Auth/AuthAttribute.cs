@@ -42,7 +42,7 @@ namespace Hiver.BackendApi.Auth
             }
             else
             {
-                context.Result = new BadRequestObjectResult(new ApiErrorResult<bool>("Bạn không có quyền truy cập"));
+                context.Result = new BadRequestObjectResult(new ApiErrorResult<string>("Bạn không có quyền truy cập"));
                 return;
             }
                 

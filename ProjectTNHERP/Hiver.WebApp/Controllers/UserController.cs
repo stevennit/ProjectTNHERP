@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Hiver.ApiIntegration;
 using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Users;
+using Hiver.WebApp.CustomAttributes;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
@@ -18,6 +19,9 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace Hiver.WebApp.Controllers
 {
+    //[CustomAttributes.Authorize]
+
+    //[ValidateModel]
     public class UserController : BaseController
     {
         private readonly IUserApiClient _userApiClient;
@@ -45,12 +49,6 @@ namespace Hiver.WebApp.Controllers
             };
 
             var data = await _userApiClient.GetUsersPagings(request);
-
-            if (data.ResultObj == null)
-            {
-                ModelState.AddModelError("", data.Message);
-                return View();
-            }
 
             ViewBag.Keyword = keyword;
             if (TempData["result"] != null)
