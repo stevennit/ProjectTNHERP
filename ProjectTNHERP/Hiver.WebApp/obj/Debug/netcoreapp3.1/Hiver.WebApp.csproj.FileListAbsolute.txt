@@ -394,7 +394,6 @@ D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\n
 D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.TagHelpers.output.cache
 D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.RazorCoreGenerate.cache
 D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\NoPermission.cshtml.g.cs
 D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Pager\Default.cshtml.g.cs
@@ -836,3 +835,7 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Permission\_NoPermission.cshtml.g.cs
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Navigation\_Header.cshtml.g.cs
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Navigation\_MenuMain.cshtml.g.cs
+D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Permission\_NoPermission.cshtml.g.cs
+D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CustomLayout\_Header.cshtml.g.cs
+D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\CustomLayout\_MenuMain.cshtml.g.cs
+D:\Drive Google\Project\Web\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Navigation\_MenuPartial.cshtml.g.cs

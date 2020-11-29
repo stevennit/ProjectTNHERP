@@ -20,6 +20,8 @@ namespace Hiver.Data.EF
         {
             //Configure using Fluent API
 
+            modelBuilder.ApplyConfiguration(new MenuConfiguration());
+
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
 
@@ -43,6 +45,8 @@ namespace Hiver.Data.EF
         public DbSet<AppController> AppControllers { set; get; }
         public DbSet<AppRoleController> AppRoleControllers { set; get; }
         public DbSet<AppRoleControllerGroup> AppRoleControllerGroups { set; get; }
+
+        public DbSet<Menu> Menus { set; get; }
 
     }
 }

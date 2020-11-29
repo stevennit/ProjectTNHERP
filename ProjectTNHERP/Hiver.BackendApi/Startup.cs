@@ -20,6 +20,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System;
 using Hiver.BackendApi.Auth;
+using Hiver.Application.Common.Menu;
 
 namespace Hiver.BackendApi
 {
@@ -44,6 +45,8 @@ namespace Hiver.BackendApi
 
             //Declare DI
             services.AddTransient<IStorageService, FileStorageService>();
+
+            services.AddTransient<IMenuService, MenuSerivce>();
 
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();

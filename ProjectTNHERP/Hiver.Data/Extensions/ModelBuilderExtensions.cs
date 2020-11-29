@@ -13,10 +13,6 @@ namespace Hiver.Data.Extensions
         public static void Seed(this ModelBuilder modelBuilder)
         {
 
-
-
-            
-
             #region Add Data AppUser
 
             var hasher = new PasswordHasher<AppUser>();
@@ -179,10 +175,65 @@ namespace Hiver.Data.Extensions
             );
             #endregion
 
-
-
-
-
+            #region Add Data Menu 
+            modelBuilder.Entity<Menu>().HasData(
+               new Menu
+               {
+                   MenuID = 1,
+                   ParentID = null,
+                   MenuName = "Trang Chính",
+                   Description = null,
+                   Url = "/",
+                   IconClass = null,
+                   MenuOrder = 1,
+                   IsVisible = true,
+               },
+               new Menu
+               {
+                   MenuID = 2,
+                   ParentID = null,
+                   MenuName = "Kho",
+                   Description = null,
+                   Url = "/",
+                   IconClass = null,
+                   MenuOrder = 1,
+                   IsVisible = true,
+               },
+               new Menu
+               {
+                   MenuID = 3,
+                   ParentID = 2,
+                   MenuName = "Nguyên Liệu",
+                   Description = null,
+                   Url = "/",
+                   IconClass = null,
+                   MenuOrder = 1,
+                   IsVisible = true,
+               },
+               new Menu
+               {
+                   MenuID = 4,
+                   ParentID = 2,
+                   MenuName = "Thành Phẩm",
+                   Description = null,
+                   Url = "/",
+                   IconClass = null,
+                   MenuOrder = 1,
+                   IsVisible = true,
+               },
+               new Menu
+               {
+                   MenuID = 5,
+                   ParentID = null,
+                   MenuName = "Kinh Doanh",
+                   Description = null,
+                   Url = "/",
+                   IconClass = null,
+                   MenuOrder = 1,
+                   IsVisible = true,
+               }
+           );
+            #endregion
 
 
         }

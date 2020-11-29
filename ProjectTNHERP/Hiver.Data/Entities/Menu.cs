@@ -6,11 +6,13 @@ namespace Hiver.Data.Entities
 {
     public class Menu
     {
-        public string ID { get; set; }
-        public string ParentID { get; set; }
-        public string Content { get; set; }
+        public int MenuID { get; set; }
+        public int? ParentID { get; set; }
+        public string MenuName { get; set; }
+        public string Description { get; set; }
         public string IconClass { get; set; }
         public string Url { get; set; }
-        public long Order { get; set; }
+        public int MenuOrder { get; set; }
+        public bool IsVisible { get; set; }
     }
 }
