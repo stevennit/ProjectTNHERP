@@ -1,0 +1,16 @@
+﻿@model System.Collections.Generic.IEnumerable<Hiver.ViewModels.Common.MenuResult>
+
+@foreach (var menu in Model)
+{
+    @if (menu.ParentID == null)
+    {
+        <li>
+            <a href="#" class="tree-menu-header">
+                <i class="@menu.IconClass"></i><span>@menu.MenuName</span>
+            </a>
+            <ul class="menu vertical nested is-active">
+                @*<partial name="Components/Menu/_MenuPartial" />*@
+            </ul>
+        </li>
+    }
+}

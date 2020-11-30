@@ -1,6 +1,9 @@
 ﻿using Hiver.ApiIntegration.Menu;
 using Hiver.ViewModels.Common;
+using Hiver.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Hiver.WebApp.Controllers.Components
@@ -14,10 +17,24 @@ namespace Hiver.WebApp.Controllers.Components
             _menuApiClient = menuApiClient;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(int? ParentID)
+        public async Task<IViewComponentResult> InvokeAsync(int parentId)
         {
-            var res = await _menuApiClient.GetMenus(ParentID);
-            return View(res);
+            var res = GetMenuItem(parentId);
+            return View("_MenuPartial",res);
         }
+       
+
+        private async Task<List<MenuViewModel>> GetChildrenMenu(int? parentId = null)
+        {
+            var res = await _menuApiClient.GetMenuParent(parentId);
+            return res;
+        }
+
+        private async Task<List<MenuMain>> GetMenuItem(int Id)
+        {
+            var res = await _menuApiClient.GetMenus(Id);
+            return res;
+        }
+
     }
 }

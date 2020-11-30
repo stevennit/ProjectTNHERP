@@ -17,19 +17,37 @@ namespace Hiver.Application.Common.Menu
         {
             _context = context;
         }
-        public async Task<List<MenuResult>> GetMenus(int ParentID)
+
+        public async Task<List<MenuResult>> GetMenu(int Id)
         {
-            var res = await _context.Menus.Where(x => x.ParentID == ParentID)
+            return await _context.Menus.Where(x => x.MenuID == Id)
                 .Select(i => new MenuResult()
                 {
-                   MenuName = i.MenuName,
-                   Description = i.Description,
-                   IconClass = i.IconClass,
-                   IsVisible =i.IsVisible,
-                   MenuOrder = i.MenuOrder
+                    MenuID = i.MenuID,
+                    MenuName = i.MenuName,
+                    Description = i.Description,
+                    IconClass = i.IconClass,
+                    IsVisible = i.IsVisible,
+                    MenuOrder = i.MenuOrder,
+                    ParentID = i.ParentID,
+                    Url = i.Url
                 }).ToListAsync();
-           
-            return res;
+        }
+
+        public async Task<List<MenuResult>> GetMenuParent(int? parentId)
+        {
+            return await _context.Menus.Where(x => x.ParentID == parentId)
+                .Select(i => new MenuResult()
+                {
+                    MenuID = i.MenuID,
+                    MenuName = i.MenuName,
+                    Description = i.Description,
+                    IconClass = i.IconClass,
+                    IsVisible = i.IsVisible,
+                    MenuOrder = i.MenuOrder,
+                    ParentID = i.ParentID,
+                    Url = i.Url
+                }).ToListAsync();
         }
     }
 }

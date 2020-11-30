@@ -1,4 +1,6 @@
 ﻿using Hiver.Application.Common.Menu;
+using Hiver.Application.System.Users;
+using Hiver.ViewModels.Common;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -14,15 +16,23 @@ namespace Hiver.BackendApi.Controllers
     {
         private readonly IMenuService _menuService;
 
-        public MenusController(MenuSerivce menuSerivce)
+        public MenusController(IMenuService menuService)
         {
-            _menuService = menuSerivce;
+            _menuService = menuService;
         }
 
-        [HttpPost]
-        public async Task<IActionResult> GetMenus(int ParentID)
+        [HttpGet("Getmenu")]
+        public async Task<IActionResult> GetMenus(int Id)
         {
-            var res = await _menuService.GetMenus(ParentID);
+            var res = await _menuService.GetMenu(Id);
+
+            return Ok(res);
+        }
+
+        [HttpGet("Getmenuparent")]
+        public async Task<IActionResult> GetMenuParent(int? parentId)
+        {
+            var res = await _menuService.GetMenuParent(parentId);
 
             return Ok(res);
         }

@@ -9,21 +9,25 @@ using Hiver.WebApp.Models;
 using Microsoft.AspNetCore.Authorization;
 using Hiver.Utilities.Constants;
 using Microsoft.AspNetCore.Http;
+using Hiver.ApiIntegration.Menu;
 
 namespace Hiver.WebApp.Controllers
 {
     public class HomeController : BaseController
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly IMenuApiClient _menuApiClient;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, IMenuApiClient menuApiClient)
         {
             _logger = logger;
+            _menuApiClient = menuApiClient;
         }
 
         public IActionResult Index()
         {
             var user = User.Identity.Name;
+
             return View();
         }
 

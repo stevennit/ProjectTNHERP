@@ -46,7 +46,7 @@ namespace Hiver.BackendApi
             //Declare DI
             services.AddTransient<IStorageService, FileStorageService>();
 
-            services.AddTransient<IMenuService, MenuSerivce>();
+            
 
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
@@ -56,6 +56,8 @@ namespace Hiver.BackendApi
             services.AddTransient<IUserService, UserService>();
 
             services.AddScoped<AuthAttribute>();
+
+            services.AddTransient<IMenuService, MenuSerivce>();
 
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
