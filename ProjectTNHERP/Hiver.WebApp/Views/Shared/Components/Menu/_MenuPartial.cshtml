@@ -1,16 +1,35 @@
-﻿@model System.Collections.Generic.IEnumerable<Hiver.ViewModels.Common.MenuResult>
+﻿@model System.Collections.Generic.IEnumerable<Hiver.ViewModels.Common.MenuViewModel>
 
 @foreach (var menu in Model)
 {
-    @if (menu.ParentID == null)
+    if (menu.Children.Any())
     {
         <li>
             <a href="#" class="tree-menu-header">
                 <i class="@menu.IconClass"></i><span>@menu.MenuName</span>
             </a>
             <ul class="menu vertical nested is-active">
-                @*<partial name="Components/Menu/_MenuPartial" />*@
+                <partial name="Components/Menu/_MenuPartial" model="menu.Children" />
             </ul>
+        </li>
+    }
+    else
+    {
+        <li >
+            @{
+                if (string.IsNullOrEmpty(menu.Url))   //Add either onclick event or href.
+                {
+                    <a >
+                        <i class="@menu.IconClass"></i><span >@menu.MenuName</span>
+                    </a>
+                }
+                else
+                {
+                    <a href="@menu.Url">
+                        <i class="@menu.IconClass"></i><span>@menu.MenuName</span>
+                    </a>
+                }
+            }
         </li>
     }
 }

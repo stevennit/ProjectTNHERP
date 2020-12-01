@@ -12,6 +12,7 @@ namespace Hiver.Data.Configurations
         public void Configure(EntityTypeBuilder<Menu> builder)
         {
             builder.ToTable("Menus");
+
             builder.HasKey(x => x.MenuID);
             builder.Property(x => x.MenuID).UseIdentityColumn();
 

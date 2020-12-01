@@ -8,7 +8,7 @@ namespace Hiver.ApiIntegration.Menu
 {
     public interface  IMenuApiClient
     {
-        Task<MenuMain> GetMenus(int Id);
-        Task<List<MenuViewModel>> GetMenuParent(int? parentId);
+        Task<List<MenuViewModel>> GetChildrenMenu(int? parentId = null);
+        Task<MenuViewModel> GetMenuItem(int Id);
     }
 }

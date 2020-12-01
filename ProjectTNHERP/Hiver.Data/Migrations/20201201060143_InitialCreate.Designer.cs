@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hiver.Data.Migrations
 {
     [DbContext(typeof(HiverDbContext))]
-    [Migration("20201127073858_InitialCreate")]
+    [Migration("20201201060143_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -88,7 +88,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "798137e9-1f6c-4481-a014-a878f087075c",
+                            ConcurrencyStamp = "125ad9eb-45ce-42ac-a0ce-fa3cadcd0f7d",
                             Description = "Administrator role",
                             Name = "Administrator",
                             NormalizedName = "Cấp 1"
@@ -96,7 +96,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
-                            ConcurrencyStamp = "10ed008d-1c96-4c77-910d-06c2b107d849",
+                            ConcurrencyStamp = "b736dd16-bae5-488b-97a5-8de9265414ad",
                             Description = "BanHang",
                             Name = "BanHang",
                             NormalizedName = "Cấp 2"
@@ -104,7 +104,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
-                            ConcurrencyStamp = "257912a8-511e-4c1a-bb15-8b66d2bcf132",
+                            ConcurrencyStamp = "e95c7796-4363-49e1-ba46-a9af74dbcaed",
                             Description = "Mua hàng",
                             Name = "MuaHang",
                             NormalizedName = "Cấp 2"
@@ -112,7 +112,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
-                            ConcurrencyStamp = "fbb658d6-8eea-4e01-9379-f68e07114685",
+                            ConcurrencyStamp = "4e2ff6a4-670f-45a9-a201-43bdbdd62546",
                             Description = "Kho",
                             Name = "Kho",
                             NormalizedName = "Cấp 2"
@@ -120,7 +120,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
-                            ConcurrencyStamp = "6b84de06-6254-4c83-8297-6e90ec7ff96c",
+                            ConcurrencyStamp = "eb14c6e6-8519-4fa2-abe0-5b750ecd6407",
                             Description = "Nhân Sự",
                             Name = "Nhansu",
                             NormalizedName = "Cấp 2"
@@ -304,7 +304,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "023dedd4-3f2f-4bb9-9d52-bf8965fa35b8",
+                            ConcurrencyStamp = "db5e00a7-56cc-4aad-8121-72d3440c5027",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -313,7 +313,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEChMh44s/vFPOi9aexEWsb3mfVdlGavmvHNHm4G33Z0JmSWv9ayDHkot6erpFdyuqw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEG7YY/U872HlnHW9T24sHzV/iNzWJ7yk4YSroyuwRsteZelXFu0cySnP7KkZQqAtMw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -323,7 +323,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "755a13a4-3eca-497b-bacf-85217bb0ed33",
+                            ConcurrencyStamp = "8760c65a-75f1-43e2-bb14-1fa04f517af2",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -332,7 +332,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGhc93cgRrMlUFBmsJVNOwsyZTricIYgnhkLdjdNv1myiIXY6zRBkV4du3xvqs9JOw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENnTUHTSWwwOuZNJhbqsAVSTijXROSQW8Fxl1ICH66ZCUHMPxbTpo3vSOav56TDzxQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -342,7 +342,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ae7e2616-384e-4a3d-8955-a7b3a5cafa61",
+                            ConcurrencyStamp = "215fd197-aeac-490a-9d86-7ab7e828036d",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -351,11 +351,94 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEApRPcoql+ZZZ+h5WvdknA5sC0RNpwf17TCInsWAaoSNWyM/nFgX4KDlOeuBNA8t+g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELiWRW8/+gZKG+ldgVMXuAV/RjYQROfnazFThNaVUmpwMokLxMDZtGfwonLtnlkWHQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
                             UserName = "kho"
+                        });
+                });
+
+            modelBuilder.Entity("Hiver.Data.Entities.Menu", b =>
+                {
+                    b.Property<int>("MenuID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:IdentityIncrement", 1)
+                        .HasAnnotation("SqlServer:IdentitySeed", 1)
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(250)")
+                        .HasMaxLength(250);
+
+                    b.Property<string>("IconClass")
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<bool>("IsVisible")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("MenuName")
+                        .HasColumnType("nvarchar(150)")
+                        .HasMaxLength(150);
+
+                    b.Property<int>("MenuOrder")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ParentID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.HasKey("MenuID");
+
+                    b.ToTable("Menus");
+
+                    b.HasData(
+                        new
+                        {
+                            MenuID = 1,
+                            IsVisible = true,
+                            MenuName = "Trang Chính",
+                            MenuOrder = 1,
+                            Url = "/"
+                        },
+                        new
+                        {
+                            MenuID = 2,
+                            IsVisible = true,
+                            MenuName = "Kho",
+                            MenuOrder = 1,
+                            Url = "/"
+                        },
+                        new
+                        {
+                            MenuID = 3,
+                            IsVisible = true,
+                            MenuName = "Nguyên Liệu",
+                            MenuOrder = 1,
+                            ParentID = 2,
+                            Url = "/"
+                        },
+                        new
+                        {
+                            MenuID = 4,
+                            IsVisible = true,
+                            MenuName = "Thành Phẩm",
+                            MenuOrder = 1,
+                            ParentID = 2,
+                            Url = "/"
+                        },
+                        new
+                        {
+                            MenuID = 5,
+                            IsVisible = true,
+                            MenuName = "Kinh Doanh",
+                            MenuOrder = 1,
+                            Url = "/"
                         });
                 });
 

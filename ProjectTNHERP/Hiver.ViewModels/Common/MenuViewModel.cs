@@ -7,7 +7,7 @@ namespace Hiver.ViewModels.Common
 {
     public class MenuMain
     {
-        public int MenuID { get; set; }
+        public int MenuId { get; set; }
         public int? ParentID { get; set; }
         public string MenuName { get; set; }
         public string Description { get; set; }
@@ -18,10 +18,9 @@ namespace Hiver.ViewModels.Common
 
     }
 
-        public class MenuViewModel
+    public class MenuViewModel
     {
-        public int MenuID { get; set; }
-        public int? ParentID { get; set; }
+        public int MenuId { get; set; }
         public string MenuName { get; set; }
         public string Description { get; set; }
         public string IconClass { get; set; }

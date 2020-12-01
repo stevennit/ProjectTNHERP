@@ -1,7 +1,7 @@
 ﻿using Hiver.ApiIntegration.Menu;
 using Hiver.ViewModels.Common;
-using Hiver.WebApp.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -17,24 +17,41 @@ namespace Hiver.WebApp.Controllers.Components
             _menuApiClient = menuApiClient;
         }
 
-        public async Task<IViewComponentResult> InvokeAsync(int parentId)
+        public Task<IViewComponentResult> InvokeAsync(int? parentId)
         {
-            var res = GetMenuItem(parentId);
-            return View("_MenuPartial",res);
+            var children =  GetMenu(parentId);
+
+            return Task.FromResult((IViewComponentResult)View("_MenuPartial", children));
+        }
+
+        public IList<MenuViewModel> GetMenu(int? parentId)
+        {
+            var children = _menuApiClient.GetChildrenMenu(parentId);
+
+            if (!children.Result.Any())
+            {
+                return new List<MenuViewModel>();
+            }
+
+            var vmList = new List<MenuViewModel>();
+
+            foreach (var item in children.Result)
+            {
+                var menu = _menuApiClient.GetMenuItem(item.MenuId);
+
+                var vm = new MenuViewModel();
+
+                vm.MenuId = menu.Result.MenuId;
+
+                vm.MenuName = menu.Result.MenuName;
+                vm.IconClass = menu.Result.IconClass;
+                vm.Url = menu.Result.Url;
+                vm.Children = GetMenu(menu.Result.MenuId);
+                vmList.Add(vm);
+            }
+            return vmList;
         }
        
-
-        private async Task<List<MenuViewModel>> GetChildrenMenu(int? parentId = null)
-        {
-            var res = await _menuApiClient.GetMenuParent(parentId);
-            return res;
-        }
-
-        private async Task<List<MenuMain>> GetMenuItem(int Id)
-        {
-            var res = await _menuApiClient.GetMenus(Id);
-            return res;
-        }
 
     }
 }

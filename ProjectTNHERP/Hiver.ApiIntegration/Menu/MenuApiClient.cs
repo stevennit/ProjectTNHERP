@@ -25,20 +25,18 @@ namespace Hiver.ApiIntegration.Menu
             _httpClientFactory = httpClientFactory;
         }
 
-        
-        public async Task<List<MenuMain>> GetMenus(int Id)
+        public async Task<List<MenuViewModel>> GetChildrenMenu(int? parentId = null)
         {
-            var data = await GetListAsync<MenuMain>($"/api/menus/Getmenu/{Id}");
-
-            return data;
-        }
-        public async Task<List<MenuViewModel>> GetMenuParent(int? parentId)
-        {
-            var data = await GetListAsync<MenuViewModel>($"/api/menus/Getmenuparent/{parentId}");
+            var data = await GetListAsync<MenuViewModel>($"/api/menus/GetChildrenMenus?parentId={parentId}");
 
             return data;
         }
 
+        public async Task<MenuViewModel> GetMenuItem(int Id)
+        {
+            var data = await GetAsync<MenuViewModel>($"/api/Menus/GetMenuItems?Id={Id}");
 
+            return data;
+        }
     }
 }
