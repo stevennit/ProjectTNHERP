@@ -42,10 +42,13 @@ namespace Hiver.WebApp.Controllers.Components
                 var vm = new MenuViewModel();
 
                 vm.MenuId = menu.Result.MenuId;
-
                 vm.MenuName = menu.Result.MenuName;
+                vm.MenuOrder = menu.Result.MenuOrder;
+                vm.Description = menu.Result.Description;
                 vm.IconClass = menu.Result.IconClass;
                 vm.Url = menu.Result.Url;
+                vm.IsVisible = menu.Result.IsVisible;
+
                 vm.Children = GetMenu(menu.Result.MenuId);
                 vmList.Add(vm);
             }

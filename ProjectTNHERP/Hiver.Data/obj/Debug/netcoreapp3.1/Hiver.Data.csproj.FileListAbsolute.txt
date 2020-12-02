@@ -15,10 +15,10 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.runtimeconfig.dev.json
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.dll
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
+E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csprojAssemblyReference.cache
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.AssemblyInfoInputs.cache
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.AssemblyInfo.cs
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csproj.CoreCompileInputs.cache
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.dll
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.pdb
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.genruntimeconfig.cache
-E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csprojAssemblyReference.cache

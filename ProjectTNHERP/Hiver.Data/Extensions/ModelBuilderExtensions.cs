@@ -87,23 +87,9 @@ namespace Hiver.Data.Extensions
                 new AppRoleController
                 {
                     Id = 1,
-                    Controller = "User",
-                    Action = "Index",
+                    Controller = "Users",
+                    Action = "GetAllPaging",
                     AppUser = "admin",
-                }, 
-                new AppRoleController
-                {
-                    Id = 2,
-                    Controller = "User",
-                    Action = "Index",
-                    AppUser = "admin",
-                },
-                new AppRoleController
-                {
-                    Id = 3,
-                    Controller = "Home",
-                    Action = "Index",
-                    AppUser = "it",
                 }
             );
 
@@ -180,7 +166,7 @@ namespace Hiver.Data.Extensions
                new Menu
                {
                    MenuID = 1,
-                   ParentID = null,
+                   ParentID = -1,
                    MenuName = "Trang Chính",
                    Description = null,
                    Url = "/",
@@ -191,7 +177,7 @@ namespace Hiver.Data.Extensions
                new Menu
                {
                    MenuID = 2,
-                   ParentID = null,
+                   ParentID = -1,
                    MenuName = "Kho",
                    Description = null,
                    Url = "/",
@@ -224,7 +210,7 @@ namespace Hiver.Data.Extensions
                new Menu
                {
                    MenuID = 5,
-                   ParentID = null,
+                   ParentID = -1,
                    MenuName = "Kinh Doanh",
                    Description = null,
                    Url = "/",
