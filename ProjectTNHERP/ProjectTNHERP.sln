@@ -9,13 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.BackendApi", "Hiver.B
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.Data", "Hiver.Data\Hiver.Data.csproj", "{D0DF6679-21FE-430E-B094-B425FB7CA9E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiver.Application", "Hiver.Application\Hiver.Application.csproj", "{F53B237A-8B66-4AF6-AA8B-AE5D86F5A1EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.Application", "Hiver.Application\Hiver.Application.csproj", "{F53B237A-8B66-4AF6-AA8B-AE5D86F5A1EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiver.Utilities", "Hiver.Utilities\Hiver.Utilities.csproj", "{C9A40A7F-132A-43BC-8D85-8C40508928C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.Utilities", "Hiver.Utilities\Hiver.Utilities.csproj", "{C9A40A7F-132A-43BC-8D85-8C40508928C7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiver.ViewModels", "Hiver.ViewModels\Hiver.ViewModels.csproj", "{5BA0C495-33DD-4CA6-96DA-B541096D4D65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.ViewModels", "Hiver.ViewModels\Hiver.ViewModels.csproj", "{5BA0C495-33DD-4CA6-96DA-B541096D4D65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiver.ApiIntegration", "Hiver.ApiIntegration\Hiver.ApiIntegration.csproj", "{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.ApiIntegration", "Hiver.ApiIntegration\Hiver.ApiIntegration.csproj", "{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hiver.AdminApp", "Hiver.AdminApp\Hiver.AdminApp.csproj", "{D747810C-5BAD-4E25-B781-8850F39482B1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D747810C-5BAD-4E25-B781-8850F39482B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D747810C-5BAD-4E25-B781-8850F39482B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D747810C-5BAD-4E25-B781-8850F39482B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D747810C-5BAD-4E25-B781-8850F39482B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

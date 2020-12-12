@@ -27,7 +27,8 @@ namespace Hiver.WebApp.Controllers
         public IActionResult Index()
         {
             var user = User.Identity.Name;
-
+            ViewBag.TitlePage = "Trang Chủ";
+            ViewBag.TitlePage1 = "";
             return View();
         }
 

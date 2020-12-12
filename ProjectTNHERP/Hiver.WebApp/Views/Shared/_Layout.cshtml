@@ -8,10 +8,14 @@
     <meta name="author" content="" />
     <title>@ViewData["Title"] - Administration</title>
 
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- iCheck -->
+    <link rel="stylesheet" href="../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
     <!-- overlayScrollbars -->
     <link rel="stylesheet" href="../dist/css/adminlte.min.css">
     <!-- Google Font: Source Sans Pro -->
@@ -25,12 +29,34 @@
         <!-- Navbar -->
         @await Html.PartialAsync("~/Views/Shared/CustomLayout/_Header.cshtml")
         <!-- /.navbar -->
-
         <!-- Main Sidebar Container -->
         @await Html.PartialAsync("~/Views/Shared/CustomLayout/_SideMenu.cshtml")
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            <!-- Content Header (Page header) -->
+            
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row mb-2">
+                        <div class="col-sm-6">
+                            <h1 class="m-0">@ViewBag.TitlePage</h1>
+                        </div><!-- /.col -->
+                        <div class="col-sm-6">
+                            @if (ViewBag.TitlePage1 != "")
+                            {
+                                <ol class="breadcrumb float-sm-right">
+                                    <li class="breadcrumb-item"><a href="#">@ViewBag.TitlePage</a></li>
+                                    <li class="breadcrumb-item active">@ViewBag.TitlePage1</li>
+                                </ol>
+                            }
+
+                        </div><!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+
+            <!-- /.content-header -->
             @RenderBody()
         </div>
         <!-- /.content-wrapper -->
@@ -50,16 +76,15 @@
         <!-- /.control-sidebar -->
     </div>
     <!-- ./wrapper -->
-
-
     <!-- jQuery -->
     <script src="../plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
+    <script src="https://kit.fontawesome.com/f8bb52af31.js" crossorigin="anonymous"></script>
     <!-- AdminLTE for demo purposes -->
-    <script src="../dist/js/demo.js"></script>
+    @*<script src="../dist/js/demo.js"></script>*@
 
     @RenderSection("Scripts", required: false)
 </body>
