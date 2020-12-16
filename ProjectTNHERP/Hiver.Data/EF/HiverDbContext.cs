@@ -1,4 +1,5 @@
 ﻿using Hiver.Data.Configurations;
+using Hiver.Data.Configutions;
 using Hiver.Data.Entities;
 using Hiver.Data.Extensions;
 using Microsoft.AspNetCore.Identity;
@@ -21,6 +22,38 @@ namespace Hiver.Data.EF
             //Configure using Fluent API
 
             modelBuilder.ApplyConfiguration(new MenuConfiguration());
+
+            
+
+            modelBuilder.ApplyConfiguration(new CustomerCompanyConfiguration());
+            modelBuilder.ApplyConfiguration(new CustomerConfiguration());
+
+            modelBuilder.ApplyConfiguration(new ProductionConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductionDetailConfiguration());
+
+            modelBuilder.ApplyConfiguration(new KnifeMoldCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new KnifeMoldConfiguration());
+            modelBuilder.ApplyConfiguration(new KnifeMoldImageConfiguration());
+            modelBuilder.ApplyConfiguration(new KnifeMoldUsingConfiguration());
+
+            modelBuilder.ApplyConfiguration(new OrderByConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderByStockConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderByDetailAndProductionDetailConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderSellConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderSellProductConfiguration());
+            modelBuilder.ApplyConfiguration(new OrderSellDetailAndProductionDetailConfiguration());
+
+            modelBuilder.ApplyConfiguration(new ProductAndProductCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
+
+            modelBuilder.ApplyConfiguration(new StockCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new StockConfiguration());
+            modelBuilder.ApplyConfiguration(new StockImageConfiguration());
+
+            modelBuilder.ApplyConfiguration(new SupplierCompanyConfiguration());
+            modelBuilder.ApplyConfiguration(new SupplierConfiguration());
 
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
@@ -47,6 +80,36 @@ namespace Hiver.Data.EF
         public DbSet<AppRoleControllerGroup> AppRoleControllerGroups { set; get; }
 
         public DbSet<Menu> Menus { set; get; }
+
+        public DbSet<Customer> Customers { set; get; }
+        public DbSet<CustomerCompany> CustomerCompanies { set; get; }
+
+        public DbSet<Production> Productions { set; get; }
+        public DbSet<ProductionDetail> ProductionDetails { get; set; }
+
+        public DbSet<KnifeMoldCategory> KnifeMoldCategories { set; get; }
+        public DbSet<KnifeMold> KnifeMolds { set; get; }
+        public DbSet<KnifeMoldImage> KnifeMoldImages { set; get; }
+        public DbSet<KnifeMoldUsing> KnifeMoldUsings { set; get; }
+
+        public DbSet<OrderBy> OrderBies { set; get; }
+        public DbSet<OrderByDetail> OrderByDetails { set; get; }
+        public DbSet<OrderByDetailAndProductionDetail> OrderByDetailAndProductionDetails { set; get; }
+        public DbSet<OrderSell> OrderSells { set; get; }
+        public DbSet<OrderSellDetail> OrderSellProducts { set; get; }
+        public DbSet<OrderSellDetailAndProductionDetail> OrderSellDetailAndProductionDetails { set; get; }
+
+        public DbSet<ProductAndProductCategory> ProductAndProductCategories { set; get; }
+        public DbSet<ProductCategory> ProductCategories { set; get; }
+        public DbSet<ProductImage> ProductImages { set; get; }
+        public DbSet<Product> Products { get; set; }
+
+        public DbSet<Stock> Stocks { set; get; }
+        public DbSet<StockCategory> StockCategories { set; get; }
+        public DbSet<StockImage> StockImages { set; get; }
+
+        public DbSet<Supplier> Suppliers { set; get; }
+        public DbSet<SupplierCompany> SupplierCompanies { set; get; }
 
     }
 }

@@ -170,7 +170,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -292,6 +296,10 @@
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
               "version": "[5.6.0, )"
+            },
+            "Telerik.UI.for.AspNet.Core.Trial": {
+              "target": "Package",
+              "version": "[2020.3.1118, )"
             }
           },
           "imports": [

@@ -8,6 +8,12 @@
     <meta name="author" content="" />
     <title>@ViewData["Title"] - Administration</title>
 
+    <!-- Telerik -->
+    <link rel="stylesheet" href="../styleroot/styleroot.css" />
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.all.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.3.1118/js/kendo.aspnetmvc.min.js"></script>
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
@@ -77,14 +83,11 @@
     </div>
     <!-- ./wrapper -->
     <!-- jQuery -->
-    <script src="../plugins/jquery/jquery.min.js"></script>
+    @*<script src="../plugins/jquery/jquery.min.js"></script>*@
     <!-- Bootstrap 4 -->
     <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="../dist/js/adminlte.min.js"></script>
-    <script src="https://kit.fontawesome.com/f8bb52af31.js" crossorigin="anonymous"></script>
-    <!-- AdminLTE for demo purposes -->
-    @*<script src="../dist/js/demo.js"></script>*@
 
     @RenderSection("Scripts", required: false)
 </body>

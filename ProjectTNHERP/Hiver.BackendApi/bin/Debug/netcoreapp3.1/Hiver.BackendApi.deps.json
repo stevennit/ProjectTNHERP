@@ -2456,6 +2456,7 @@
       },
       "Hiver.Data/1.0.0": {
         "dependencies": {
+          "Hiver.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "3.1.1",
           "Microsoft.EntityFrameworkCore.SqlServer": "3.1.1",
           "Microsoft.Extensions.Configuration.FileExtensions": "3.1.1",

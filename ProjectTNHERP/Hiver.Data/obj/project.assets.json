@@ -1402,6 +1402,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "Hiver.Utilities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Hiver.Utilities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hiver.Utilities.dll": {}
+        }
       }
     }
   },
@@ -5264,10 +5274,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "Hiver.Utilities/1.0.0": {
+      "type": "project",
+      "path": "../Hiver.Utilities/Hiver.Utilities.csproj",
+      "msbuildProject": "../Hiver.Utilities/Hiver.Utilities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Hiver.Utilities >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 3.1.1",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.1",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.1",
@@ -5311,7 +5327,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+              "projectPath": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

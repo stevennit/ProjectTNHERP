@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>92630fc9-15b9-4ef2-be65-604fc4e5facb</UserSecretsId>
+    <ApplicationInsightsResourceId>/subscriptions/18b53581-fb3f-49cd-8dda-02a6b6162490/resourceGroups/TNHProduction/providers/microsoft.insights/components/TNHProductionApi</ApplicationInsightsResourceId>
   </PropertyGroup>
 
 	<ItemGroup>

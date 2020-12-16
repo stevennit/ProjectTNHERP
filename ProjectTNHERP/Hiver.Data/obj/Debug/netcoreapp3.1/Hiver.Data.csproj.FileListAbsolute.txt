@@ -22,3 +22,6 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.dll
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.pdb
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.genruntimeconfig.cache
+E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
+E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csproj.CopyComplete

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "restored": true,
+      "restoreTime": "2020-12-15T10:41:16.0430081Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "TNHProduction"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "18b53581-fb3f-49cd-8dda-02a6b6162490"
+    }
+  }
+}

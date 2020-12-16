@@ -10,8 +10,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Catalog\" />
+	  <Folder Include="Catalog\ProductCategories\" />
 	  <Folder Include="Utilities\" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\Hiver.Utilities\Hiver.Utilities.csproj" />
 	</ItemGroup>
 
 </Project>

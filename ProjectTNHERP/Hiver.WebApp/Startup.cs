@@ -31,12 +31,13 @@ namespace Hiver.WebApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient();
+            services.AddKendo();
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
                 {
                     options.LoginPath = "/Login/Index";
-                    options.AccessDeniedPath = "/Home/Forbidden/";
+                    options.AccessDeniedPath = "/User/Forbidden/";
                 });
 
             services.AddControllersWithViews()
@@ -90,7 +91,6 @@ namespace Hiver.WebApp
             app.UseSession();
             app.UseEndpoints(endpoints =>
             {
-
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

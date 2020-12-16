@@ -1,5 +1,5 @@
 ﻿using Hiver.Data.Entities;
-using Hiver.Data.Enums;
+using Hiver.Utilities.Enums;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
