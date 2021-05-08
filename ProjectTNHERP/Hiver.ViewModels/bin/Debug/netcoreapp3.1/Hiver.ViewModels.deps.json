@@ -9,6 +9,7 @@
       "Hiver.ViewModels/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "8.6.2",
+          "Hiver.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.2"
         },
         "runtime": {
@@ -72,7 +73,12 @@
         }
       },
       "System.ComponentModel.Annotations/4.4.1": {},
-      "System.IO.Pipelines/4.7.0": {}
+      "System.IO.Pipelines/4.7.0": {},
+      "Hiver.Utilities/1.0.0": {
+        "runtime": {
+          "Hiver.Utilities.dll": {}
+        }
+      }
     }
   },
   "libraries": {
@@ -136,6 +142,11 @@
       "sha512": "sha512-S0L7oyWyQdVzD+5xIvcC8h44Vc+FY+qXDCLRh2+YsuBDORNphcxNX+tXR6ByLMjQ/7jDaXxsYBF6qbAr7ZIaFw==",
       "path": "system.io.pipelines/4.7.0",
       "hashPath": "system.io.pipelines.4.7.0.nupkg.sha512"
+    },
+    "Hiver.Utilities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

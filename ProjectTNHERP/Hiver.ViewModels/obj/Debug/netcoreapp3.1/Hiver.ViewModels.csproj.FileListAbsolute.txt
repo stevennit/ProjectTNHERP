@@ -16,3 +16,15 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcor
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CoreCompileInputs.cache
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.dll
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.deps.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csprojAssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.AssemblyInfoInputs.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.AssemblyInfo.cs
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CoreCompileInputs.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CopyComplete
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.pdb

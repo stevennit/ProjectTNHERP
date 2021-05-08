@@ -90,7 +90,37 @@ namespace Hiver.Data.Extensions
                     Controller = "Users",
                     Action = "GetAllPaging",
                     AppUser = "admin",
+                },
+                new AppRoleController
+                {
+                    Id = 2,
+                    Controller = "Users",
+                    Action = "GetById",
+                    AppUser = "admin",
+                },
+                new AppRoleController
+                {
+                    Id = 3,
+                    Controller = "Users",
+                    Action = "Register",
+                    AppUser = "admin",
+                },
+                new AppRoleController
+                {
+                    Id = 4,
+                    Controller = "Users",
+                    Action = "Update",
+                    AppUser = "admin",
+                },
+                new AppRoleController
+                {
+                    Id = 5,
+                    Controller = "Users",
+                    Action = "Delete",
+                    AppUser = "admin",
                 }
+
+
             );
 
             #endregion

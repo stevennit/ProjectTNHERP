@@ -1,39 +1,41 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {}
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {}
   },
   "projects": {
-    "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
         "projectName": "Hiver.Utilities",
-        "projectPath": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
-        "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "E:\\Project\\TNH\\Web\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
+        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\Offline Packages",
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.2.config",
+          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Telerik UI for WPF.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/nuget": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -45,6 +47,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -60,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

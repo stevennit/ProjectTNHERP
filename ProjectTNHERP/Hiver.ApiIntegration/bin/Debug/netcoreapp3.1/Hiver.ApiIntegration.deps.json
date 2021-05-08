@@ -90,6 +90,7 @@
       "Hiver.ViewModels/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "8.6.2",
+          "Hiver.Utilities": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.2"
         },
         "runtime": {

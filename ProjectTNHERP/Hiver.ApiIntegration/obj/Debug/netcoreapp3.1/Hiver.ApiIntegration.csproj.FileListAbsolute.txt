@@ -26,3 +26,17 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\ne
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csproj.CopyComplete
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.dll
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ApiIntegration.deps.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ApiIntegration.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ApiIntegration.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csprojAssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.AssemblyInfoInputs.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.AssemblyInfo.cs
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csproj.CoreCompileInputs.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csproj.CopyComplete
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.pdb

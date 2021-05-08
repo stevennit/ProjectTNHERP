@@ -134,7 +134,7 @@ namespace Hiver.Application.Catalog.Products
                         join pt in _context.ProductAndProductCategories on p.Id equals pt.IdProduct
                         join pic in _context.ProductCategories on p.Id equals pic.Id into ppic
                         from pic in ppic.DefaultIfEmpty()
-                        join c in _context.ProductImages on p.Id equals pi.ProductId into ppi
+                        join c in _context.ProductImages on p.Id equals c.ProductId into ppi
                         from c in ppi.DefaultIfEmpty()
                         select new { p, pt, pic };
             //2. filter
@@ -166,7 +166,7 @@ namespace Hiver.Application.Catalog.Products
                     ModifyBy = x.p.ModifyBy,
                     Status = x.p.Status,
                     ViewCount = x.p.ViewCount,
-                    ThumbnailImage = x.c.ImagePath
+                    ThumbnailImage = x.pic.Image
                 }).ToListAsync();
 
             //4. Select and projection
