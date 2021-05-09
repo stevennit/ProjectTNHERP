@@ -1,8 +1,5 @@
 ﻿using Microsoft.AspNetCore.Hosting;
-using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Hiver.Application.Common
@@ -10,10 +7,15 @@ namespace Hiver.Application.Common
     public class FileStorageService : IStorageService
     {
         private readonly string _userContentFolder;
-        private const string USER_CONTENT_FOLDER_NAME = "user-content";
+        private const string USER_CONTENT_FOLDER_NAME = "files";
 
         public FileStorageService(IWebHostEnvironment webHostEnvironment)
         {
+            if (string.IsNullOrWhiteSpace(webHostEnvironment.WebRootPath))
+            {
+                webHostEnvironment.WebRootPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot");
+            }
+
             _userContentFolder = Path.Combine(webHostEnvironment.WebRootPath, USER_CONTENT_FOLDER_NAME);
         }
 
@@ -37,5 +39,7 @@ namespace Hiver.Application.Common
                 await Task.Run(() => File.Delete(filePath));
             }
         }
+
+       
     }
 }

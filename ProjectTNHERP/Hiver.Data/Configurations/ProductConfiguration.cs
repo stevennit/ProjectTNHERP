@@ -9,7 +9,8 @@ namespace Hiver.Data.Configutions
     {
         public void Configure(EntityTypeBuilder<Product> builder)
         {
-            builder.HasKey(x => x.Id);
+            builder.HasKey(x => new { x.Id });
+
             builder.ToTable("Products");
 
             builder.Property(x => x.Id).UseIdentityColumn();
@@ -22,6 +23,7 @@ namespace Hiver.Data.Configutions
             builder.Property(x => x.CreateBy).IsRequired();
 
             builder.Property(x => x.Status).IsRequired().HasDefaultValue(Status.Active);
+
         }
     }
 }

@@ -314,14 +314,6 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcor
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.dll
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.pdb
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.genruntimeconfig.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\appsettings.json
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.exe
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.deps.json
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.runtimeconfig.json
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.runtimeconfig.dev.json
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.dll
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
@@ -454,20 +446,29 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreap
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Data.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Application.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csprojAssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.AssemblyInfo.cs
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csproj.CoreCompileInputs.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.MvcApplicationPartsAssemblyInfo.cs
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\staticwebassets\Hiver.BackendApi.StaticWebAssets.Manifest.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\staticwebassets\Hiver.BackendApi.StaticWebAssets.xml
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\scopedcss\bundle\Hiver.BackendApi.styles.css
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.RazorTargetAssemblyInfo.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.exe
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.deps.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.runtimeconfig.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.runtimeconfig.dev.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\elFinder.NetCore.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Application.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csproj.CoreCompileInputs.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csproj.CopyComplete
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.pdb

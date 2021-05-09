@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Hiver.Utilities.Enums;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -15,9 +16,8 @@ namespace Hiver.ViewModels.Catalog.Products
         public string Description { get; set; }
         public string Detail { get; set; }
 
-        public DateTime ModifyDate { get; set; }
         public string ModifyBy { get; set; }
-        public string Status { get; set; }
+        public Status Status { get; set; }
 
         public IFormFile ThumbnailImage { get; set; }
 

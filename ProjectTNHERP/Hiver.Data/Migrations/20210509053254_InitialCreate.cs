@@ -841,11 +841,11 @@ namespace Hiver.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"), "8d9b8394-33f4-4ab8-9cbd-d506ff21ee4a", "Nhân Sự", "Nhansu", "Cấp 2" },
-                    { new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"), "61a0848c-5a3a-4170-9c0b-63eab685b6e9", "Kho", "Kho", "Cấp 2" },
-                    { new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"), "f6cffd5a-6d40-485f-aab2-1d0a74a295c0", "Mua hàng", "MuaHang", "Cấp 2" },
-                    { new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"), "4e2b83e8-79ce-45fe-9ed1-b433cc394e7d", "BanHang", "BanHang", "Cấp 2" },
-                    { new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"), "ea3d6739-3b45-4511-a0fb-96bfd37eff9d", "Administrator role", "Administrator", "Cấp 1" }
+                    { new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"), "c16a3082-7de0-46a0-8742-44ac2ccb5720", "Nhân Sự", "Nhansu", "Cấp 2" },
+                    { new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"), "ca41d082-e85f-4aaa-827a-4cb75de35b62", "Kho", "Kho", "Cấp 2" },
+                    { new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"), "7a091f7f-84b9-4774-a95f-f5c24ec1bac0", "Mua hàng", "MuaHang", "Cấp 2" },
+                    { new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"), "a11aeada-f23b-4e50-b22b-785d2f84ba0e", "BanHang", "BanHang", "Cấp 2" },
+                    { new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"), "0149f1bf-3402-49bd-867e-10bfa2f3c79f", "Administrator role", "Administrator", "Cấp 1" }
                 });
 
             migrationBuilder.InsertData(
@@ -853,9 +853,9 @@ namespace Hiver.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Dob", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"), 0, "583bb56b-29c4-4eec-9bc0-55b16058a48d", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@gmail.com", true, "Nguyễn", "Admin", false, null, "admin@gmail.com", "admin", "AQAAAAEAACcQAAAAEEtaUomSx+Lc9KRr+YTPXDibN4P5JnEloyzjK1J9EfOm6mknbWFdS22SCNcsYeE/ow==", null, false, "", false, "admin" },
-                    { new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"), 0, "b52a52a2-3b63-4e13-93f0-a56612e71461", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "it@gmail.com", true, "Nguyễn", "It", false, null, "it@gmail.com", "it", "AQAAAAEAACcQAAAAEBfABHAcZEKExr01hXVb88dUgRK/NjXuzEPflBZ69nSwqbNIeNksO+nRx2J+tivHsg==", null, false, "", false, "it" },
-                    { new Guid("171f3098-762c-4b02-85c5-a687f6601de4"), 0, "3d4a92c1-c2e8-40ff-9730-193428150231", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "kho@gmail.com", true, "Nguyễn", "Kho", false, null, "kho@gmail.com", "kho", "AQAAAAEAACcQAAAAEIWrwnT2Eq9zl29Cxfen8XgKhp+6x/AK8q7+4URnYKLBWzXYeB273+F+OnN6l+BjUw==", null, false, "", false, "kho" }
+                    { new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"), 0, "dbf34965-4a03-4237-bd36-a619b2754e5e", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@gmail.com", true, "Nguyễn", "Admin", false, null, "admin@gmail.com", "admin", "AQAAAAEAACcQAAAAEDhVBaGAyc8mX96cfX9DGfn5HRjrc6TMIqzzGbTmb5G2KxfF1Bl9Vs8HzhAtBQYXUw==", null, false, "", false, "admin" },
+                    { new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"), 0, "799387cc-2581-464e-b22f-87196dc0a98b", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "it@gmail.com", true, "Nguyễn", "It", false, null, "it@gmail.com", "it", "AQAAAAEAACcQAAAAEEPlLXBSqi+zlQETwSOlB+gnMXlReCFslh2c+vd9jzsowCioJNSX3oU9itTS824KWg==", null, false, "", false, "it" },
+                    { new Guid("171f3098-762c-4b02-85c5-a687f6601de4"), 0, "fcf15d14-0317-4213-829d-79d2fa09c1d9", new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified), "kho@gmail.com", true, "Nguyễn", "Kho", false, null, "kho@gmail.com", "kho", "AQAAAAEAACcQAAAAEMHwYqtyZn3v4+ESJX5Xk0CTOey3qk3tkUpmx7CHrrYmgGpC2AlFqa+mcLyC4cRNaA==", null, false, "", false, "kho" }
                 });
 
             migrationBuilder.InsertData(

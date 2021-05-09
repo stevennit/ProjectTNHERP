@@ -9,9 +9,7 @@ namespace Hiver.Data.Entities
         public int Id { get; set; }
         public int Qty { get; set; }
         public string Description { get; set; }
-
         public DateTime DateDelivery { get; set; }
-
         public DateTime CreateDate { get; set; }
         public string CreateBy { get; set; }
         public DateTime ModifyDate { get; set; }

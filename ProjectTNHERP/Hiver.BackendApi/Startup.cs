@@ -21,6 +21,8 @@ using Microsoft.OpenApi.Models;
 using System;
 using Hiver.BackendApi.Auth;
 using Hiver.Application.Common.Menu;
+using Hiver.Application.Catalog.Products;
+using Hiver.Application.Catalog.ProductCategories;
 
 namespace Hiver.BackendApi
 {
@@ -52,6 +54,8 @@ namespace Hiver.BackendApi
 
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
 
             services.AddScoped<AuthAttribute>();
 
