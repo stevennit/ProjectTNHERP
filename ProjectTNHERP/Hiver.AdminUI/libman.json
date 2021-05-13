@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "elfinder@2.1.57",
+      "destination": "wwwroot/lib/elfinder/"
+    },
+    {
+      "library": "tinymce@5.7.1",
+      "destination": "wwwroot/lib/tinymce/"
+    },
+    {
+      "library": "jqueryui@1.12.1",
+      "destination": "wwwroot/lib/jqueryui/"
+    }
+  ]
+}

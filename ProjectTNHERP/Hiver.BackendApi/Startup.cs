@@ -28,6 +28,8 @@ namespace Hiver.BackendApi
 {
     public class Startup
     {
+        public static string WebRootPath { get; private set; }
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -143,7 +145,9 @@ namespace Hiver.BackendApi
                 "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789-._@+";
                 options.User.RequireUniqueEmail = false;
             });
-            
+
+            services.AddCors();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -161,6 +165,13 @@ namespace Hiver.BackendApi
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            // global cors policy
+            app.UseCors(x => x
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .SetIsOriginAllowed(origin => true) // allow any origin
+                .AllowCredentials()); // allow credentials
 
             app.UseAuthentication();
             app.UseRouting();
@@ -180,6 +191,8 @@ namespace Hiver.BackendApi
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            WebRootPath = env.WebRootPath;
         }
     }
 }

@@ -1,0 +1,78 @@
+﻿@{
+    ViewBag.Title = "File Manager";
+}
+
+<div id="elfinder"></div>
+
+
+@section Css {
+    <link rel="stylesheet" href="lib/elfinder/css/theme.css" /> @* <-- NOTE: This file is new and some of the themes may not look quite right if this is used. *@
+    <!-- Begin Add ElFinder Css-->
+    <link href="lib/jqueryui/themes/base/theme.css" rel="stylesheet" />
+    <link href="lib/jqueryui/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="lib/elfinder/css/elfinder.full.css" />
+    <!-- End Add ElFinder Css-->
+
+    @*<style>
+        .elfinder-cwd table td {
+            /* fix conflict with Bootstrap CSS. See: https://github.com/Studio-42/elFinder/commit/4f858d5ffc9a8f41b4cc07a063782abe2e722bdf */
+            box-sizing: content-box;
+        }
+    </style>*@
+}
+@section Scripts {
+    <!-- Begin Add ElFinder Css-->
+    <script src="lib/jqueryui/jquery-ui.js"></script>
+    <script src="lib/elfinder/js/elfinder.full.js"></script>
+
+    <script type="text/javascript">
+		// Documentation for client options:
+		// https://github.com/Studio-42/elFinder/wiki/Client-configuration-options
+        $(document).ready(function () {
+            var myCommands = elFinder.prototype._options.commands;
+            var disabled = ['callback', 'chmod', 'editor', 'netmount', 'ping', 'zipdl', 'help']; // Not yet implemented commands in elFinder.NetCore
+            elFinder.prototype.i18.en.messages.TextArea = "Edit";
+            elFinder.prototype.i18.en.messages.errNewNameSelection = 'Unable to create new file with name "$1"';
+
+            $.each(disabled, function (i, cmd) {
+                (idx = $.inArray(cmd, myCommands)) !== -1 && myCommands.splice(idx, 1);
+            });
+
+            var options = {
+                //url: '/el-finder/file-system/connector', // Default (Local File System)
+                url: 'https://localhost:5001/api/FileSystem/connector',
+                @*//customData: { folder: '@Model.Folder', subFolder: '@Model.SubFolder' }, // customData passed in every request to the connector as query strings. These values are used in FileController's Index method.*@
+                rememberLastDir: false, // Prevent elFinder saving in the Browser LocalStorage the last visited directory
+                commands: myCommands,
+                //lang: 'pt_BR', // elFinder supports UI and messages localization. Check the folder Content\elfinder\js\i18n for all available languages. Be sure to include the corresponding .js file(s) in the JavaScript bundle.
+                uiOptions: { // UI buttons available to the user
+                    toolbar: [
+                        ['back', 'forward'],
+                        ['reload'],
+                        ['home', 'up'],
+                        ['mkdir', 'mkfile', 'upload'],
+                        ['open', 'download'],
+                        ['undo', 'redo'],
+                        ['info'],
+                        ['quicklook'],
+                        ['copy', 'cut', 'paste'],
+                        ['rm'],
+                        ['duplicate', 'rename', 'edit'],
+                        ['selectall', 'selectnone', 'selectinvert'],
+                        ['view', 'sort'],
+                        ['search']
+                    ]
+                },
+                contextmenu: {
+                    files: [
+                        'getfile', '|', 'open', '|', 'copy', 'cut', 'paste', 'duplicate', '|',
+                        'rm', '|', 'edit', 'rename', '|', 'archive', 'extract', '|', 'info'
+                    ]
+                },
+                //onlyMimes: ["image", "text/plain"], // Get files of requested mime types only
+                //lang: 'vi', // Change language
+            };
+            $('#elfinder').elfinder(options).elfinder('instance');
+        });
+    </script>
+}

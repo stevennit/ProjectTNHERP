@@ -22,4 +22,9 @@
 		<ProjectReference Include="..\Hiver.Utilities\Hiver.Utilities.csproj" />
 		<ProjectReference Include="..\Hiver.ViewModels\Hiver.ViewModels.csproj" />
 	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="wwwroot\assets\plugins\popper\esm\" />
+	  <Folder Include="wwwroot\assets\plugins\retinajs\" />
+	</ItemGroup>
 </Project>
