@@ -64,13 +64,16 @@
                     ]
                 },
                 contextmenu: {
-                    files: [
-                        'getfile', '|', 'open', '|', 'copy', 'cut', 'paste', 'duplicate', '|',
-                        'rm', '|', 'edit', 'rename', '|', 'archive', 'extract', '|', 'info'
-                    ]
+                    // navbarfolder menu
+                    navbar: ['open', 'download', '|', 'upload', 'mkdir', '|', 'copy', 'cut', 'paste', 'duplicate', '|', '|', 'rename', '|', 'places', 'info', 'chmod', 'netunmount'],
+                    // current directory menu
+                    cwd: ['undo', 'redo', '|', 'back', 'up', 'reload', '|', 'upload', 'mkdir', 'mkfile', 'paste', '|', '|', 'view', 'sort', 'selectall', 'colwidth', '|', 'info', '|', 'fullscreen', '|'],
+                    // current directory file menu
+                    files: ['getfile', '|', 'open', 'download', 'opendir', 'quicklook', '|', 'upload', 'mkdir', '|', 'copy', 'cut', 'paste', 'duplicate', '|', 'empty', '|', 'rename', 'edit', 'resize', '|', 'archive', 'extract', '|', 'selectall', 'selectinvert', '|', 'places', 'info', 'chmod', 'netunmount']
                 },
-                //onlyMimes: ["image", "text/plain"], // Get files of requested mime types only
-                //lang: 'vi', // Change language
+                onlyMimes: ["image", "text/plain"], // Get files of requested mime types only
+                lang: 'vi', // Change language
+                width: '100%'
             };
             $('#elfinder').elfinder(options).elfinder('instance');
         });
