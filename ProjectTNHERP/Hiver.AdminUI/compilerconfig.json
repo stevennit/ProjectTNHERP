@@ -1,7 +1,10 @@
-[
+﻿[
   {
     "outputFile": "wwwroot/pages/scss/pages.css",
-    "inputFile": "wwwroot/pages/scss/pages.scss",
-    "sourceMap": false
+    "inputFile": "wwwroot/pages/scss/pages.scss"
+  },
+  {
+    "outputFile": "wwwroot/custom/scss/customSCSS.css",
+    "inputFile": "wwwroot/custom/scss/customSCSS.scss"
   }
 ]

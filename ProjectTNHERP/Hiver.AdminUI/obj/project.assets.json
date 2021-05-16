@@ -564,7 +564,7 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
@@ -1886,6 +1886,21 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "Hiver.ApiIntegration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Hiver.Utilities": "1.0.0",
+          "Hiver.ViewModels": "1.0.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "bin/placeholder/Hiver.ApiIntegration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Hiver.ApiIntegration.dll": {}
+        }
+      },
       "Hiver.Utilities/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2850,10 +2865,10 @@
         "netstandard.library.nuspec"
       ]
     },
-    "Newtonsoft.Json/11.0.2": {
-      "sha512": "IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
+    "Newtonsoft.Json/12.0.3": {
+      "sha512": "6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
       "type": "package",
-      "path": "newtonsoft.json/11.0.2",
+      "path": "newtonsoft.json/12.0.3",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -2876,8 +2891,9 @@
         "lib/portable-net40+sl5+win8+wp8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net45+win8+wp8+wpa81/Newtonsoft.Json.xml",
-        "newtonsoft.json.11.0.2.nupkg.sha512",
-        "newtonsoft.json.nuspec"
+        "newtonsoft.json.12.0.3.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
       ]
     },
     "NuGet.Frameworks/4.7.0": {
@@ -6445,6 +6461,11 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "Hiver.ApiIntegration/1.0.0": {
+      "type": "project",
+      "path": "../Hiver.ApiIntegration/Hiver.ApiIntegration.csproj",
+      "msbuildProject": "../Hiver.ApiIntegration/Hiver.ApiIntegration.csproj"
+    },
     "Hiver.Utilities/1.0.0": {
       "type": "project",
       "path": "../Hiver.Utilities/Hiver.Utilities.csproj",
@@ -6458,6 +6479,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Hiver.ApiIntegration >= 1.0.0",
       "Hiver.ViewModels >= 1.0.0",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.13",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.5"
@@ -6501,6 +6523,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj": {
+              "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj"
+            },
             "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
               "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
             }

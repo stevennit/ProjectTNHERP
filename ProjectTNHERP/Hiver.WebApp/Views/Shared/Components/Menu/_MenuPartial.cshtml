@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Hiver.ViewModels.Common.MenuViewModel>
+﻿
+
+@model IEnumerable<Hiver.ViewModels.Common.MenuViewModel>
 
 @foreach (var menu in Model)
 {
@@ -25,7 +27,7 @@
                 if (string.IsNullOrEmpty(menu.Url))   //Add either onclick event or href.
                 {
                     <a class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
+                        <i class="nav-icon @menu.IconClass"></i>
                         <p>
                             @menu.MenuName
                         </p>
@@ -34,7 +36,7 @@
                 else
                 {
                     <a href="@menu.Url" class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
+                        <i class="nav-icon @menu.IconClass"></i>
                         <p>
                             @menu.MenuName
                         </p>
