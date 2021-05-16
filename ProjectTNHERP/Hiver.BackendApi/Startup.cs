@@ -28,7 +28,7 @@ namespace Hiver.BackendApi
 {
     public class Startup
     {
-        public static string WebRootPath { get; private set; }
+        //public static string WebRootPath { get; private set; }
 
         public Startup(IConfiguration configuration)
         {
@@ -146,7 +146,14 @@ namespace Hiver.BackendApi
                 options.User.RequireUniqueEmail = false;
             });
 
-            services.AddCors();
+            services.AddCors(options =>
+            {
+                options.AddDefaultPolicy(
+                    builder =>
+                    {
+                        builder.WithOrigins("https://localhost:5001");
+                    });
+            });
 
         }
 
@@ -192,7 +199,7 @@ namespace Hiver.BackendApi
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            WebRootPath = env.WebRootPath;
+            //WebRootPath = env.WebRootPath;
         }
     }
 }

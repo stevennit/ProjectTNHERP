@@ -12,5 +12,6 @@ namespace Hiver.AdminUI.Controllers
         {
             return View();
         }
+
     }
 }

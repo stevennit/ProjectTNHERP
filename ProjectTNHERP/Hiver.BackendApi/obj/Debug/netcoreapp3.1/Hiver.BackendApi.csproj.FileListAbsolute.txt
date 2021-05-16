@@ -316,6 +316,7 @@ E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcor
 E:\Project\TNH\Web\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.genruntimeconfig.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\appsettings.Development.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\appsettings.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\libman.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.exe
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.deps.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.BackendApi.runtimeconfig.json
@@ -473,4 +474,3 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreap
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.genruntimeconfig.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\libman.json
