@@ -108,6 +108,9 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Hiver.AdminUI.TagHelpers.output.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Hiver.AdminUI.RazorCoreGenerate.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Category\Index.cshtml.g.cs
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Docs\ElFinder.cshtml.g.cs
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Docs\Index.cshtml.g.cs
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Docs\Tinymce.cshtml.g.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Home\Privacy.cshtml.g.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Menu\_MenuPartial.cshtml.g.cs

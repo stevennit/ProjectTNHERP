@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Css {
+    @*<link href="assets/plugins/jquery-datatable/media/css/jquery.dataTables.min.css" rel="stylesheet" />*@
+    <link type="text/css" rel="stylesheet" href="assets/plugins/jquery-datatable/media/css/jquery.dataTables.css">
+    <link type="text/css" rel="stylesheet" href="assets/plugins/jquery-datatable/extensions/FixedColumns/css/dataTables.fixedColumns.min.css">
+    <link media="screen" type="text/css" rel="stylesheet" href="assets/plugins/datatables-responsive/css/datatables.responsive.css">
+}
+
+@section Scripts  {
+    <script type="text/javascript" src="assets/plugins/jquery-datatable/media/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-datatable/extensions/TableTools/js/dataTables.tableTools.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-datatable/extensions/Bootstrap/jquery-datatable-bootstrap.js"></script>
+    <script src="assets/plugins/datatables-responsive/js/datatables.responsive.js" type="text/javascript"></script>
+    <script src="assets/plugins/datatables-responsive/js/lodash.min.js" type="text/javascript"></script>
+
+    <!-- Apply the plugin -->
+    <script>
+        $(document).ready(function () {
+            $('#example').DataTable();
+        });
+    </script>
+}
+
+<div class="row">
+    <div class="col-12">
+        <!-- START WIDGET widget_tableWidget-->
+        <div class="widget-11 card widget-loader-bar">
+            <div class="card-header">
+                <div class="card-controls">
+                    <ul>
+                        <li>
+                            <a data-toggle="refresh" class="card-refresh" href="#"><i class="card-icon card-icon-refresh"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="widget-11-table auto-overflow p-4">
+                <table id="example" class="display" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên</th>
+                            <th>Link</th>
+                            <th>Mô Tả</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>ElFinder</td>
+                            <td><a href="/Docs/ElFinder">ElFinder</a></td>
+                            <td>Quản lý Ảnh</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Tinymce</td>
+                            <td><a href="/Docs/Tinymce">Tinymce</a></td>
+                            <td>Trình soản thảo trên web</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="p-t-15 p-b-15 p-l-20 p-r-20">
+                <p class="small no-margin">
+                    <a href="#" class="btn-circle-arrow b-grey"><i class="pg-icon">chevron_down</i></a>
+                    <span class="hint-text ">Show more details of <a href="#"> Revox pvt ltd </a></span>
+                </p>
+            </div>
+        </div>
+        <!-- END WIDGET -->
+    </div>
+</div>
+
