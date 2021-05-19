@@ -1,15 +1,17 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    ViewBag.pageContent = "content-builder active full-height";
+    ViewBag.content = "content-builder active full-height";
 }
 
 @section Css {
 
     <!-- Begin Add ElFinder Css-->
-    <link rel="stylesheet" href="lib/elfinder/css/theme.css" /> @* <-- NOTE: This file is new and some of the themes may not look quite right if this is used. *@
-    <link href="lib/jqueryui/themes/base/theme.css" rel="stylesheet" />
-    <link href="lib/jqueryui/themes/base/jquery-ui.css" rel="stylesheet" />
-    <link rel="stylesheet" href="lib/elfinder/css/elfinder.full.css" />
-    <link href="~/custom/css/elfinder/themes/material/css/theme.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/elfinder/css/theme.css" /> @* <-- NOTE: This file is new and some of the themes may not look quite right if this is used. *@
+    <link href="/lib/jqueryui/themes/base/theme.css" rel="stylesheet" />
+    <link href="/lib/jqueryui/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/lib/elfinder/css/elfinder.full.css" />
+    <link href="/custom/css/elfinder/themes/material/css/theme.css" rel="stylesheet" />
     <!-- End Add ElFinder Css-->
 }
 
@@ -67,7 +69,3 @@
 
 
 </div>
-
-
-
-

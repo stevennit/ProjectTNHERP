@@ -12,5 +12,5 @@
  * Pages - Admin Template , nguyên liệu bao gồm Folder : Assets, page + custom/scss/customSCSS.css
  * Sử dụng ElFinder : lib/elfinder + jqueryui
  * sử dụng tinymce : lib/tinymce + jqueryui + custom/js/tinymceElfinder.js
-
+ * Sử dụng Bootstrap Breadcrumb Core 1.0.1
 

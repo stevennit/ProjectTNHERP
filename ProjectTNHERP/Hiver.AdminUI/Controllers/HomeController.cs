@@ -1,4 +1,5 @@
-﻿using Hiver.AdminUI.Models;
+﻿using BootstrapBreadcrumbs.Core;
+using Hiver.AdminUI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,11 +14,13 @@ namespace Hiver.AdminUI.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
+        
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
         }
 
+        
         public IActionResult Index()
         {
             return View();

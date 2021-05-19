@@ -37,7 +37,7 @@ namespace Hiver.AdminUI
                     options.AccessDeniedPath = "/User/Forbidden/";
                 });
 
-            services.AddControllersWithViews()
+            services.AddControllersWithViews().AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null)
                      .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
 
             services.AddRazorPages();
@@ -56,6 +56,8 @@ namespace Hiver.AdminUI
             IMvcBuilder builder = services.AddRazorPages();
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
+
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -72,6 +74,7 @@ namespace Hiver.AdminUI
                 //app.UseHsts();
             }
             //app.UseHttpsRedirection();
+
 
             app.Use(async (context, next) =>
             {

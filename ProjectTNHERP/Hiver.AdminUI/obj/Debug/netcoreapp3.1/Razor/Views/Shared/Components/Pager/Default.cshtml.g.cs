@@ -26,8 +26,15 @@ using Hiver.AdminUI.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\Views\_ViewImports.cshtml"
+using DevExtreme.AspNet.Mvc;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"a58a2616bea1f14bfb80be0af0721926ce62f60e", @"/Views/Shared/Components/Pager/Default.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"1650bdb68ad44896002f9eeeb33a0559ffcc764a", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ee3a1a02c323cb5974037a219eccd6d79608f61c", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Pager_Default : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Hiver.ViewModels.Common.PagedResultBase>
     {
         #pragma warning disable 1998
