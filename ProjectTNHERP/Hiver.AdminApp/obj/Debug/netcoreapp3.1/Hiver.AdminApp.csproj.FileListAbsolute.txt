@@ -788,6 +788,7 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\netcoreapp3
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\netcoreapp3.1\Hiver.ApiIntegration.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.csprojAssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.AssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.csproj.CoreCompileInputs.cache
@@ -815,4 +816,3 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.genruntimeconfig.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\netcoreapp3.1\Hiver.AdminApp.csprojAssemblyReference.cache

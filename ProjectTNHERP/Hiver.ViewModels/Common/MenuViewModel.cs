@@ -12,6 +12,7 @@ namespace Hiver.ViewModels.Common
         public string Description { get; set; }
         public string IconClass { get; set; }
         public string Url { get; set; }
+        public string IconNumber { get; set; }
         public int MenuOrder { get; set; }
         public bool IsVisible { get; set; }
 

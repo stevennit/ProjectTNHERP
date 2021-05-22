@@ -4,22 +4,4 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-@(Html.DevExtreme().DataGrid()
-    .ID("gridContainer")
-    .Selection(s => s.Mode(SelectionMode.Single))
-    .DataSource(d => d.StaticJson().Url("custom/SampleData/document.json").Key("ID"))
-    .ShowBorders(true)
-    .HoverStateEnabled(true)
-    .Columns(columns => {
-        columns.Add().DataField("ID");
-        columns.Add().DataField("Name").Caption("Tên tài liệu");
-        columns.Add().DataField("Link").CellTemplate(@<text>
-                <div>
-                    <a href="<%- value %>"><%- value %></a>
-                </div>
-            </text>);
-        columns.Add().DataField("Description").Caption("Mô tả");
-    })
-
-)
 

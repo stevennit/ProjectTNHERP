@@ -31,6 +31,7 @@
           "C:\\Program Files (x86)\\DevExpress 20.1\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R1 2021": {},
+          "C:\\Users\\namst\\Desktop\\telerik": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/nuget": {}
         },
@@ -76,6 +77,30 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[3.1.5, )"
+            },
+            "Telerik.Documents.Core": {
+              "target": "Package",
+              "version": "[2021.1.322, )"
+            },
+            "Telerik.Documents.Fixed": {
+              "target": "Package",
+              "version": "[2021.1.322, )"
+            },
+            "Telerik.Documents.Flow": {
+              "target": "Package",
+              "version": "[2021.1.322, )"
+            },
+            "Telerik.Documents.Flow.FormatProviders.Pdf": {
+              "target": "Package",
+              "version": "[2021.1.322, )"
+            },
+            "Telerik.UI.for.AspNet.Core": {
+              "target": "Package",
+              "version": "[2021.1.330, )"
+            },
+            "Telerik.Zip": {
+              "target": "Package",
+              "version": "[2021.1.322, )"
             }
           },
           "imports": [
@@ -127,6 +152,7 @@
           "C:\\Program Files (x86)\\DevExpress 20.1\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R1 2021": {},
+          "C:\\Users\\namst\\Desktop\\telerik": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/nuget": {}
         },
@@ -204,6 +230,7 @@
           "C:\\Program Files (x86)\\DevExpress 20.1\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R1 2021": {},
+          "C:\\Users\\namst\\Desktop\\telerik": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/nuget": {}
         },
@@ -268,6 +295,7 @@
           "C:\\Program Files (x86)\\DevExpress 20.1\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R1 2021": {},
+          "C:\\Users\\namst\\Desktop\\telerik": {},
           "https://api.nuget.org/v3/index.json": {},
           "https://nuget.telerik.com/nuget": {}
         },

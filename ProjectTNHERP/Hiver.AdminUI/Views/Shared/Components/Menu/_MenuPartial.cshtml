@@ -6,39 +6,44 @@
     {
         if (menu.Children.Any())
         {
-            <li class="">
-                <a href="javascript:;" class="">
-                    <span class="title">@menu.MenuName</span>
-                    <span class="arrow"></span>
+            <li class="has-sub">
+                <a href="javascript:;">
+                    @if (menu.IconNumber.Trim() == "")
+                    {
+                        <b class="caret"></b>
+                        <i class="@menu.IconClass"></i>
+                        <span>@menu.MenuName</span>
+                    }
+                    else
+                    {
+                        <span class="badge pull-right">@menu.IconNumber</span>
+                        <i class="@menu.IconClass"></i>
+                        <span>@menu.MenuName</span>
+                    }
                 </a>
-                <span class="icon-thumbnail"><i class="material-icons">@menu.IconClass</i></span>
-                <ul class="sub-menu" style="display: none;">
+                <ul class="sub-menu">
                     <partial name="Components/Menu/_MenuPartial" model="menu.Children" />
                 </ul>
             </li>
         }
         else
         {
-            <li class="nav-item">
-                @{
-                    if (string.IsNullOrEmpty(menu.Url))   //Add either onclick event or href.
+            <li class="has-sub">
+                <a href="@menu.Url">
+                    @if (menu.IconNumber.Trim() == "")
                     {
-                        <a>
-                            <span class="title">@menu.MenuName</span>
-                            <!--<span class="details">-->@*12 New Updates*@<!--</span>-->
-                        </a>
-                        <span class="icon-thumbnail"><i class="material-icons">@menu.IconClass</i></span>
+                        <i class="@menu.IconClass"></i>
+                        <span>@menu.MenuName</span>
                     }
                     else
                     {
-                        <a href="@menu.Url">
-                            <span class="title">@menu.MenuName</span>
-                            @*<span class="details">12 New Updates</span>*@
-                        </a>
-                        <span class="icon-thumbnail"><i class="material-icons">@menu.IconClass</i></span>
+                        <span class="badge pull-right">@menu.IconNumber</span>
+                        <i class="@menu.IconClass"></i>
+                        <span>@menu.MenuName</span>
                     }
-                }
+                </a>
             </li>
+
         }
     }
 

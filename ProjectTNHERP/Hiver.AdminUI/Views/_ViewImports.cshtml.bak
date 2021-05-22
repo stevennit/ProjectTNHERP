@@ -1,3 +1,0 @@
-﻿@using Hiver.AdminUI
-@using Hiver.AdminUI.Models
-@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
