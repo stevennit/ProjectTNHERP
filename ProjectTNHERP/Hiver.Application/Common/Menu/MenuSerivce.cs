@@ -1,4 +1,5 @@
 ﻿using Hiver.Data.EF;
+using Hiver.Utilities.Exceptions;
 using Hiver.ViewModels.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -20,7 +21,7 @@ namespace Hiver.Application.Common.Menu
 
         public async Task<MenuResult> GetMenuItem(int Id)
         {
-            var res = await _context.Menus.FirstOrDefaultAsync(x => x.MenuID == Id);
+            var res = await _context.Menus.Where(x => x.MenuID == Id).FirstOrDefaultAsync();
 
             var menu = new MenuResult()
             {
@@ -30,18 +31,17 @@ namespace Hiver.Application.Common.Menu
                 IconClass = res.IconClass,
                 IconNumber = res.IconNumber,
                 IsVisible = res.IsVisible,
-                MenuOrder = res.MenuOrder,
                 ParentID = res.ParentID,
+                MenuOrder = res.MenuOrder,
                 Url = res.Url
             };
-
             return menu;
            
         }
 
-        public async Task<List<MenuResult>> GetChildrenMenu(int? parentId)
+        public async Task<List<MenuResult>> GetChildrenMenu(int? parentId, int? menuOrder)
         {
-            return await _context.Menus.Where(x => x.ParentID == parentId)
+            return await _context.Menus.Where(x => x.ParentID == parentId && x.MenuOrder == menuOrder).OrderBy(x => x.MenuVisible)
                 .Select( i => new MenuResult()
                     {
                         MenuId = i.MenuID,
@@ -50,11 +50,13 @@ namespace Hiver.Application.Common.Menu
                         IconClass = i.IconClass,
                         IconNumber = i.IconNumber,
                         IsVisible = i.IsVisible,
-                        MenuOrder = i.MenuOrder,
                         ParentID = i.ParentID,
+                        MenuOrder = i.MenuOrder,
                         Url = i.Url
                     }
                 ).ToListAsync();
         }
+
+        
     }
 }

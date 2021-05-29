@@ -201,7 +201,7 @@ namespace Hiver.Data.Extensions
                    Description = null,
                    Url = "/",
                    IconClass = null,
-                   MenuOrder = 1,
+                   MenuVisible = 1,
                    IsVisible = true,
                },
                new Menu
@@ -212,7 +212,7 @@ namespace Hiver.Data.Extensions
                    Description = null,
                    Url = "/",
                    IconClass = null,
-                   MenuOrder = 1,
+                   MenuVisible = 2,
                    IsVisible = true,
                },
                new Menu
@@ -223,7 +223,7 @@ namespace Hiver.Data.Extensions
                    Description = null,
                    Url = "/",
                    IconClass = null,
-                   MenuOrder = 1,
+                   MenuVisible = 3,
                    IsVisible = true,
                },
                new Menu
@@ -234,7 +234,7 @@ namespace Hiver.Data.Extensions
                    Description = null,
                    Url = "/",
                    IconClass = null,
-                   MenuOrder = 1,
+                   MenuVisible = 4,
                    IsVisible = true,
                },
                new Menu
@@ -245,7 +245,7 @@ namespace Hiver.Data.Extensions
                    Description = null,
                    Url = "/",
                    IconClass = null,
-                   MenuOrder = 1,
+                   MenuVisible = 5,
                    IsVisible = true,
                }
            );

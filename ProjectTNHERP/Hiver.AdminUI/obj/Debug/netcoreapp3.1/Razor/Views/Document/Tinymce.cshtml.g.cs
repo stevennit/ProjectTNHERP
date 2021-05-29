@@ -26,8 +26,15 @@ using Hiver.AdminUI.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\Views\_ViewImports.cshtml"
+using Kendo.Mvc.UI;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"6e062f8bda33184feb8c7d6d0b475cc8d483fb03", @"/Views/Document/Tinymce.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca4fa29163665a8ecb0495907d593510b7bc3207", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fcfc5c5ebe59075999039033919dcf135362289c", @"/Views/_ViewImports.cshtml")]
     public class Views_Document_Tinymce : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("method", "post", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -123,7 +130,7 @@ using Hiver.AdminUI.Models;
             }
             );
             WriteLiteral("\r\n\r\n<div class=\"text-center\">\r\n    <h1 class=\"display-4\">Welcome</h1>\r\n    <p>Learn about <a href=\"https://docs.microsoft.com/aspnet/core\">building Web apps with ASP.NET Core</a>.</p>\r\n\r\n    ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e062f8bda33184feb8c7d6d0b475cc8d483fb036523", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e062f8bda33184feb8c7d6d0b475cc8d483fb036708", async() => {
                 WriteLiteral("\r\n        <textarea>&lt;p&gt;This TinyMCE editor is fully integrated with the elFinder file manager.&lt;/p&gt;&lt;p&gt;You can upload images on TinyMCE upload dialog and save the result of image editing on TinyMCE to elFinder.&lt;/p&gt;</textarea>\r\n    ");
             }
             );

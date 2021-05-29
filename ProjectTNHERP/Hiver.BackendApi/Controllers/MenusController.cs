@@ -22,12 +22,13 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpGet("GetChildrenMenus")]
-        public async Task<IActionResult> GetChildrenMenu(int? parentId)
+        public async Task<IActionResult> GetChildrenMenu(int? parentId, int? menuOrder)
         {
-            var res = await _menuService.GetChildrenMenu(parentId);
+            var res = await _menuService.GetChildrenMenu(parentId, menuOrder);
 
             return Ok(res);
         }
+
 
         [HttpGet("GetMenuItems")]
         public async Task<IActionResult> GetMenuItem(int Id)
@@ -36,6 +37,7 @@ namespace Hiver.BackendApi.Controllers
 
             return Ok(res);
         }
+       
 
     }
 }

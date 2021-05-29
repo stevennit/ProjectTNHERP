@@ -86,7 +86,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "9780539e-00a4-43c0-aa2b-c158f298ede4",
+                            ConcurrencyStamp = "de973332-8321-4f35-b54a-d394177d676b",
                             Description = "Administrator role",
                             Name = "Administrator",
                             NormalizedName = "Cấp 1"
@@ -94,7 +94,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
-                            ConcurrencyStamp = "c37e3fb7-bac4-437c-8b6e-2495cab66e13",
+                            ConcurrencyStamp = "288ffdd3-03e0-49f8-969f-e2f64f8b927a",
                             Description = "BanHang",
                             Name = "BanHang",
                             NormalizedName = "Cấp 2"
@@ -102,7 +102,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
-                            ConcurrencyStamp = "ea6cf8b4-239c-4a53-a3a9-94dd87398366",
+                            ConcurrencyStamp = "e02959d9-8640-4c5d-b261-7bf33a1b2ac5",
                             Description = "Mua hàng",
                             Name = "MuaHang",
                             NormalizedName = "Cấp 2"
@@ -110,7 +110,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
-                            ConcurrencyStamp = "9a69b57a-6cd1-4370-9aaa-33c445fda7d4",
+                            ConcurrencyStamp = "caa68d07-03e1-441e-97f7-dbddd6917a2e",
                             Description = "Kho",
                             Name = "Kho",
                             NormalizedName = "Cấp 2"
@@ -118,7 +118,7 @@ namespace Hiver.Data.Migrations
                         new
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
-                            ConcurrencyStamp = "aad3f04c-6cfe-44da-a327-4eba066e4ef2",
+                            ConcurrencyStamp = "43a8cfea-6cde-467e-93a4-618748f2a2f2",
                             Description = "Nhân Sự",
                             Name = "Nhansu",
                             NormalizedName = "Cấp 2"
@@ -316,7 +316,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1696fcde-0cfc-4547-be00-77d0fcb3007a",
+                            ConcurrencyStamp = "c1fbec04-165b-400e-a4ba-e0d7186cb49b",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -325,7 +325,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEGGPWnx3UiMAjblQPZJS9mx+1dGBlshSISx2ymIfX+Nh67sV9tVLn9pGLhCRiL6zLQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJcjRw++2PVTS303FVzSjELfEquWQIlPIuz9sYJFTdptlsqKODKtbJHyE0Cer7ABzA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -335,7 +335,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fa1079b1-9e7d-4ea8-88f4-332c984631c1",
+                            ConcurrencyStamp = "840ba850-d372-4d12-8777-11f1e1e7a51e",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -344,7 +344,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEIbiVMa66g/dPcYtKsEnVerZt8R2t3mFEZLOmxB35cj74RJ3qldForXe4SrB8CHvjg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEJcz6EUQFoc7NWk/k1PjvLQkbpZpionU9/G9bWdcXtnWXp9EJt+S0FkQdbBVlW2E0Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -354,7 +354,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "2608bf32-7989-411b-ad42-d231db1b6391",
+                            ConcurrencyStamp = "c55e0627-b298-41bd-bf2d-34657e953ab6",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -363,7 +363,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOLFEtOiMjIONQuGLUxIIcaiKjNnAHJv5FbvlAFNoZJVgT8zUeoJDo2gqsLEGl9Ceg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEAoDQz1IoNz/Lpqdv8dPZOIXwcGxd0P3MmxGhMKyQj4oaSpVygG26yY9qSev9Ne/3w==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -713,7 +713,10 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("nvarchar(150)")
                         .HasMaxLength(150);
 
-                    b.Property<int>("MenuOrder")
+                    b.Property<int?>("MenuOrder")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MenuVisible")
                         .HasColumnType("int");
 
                     b.Property<int?>("ParentID")
@@ -733,7 +736,7 @@ namespace Hiver.Data.Migrations
                             MenuID = 1,
                             IsVisible = true,
                             MenuName = "Trang Chính",
-                            MenuOrder = 1,
+                            MenuVisible = 1,
                             ParentID = -1,
                             Url = "/"
                         },
@@ -742,7 +745,7 @@ namespace Hiver.Data.Migrations
                             MenuID = 2,
                             IsVisible = true,
                             MenuName = "Kho",
-                            MenuOrder = 1,
+                            MenuVisible = 2,
                             ParentID = -1,
                             Url = "/"
                         },
@@ -751,7 +754,7 @@ namespace Hiver.Data.Migrations
                             MenuID = 3,
                             IsVisible = true,
                             MenuName = "Nguyên Liệu",
-                            MenuOrder = 1,
+                            MenuVisible = 3,
                             ParentID = 2,
                             Url = "/"
                         },
@@ -760,7 +763,7 @@ namespace Hiver.Data.Migrations
                             MenuID = 4,
                             IsVisible = true,
                             MenuName = "Thành Phẩm",
-                            MenuOrder = 1,
+                            MenuVisible = 4,
                             ParentID = 2,
                             Url = "/"
                         },
@@ -769,7 +772,7 @@ namespace Hiver.Data.Migrations
                             MenuID = 5,
                             IsVisible = true,
                             MenuName = "Kinh Doanh",
-                            MenuOrder = 1,
+                            MenuVisible = 5,
                             ParentID = -1,
                             Url = "/"
                         });

@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="utf-8" />
+    <title>TNH ERP - @ViewData["Title"]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" href="pages/ico/60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="pages/ico/76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="pages/ico/120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="pages/ico/152.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta content="Meet pages - The simplest and fastest way to build web UI for your dashboard or app." name="description" />
+    <meta content="Ace" name="author" />
+
+    <!-- ================== BEGIN BASE CSS STYLE ================== -->
+    <link href="/custom/scss/customSCSS.min.css" rel="stylesheet" />
+    <link href="/assets/css/default/app.min.css" rel="stylesheet" />
+    <!-- ================== END BASE CSS STYLE ================== -->
+    <!-- Customer -->
+    <link href="/custom/scss/customSCSS.css" rel="stylesheet" />
+
+    @RenderSection("Css", required: false)
+
+</head>
+<body>
+    <!-- begin #page-loader -->
+    <div id="page-loader" class="fade show">
+        <span class="spinner"></span>
+    </div>
+    <!-- end #page-loader -->
+    <!-- begin #page-container -->
+    <div id="page-container" class="fade page-without-sidebar page-header-fixed @ViewBag.PageOption">
+        <!-- begin #header -->
+        @await Html.PartialAsync("~/Views/Shared/CustomLayout/_Header.cshtml")
+        <!-- end #header -->
+
+        @if (ViewBag.LayoutPageContent == null)
+        {
+            <!-- begin #content -->
+            <div id="content" class="content">
+                <!-- begin breadcrumb -->
+                <ol class="breadcrumb float-xl-right">
+                    <breadcrumbs-nav home-action="Index" home-controller="Home" home-title="Trang Chủ"></breadcrumbs-nav>
+                </ol>
+                <!-- end breadcrumb -->
+                <!-- begin page-header -->
+                <h1 class="page-header">@ViewBag.PageTitle A<small>@ViewBag.PageDescriptionTitle</small></h1>
+                <!-- end page-header -->
+                <!-- begin panel -->
+                <div class="panel panel-inverse">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">Panel Title here</h4>
+                        <div class="panel-heading-btn">
+                            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-default" data-click="panel-expand"><i class="fa fa-expand"></i></a>
+                            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-success" data-click="panel-reload"><i class="fa fa-redo"></i></a>
+                            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
+                            <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        @RenderBody()
+                    </div>
+                </div>
+                <!-- end panel -->
+            </div>
+            <!-- end #content -->
+        }
+        else
+        {
+            <!-- begin #content -->
+            <div id="content" class="content @ViewBag.LayoutPageContent">
+                @RenderBody()
+            </div>
+            <!-- end #content -->
+        }
+        <!-- begin scroll to top btn -->
+        <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
+        <!-- end scroll to top btn -->
+    </div>
+    <!-- end page container -->
+    <!-- ================== BEGIN BASE JS ================== -->
+    <script src="/assets/js/app.min.js"></script>
+    @*<script src="/assets/js/theme/default.min.js"></script>*@
+    <!-- ================== END BASE JS ================== -->
+
+
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

@@ -9,6 +9,6 @@ namespace Hiver.Application.Common.Menu
     public interface IMenuService
     {
         Task<MenuResult> GetMenuItem(int Id);
-        Task<List<MenuResult>> GetChildrenMenu(int? parentId);
+        Task<List<MenuResult>> GetChildrenMenu(int? parentId, int? menuOrder);
     }
 }

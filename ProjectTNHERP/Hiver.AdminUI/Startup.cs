@@ -1,4 +1,4 @@
-using FluentValidation.AspNetCore;
+﻿using FluentValidation.AspNetCore;
 using Hiver.ApiIntegration.Menu;
 using Hiver.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -42,10 +42,15 @@ namespace Hiver.AdminUI
 
             services.AddRazorPages();
 
+            services.AddDistributedMemoryCache();
+
             services.AddSession(options =>
             {
-                options.IdleTimeout = TimeSpan.FromMinutes(30);
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.IsEssential = true;
             });
+
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             //services.AddTransient<IUserApiClient, UserApiClient>();
@@ -87,7 +92,6 @@ namespace Hiver.AdminUI
             });
 
             app.UseStaticFiles();
-
 
             app.UseAuthentication();
 

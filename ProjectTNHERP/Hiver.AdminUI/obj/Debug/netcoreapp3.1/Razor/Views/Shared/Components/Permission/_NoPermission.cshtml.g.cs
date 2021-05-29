@@ -26,8 +26,15 @@ using Hiver.AdminUI.Models;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 6 "D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminUI\Views\_ViewImports.cshtml"
+using Kendo.Mvc.UI;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cf9c091dcbf9b42cc8f2bffe69d488d2737c0e65", @"/Views/Shared/Components/Permission/_NoPermission.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ca4fa29163665a8ecb0495907d593510b7bc3207", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fcfc5c5ebe59075999039033919dcf135362289c", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared_Components_Permission__NoPermission : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

@@ -16,75 +16,11 @@
         </button>
     </div>
     <!-- end navbar-header -->
-    <!-- begin navbar-collapse -->
     <div class="collapse navbar-collapse" id="top-navbar">
         <ul class="nav navbar-nav">
-            <li class="dropdown dropdown-lg">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-th-large fa-fw mr-1 mr-md-0"></i> Tổng Quan <b class="caret ml-1 ml-md-0"></b></a>
-                <div class="dropdown-menu dropdown-menu-lg">
-                    <div class="row " style="font-size: 0.9rem;">
-                        <!-- Col Start -->
-                        <div class="col-lg-2 col-md-2">
-                            <div class="fa-lg mb-2">Quản lý Sản Xuất</div>
-                            <div class="m-b-20">
-                                <ul class="nav d-block" >
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg mr-3 pb-1"></i><strong>Thiết Kế</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-fill-drip fa-lg text-inverse mr-3"></i> <strong>Sản xuất In</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-layer-group fa-lg text-inverse mr-3"></i> <strong>Sản xuất Bế</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-laptop-house fa-lg text-inverse mr-3"></i> <strong>VP In</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>Đóng gói</strong></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Col End -->
-                        <!-- Col Start -->
-                        <div class="col-lg-2 col-md-2">
-                            <div class="f-w-700 text-inverse mb-2">Quản lý Chất Lượng</div>
-                            <div class="m-b-20">
-                                <ul class="nav d-block">
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>QCC</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>QC</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>QA</strong></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Col End -->
-                        <!-- Col Start -->
-                        <div class="col-lg-2 col-md-2">
-                            <div class="f-w-700 text-inverse mb-2">Quy lý Kho</div>
-                            <div class="m-b-20">
-                                <ul class="nav d-block">
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>Nguyên Liệu</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>Sản Phẩm</strong></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Col End -->
-                        <!-- Col Start -->
-                        <div class="col-lg-2 col-md-2">
-                            <div class="f-w-700 text-inverse mb-2">Quy lý Hàng Hóa</div>
-                            <div class="m-b-20">
-                                <ul class="nav d-block">
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>Vận Chuyển</strong></a></li>
-                                    <li><a href="javascript:;" class="text-ellipsis text-muted"><i class="fas fa-pencil-ruler fa-lg text-inverse mr-3"></i> <strong>Sản Phẩm</strong></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Col End -->
-                    </div>
-                </div>
-            </li>
-            
-            <li>
-                <a href="javascript:;">
-                    <i class="fa fa-gem fa-fw mr-1 mr-md-0"></i> Báo cáo sự cố
-                </a>
-            </li>
-
-
+            @(await Component.InvokeAsync("Menu", new { parentId = 0, menuOrder = 1}))
         </ul>
     </div>
-    <!-- end navbar-collapse -->
     <!-- begin header-nav -->
     <ul class="navbar-nav navbar-right">
         <li class="dropdown">

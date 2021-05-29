@@ -2,49 +2,53 @@
 
 @foreach (var menu in Model)
 {
-    if (menu.MenuOrder == 1) // Check vị trí menu
+    if (menu.Children.Any())
     {
-        if (menu.Children.Any())
-        {
-            <li class="has-sub">
-                <a href="javascript:;">
-                    @if (menu.IconNumber.Trim() == "")
-                    {
-                        <b class="caret"></b>
-                        <i class="@menu.IconClass"></i>
-                        <span>@menu.MenuName</span>
-                    }
-                    else
-                    {
-                        <span class="badge pull-right">@menu.IconNumber</span>
-                        <i class="@menu.IconClass"></i>
-                        <span>@menu.MenuName</span>
-                    }
-                </a>
-                <ul class="sub-menu">
+        <li class="dropdown">
+            <a href="javascript:;" class="dropdown-toggle text-ellipsis text-muted" data-toggle="dropdown">
+                @if (menu.IconNumber == "")
+                {
+                    <i class="@menu.IconClass fa-fw text-inverse mr-1 mr-md-0"></i>
+                    <span>@menu.MenuName</span>
+                    <b class="caret ml-1 ml-md-0"></b>
+                }
+                else
+                {
+                    <i class="@menu.IconClass fa-fw text-inverse mr-1 mr-md-0"></i>
+                    <span>@menu.MenuName</span>
+                    <span class="badge ml-1 ml-md-0">@menu.IconNumber</span>
+                }
+            </a>
+            <div class="dropdown-menu">
+                <ul class="nav d-block" style="padding:10px;">
                     <partial name="Components/Menu/_MenuPartial" model="menu.Children" />
                 </ul>
-            </li>
-        }
-        else
-        {
-            <li class="has-sub">
-                <a href="@menu.Url">
-                    @if (menu.IconNumber.Trim() == "")
-                    {
-                        <i class="@menu.IconClass"></i>
-                        <span>@menu.MenuName</span>
-                    }
-                    else
-                    {
-                        <span class="badge pull-right">@menu.IconNumber</span>
-                        <i class="@menu.IconClass"></i>
-                        <span>@menu.MenuName</span>
-                    }
-                </a>
-            </li>
-
-        }
+            </div>
+        </li>
     }
+    else
+    {
+        <li class="pb-1">
+            
+            <a href="@menu.Url" class="text-ellipsis text-muted">
+                @if (menu.IconNumber == "")
+                {
+                    <i class="@menu.IconClass fa-fw text-inverse mr-1 mr-md-0"></i>
+                    <span>@menu.MenuName</span>
+                }
+                else
+                {
+                    <i class="@menu.IconClass fa-fw text-inverse mr-1 mr-md-0"></i>
+                    <span>@menu.MenuName</span>
+                    <span class="badge ml-1 ml-md-0">@menu.IconNumber</span>
 
+                }
+            </a>
+
+        </li>
+
+    }
 }
+
+
+

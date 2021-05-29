@@ -17,14 +17,14 @@ namespace Hiver.WebApp.Controllers.Components
             _menuApiClient = menuApiClient;
         }
 
-        public Task<IViewComponentResult> InvokeAsync(int? parentId)
+        public Task<IViewComponentResult> InvokeAsync(int? parentId, int menuOrder)
         {
-            var children =  GetMenu(parentId);
+            var children = GetMenu(parentId, menuOrder);
 
             return Task.FromResult((IViewComponentResult)View("_MenuPartial", children));
         }
 
-        public IList<MenuViewModel> GetMenu(int? parentId)
+        public IList<MenuViewModel> GetMenu(int? parentId, int menuOrder)
         {
             var children = _menuApiClient.GetChildrenMenu(parentId);
 
@@ -43,13 +43,12 @@ namespace Hiver.WebApp.Controllers.Components
 
                 vm.MenuId = menu.Result.MenuId;
                 vm.MenuName = menu.Result.MenuName;
-                vm.MenuOrder = menu.Result.MenuOrder;
                 vm.Description = menu.Result.Description;
                 vm.IconClass = menu.Result.IconClass;
                 vm.Url = menu.Result.Url;
                 vm.IsVisible = menu.Result.IsVisible;
 
-                vm.Children = GetMenu(menu.Result.MenuId);
+                vm.Children = GetMenu(menu.Result.MenuId, menuOrder);
                 vmList.Add(vm);
             }
             return vmList;

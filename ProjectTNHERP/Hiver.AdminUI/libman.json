@@ -17,10 +17,6 @@
     {
       "library": "jquery@3.6.0",
       "destination": "wwwroot/lib/jquery/"
-    },
-    {
-      "library": "kendo-ui-core@2014.1.416",
-      "destination": "wwwroot/lib/kendo-ui-core/"
     }
   ]
 }
