@@ -16,6 +16,16 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Catalog\CustomerCompanies\" />
+	  <Folder Include="Catalog\Customers\" />
+	  <Folder Include="Catalog\KnifeMolds\" />
+	  <Folder Include="Catalog\KnifeMoldCategories\" />
+	  <Folder Include="Catalog\OrderByDetailAndProductionDetails\" />
+	  <Folder Include="Catalog\OrderByDetails\" />
+	  <Folder Include="Catalog\StockCategories\" />
+	  <Folder Include="Catalog\Stocks\" />
+	  <Folder Include="Catalog\SupplierCompanies\" />
+	  <Folder Include="Catalog\Suppliers\" />
 	  <Folder Include="Utilities\" />
 	</ItemGroup>
 

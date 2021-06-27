@@ -460,7 +460,7 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreap
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csprojAssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csproj.AssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.AssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\netcoreapp3.1\Hiver.BackendApi.csproj.CoreCompileInputs.cache

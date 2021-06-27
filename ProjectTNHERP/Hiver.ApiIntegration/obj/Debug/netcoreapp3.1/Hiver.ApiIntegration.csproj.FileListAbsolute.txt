@@ -33,7 +33,7 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netco
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csprojAssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csproj.AssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.AssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\netcoreapp3.1\Hiver.ApiIntegration.csproj.CoreCompileInputs.cache

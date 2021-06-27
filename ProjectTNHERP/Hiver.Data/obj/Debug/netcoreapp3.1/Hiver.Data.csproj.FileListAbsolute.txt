@@ -32,7 +32,7 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\H
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csprojAssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csproj.AssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.AssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csproj.CoreCompileInputs.cache
