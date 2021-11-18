@@ -2,6 +2,7 @@
 @model LoginRequest
 @{
     Layout = null;
+    var returnUrl = @Context.Request.Query["returnurl"];
 }
 
 <!DOCTYPE html>
@@ -34,8 +35,8 @@
         <div class="card">
             <div class="card-body login-card-body">
                 <p class="login-box-msg">Sign in to start your session</p>
-
-                <form asp-action="Index" asp-controller="Login" method="post">
+              
+                <form asp-action="Index" asp-controller="Login" method="post" asp-route-returnurl="@returnUrl">
                     <div asp-validation-summary="All" class="text-danger"></div>
 
                     <div class="input-group mb-3">
@@ -70,7 +71,7 @@
                         <!-- /.col -->
                     </div>
                 </form>
-</div>
+            </div>
             <!-- /.login-card-body -->
         </div>
     </div>

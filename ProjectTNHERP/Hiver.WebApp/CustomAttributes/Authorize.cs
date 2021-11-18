@@ -18,8 +18,6 @@
 //        }
 //    }
 
-    
-
 //    public class AuthorizeFilter : IAuthorizationFilter
 //    {
 
@@ -32,41 +30,35 @@
 
 //        public void OnAuthorization(AuthorizationFilterContext context)
 //        {
-
 //            var IsAuthenticated = context.HttpContext.User.Identity.IsAuthenticated;
-//            var claimsIndentity = context.HttpContext.User.Identity as ClaimsIdentity;
-//            var ds = context.ModelState.ValidationState;
-
 //            if (IsAuthenticated)
 //            {
+//                var claimsIndentity = context.HttpContext.User.Identity as ClaimsIdentity;
+
+//                // Get the claims values
+//                var nameRole = claimsIndentity.Claims.Where(c => c.Type == ClaimTypes.Role)
+//                                   .Select(c => c.Value).ToList();
+
+//                //var nameGroupRole = claimsPrincipal.
+
 //                bool flagClaim = false;
+
 //                foreach (var item in _claim)
 //                {
-//                    if (context.HttpContext.User.HasClaim(item, item))
-//                        flagClaim = true;
+//                    foreach (var itemrole in nameRole)
+//                    {
+//                        if (item == itemrole)
+//                            flagClaim = true;
+//                    }
 //                }
 //                if (!flagClaim)
-//                {
+
 //                    if (context.HttpContext.Request.IsAjaxRequest())
-//                        context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized; //Set HTTP 401 - JRozario
+//                        context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized; //Set HTTP 401
 //                    else
-//                        context.Result = new RedirectResult("~/Home/NoPermission");
-//                }
+//                        context.Result = new RedirectResult("~/Shared/Error.cshtml");
 //            }
-//            else
-//            {
-                
-//                if (context.HttpContext.Request.IsAjaxRequest())
-//                {
-                    
-//                    context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Forbidden; //Set HTTP 403 - JRozario
-//                }
-//                else
-//                {
-//                    context.Result = new RedirectResult("~/Home/Index");
-//                }
-//            }
-//            return ;
+//            return;
 //        }
 //    }
 //}

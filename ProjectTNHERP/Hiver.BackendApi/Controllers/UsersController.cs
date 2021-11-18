@@ -38,7 +38,7 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpPost]
         [ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Register([FromBody]RegisterRequest request)
+        public async Task<IActionResult> Create([FromBody]RegisterRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

@@ -39,10 +39,11 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcorea
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csprojAssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.AssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.CoreCompileInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.CopyComplete
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.AssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.GeneratedMSBuildEditorConfig.editorconfig

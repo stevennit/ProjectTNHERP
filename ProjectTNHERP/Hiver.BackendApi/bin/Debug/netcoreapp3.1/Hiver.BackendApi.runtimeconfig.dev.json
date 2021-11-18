@@ -3,8 +3,7 @@
     "additionalProbingPaths": [
       "C:\\Users\\namst\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\namst\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Progress\\ToolboxNuGetPackages",
-      "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+      "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
     ]
   }
 }

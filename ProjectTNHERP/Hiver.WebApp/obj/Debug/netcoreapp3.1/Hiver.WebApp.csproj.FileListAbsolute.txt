@@ -1220,7 +1220,6 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\bin\Debug\netcoreapp3.1
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\bin\Debug\netcoreapp3.1\Hiver.ApiIntegration.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.csprojAssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.AssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.csproj.CoreCompileInputs.cache
@@ -1229,8 +1228,6 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.RazorAssemblyInfo.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.RazorAssemblyInfo.cs
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\staticwebassets\Hiver.WebApp.StaticWebAssets.Manifest.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\staticwebassets\Hiver.WebApp.StaticWebAssets.xml
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\scopedcss\bundle\Hiver.WebApp.styles.css
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.TagHelpers.input.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.TagHelpers.output.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.RazorCoreGenerate.cache
@@ -1260,3 +1257,5 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.genruntimeconfig.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.csproj.AssemblyReference.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.GeneratedMSBuildEditorConfig.editorconfig

@@ -38,7 +38,7 @@ namespace Hiver.WebApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Index(LoginRequest request)
+        public async Task<IActionResult> Index(LoginRequest request,string returnUrl)
         {
             if (!ModelState.IsValid)
                 return View();
@@ -50,6 +50,7 @@ namespace Hiver.WebApp.Controllers
                 return View();
             }
             var userPrincipal = this.ValidateToken(result.ResultObj);
+
             var authProperties = new AuthenticationProperties
             {
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
@@ -61,7 +62,10 @@ namespace Hiver.WebApp.Controllers
                         userPrincipal,
                         authProperties);
 
-            return RedirectToAction("Index", "Home");
+            if (!String.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
+                return Redirect(returnUrl);
+            else
+                return RedirectToAction("Index", "Home");
         }
 
         private ClaimsPrincipal ValidateToken(string jwtToken)
