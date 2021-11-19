@@ -12,6 +12,6 @@ namespace Hiver.ApiIntegration
         Task<ApiResult<List<RoleVm>>> GetAll();
 
 
-        Task<ApiResult<bool>> roleCheck(string nameUser);
+        Task<ApiResult<bool>> roleCheck(RoleCheckVm nameUser);
     }
 }

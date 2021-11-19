@@ -1,4 +1,4 @@
-﻿using Hiver.Application.System.Roles;
+﻿using Hiver.ApiIntegration;
 using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Mvc;
@@ -6,22 +6,21 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 
-namespace Hiver.BackendApi.Auth
+namespace Hiver.WebApp.CustomAttributes
 {
-    public class AuthAttribute : ActionFilterAttribute
+    public class AuthAttributeClient : ActionFilterAttribute
     {
-        private readonly IRoleService _roleService;
-        public AuthAttribute(IRoleService roleService)
+        private readonly IRoleApiClient _roleApiClient;
+        public AuthAttributeClient(IRoleApiClient roleApiClient)
         {
-            _roleService = roleService;
+            _roleApiClient = roleApiClient;
         }
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             // Get name
-            string nameUser = context.HttpContext.User.Claims.Where(c => c.Type == ClaimTypes.Name).Select(c => c.Value).FirstOrDefault();
+            string nameUser = context.HttpContext.User.Identity.Name;
 
             // Get Name Controller and Name Action 
             string nameController = (string)context.RouteData.Values["Controller"];
@@ -34,18 +33,20 @@ namespace Hiver.BackendApi.Auth
                 Action = nameAction
             };
 
-            var res = _roleService.roleCheck(request);
+            var res = _roleApiClient.roleCheck(request);
 
-            if (res.Result.ResultObj == true)
+            if (res.Result.IsSuccessed == true)
             {
                 base.OnActionExecuting(context);
             }
             else
             {
-                context.Result = new BadRequestObjectResult(new ApiErrorResult<string>("Bạn không có quyền truy cập"));
+                
+                context.Result = new UnprocessableEntityObjectResult(new ApiErrorResult<string>("Bạn không có quyền truy cập"));
                 return;
             }
-                
+
         }
+
     }
 }

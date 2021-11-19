@@ -38,17 +38,15 @@ namespace Hiver.Application.System.Roles
             return roles;
         }
 
-        public async Task<bool> roleCheck(RoleCheckVm request)
+        public async Task<ApiResult<bool>> roleCheck(RoleCheckVm request)
         {
             var rel = await _context.AppRoleControllers.SingleOrDefaultAsync(x => x.Controller == request.Controller &&
                 x.Action == request.Action && x.AppUser == request.AppUser);
 
-            if (rel == null)
-            {
-                return false;
-            }
+            if (rel != null)
+                return new ApiSuccessResult<bool>();
 
-            return true;
+            return new ApiErrorResult<bool>("Xóa không thành công");
         }
 
         

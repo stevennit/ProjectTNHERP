@@ -47,3 +47,20 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcorea
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.AssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Application.deps.json
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Application.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Application.pdb
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Data.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.AssemblyReference.cache
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.AssemblyInfoInputs.cache
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.AssemblyInfo.cs
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.CoreCompileInputs.cache
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.csproj.CopyComplete
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\netcoreapp3.1\Hiver.Application.pdb

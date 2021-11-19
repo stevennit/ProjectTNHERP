@@ -31,6 +31,12 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            @if (TempData["AlertMessage"] != null)
+            {
+                <div class="alert @TempData["AlertType"] hide">
+                    @TempData["AlertMessage"]
+                </div>
+            }    
             @RenderBody()
         </div>
         <!-- /.content-wrapper -->
@@ -62,5 +68,11 @@
     <script src="../dist/js/demo.js"></script>
 
     @RenderSection("Scripts", required: false)
+
+<script type="text/javascript">
+    $('#AlerBox').removeClass('hide')
+    $('#AlerBox').delay(1000).slide(500);
+
+</script>
 </body>
 </html>

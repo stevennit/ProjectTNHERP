@@ -15,6 +15,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authorization;
 using Hiver.ApiIntegration.Menu;
+using Hiver.WebApp.CustomAttributes;
 
 namespace Hiver.WebApp
 {
@@ -54,6 +55,8 @@ namespace Hiver.WebApp
             services.AddTransient<IRoleApiClient, RoleApiClient>();
 
             services.AddTransient<IMenuApiClient, MenuApiClient>();
+
+            services.AddScoped<AuthAttributeClient>();
 
             IMvcBuilder builder = services.AddRazorPages();
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");

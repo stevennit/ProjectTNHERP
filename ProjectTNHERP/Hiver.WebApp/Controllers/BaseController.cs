@@ -14,8 +14,8 @@ namespace Hiver.WebApp.Controllers
     [Authorize]
     public class BaseController : Controller
     {
-
-        public BaseController()
+        private readonly IRoleApiClient _roleApiClient;
+        public BaseController(IRoleApiClient roleApiClient)
         {
 
         }
@@ -24,13 +24,44 @@ namespace Hiver.WebApp.Controllers
         {
 
             var sessions = context.HttpContext.Session.GetString("Token");
+
             if (sessions == null)
             {
                 context.Result = new RedirectToActionResult("Index", "Login", null);
             }
-            string name = (string)context.RouteData.Values["Controller"];
+
+
+            // Get name
+            string nameUser = context.HttpContext.User.Identity.Name;
+
+            // Get Name Controller and Name Action 
+            string nameController = (string)context.RouteData.Values["Controller"];
+            string nameAction = (string)context.RouteData.Values["Action"];
+
+            var request = new RoleCheckVm()
+            {
+                AppUser = nameUser,
+                Controller = nameController,
+                Action = nameAction
+            };
+
+            var res = _roleApiClient.roleCheck(request);
 
             base.OnActionExecuting(context);
+        }
+
+        protected void SetAlert(string massage, string type)
+        {
+            TempData["AlertMessage"] = massage;
+
+            if (type == "success")
+            {
+                TempData["AlertType"] = "alert-success";
+            }
+            else if (type == "warring")
+            {
+                TempData["AlertType"] = "alert-success";
+            }
         }
 
     }

@@ -64,8 +64,10 @@ namespace Hiver.WebApp.Controllers
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(AuthAttributeClient))]
         public IActionResult Create()
         {
+            
             return View();
         }
 
@@ -80,6 +82,7 @@ namespace Hiver.WebApp.Controllers
             if (result.IsSuccessed)
             {
                 TempData["result"] = "Thêm mới người dùng thành công";
+               
                 return RedirectToAction("Index");
             }
 

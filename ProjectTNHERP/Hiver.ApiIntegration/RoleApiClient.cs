@@ -44,15 +44,14 @@ namespace Hiver.ApiIntegration
             return JsonConvert.DeserializeObject<ApiErrorResult<List<RoleVm>>>(body);
         }
 
-        public async Task<ApiResult<bool>> roleCheck(string nameUser)
+        public async Task<ApiResult<bool>> roleCheck(RoleCheckVm nameUser)
         {
             var json = JsonConvert.SerializeObject(nameUser);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
-            var response = await client.PostAsync("/api/Roles/RoleCheck", httpContent);
-
+            var response = await client.PostAsync("/api/Roles/rolecheck", httpContent);
             if (response.IsSuccessStatusCode)
             {
                 return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(await response.Content.ReadAsStringAsync());

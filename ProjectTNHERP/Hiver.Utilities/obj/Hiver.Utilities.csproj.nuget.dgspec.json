@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {}
+    "D:\\Nam\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {}
   },
   "projects": {
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+    "D:\\Nam\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "projectUniqueName": "D:\\Nam\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
         "projectName": "Hiver.Utilities",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
-        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
+        "projectPath": "D:\\Nam\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Doanh\\.nuget\\packages\\",
+        "outputPath": "D:\\Nam\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Doanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

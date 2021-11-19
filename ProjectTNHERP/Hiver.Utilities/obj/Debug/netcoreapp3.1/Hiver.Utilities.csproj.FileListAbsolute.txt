@@ -24,3 +24,13 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\netcoreapp3.1\Hiver.Utilities.deps.json
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.csproj.AssemblyReference.cache
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.AssemblyInfoInputs.cache
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.AssemblyInfo.cs
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.csproj.CoreCompileInputs.cache
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.dll
+D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.pdb
