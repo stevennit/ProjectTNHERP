@@ -13,10 +13,14 @@ namespace Hiver.WebApp.CustomAttributes
     public class AuthAttributeClient : ActionFilterAttribute
     {
         private readonly IRoleApiClient _roleApiClient;
+
         public AuthAttributeClient(IRoleApiClient roleApiClient)
         {
             _roleApiClient = roleApiClient;
         }
+
+
+
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             // Get name

@@ -12,6 +12,7 @@ using Hiver.WebApp.CustomAttributes;
 //using Hiver.WebApp.CustomAttributes;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -51,7 +52,11 @@ namespace Hiver.WebApp.Controllers
             var data = await _userApiClient.GetUsersPagings(request);
 
             ViewBag.Keyword = keyword;
-            
+
+            if (this.HavePermission("ds"))
+                return View("SupervisorPage");
+
+
             return View(data.ResultObj);
         }
 
@@ -64,10 +69,8 @@ namespace Hiver.WebApp.Controllers
         }
 
         [HttpGet]
-        [ServiceFilter(typeof(AuthAttributeClient))]
         public IActionResult Create()
         {
-            
             return View();
         }
 

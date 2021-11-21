@@ -34,3 +34,4 @@ D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.csproj.CoreCompileInputs.cache
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.dll
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\netcoreapp3.1\Hiver.Utilities.csproj.AssemblyReference.cache

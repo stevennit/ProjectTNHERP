@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Hiver.ApiIntegration;
+using Hiver.ViewModels.System.Roles;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +12,12 @@ namespace Hiver.WebApp.CustomAttributes
 {
     public static class PermissionExtension
     {
+        public static IRoleApiClient _roleApiClient;
+
+        public PermissionExtension(IRoleApiClient roleApiClient)
+        {
+            _roleApiClient = roleApiClient;
+        }
         public static bool HavePermission(this Controller c, string claimValue)
         {
             var user = c.HttpContext.User as ClaimsPrincipal;
@@ -17,11 +25,22 @@ namespace Hiver.WebApp.CustomAttributes
             bool havePer = user.HasClaim(claimValue, claimValue);
             return havePer;
         }
-        public static bool HavePermission(this IIdentity claims, string claimValue)
+
+        public static bool HavePermission(this IIdentity claims, string ControllerName, string ActionName)
         {
             var userClaims = claims as ClaimsIdentity;
-            bool havePer = userClaims.HasClaim(claimValue, claimValue);
-            return havePer;
+
+            var request = new RoleCheckVm()
+            {
+                AppUser = userClaims.Name,
+                Controller = ControllerName,
+                Action = ActionName
+            };
+
+            //var res = _roleApiClient.roleCheck(request);
+
+             return false;
+
         }
     }
 }
