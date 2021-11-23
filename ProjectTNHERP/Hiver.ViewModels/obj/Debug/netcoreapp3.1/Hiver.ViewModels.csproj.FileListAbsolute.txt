@@ -35,3 +35,13 @@ D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CoreCompileInputs.cache
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.dll
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.deps.json
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.AssemblyReference.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.AssemblyInfoInputs.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.AssemblyInfo.cs
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.pdb

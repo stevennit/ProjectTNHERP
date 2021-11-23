@@ -48,3 +48,16 @@ D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hi
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.dll
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.pdb
 D:\Nam\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.genruntimeconfig.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.deps.json
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.runtimeconfig.json
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.runtimeconfig.dev.json
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.dll
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\netcoreapp3.1\Hiver.Data.pdb
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csproj.AssemblyReference.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.AssemblyInfoInputs.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.AssemblyInfo.cs
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.csproj.CoreCompileInputs.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.dll
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.pdb
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\netcoreapp3.1\Hiver.Data.genruntimeconfig.cache

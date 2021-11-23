@@ -16,6 +16,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.AspNetCore.Authorization;
 using Hiver.ApiIntegration.Menu;
 using Hiver.WebApp.CustomAttributes;
+using Hiver.WebApp.Infrastructure;
 
 namespace Hiver.WebApp
 {
@@ -56,7 +57,9 @@ namespace Hiver.WebApp
 
             services.AddTransient<IMenuApiClient, MenuApiClient>();
 
-            services.AddScoped<AuthAttributeClient>();
+            //services.AddScoped<AuthAttributeClient>();
+
+            services.AddSignalR();
 
             IMvcBuilder builder = services.AddRazorPages();
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
@@ -89,6 +92,7 @@ namespace Hiver.WebApp
 
             app.UseRouting();
 
+
             app.UseAuthorization();
             app.UseSession();
             app.UseEndpoints(endpoints =>
@@ -97,7 +101,7 @@ namespace Hiver.WebApp
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-
+                endpoints.MapHub<signalrServer>("/Infrastructure/signalrServer");
             });
         }
     }

@@ -53,10 +53,6 @@ namespace Hiver.WebApp.Controllers
 
             ViewBag.Keyword = keyword;
 
-            if (this.HavePermission("ds"))
-                return View("SupervisorPage");
-
-
             return View(data.ResultObj);
         }
 
@@ -69,13 +65,13 @@ namespace Hiver.WebApp.Controllers
         }
 
         [HttpGet]
+        [ServiceFilter(typeof(AuthAttribute))]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        
         public async Task<IActionResult> Create(RegisterRequest request)
         {
             if (!ModelState.IsValid)

@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -31,9 +33,10 @@
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
+            <div class="testmessage" id="IdOfElementToDisplayMessage"></div>
             @if (TempData["AlertMessage"] != null)
             {
-                <div class="alert @TempData["AlertType"] hide">
+                <div class="alert @TempData["AlertType"] hide" role="alert">
                     @TempData["AlertMessage"]
                 </div>
             }    
@@ -67,6 +70,8 @@
     <!-- AdminLTE for demo purposes -->
     <script src="../dist/js/demo.js"></script>
 
+    <script src="../microsoft/signalr/dist/browser/signalr.js"></script>
+    <script src="~/Style/site.js"></script>
     @RenderSection("Scripts", required: false)
 
 <script type="text/javascript">

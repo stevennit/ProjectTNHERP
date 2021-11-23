@@ -24,6 +24,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\Hiver.ApiIntegration\Hiver.ApiIntegration.csproj" />
+		<ProjectReference Include="..\Hiver.Application\Hiver.Application.csproj" />
 		<ProjectReference Include="..\Hiver.Utilities\Hiver.Utilities.csproj" />
 		<ProjectReference Include="..\Hiver.ViewModels\Hiver.ViewModels.csproj" />
 	</ItemGroup>
