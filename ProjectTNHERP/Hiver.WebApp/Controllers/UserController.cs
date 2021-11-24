@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Logging;
 using Microsoft.IdentityModel.Tokens;
@@ -28,14 +29,18 @@ namespace Hiver.WebApp.Controllers
         private readonly IUserApiClient _userApiClient;
         private readonly IConfiguration _configuration;
         private readonly IRoleApiClient _roleApiClient;
+        private readonly IHubContext<ChatHub> _hubContext;
 
         public UserController(IUserApiClient userApiClient,
             IRoleApiClient roleApiClient,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            IHubContext<ChatHub> hubContext)
         {
             _userApiClient = userApiClient;
             _configuration = configuration;
             _roleApiClient = roleApiClient;
+            _hubContext = hubContext;
+
         }
 
 
@@ -65,9 +70,10 @@ namespace Hiver.WebApp.Controllers
         }
 
         [HttpGet]
-        [ServiceFilter(typeof(AuthAttribute))]
+        //[ServiceFilter(typeof(AuthAttribute))]
         public IActionResult Create()
         {
+            _hubContext.Clients.All.SendAsync("Notify", $"Home page loaded at: {DateTime.Now}");
             return View();
         }
 

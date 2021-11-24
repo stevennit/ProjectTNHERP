@@ -36,7 +36,7 @@ namespace Hiver.BackendApi.Auth
 
             var res = _roleService.roleCheck(request);
 
-            if (res.Result.ResultObj == true)
+            if (res.Result.IsSuccessed == true)
             {
                 base.OnActionExecuting(context);
             }

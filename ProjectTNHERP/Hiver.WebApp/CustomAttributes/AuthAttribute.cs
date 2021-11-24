@@ -2,7 +2,6 @@
 using Hiver.Application.System.Roles;
 using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Roles;
-using Hiver.WebApp.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.SignalR;
@@ -17,12 +16,10 @@ namespace Hiver.WebApp.CustomAttributes
     public class AuthAttribute : ActionFilterAttribute
     {
         private readonly IRoleApiClient _roleApiClient;
-        private readonly IHubContext<signalrServer> _hubContext;
 
-        public AuthAttribute(IRoleApiClient roleApiClient, IHubContext<signalrServer> hubContext)
+        public AuthAttribute(IRoleApiClient roleApiClient)
         {
             _roleApiClient = roleApiClient;
-            _hubContext = hubContext;
         }
         public override void OnActionExecuting(ActionExecutingContext context)
         {
@@ -48,7 +45,6 @@ namespace Hiver.WebApp.CustomAttributes
             }
             else
             {
-                _hubContext.Clients.All.SendAsync("Notify", $"Home page loaded at: {DateTime.Now}");
                 context.Result = new BadRequestObjectResult(new ApiErrorResult<string>("Bạn không có quyền truy cập"));
                 return;
             }

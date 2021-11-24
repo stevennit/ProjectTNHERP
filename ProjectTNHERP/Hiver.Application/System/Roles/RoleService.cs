@@ -46,7 +46,7 @@ namespace Hiver.Application.System.Roles
             if (rel != null)
                 return new ApiSuccessResult<bool>();
 
-            return new ApiErrorResult<bool>("Xóa không thành công");
+            return new ApiErrorResult<bool>("Bạn không có quyền vào");
         }
 
         

@@ -2124,3 +2124,5 @@ C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\o
 C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.Views.pdb
 C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.csproj.CopyComplete
 C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Hiver.WebApp.genruntimeconfig.cache
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\bin\Debug\netcoreapp3.1\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\Doanh\Source\Repos\Stevennit\ProjectTNHERP\ProjectTNHERP\Hiver.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Chat\Index.cshtml.g.cs
