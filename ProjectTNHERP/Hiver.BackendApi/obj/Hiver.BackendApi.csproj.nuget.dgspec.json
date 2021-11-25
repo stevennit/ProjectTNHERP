@@ -1,23 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj": {}
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj": {
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj",
+        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj",
         "projectName": "Hiver.Application",
-        "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj",
-        "packagesPath": "C:\\Users\\Doanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\obj\\",
+        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj",
+        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Doanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -33,14 +34,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj"
               },
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
               },
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
               }
             }
           }
@@ -83,20 +84,21 @@
         }
       }
     },
-    "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj": {
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj",
+        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj",
         "projectName": "Hiver.BackendApi",
-        "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj",
-        "packagesPath": "C:\\Users\\Doanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\obj\\",
+        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\Hiver.BackendApi.csproj",
+        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Doanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -112,17 +114,17 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Application\\Hiver.Application.csproj"
               },
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj"
               },
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
               },
-              "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
-                "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
+              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
               }
             }
           }
@@ -176,20 +178,21 @@
         }
       }
     },
-    "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj": {
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj",
+        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj",
         "projectName": "Hiver.Data",
-        "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj",
-        "packagesPath": "C:\\Users\\Doanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\obj\\",
+        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\Hiver.Data.csproj",
+        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Doanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -265,20 +268,21 @@
         }
       }
     },
-    "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
         "projectName": "Hiver.Utilities",
-        "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
-        "packagesPath": "C:\\Users\\Doanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
+        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Doanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -324,20 +328,21 @@
         }
       }
     },
-    "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
         "projectName": "Hiver.ViewModels",
-        "projectPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Doanh\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Doanh\\Source\\Repos\\Stevennit\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
+        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
+        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Doanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
