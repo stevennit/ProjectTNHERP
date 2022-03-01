@@ -9,7 +9,7 @@ namespace Hiver.ApiIntegration
 {
     public interface IRoleApiClient
     {
-        Task<ApiResult<List<RoleVm>>> GetAll();
+        Task<ApiResult<List<RoleVm>>> GetAllPaging();
 
 
         Task<ApiResult<bool>> roleCheck(string nameUser);

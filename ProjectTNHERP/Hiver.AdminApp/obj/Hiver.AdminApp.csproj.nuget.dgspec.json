@@ -1,42 +1,48 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj": {}
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj": {}
   },
   "projects": {
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj": {
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj",
+        "projectUniqueName": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj",
         "projectName": "Hiver.AdminApp",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj",
+        "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\obj\\",
+        "outputPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
+          "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj"
               },
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
               },
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
               }
             }
           }
@@ -48,16 +54,16 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[8.6.2, )"
+              "version": "[10.3.6, )"
             },
             "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[6.0.2, )"
             },
             "Microsoft.AspNetCore.Session": {
               "target": "Package",
@@ -65,19 +71,19 @@
             },
             "Microsoft.IdentityModel.Logging": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[6.16.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",
-              "version": "[5.6.0, )"
+              "version": "[6.16.0, )"
             },
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
-              "version": "[3.1.4, )"
+              "version": "[6.0.2, )"
             },
             "System.IdentityModel.Tokens.Jwt": {
               "target": "Package",
-              "version": "[5.6.0, )"
+              "version": "[6.16.0, )"
             }
           },
           "imports": [
@@ -98,40 +104,46 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj": {
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj",
+        "projectUniqueName": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj",
         "projectName": "Hiver.ApiIntegration",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj",
+        "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\Hiver.ApiIntegration.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\obj\\",
+        "outputPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ApiIntegration\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
+          "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
               },
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj"
               }
             }
           }
@@ -143,8 +155,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
@@ -166,34 +178,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "projectUniqueName": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
         "projectName": "Hiver.Utilities",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
+        "outputPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
+          "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -204,8 +222,8 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -221,37 +239,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+        "projectUniqueName": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
         "projectName": "Hiver.ViewModels",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+        "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
         "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
+        "outputPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
+        ],
         "configFilePaths": [
-          "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
+          "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
           "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
+          "C:\\Program Files (x86)\\DevExpress 21.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
               }
             }
           }
@@ -263,16 +287,16 @@
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "FluentValidation.AspNetCore": {
               "target": "Package",
-              "version": "[8.6.2, )"
+              "version": "[10.3.6, )"
             },
             "Microsoft.AspNetCore.Http.Features": {
               "target": "Package",
-              "version": "[3.1.2, )"
+              "version": "[5.0.14, )"
             }
           },
           "imports": [
@@ -290,7 +314,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

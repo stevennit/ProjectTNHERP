@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using FluentValidation.AspNetCore;
 using Hiver.ApiIntegration;
-using Hiver.ApiIntegration.Menu;
 using Hiver.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -33,15 +32,13 @@ namespace Hiver.AdminApp
 
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
-                {
-                    options.LoginPath = "/Login/Index";
-                    options.AccessDeniedPath = "/Home/Forbidden/";
-                });
+            {
+                options.LoginPath = "/Login/Index";
+                options.AccessDeniedPath = "/User/Forbidden/";
+            });
 
             services.AddControllersWithViews()
                      .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
-
-            services.AddRazorPages();
 
             services.AddSession(options =>
             {
@@ -51,8 +48,6 @@ namespace Hiver.AdminApp
 
             services.AddTransient<IUserApiClient, UserApiClient>();
             services.AddTransient<IRoleApiClient, RoleApiClient>();
-
-            services.AddTransient<IMenuApiClient, MenuApiClient>();
 
             IMvcBuilder builder = services.AddRazorPages();
             var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
@@ -76,15 +71,17 @@ namespace Hiver.AdminApp
             {
                 app.UseExceptionHandler("/Home/Error");
                 // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
+                //app.UseHsts();
             }
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            app.UseAuthentication();
 
             app.UseRouting();
 
             app.UseAuthorization();
-
+            app.UseSession();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

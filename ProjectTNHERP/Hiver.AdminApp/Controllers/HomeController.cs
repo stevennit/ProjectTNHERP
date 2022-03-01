@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Hiver.AdminApp.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Hiver.Utilities.Constants;
 
 namespace Hiver.AdminApp.Controllers
 {
@@ -20,6 +23,7 @@ namespace Hiver.AdminApp.Controllers
 
         public IActionResult Index()
         {
+            var user = User.Identity.Name;
             return View();
         }
 
@@ -32,6 +36,13 @@ namespace Hiver.AdminApp.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+
+
+        public IActionResult NoPermission()
+        {
+            return View("NoPermission");
         }
     }
 }

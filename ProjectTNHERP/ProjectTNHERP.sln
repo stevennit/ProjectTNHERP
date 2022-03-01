@@ -1,10 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30204.135
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.WebApp", "Hiver.WebApp\Hiver.WebApp.csproj", "{188D5F33-3B67-4477-9A50-AFB8AC66DB7E}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.BackendApi", "Hiver.BackendApi\Hiver.BackendApi.csproj", "{90D36895-9DCE-4EFA-AAA6-C9F684B0FFCF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.Data", "Hiver.Data\Hiver.Data.csproj", "{D0DF6679-21FE-430E-B094-B425FB7CA9E4}"
@@ -17,10 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.ViewModels", "Hiver.V
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.ApiIntegration", "Hiver.ApiIntegration\Hiver.ApiIntegration.csproj", "{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.AdminApp", "Hiver.AdminApp\Hiver.AdminApp.csproj", "{D747810C-5BAD-4E25-B781-8850F39482B1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.AdminUI", "Hiver.AdminUI\Hiver.AdminUI.csproj", "{F3A9A3C3-3326-46B0-8EF0-5C0E9EB5D8BF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution Items", "0. Solution Items", "{98F0C55D-F070-48C9-B2D6-4EA73149F371}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
@@ -32,16 +26,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. BackEnd", "2. BackEnd", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. FontEnd", "3. FontEnd", "{564EEC0F-FC0E-4A38-B195-AAAB6CB1F698}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hiver.AdminApp", "Hiver.AdminApp\Hiver.AdminApp.csproj", "{73649F46-57B7-4D88-8D43-8E87BA72C856}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{188D5F33-3B67-4477-9A50-AFB8AC66DB7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{188D5F33-3B67-4477-9A50-AFB8AC66DB7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{188D5F33-3B67-4477-9A50-AFB8AC66DB7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{188D5F33-3B67-4477-9A50-AFB8AC66DB7E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{90D36895-9DCE-4EFA-AAA6-C9F684B0FFCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{90D36895-9DCE-4EFA-AAA6-C9F684B0FFCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90D36895-9DCE-4EFA-AAA6-C9F684B0FFCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,28 +58,22 @@ Global
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D747810C-5BAD-4E25-B781-8850F39482B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D747810C-5BAD-4E25-B781-8850F39482B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D747810C-5BAD-4E25-B781-8850F39482B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D747810C-5BAD-4E25-B781-8850F39482B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F3A9A3C3-3326-46B0-8EF0-5C0E9EB5D8BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F3A9A3C3-3326-46B0-8EF0-5C0E9EB5D8BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F3A9A3C3-3326-46B0-8EF0-5C0E9EB5D8BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F3A9A3C3-3326-46B0-8EF0-5C0E9EB5D8BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73649F46-57B7-4D88-8D43-8E87BA72C856}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73649F46-57B7-4D88-8D43-8E87BA72C856}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73649F46-57B7-4D88-8D43-8E87BA72C856}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73649F46-57B7-4D88-8D43-8E87BA72C856}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{188D5F33-3B67-4477-9A50-AFB8AC66DB7E} = {564EEC0F-FC0E-4A38-B195-AAAB6CB1F698}
 		{90D36895-9DCE-4EFA-AAA6-C9F684B0FFCF} = {44E69F60-2E6D-4804-BFD9-5E7905A21FC4}
 		{D0DF6679-21FE-430E-B094-B425FB7CA9E4} = {44E69F60-2E6D-4804-BFD9-5E7905A21FC4}
 		{F53B237A-8B66-4AF6-AA8B-AE5D86F5A1EB} = {44E69F60-2E6D-4804-BFD9-5E7905A21FC4}
 		{C9A40A7F-132A-43BC-8D85-8C40508928C7} = {01034ADE-A683-421F-9821-DC816A351003}
 		{5BA0C495-33DD-4CA6-96DA-B541096D4D65} = {01034ADE-A683-421F-9821-DC816A351003}
 		{DE5C631B-915E-4F0D-A19D-0AF0F10598D5} = {564EEC0F-FC0E-4A38-B195-AAAB6CB1F698}
-		{D747810C-5BAD-4E25-B781-8850F39482B1} = {564EEC0F-FC0E-4A38-B195-AAAB6CB1F698}
-		{F3A9A3C3-3326-46B0-8EF0-5C0E9EB5D8BF} = {564EEC0F-FC0E-4A38-B195-AAAB6CB1F698}
+		{73649F46-57B7-4D88-8D43-8E87BA72C856} = {564EEC0F-FC0E-4A38-B195-AAAB6CB1F698}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {94E345F5-E1EB-49AF-8595-8C125C5573F4}

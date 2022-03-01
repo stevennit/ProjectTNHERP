@@ -1,6 +1,9 @@
 ﻿using Hiver.Application.System.Roles;
+using Hiver.Application.System.Users;
+using Hiver.Data.Entities;
 using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Roles;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
@@ -14,9 +17,11 @@ namespace Hiver.BackendApi.Auth
     public class AuthAttribute : ActionFilterAttribute
     {
         private readonly IRoleService _roleService;
-        public AuthAttribute(IRoleService roleService)
+        private readonly IUserService _userService;
+        public AuthAttribute(IRoleService roleService, IUserService userService)
         {
             _roleService = roleService;
+            _userService = userService;
         }
         public override void OnActionExecuting(ActionExecutingContext context)
         {
@@ -29,14 +34,13 @@ namespace Hiver.BackendApi.Auth
 
             var request = new RoleCheckVm()
             {
-                AppUser = nameUser,
-                Controller = nameController,
-                Action = nameAction
+                ControllerName = nameController,
+                ActionName = nameAction
             };
 
-            var res = _roleService.roleCheck(request);
+            var res = _roleService.roleCheck(nameUser,request);
 
-            if (res.Result == true)
+            if (res.Result.IsSuccessed == true || nameUser == "admin")
             {
                 base.OnActionExecuting(context);
             }

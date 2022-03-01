@@ -1,0 +1,17 @@
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.ApiIntegration.deps.json
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.ApiIntegration.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\ref\Hiver.ApiIntegration.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.ApiIntegration.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.ViewModels.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.Utilities.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\bin\Debug\net6.0\Hiver.ViewModels.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.csproj.AssemblyReference.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.AssemblyInfoInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.AssemblyInfo.cs
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.csproj.CoreCompileInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.csproj.CopyComplete
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\ref\Hiver.ApiIntegration.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ApiIntegration\obj\Debug\net6.0\Hiver.ApiIntegration.pdb

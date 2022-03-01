@@ -19,13 +19,12 @@ namespace Hiver.BackendApi.Controllers
             _roleService = roleService;
         }
 
-        //[HttpGet]
-        //public async Task<IActionResult> GetAll()
-        //{
-        //    var roles = await _roleService.GetAll();
-        //    return Ok(roles);
-        //}
-
+        [HttpGet]
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetRolePagingRequest request)
+        {
+            var roles = await _roleService.GetRolesPaging(request);
+            return Ok(roles);
+        }
 
         //[HttpPost]
         //public async Task<IActionResult> RoleCheck([FromBody]RoleCheckVm request)

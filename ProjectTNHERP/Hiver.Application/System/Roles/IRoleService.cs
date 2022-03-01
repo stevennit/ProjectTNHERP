@@ -9,8 +9,9 @@ namespace Hiver.Application.System.Roles
 {
     public interface IRoleService
     {
-        Task<List<RoleVm>> GetAll();
+        Task<ApiResult<PagedResult<RoleVm>>> GetRolesPaging(GetRolePagingRequest request);
 
-        Task<bool> roleCheck(RoleCheckVm request);
+        Task<ApiResult<bool>> roleCheck(string userName, RoleCheckVm request);
+
     }
 }

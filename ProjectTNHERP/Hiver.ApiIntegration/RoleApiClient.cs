@@ -28,7 +28,7 @@ namespace Hiver.ApiIntegration
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<ApiResult<List<RoleVm>>> GetAll()
+        public async Task<ApiResult<List<RoleVm>>> GetAllPaging()
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
@@ -38,7 +38,7 @@ namespace Hiver.ApiIntegration
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {
-                List<RoleVm> myDeserializedObjList = (List<RoleVm>)JsonConvert.DeserializeObject(body, typeof(List<RoleVm>));
+                List<RoleVm> myDeserializedObjList = (List<RoleVm>)JsonConvert.DeserializeObject(body, typeof(List<GetRolePagingRequest>));
                 return new ApiSuccessResult<List<RoleVm>>(myDeserializedObjList);
             }
             return JsonConvert.DeserializeObject<ApiErrorResult<List<RoleVm>>>(body);

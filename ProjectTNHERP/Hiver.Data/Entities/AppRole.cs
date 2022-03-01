@@ -7,6 +7,8 @@ namespace Hiver.Data.Entities
 {
     public class AppRole : IdentityRole<Guid>
     {
+        public string ControllerName { get; set; }
+        public string ActionName { get; set; }
         public string Description { get; set; }
     }
 }

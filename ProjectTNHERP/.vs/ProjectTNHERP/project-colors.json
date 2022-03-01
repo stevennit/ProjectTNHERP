@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "f3a9a3c3-3326-46b0-8ef0-5c0e9eb5d8bf": {
+      "ProjectGuid": "f3a9a3c3-3326-46b0-8ef0-5c0e9eb5d8bf",
+      "DisplayName": "Hiver.AdminUI",
+      "ColorIndex": 0
+    },
+    "d0df6679-21fe-430e-b094-b425fb7ca9e4": {
+      "ProjectGuid": "d0df6679-21fe-430e-b094-b425fb7ca9e4",
+      "DisplayName": "Hiver.Data",
+      "ColorIndex": 1
+    },
+    "c9a40a7f-132a-43bc-8d85-8c40508928c7": {
+      "ProjectGuid": "c9a40a7f-132a-43bc-8d85-8c40508928c7",
+      "DisplayName": "Hiver.Utilities",
+      "ColorIndex": 2
+    },
+    "5ba0c495-33dd-4ca6-96da-b541096d4d65": {
+      "ProjectGuid": "5ba0c495-33dd-4ca6-96da-b541096d4d65",
+      "DisplayName": "Hiver.ViewModels",
+      "ColorIndex": 3
+    },
+    "f53b237a-8b66-4af6-aa8b-ae5d86f5a1eb": {
+      "ProjectGuid": "f53b237a-8b66-4af6-aa8b-ae5d86f5a1eb",
+      "DisplayName": "Hiver.Application",
+      "ColorIndex": 4
+    },
+    "90d36895-9dce-4efa-aaa6-c9f684b0ffcf": {
+      "ProjectGuid": "90d36895-9dce-4efa-aaa6-c9f684b0ffcf",
+      "DisplayName": "Hiver.BackendApi",
+      "ColorIndex": 5
+    },
+    "d747810c-5bad-4e25-b781-8850f39482b1": {
+      "ProjectGuid": "d747810c-5bad-4e25-b781-8850f39482b1",
+      "DisplayName": "Hiver.AdminApp",
+      "ColorIndex": 6
+    },
+    "de5c631b-915e-4f0d-a19d-0af0f10598d5": {
+      "ProjectGuid": "de5c631b-915e-4f0d-a19d-0af0f10598d5",
+      "DisplayName": "Hiver.ApiIntegration",
+      "ColorIndex": 7
+    },
+    "be14034c-4a66-4ac3-bfaf-9ed2a51e07bb": {
+      "ProjectGuid": "be14034c-4a66-4ac3-bfaf-9ed2a51e07bb",
+      "DisplayName": "Hiver.WebApp",
+      "ColorIndex": 8
+    }
+  },
+  "NextColorIndex": 9
+}

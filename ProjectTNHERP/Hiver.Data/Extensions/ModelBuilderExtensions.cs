@@ -63,130 +63,44 @@ namespace Hiver.Data.Extensions
             );
             #endregion
 
-            #region Add Data AppController
-            modelBuilder.Entity<AppController>().HasData(
-                new AppController
-                {
-                    Controller = "User",
-                    Action = "Index",
-                    Description = "Quản lý User",
-                    Licensed = true
-                },
-                new AppController
-                {
-                    Controller = "Home",
-                    Action = "Index",
-                    Description = "Trang Chủ",
-                    Licensed = true
-                }
-            );
-            #endregion
-
-            #region Add Data AppRoleController
-            modelBuilder.Entity<AppRoleController>().HasData(
-                new AppRoleController
-                {
-                    Id = 1,
-                    Controller = "Users",
-                    Action = "GetAllPaging",
-                    AppUser = "admin",
-                },
-                new AppRoleController
-                {
-                    Id = 2,
-                    Controller = "Users",
-                    Action = "GetById",
-                    AppUser = "admin",
-                },
-                new AppRoleController
-                {
-                    Id = 3,
-                    Controller = "Users",
-                    Action = "Register",
-                    AppUser = "admin",
-                },
-                new AppRoleController
-                {
-                    Id = 4,
-                    Controller = "Users",
-                    Action = "Update",
-                    AppUser = "admin",
-                },
-                new AppRoleController
-                {
-                    Id = 5,
-                    Controller = "Users",
-                    Action = "Delete",
-                    AppUser = "admin",
-                }
-
-
-            );
-
-            #endregion
 
             #region Add Data Role 
             modelBuilder.Entity<AppRole>().HasData(
                 new AppRole
                 {
                     Id = new Guid("8D04DCE2-969A-435D-BBA4-DF3F325983DC"),
-                    Name = "Administrator",
-                    NormalizedName = "Cấp 1",
-                    Description = "Administrator role"
+                    Name = "admin",
+                    ControllerName = "Users",
+                    ActionName = "GetAllPaging",
+                    Description = "Tài khoản - Xem tất cả tài khoản"
                 }, new AppRole
                 {
                     Id = new Guid("44694FAB-619C-4BCC-A8A1-4247A17905F5"),
-                    Name = "BanHang",
-                    NormalizedName = "Cấp 2",
-                    Description = "BanHang"
+                    Name = "admin",
+                    ControllerName = "Users",
+                    ActionName = "GetById",
+                    Description = "Tài khoản - Xem chi tiết tài khoản"
                 }, new AppRole
                 {
                     Id = new Guid("80B0A1AC-D287-4BA3-92C4-51CBCEA55920"),
-                    Name = "MuaHang",
-                    NormalizedName = "Cấp 2",
-                    Description = "Mua hàng"
+                    Name = "admin",
+                    ControllerName = "Register",
+                    ActionName = "admin",
+                    Description = "Tài khoản - Đăng ký tài khoản"
                 }, new AppRole
                 {
                     Id = new Guid("2629553D-758A-460B-92CF-5C34B76A97A7"),
-                    Name = "Kho",
-                    NormalizedName = "Cấp 2",
-                    Description = "Kho"
+                    Name = "admin",
+                    ControllerName = "Users",
+                    ActionName = "Update",
+                    Description = "Tài khoản - Cập nhập tài khoản"
                 },new AppRole
                 {
                     Id = new Guid("7FEB5851-4244-4538-A6BD-3B98C18AFEEE"),
-                    Name = "Nhansu",
-                    NormalizedName = "Cấp 2",
-                    Description = "Nhân Sự"
-                }
-            );
-            #endregion
-
-            #region Add Data RoleControllerGroup 
-            modelBuilder.Entity<AppRoleControllerGroup>().HasData(
-                new AppRoleControllerGroup
-                {
-                    Id = 1,
-                    IdRole = new Guid("7FEB5851-4244-4538-A6BD-3B98C18AFEEE"),
-                    Controller = "User",
-                    Action = "Index"
-                }, new AppRoleControllerGroup
-                {
-                    Id = 2,
-                    IdRole = new Guid("7FEB5851-4244-4538-A6BD-3B98C18AFEEE"),
-                    Controller = "User",
-                    Action = "Delete"
-                }, new AppRoleControllerGroup
-                {
-                    Id = 3,
-                    IdRole = new Guid("7FEB5851-4244-4538-A6BD-3B98C18AFEEE"),
-                    Controller = "User",
-                    Action = "EDIT"
-                }, new AppRoleControllerGroup
-                {
-                    Id = 4,
-                    IdRole = new Guid("7FEB5851-4244-4538-A6BD-3B98C18AFEEE"),
-                    Controller = "User",
-                    Action = "DETAIL"
+                    Name = "admin",
+                    ControllerName = "Delete",
+                    ActionName = "admin",
+                    Description = "Tài khoản - Xóa tài khoản"
                 }
             );
             #endregion

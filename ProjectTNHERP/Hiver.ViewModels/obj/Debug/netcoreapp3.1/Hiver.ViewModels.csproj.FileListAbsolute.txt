@@ -28,3 +28,16 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreap
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CopyComplete
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.deps.json
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.ViewModels.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\bin\Debug\netcoreapp3.1\Hiver.Utilities.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.AssemblyReference.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.AssemblyInfoInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.AssemblyInfo.cs
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CoreCompileInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.csproj.CopyComplete
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.ViewModels\obj\Debug\netcoreapp3.1\Hiver.ViewModels.pdb

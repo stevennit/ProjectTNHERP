@@ -73,6 +73,7 @@ namespace Hiver.Application.System.Users
             return new ApiErrorResult<bool>("Xóa không thành công");
         }
 
+
         public async Task<ApiResult<UserVm>> GetById(Guid id)
         {
             var user = await _userManager.FindByIdAsync(id.ToString());
@@ -168,6 +169,7 @@ namespace Hiver.Application.System.Users
                 return new ApiErrorResult<bool>("Tài khoản không tồn tại");
             }
             var removedRoles = request.Roles.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+
             foreach (var roleName in removedRoles)
             {
                 if (await _userManager.IsInRoleAsync(user, roleName) == true)

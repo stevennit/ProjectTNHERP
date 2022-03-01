@@ -59,9 +59,6 @@ namespace Hiver.Data.EF
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
 
-            modelBuilder.ApplyConfiguration(new AppControllerConfiguration());
-            modelBuilder.ApplyConfiguration(new AppRoleControllerConfiguration());
-            modelBuilder.ApplyConfiguration(new AppRoleControllerGroupConfiguration());
 
             modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims");
             modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new { x.UserId, x.RoleId });
@@ -75,10 +72,6 @@ namespace Hiver.Data.EF
             //base.OnModelCreating(modelBuilder);
         }
 
-
-        public DbSet<AppController> AppControllers { set; get; }
-        public DbSet<AppRoleController> AppRoleControllers { set; get; }
-        public DbSet<AppRoleControllerGroup> AppRoleControllerGroups { set; get; }
 
         public DbSet<Menu> Menus { set; get; }
 

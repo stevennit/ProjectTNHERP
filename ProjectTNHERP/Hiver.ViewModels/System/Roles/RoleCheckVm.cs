@@ -6,8 +6,7 @@ namespace Hiver.ViewModels.System.Roles
 {
     public class RoleCheckVm
     {
-        public string Controller { get; set; }
-        public string Action { get; set; }
-        public string AppUser { get; set; }
+        public string ControllerName { get; set; }
+        public string ActionName { get; set; }
     }
 }

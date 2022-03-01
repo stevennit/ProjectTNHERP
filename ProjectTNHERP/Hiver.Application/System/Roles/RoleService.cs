@@ -25,30 +25,64 @@ namespace Hiver.Application.System.Roles
             _context = context;
         }
 
-        public async Task<List<RoleVm>> GetAll()
+        public async Task<ApiResult<PagedResult<RoleVm>>> GetRolesPaging(GetRolePagingRequest request)
         {
-            var roles = await _roleManager.Roles
+            var query = _roleManager.Roles;
+            if (!string.IsNullOrEmpty(request.Keyword))
+            {
+                query = query.Where(x => x.ControllerName.Contains(request.Keyword)
+                 || x.ActionName.Contains(request.Keyword));
+            }
+
+            //3. Paging
+            int totalRow = await query.CountAsync();
+
+            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
+                .Take(request.PageSize)
                 .Select(x => new RoleVm()
                 {
                     Id = x.Id,
-                    Name = x.Name,
-                    Description = x.Description
+                    ControllerName = x.ControllerName,
+                    ActionName = x.ActionName,
                 }).ToListAsync();
 
-            return roles;
+            //4. Select and projection
+            var pagedResult = new PagedResult<RoleVm>()
+            {
+                TotalRecords = totalRow,
+                PageIndex = request.PageIndex,
+                PageSize = request.PageSize,
+                Items = data
+            };
+            return new ApiSuccessResult<PagedResult<RoleVm>>(pagedResult);
         }
 
-        public async Task<bool> roleCheck(RoleCheckVm request)
+        public async Task<ApiResult<bool>> roleCheck(string userName ,RoleCheckVm request)
         {
-            var rel = await _context.AppRoleControllers.SingleOrDefaultAsync(x => x.Controller == request.Controller &&
-                x.Action == request.Action && x.AppUser == request.AppUser);
+            var rel = await _context.Roles.Where(x => x.ControllerName == request.ControllerName &&
+                x.ActionName == request.ActionName).FirstOrDefaultAsync();
 
             if (rel == null)
             {
-                return false;
+                return new ApiErrorResult<bool>("Bạn không có quyền đăng nhập");
             }
 
-            return true;
+            var checkidUser = await _context.Users.SingleOrDefaultAsync(x => x.UserName == userName);
+
+            if (checkidUser == null)
+            {
+                return new ApiErrorResult<bool>("Bạn không có quyền đăng nhập");
+            }
+
+            var result = await _context.UserRoles.SingleOrDefaultAsync(x => x.UserId == checkidUser.Id
+            && x.RoleId == rel.Id);
+
+            if (result == null)
+            {
+                return new ApiErrorResult<bool>("Bạn không có quyền đăng nhập");
+            }
+
+            return new ApiSuccessResult<bool>();
         }
 
         
