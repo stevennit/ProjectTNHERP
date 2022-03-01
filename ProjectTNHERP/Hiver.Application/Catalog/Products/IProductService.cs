@@ -22,5 +22,7 @@ namespace Hiver.Application.Catalog.Products
         Task<int> Delete(int productId);
         Task AddViewcount(int productId);
 
+        Task<ApiResult<bool>> ProductAssignCategory(int id, ProductAssignCategoryRequest request);
+
     }
 }

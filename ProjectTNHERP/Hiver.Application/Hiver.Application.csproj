@@ -4,6 +4,36 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Catalog\CustomerCompanies\**" />
+    <Compile Remove="Catalog\KnifeMoldCategories\**" />
+    <Compile Remove="Catalog\KnifeMolds\**" />
+    <Compile Remove="Catalog\OrderByDetailAndProductionDetails\**" />
+    <Compile Remove="Catalog\OrderByDetails\**" />
+    <Compile Remove="Catalog\StockCategories\**" />
+    <Compile Remove="Catalog\Stocks\**" />
+    <Compile Remove="Catalog\SupplierCompanies\**" />
+    <Compile Remove="Catalog\Suppliers\**" />
+    <EmbeddedResource Remove="Catalog\CustomerCompanies\**" />
+    <EmbeddedResource Remove="Catalog\KnifeMoldCategories\**" />
+    <EmbeddedResource Remove="Catalog\KnifeMolds\**" />
+    <EmbeddedResource Remove="Catalog\OrderByDetailAndProductionDetails\**" />
+    <EmbeddedResource Remove="Catalog\OrderByDetails\**" />
+    <EmbeddedResource Remove="Catalog\StockCategories\**" />
+    <EmbeddedResource Remove="Catalog\Stocks\**" />
+    <EmbeddedResource Remove="Catalog\SupplierCompanies\**" />
+    <EmbeddedResource Remove="Catalog\Suppliers\**" />
+    <None Remove="Catalog\CustomerCompanies\**" />
+    <None Remove="Catalog\KnifeMoldCategories\**" />
+    <None Remove="Catalog\KnifeMolds\**" />
+    <None Remove="Catalog\OrderByDetailAndProductionDetails\**" />
+    <None Remove="Catalog\OrderByDetails\**" />
+    <None Remove="Catalog\StockCategories\**" />
+    <None Remove="Catalog\Stocks\**" />
+    <None Remove="Catalog\SupplierCompanies\**" />
+    <None Remove="Catalog\Suppliers\**" />
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.16.0" />
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
@@ -16,16 +46,6 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Folder Include="Catalog\CustomerCompanies\" />
-	  <Folder Include="Catalog\Customers\" />
-	  <Folder Include="Catalog\KnifeMolds\" />
-	  <Folder Include="Catalog\KnifeMoldCategories\" />
-	  <Folder Include="Catalog\OrderByDetailAndProductionDetails\" />
-	  <Folder Include="Catalog\OrderByDetails\" />
-	  <Folder Include="Catalog\StockCategories\" />
-	  <Folder Include="Catalog\Stocks\" />
-	  <Folder Include="Catalog\SupplierCompanies\" />
-	  <Folder Include="Catalog\Suppliers\" />
 	  <Folder Include="Utilities\" />
 	</ItemGroup>
 

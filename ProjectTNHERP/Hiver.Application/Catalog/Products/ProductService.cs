@@ -129,6 +129,7 @@ namespace Hiver.Application.Catalog.Products
                 CreateDate = DateTime.UtcNow,
                 Status = (Utilities.Enums.Status)request.Status
             };
+
             //Save image
             if (request.ThumbnailImage != null)
             {
@@ -290,6 +291,46 @@ namespace Hiver.Application.Catalog.Products
                 throw new HiverException($"Không tìm được ảnh {imageId}");
             _context.ProductImages.Remove(productImage);
             return await _context.SaveChangesAsync();
+        }
+
+        public async Task<ApiResult<bool>> ProductAssignCategory(int id, ProductAssignCategoryRequest request)
+        {
+            var product = await _context.Products.FindAsync(id);
+
+            if (product == null)
+            {
+                return new ApiErrorResult<bool>("Sản phẩm không tồn tại");
+            }
+            var remove = request.ProductCategory.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+
+            foreach (var productCategoryName in remove)
+            {
+                var findproductcategory = _context.ProductCategories.FirstOrDefault(x => x.Name == productCategoryName);
+
+                var resul = await _context.ProductAndProductCategories.FirstAsync(
+                    x => x.IdProduct == product.Id && x.IdProductCategory == findproductcategory.Id);
+
+                _context.ProductAndProductCategories.Remove(resul);
+            }
+
+            var add = request.ProductCategory.Where(x => x.Selected).Select(x => x.Name).ToList();
+
+            foreach (var productCategoryName in add)
+            {
+                var findproductcategory = _context.ProductCategories.FirstOrDefault(x => x.Name == productCategoryName);
+
+                var resul = new ProductAndProductCategory()
+                {
+                    IdProduct = product.Id,
+                    IdProductCategory = findproductcategory.Id
+                };
+
+                _context.ProductAndProductCategories.Add(resul);
+            }
+
+            await _context.SaveChangesAsync();
+
+            return new ApiSuccessResult<bool>();
         }
     }
 }

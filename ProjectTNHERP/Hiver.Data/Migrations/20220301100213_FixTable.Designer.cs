@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Hiver.Data.Migrations
 {
     [DbContext(typeof(HiverDbContext))]
-    [Migration("20220228041307_FixRole")]
-    partial class FixRole
+    [Migration("20220301100213_FixTable")]
+    partial class FixTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -59,7 +59,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
                             ActionName = "GetAllPaging",
-                            ConcurrencyStamp = "9fdf19cb-72b8-44b7-972e-86d04ef856fd",
+                            ConcurrencyStamp = "8ede799e-5e89-4ffd-bfcb-342799271d70",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem tất cả tài khoản",
                             Name = "admin"
@@ -68,7 +68,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
                             ActionName = "GetById",
-                            ConcurrencyStamp = "50cb3887-f847-4feb-b6d3-9e727dd1a958",
+                            ConcurrencyStamp = "900ede45-0b24-4cf5-b73f-501dd14f9eb5",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem chi tiết tài khoản",
                             Name = "admin"
@@ -77,7 +77,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "529d7f64-f1a9-4f56-9366-90b089fe4509",
+                            ConcurrencyStamp = "6287b393-6f60-423a-b017-b4473b1e389b",
                             ControllerName = "Register",
                             Description = "Tài khoản - Đăng ký tài khoản",
                             Name = "admin"
@@ -86,7 +86,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
                             ActionName = "Update",
-                            ConcurrencyStamp = "6d83e057-0cba-4d01-a192-364459cc130e",
+                            ConcurrencyStamp = "7dfc557c-ad34-489a-9cec-b456e2356f60",
                             ControllerName = "Users",
                             Description = "Tài khoản - Cập nhập tài khoản",
                             Name = "admin"
@@ -95,7 +95,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "9dc9c21d-8cba-48bb-a1d2-a019b7c43e59",
+                            ConcurrencyStamp = "32efda2b-bcae-49c2-9159-b07b6020da9d",
                             ControllerName = "Delete",
                             Description = "Tài khoản - Xóa tài khoản",
                             Name = "admin"
@@ -172,7 +172,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "a74c274f-accd-4720-a748-0ef2813299ec",
+                            ConcurrencyStamp = "fd86829c-a36c-42ea-81a2-a0f99a2997eb",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -181,7 +181,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOw7KnpkEQWGNMXo1kowPp4+VAaFY+zuZky4Sd0bssdr0unvOkVua0s7S3j1U+tj8Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEH7PDKF7dAika/nQ6ei29KoAGhdo7B4waXg2Ww6bLF2ns2eJFqqSEBD7jmc7Dzdw4A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -191,7 +191,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "466df8a1-afd6-4135-b2af-24ead9a471b3",
+                            ConcurrencyStamp = "5650d56c-143e-4a30-bc4b-50bc3b8f9be6",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -200,7 +200,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMWtcO+M+Xvzz06Zk/I4cq5goon7H7jMVWxwLNyjvk0Htjec8bxIPRT1wiZd9OgFAw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMqN6NXK2FhCjhCk07de9ZDuDF9SVFhglpbyZH5u1bOlN3csE9Uc6tCD6Kbs/VwqvA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -210,7 +210,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5ccd14de-963f-4c2e-9db7-16abe44dd21c",
+                            ConcurrencyStamp = "51a4b9ef-278a-4f11-978f-3f572dd1b510",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -219,7 +219,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMzD7JWsgyigXiNDqp2tgQMDNOvS0SewY0AERWtiWkB5Bguy8xe0r1wtsBq/smNpAw==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEObDhsiZDhnHaym+F6WxNXhZDd9vJTPcYisgxtBStHpYttUEv8tB9KDlo8tiBBOiBg==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -236,7 +236,6 @@ namespace Hiver.Data.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("CreateDate")
@@ -249,7 +248,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DoB")
+                    b.Property<DateTime?>("DoB")
                         .HasColumnType("Date");
 
                     b.Property<string>("Email")
@@ -265,19 +264,13 @@ namespace Hiver.Data.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("ImageMore")
-                        .HasColumnType("xml");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("xml");
-
                     b.Property<string>("Mobile")
                         .HasColumnType("xml");
 
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")

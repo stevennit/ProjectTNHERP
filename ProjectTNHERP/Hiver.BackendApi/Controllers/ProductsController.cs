@@ -13,7 +13,7 @@ namespace Hiver.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : ControllerBase
+    public class ProductsController : Controller
     {
         private readonly IProductService _productService;
 
@@ -143,6 +143,20 @@ namespace Hiver.BackendApi.Controllers
             if (image == null)
                 return BadRequest("Không tìm thấy ảnh");
             return Ok(image);
+        }
+
+        [HttpPut("{id}/productassign")]
+        public async Task<IActionResult> RoleAssign(int id, [FromBody] ProductAssignCategoryRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _productService.ProductAssignCategory(id, request);
+            if (!result.IsSuccessed)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
         }
     }
 }

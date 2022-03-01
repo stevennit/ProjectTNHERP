@@ -19,15 +19,10 @@ namespace Hiver.Data.Configutions
             builder.Property(x => x.Name).IsRequired().HasMaxLength(200);
             builder.Property(x => x.Mobile).HasColumnType("xml");
             builder.Property(x => x.Email).HasColumnType("xml");
-            builder.Property(x => x.Message).HasColumnType("xml");
             builder.Property(x => x.Description).HasMaxLength(250);
             builder.Property(x => x.Image).HasMaxLength(250);
-            builder.Property(x => x.ImageMore).HasColumnType("xml");
 
             builder.Property(x => x.DoB).HasColumnType("Date");
-
-            builder.Property(x => x.CreateDate).IsRequired();
-            builder.Property(x => x.CreateBy).IsRequired();
 
             builder.Property(x => x.Status).IsRequired().HasDefaultValue(Status.Active);
         }
