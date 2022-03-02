@@ -1,4 +1,6 @@
-﻿namespace Hiver.Data.Entities
+﻿using System;
+
+namespace Hiver.Data.Entities
 {
     public class ProductAndProductCategory
     {

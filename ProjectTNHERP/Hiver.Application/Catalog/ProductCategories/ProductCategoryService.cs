@@ -29,7 +29,6 @@ namespace Hiver.Application.Catalog.ProductCategories
                 Name = request.Name,
                 Description = request.Description,
                 Image = request.Image,
-                ImageMore = request.ImageMore,
                 CreateBy = request.CreateBy,
                 Status = request.Status
             };
@@ -37,7 +36,7 @@ namespace Hiver.Application.Catalog.ProductCategories
             _context.ProductCategories.Add(table);
             await _context.SaveChangesAsync();
 
-            return request.Id;
+            return table.Id;
         }
 
         public async Task<int> Delete(int Id)
@@ -66,7 +65,6 @@ namespace Hiver.Application.Catalog.ProductCategories
                     Name = x.c.Name,
                     Description = x.c.Description,
                     Image = x.c.Image,
-                    ImageMore = x.c.ImageMore,
                     CreateBy = x.c.CreateBy,
                     CreateDate = x.c.CreateDate,
                     ModifyBy = x.c.ModifyBy,
@@ -97,7 +95,6 @@ namespace Hiver.Application.Catalog.ProductCategories
                 Name = x.c.Name,
                 Description = x.c.Description,
                 Image = x.c.Image,
-                ImageMore = x.c.ImageMore,
                 CreateBy = x.c.CreateBy,
                 CreateDate = x.c.CreateDate,
                 ModifyBy = x.c.ModifyBy,
@@ -117,7 +114,6 @@ namespace Hiver.Application.Catalog.ProductCategories
             table.Name = request.Name;
             table.Description = request.Description;
             table.Image = request.Image;
-            table.ImageMore = request.ImageMore;
             table.ModifyBy = request.ModifyBy;
             table.Status = request.Status;
 

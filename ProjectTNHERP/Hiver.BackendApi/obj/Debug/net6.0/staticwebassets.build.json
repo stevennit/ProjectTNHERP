@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yKee5VnTIZCElce2n9ZUzvyj9TueV1wzZkclgBhO9Z8=",
+  "Hash": "IJV/A1xVJh54Bg+h40P1S3m1JtTu/JP3rLrGgkWMGxY=",
   "Source": "Hiver.BackendApi",
   "BasePath": "_content/Hiver.BackendApi",
   "Mode": "Default",
@@ -10,62 +10,10 @@
     {
       "Name": "Hiver.BackendApi\\wwwroot",
       "Source": "Hiver.BackendApi",
-      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
       "BasePath": "_content/Hiver.BackendApi",
       "Pattern": "**"
     }
   ],
-  "Assets": [
-    {
-      "Identity": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\Files\\files09379d27-ea11-4eba-915e-a2696d85fa22.jpg",
-      "SourceId": "Hiver.BackendApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
-      "BasePath": "_content/Hiver.BackendApi",
-      "RelativePath": "Files/files09379d27-ea11-4eba-915e-a2696d85fa22.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\files09379d27-ea11-4eba-915e-a2696d85fa22.jpg"
-    },
-    {
-      "Identity": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\Files\\files8925c895-2b81-4a2c-865d-e97c49c94fd4.jpg",
-      "SourceId": "Hiver.BackendApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
-      "BasePath": "_content/Hiver.BackendApi",
-      "RelativePath": "Files/files8925c895-2b81-4a2c-865d-e97c49c94fd4.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\files8925c895-2b81-4a2c-865d-e97c49c94fd4.jpg"
-    },
-    {
-      "Identity": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\Files\\filesd7762972-e126-4af1-9aea-13cd6eade6c4.jpg",
-      "SourceId": "Hiver.BackendApi",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
-      "BasePath": "_content/Hiver.BackendApi",
-      "RelativePath": "Files/filesd7762972-e126-4af1-9aea-13cd6eade6c4.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Files\\filesd7762972-e126-4af1-9aea-13cd6eade6c4.jpg"
-    }
-  ]
+  "Assets": []
 }

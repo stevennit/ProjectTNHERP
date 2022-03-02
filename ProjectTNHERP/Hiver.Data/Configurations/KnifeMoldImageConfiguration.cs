@@ -11,7 +11,7 @@ namespace Hiver.Data.Configutions
             builder.ToTable("KnifeMoldImages");
             builder.HasKey(x => x.Id);
 
-            builder.HasOne(x => x.KnifeMold).WithMany(x => x.KnifeMoldImages).HasForeignKey(x => x.IdKnifeMold);
+            builder.HasOne(x => x.KnifeMold).WithMany(x => x.KnifeMoldImages).HasForeignKey(x => x.IdTable);
 
             builder.Property(x => x.Id).UseIdentityColumn();
 

@@ -1,12 +1,12 @@
 ﻿using Hiver.Utilities.Enums;
+using Hiver.Utilities.Table;
 using System;
 using System.Collections.Generic;
 
 namespace Hiver.Data.Entities
 {
-    public class ProductionDetail
+    public class ProductionDetail : HiverTableUpdate
     {
-        public int Id { get; set; }
         public int QtyComplate { get; set; }
         public DateTime StartWork { get; set; }
         public DateTime EndWork { get; set; }
@@ -16,8 +16,6 @@ namespace Hiver.Data.Entities
 
         public string UserUsing { get; set; }
 
-        public DateTime ModifyDate { get; set; }
-        public string ModifyBy { get; set; }
         public Status Status { get; set; }
 
         public List<OrderByDetailAndProductionDetail> OrderByDetailAndProductionDetails { get; set; }

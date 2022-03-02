@@ -6,8 +6,6 @@
 
   <ItemGroup>
     <Compile Remove="Catalog\CustomerCompanies\**" />
-    <Compile Remove="Catalog\KnifeMoldCategories\**" />
-    <Compile Remove="Catalog\KnifeMolds\**" />
     <Compile Remove="Catalog\OrderByDetailAndProductionDetails\**" />
     <Compile Remove="Catalog\OrderByDetails\**" />
     <Compile Remove="Catalog\StockCategories\**" />
@@ -15,8 +13,6 @@
     <Compile Remove="Catalog\SupplierCompanies\**" />
     <Compile Remove="Catalog\Suppliers\**" />
     <EmbeddedResource Remove="Catalog\CustomerCompanies\**" />
-    <EmbeddedResource Remove="Catalog\KnifeMoldCategories\**" />
-    <EmbeddedResource Remove="Catalog\KnifeMolds\**" />
     <EmbeddedResource Remove="Catalog\OrderByDetailAndProductionDetails\**" />
     <EmbeddedResource Remove="Catalog\OrderByDetails\**" />
     <EmbeddedResource Remove="Catalog\StockCategories\**" />
@@ -24,8 +20,6 @@
     <EmbeddedResource Remove="Catalog\SupplierCompanies\**" />
     <EmbeddedResource Remove="Catalog\Suppliers\**" />
     <None Remove="Catalog\CustomerCompanies\**" />
-    <None Remove="Catalog\KnifeMoldCategories\**" />
-    <None Remove="Catalog\KnifeMolds\**" />
     <None Remove="Catalog\OrderByDetailAndProductionDetails\**" />
     <None Remove="Catalog\OrderByDetails\**" />
     <None Remove="Catalog\StockCategories\**" />

@@ -57,7 +57,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
                             ActionName = "GetAllPaging",
-                            ConcurrencyStamp = "8ede799e-5e89-4ffd-bfcb-342799271d70",
+                            ConcurrencyStamp = "e330990f-757c-45cb-8756-676128370bd3",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem tất cả tài khoản",
                             Name = "admin"
@@ -66,7 +66,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
                             ActionName = "GetById",
-                            ConcurrencyStamp = "900ede45-0b24-4cf5-b73f-501dd14f9eb5",
+                            ConcurrencyStamp = "168b7034-c199-4867-8501-4ce475062bd1",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem chi tiết tài khoản",
                             Name = "admin"
@@ -75,7 +75,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "6287b393-6f60-423a-b017-b4473b1e389b",
+                            ConcurrencyStamp = "6996017e-75a3-4320-9401-cebb8cc882d5",
                             ControllerName = "Register",
                             Description = "Tài khoản - Đăng ký tài khoản",
                             Name = "admin"
@@ -84,7 +84,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
                             ActionName = "Update",
-                            ConcurrencyStamp = "7dfc557c-ad34-489a-9cec-b456e2356f60",
+                            ConcurrencyStamp = "35cbe7e5-4a1f-42d6-9b9d-40e67d7370ab",
                             ControllerName = "Users",
                             Description = "Tài khoản - Cập nhập tài khoản",
                             Name = "admin"
@@ -93,7 +93,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "32efda2b-bcae-49c2-9159-b07b6020da9d",
+                            ConcurrencyStamp = "1ac3251a-9798-4cae-ae00-c229ed6782fe",
                             ControllerName = "Delete",
                             Description = "Tài khoản - Xóa tài khoản",
                             Name = "admin"
@@ -170,7 +170,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "fd86829c-a36c-42ea-81a2-a0f99a2997eb",
+                            ConcurrencyStamp = "faa81d5e-ff94-4864-b4a4-3144938a8b1b",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -179,7 +179,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEH7PDKF7dAika/nQ6ei29KoAGhdo7B4waXg2Ww6bLF2ns2eJFqqSEBD7jmc7Dzdw4A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEHivmYWRW/ZrrKTZbSQ1RvWEl03kXvtPzQFveEejHU3DqMCRxAyjgKdrqJ3wIUzUDA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -189,7 +189,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5650d56c-143e-4a30-bc4b-50bc3b8f9be6",
+                            ConcurrencyStamp = "a60426cf-a006-4226-a77c-880c33013ca2",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -198,7 +198,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEMqN6NXK2FhCjhCk07de9ZDuDF9SVFhglpbyZH5u1bOlN3csE9Uc6tCD6Kbs/VwqvA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGrxUMZcRLSXxUmiaBauMIxW8F1UBCVeZuhlJjoJQbPK5s+rZAA9y7sBj4CzfBVVVw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -208,7 +208,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "51a4b9ef-278a-4f11-978f-3f572dd1b510",
+                            ConcurrencyStamp = "eb404d4d-9402-40f2-9d97-65b5d57f845f",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -217,7 +217,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEObDhsiZDhnHaym+F6WxNXhZDd9vJTPcYisgxtBStHpYttUEv8tB9KDlo8tiBBOiBg==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEGouHXTKoX6dqYoh8bcyjDA59rjt1lbLVBKl9z4bwLyMtnvdWZPnlFxDQlqzXehatw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -236,7 +236,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("CreateBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -252,7 +252,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("xml");
 
-                    b.Property<int>("Gender")
+                    b.Property<int?>("Gender")
                         .HasColumnType("int");
 
                     b.Property<int?>("IdCustomerCompany")
@@ -303,14 +303,15 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<DateTime>("DoB")
+                    b.Property<DateTime?>("DoB")
                         .HasColumnType("Date");
 
                     b.Property<string>("Email")
@@ -322,9 +323,6 @@ namespace Hiver.Data.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("ImageMore")
-                        .HasColumnType("xml");
-
                     b.Property<string>("Mobile")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
@@ -332,7 +330,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -365,7 +363,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -384,7 +383,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -422,7 +421,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -432,13 +432,10 @@ namespace Hiver.Data.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("ImageMore")
-                        .HasColumnType("xml");
-
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -474,7 +471,7 @@ namespace Hiver.Data.Migrations
                     b.Property<long>("FileSize")
                         .HasColumnType("bigint");
 
-                    b.Property<int?>("IdKnifeMold")
+                    b.Property<int>("IdTable")
                         .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
@@ -490,7 +487,7 @@ namespace Hiver.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdKnifeMold");
+                    b.HasIndex("IdTable");
 
                     b.ToTable("KnifeMoldImages", (string)null);
                 });
@@ -503,10 +500,12 @@ namespace Hiver.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<DateTime>("DateUsingEnd")
+                    b.Property<DateTime?>("DateUsingEnd")
+                        .IsRequired()
                         .HasColumnType("Date");
 
-                    b.Property<DateTime>("DateUsingStart")
+                    b.Property<DateTime?>("DateUsingStart")
+                        .IsRequired()
                         .HasColumnType("Date");
 
                     b.Property<int>("IdProductionDetail")
@@ -630,7 +629,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -646,7 +646,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -678,7 +678,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -697,8 +698,11 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("OrderById")
                         .HasColumnType("int");
@@ -760,7 +764,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -776,7 +781,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -808,7 +813,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<DateTime>("DateDelivery")
@@ -827,8 +833,11 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Qty")
                         .HasColumnType("int");
@@ -882,7 +891,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -898,7 +908,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -953,7 +963,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -964,13 +975,10 @@ namespace Hiver.Data.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("ImageMore")
-                        .HasColumnType("xml");
-
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -1006,6 +1014,9 @@ namespace Hiver.Data.Migrations
                     b.Property<long>("FileSize")
                         .HasColumnType("bigint");
 
+                    b.Property<int>("IdTable")
+                        .HasColumnType("int");
+
                     b.Property<string>("ImagePath")
                         .IsRequired()
                         .HasMaxLength(200)
@@ -1014,15 +1025,12 @@ namespace Hiver.Data.Migrations
                     b.Property<bool>("IsDefault")
                         .HasColumnType("bit");
 
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
                     b.Property<int>("SortOrder")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("IdTable");
 
                     b.ToTable("ProductImages", (string)null);
                 });
@@ -1043,8 +1051,11 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")
                         .ValueGeneratedOnAdd()
@@ -1072,6 +1083,9 @@ namespace Hiver.Data.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<DateTime>("EndWork")
                         .HasColumnType("datetime2");
 
@@ -1086,8 +1100,11 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("PercentComplete")
                         .HasColumnType("decimal(18,2)");
@@ -1131,7 +1148,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -1147,7 +1165,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -1183,7 +1201,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -1200,7 +1219,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -1236,7 +1255,7 @@ namespace Hiver.Data.Migrations
                     b.Property<long>("FileSize")
                         .HasColumnType("bigint");
 
-                    b.Property<int?>("IdStock")
+                    b.Property<int>("IdTable")
                         .HasColumnType("int");
 
                     b.Property<string>("ImagePath")
@@ -1252,7 +1271,7 @@ namespace Hiver.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdStock");
+                    b.HasIndex("IdTable");
 
                     b.ToTable("StockImages", (string)null);
                 });
@@ -1269,7 +1288,8 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -1279,22 +1299,19 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("DoB")
+                    b.Property<DateTime?>("DoB")
                         .HasColumnType("Date");
 
                     b.Property<string>("Email")
                         .HasColumnType("xml");
 
-                    b.Property<int>("Gender")
+                    b.Property<int?>("Gender")
                         .HasColumnType("int");
 
                     b.Property<int?>("IdSupplierCompany")
                         .HasColumnType("int");
 
                     b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ImageMore")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Message")
@@ -1306,7 +1323,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -1344,20 +1361,22 @@ namespace Hiver.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("CreateDate")
+                    b.Property<DateTime?>("CreateDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateWorkEnd")
+                    b.Property<DateTime?>("DateWorkEnd")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DateWorkFirst")
+                    b.Property<DateTime?>("DateWorkFirst")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<DateTime>("DoB")
+                    b.Property<DateTime?>("DoB")
                         .HasColumnType("Date");
 
                     b.Property<string>("Email")
@@ -1369,9 +1388,6 @@ namespace Hiver.Data.Migrations
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<string>("ImageMore")
-                        .HasColumnType("xml");
-
                     b.Property<string>("Mobile")
                         .HasMaxLength(20)
                         .HasColumnType("nvarchar(20)");
@@ -1379,7 +1395,7 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("ModifyDate")
+                    b.Property<DateTime?>("ModifyDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
@@ -1518,7 +1534,9 @@ namespace Hiver.Data.Migrations
                 {
                     b.HasOne("Hiver.Data.Entities.KnifeMold", "KnifeMold")
                         .WithMany("KnifeMoldImages")
-                        .HasForeignKey("IdKnifeMold");
+                        .HasForeignKey("IdTable")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("KnifeMold");
                 });
@@ -1655,7 +1673,7 @@ namespace Hiver.Data.Migrations
                 {
                     b.HasOne("Hiver.Data.Entities.Product", "Product")
                         .WithMany("ProductImages")
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("IdTable")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -1686,7 +1704,9 @@ namespace Hiver.Data.Migrations
                 {
                     b.HasOne("Hiver.Data.Entities.Stock", "Stock")
                         .WithMany("StockImages")
-                        .HasForeignKey("IdStock");
+                        .HasForeignKey("IdTable")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Stock");
                 });

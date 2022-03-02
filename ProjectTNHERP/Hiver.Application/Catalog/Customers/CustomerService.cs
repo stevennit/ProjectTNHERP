@@ -45,26 +45,23 @@ namespace Hiver.Application.Catalog.Customers
 
             _context.Customers.Add(table);
             await _context.SaveChangesAsync();
+
             return table.Id;
         }
 
         private async Task<string> SaveFile(IFormFile file)
         {
-            var originalFileName = USER_CONTENT_FOLDER_NAME + ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            var fullfilename = USER_CONTENT_FOLDER_NAME + fileName;
-            await _storageService.SaveFileAsync(file.OpenReadStream(), fullfilename);
-            return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
+            if (file != null)
+            {
+                var originalFileName = USER_CONTENT_FOLDER_NAME + ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+                var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
+                var fullfilename = USER_CONTENT_FOLDER_NAME + fileName;
+                await _storageService.SaveFileAsync(file.OpenReadStream(), fullfilename);
+                return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
+            }
+            return "";
         }
 
-        private async Task<string> DeleteFile(IFormFile file)
-        {
-            var originalFileName = USER_CONTENT_FOLDER_NAME + ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
-            var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            var fullfilename = USER_CONTENT_FOLDER_NAME + fileName;
-            await _storageService.DeleteFileAsync(fullfilename);
-            return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
-        }
 
         public async Task<int> Delete(int Id)
         {
@@ -160,9 +157,10 @@ namespace Hiver.Application.Catalog.Customers
             table.Status = request.Status;
 
             _context.Customers.Update(table);
+
             await _context.SaveChangesAsync();
 
-            return table.Id;
+            return Convert.ToInt32(table.Id);
         }
     }
 }

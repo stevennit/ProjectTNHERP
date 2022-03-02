@@ -66,6 +66,7 @@ namespace Hiver.BackendApi.Controllers
             var affectedResult = await _customerService.Update(request);
             if (affectedResult == 0)
                 return BadRequest();
+
             return Ok();
         }
 

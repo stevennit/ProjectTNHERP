@@ -19,7 +19,6 @@ namespace Hiver.Data.Configutions
             builder.Property(x => x.Email).HasMaxLength(50).IsUnicode(false);
             builder.Property(x => x.Description).HasMaxLength(250);
             builder.Property(x => x.Image).HasMaxLength(250);
-            builder.Property(x => x.ImageMore).HasColumnType("xml");
 
             builder.Property(x => x.DateWorkFirst).IsRequired();
             builder.Property(x => x.DoB).HasColumnType("Date");

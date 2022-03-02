@@ -1,27 +1,12 @@
-﻿using System;
+﻿using Hiver.Utilities.Table;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Hiver.Data.Entities
 {
-    public class StockImage
+    public class StockImage : HiverTableImageFull
     {
-        public int Id { get; set; }
-
-        public int? IdStock { get; set; }
-
-        public string ImagePath { get; set; }
-
-        public string Caption { get; set; }
-
-        public bool IsDefault { get; set; }
-
-        public DateTime DateCreated { get; set; }
-
-        public int SortOrder { get; set; }
-
-        public long FileSize { get; set; }
-
         public Stock Stock { get; set; }
 
 

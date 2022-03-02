@@ -1,26 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {}
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {}
   },
   "projects": {
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "projectUniqueName": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
         "projectName": "Hiver.Utilities",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
-        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
+        "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
-          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -28,12 +26,9 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 21.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R2 2021\\dpl": {},
-          "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R2 2021\\wrappers\\aspnetcore\\Binaries\\AspNet.Core": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,6 +46,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.14, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -66,27 +67,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
+    "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+        "projectUniqueName": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
         "projectName": "Hiver.ViewModels",
-        "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\namst\\.nuget\\packages\\",
-        "outputPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
+        "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\Hiver.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages"
         ],
         "configFilePaths": [
-          "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
-          "C:\\Users\\namst\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 20.1.config",
+          "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\DevExpress 21.2.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -94,20 +93,17 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\DevExpress 20.1\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\System\\Components\\Packages": {},
           "C:\\Program Files (x86)\\DevExpress 21.2\\DevExtreme\\System\\DevExtreme\\Bin\\AspNetCore": {},
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R2 2021\\dpl": {},
-          "C:\\Program Files (x86)\\Progress\\Telerik UI for ASP.NET Core R2 2021\\wrappers\\aspnetcore\\Binaries\\AspNet.Core": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
-                "projectPath": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
+              "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj": {
+                "projectPath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj"
               }
             }
           }
@@ -146,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

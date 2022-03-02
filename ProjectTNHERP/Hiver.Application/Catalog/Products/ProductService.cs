@@ -37,7 +37,7 @@ namespace Hiver.Application.Catalog.Products
                         from t1 in temp1.DefaultIfEmpty()
                         join t2 in _context.ProductCategories on t1.IdProductCategory equals t2.Id into temp2
                         from t2 in temp2.DefaultIfEmpty()
-                        join t3 in _context.ProductImages on t0.Id equals t3.ProductId into temp3
+                        join t3 in _context.ProductImages on t0.Id equals t3.IdTable into temp3
                         from t3 in temp3.DefaultIfEmpty()
                         select new { t0, t1, t2 ,t3};
             //2. filter
@@ -89,7 +89,7 @@ namespace Hiver.Application.Catalog.Products
 
             if (product == null) throw new HiverException($"Không tìm được sản phẩm : {Id}");
 
-            var image = await _context.ProductImages.Where(x => x.ProductId == Id && x.IsDefault == true).FirstOrDefaultAsync();
+            var image = await _context.ProductImages.Where(x => x.IdTable == Id && x.IsDefault == true).FirstOrDefaultAsync();
 
             var productViewModel = new ProductVm()
             {
@@ -148,7 +148,7 @@ namespace Hiver.Application.Catalog.Products
             }
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
-            return product.Id;
+            return Convert.ToInt32(product.Id);
         }
 
         public async Task<int> Delete(int productId)
@@ -156,7 +156,7 @@ namespace Hiver.Application.Catalog.Products
             var product = await _context.Products.FindAsync(productId);
             if (product == null) throw new HiverException($"Không tìm được sản phẩm : {productId}");
 
-            var images = _context.ProductImages.Where(i => i.ProductId == productId);
+            var images = _context.ProductImages.Where(i => i.IdTable == productId);
             foreach (var image in images)
             {
                 await _storageService.DeleteFileAsync(image.ImagePath);
@@ -184,7 +184,7 @@ namespace Hiver.Application.Catalog.Products
             //Save image
             if (request.ThumbnailImage != null)
             {
-                var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.ProductId == request.Id);
+                var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.IdTable == request.Id);
                 if (thumbnailImage != null)
                 {
                     thumbnailImage.FileSize = request.ThumbnailImage.Length;
@@ -219,7 +219,7 @@ namespace Hiver.Application.Catalog.Products
                 Caption = request.Caption,
                 DateCreated = DateTime.Now,
                 IsDefault = request.IsDefault,
-                ProductId = tableId,
+                IdTable = tableId,
                 SortOrder = request.SortOrder
             };
 
@@ -247,7 +247,7 @@ namespace Hiver.Application.Catalog.Products
                 Id = image.Id,
                 ImagePath = image.ImagePath,
                 IsDefault = image.IsDefault,
-                ProductId = image.ProductId,
+                IdTable = image.IdTable,
                 SortOrder = image.SortOrder
             };
             return viewModel;
@@ -255,7 +255,7 @@ namespace Hiver.Application.Catalog.Products
 
         public async Task<List<ProductImageViewModel>> GetListImages(int tableId)
         {
-            return await _context.ProductImages.Where(x => x.ProductId == tableId)
+            return await _context.ProductImages.Where(x => x.IdTable == tableId)
                 .Select(i => new ProductImageViewModel()
                 {
                     Caption = i.Caption,
@@ -264,7 +264,7 @@ namespace Hiver.Application.Catalog.Products
                     Id = i.Id,
                     ImagePath = i.ImagePath,
                     IsDefault = i.IsDefault,
-                    ProductId = i.ProductId,
+                    IdTable = i.IdTable,
                     SortOrder = i.SortOrder
                 }).ToListAsync();
         }
