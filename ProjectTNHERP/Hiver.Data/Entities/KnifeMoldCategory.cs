@@ -14,7 +14,7 @@ namespace Hiver.Data.Entities
 
         public DateTime CreateDate { get; set; }
         public string CreateBy { get; set; }
-        public DateTime ModifyDate { get; set; }
+        public DateTime? ModifyDate { get; set; }
         public string ModifyBy { get; set; }
         public Status Status { get; set; }
 

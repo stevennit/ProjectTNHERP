@@ -1,5 +1,5 @@
 ﻿using Hiver.Application.Catalog.Customers;
-using Hiver.ViewModels.Catalog.Customer;
+using Hiver.ViewModels.Catalog.Customers;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 

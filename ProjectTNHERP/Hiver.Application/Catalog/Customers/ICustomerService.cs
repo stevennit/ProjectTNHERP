@@ -1,4 +1,4 @@
-﻿using Hiver.ViewModels.Catalog.Customer;
+﻿using Hiver.ViewModels.Catalog.Customers;
 using Hiver.ViewModels.Common;
 using System;
 using System.Collections.Generic;

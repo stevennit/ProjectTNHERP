@@ -2,7 +2,7 @@
 using Hiver.Data.EF;
 using Hiver.Data.Entities;
 using Hiver.Utilities.Exceptions;
-using Hiver.ViewModels.Catalog.Customer;
+using Hiver.ViewModels.Catalog.Customers;
 using Hiver.ViewModels.Common;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;

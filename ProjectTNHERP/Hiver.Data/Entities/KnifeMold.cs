@@ -16,7 +16,7 @@ namespace Hiver.Data.Entities
         public string Detail { get; set; }
         public DateTime CreateDate { get; set; }
         public string CreateBy { get; set; }
-        public DateTime ModifyDate { get; set; }
+        public DateTime? ModifyDate { get; set; }
         public string ModifyBy { get; set; }
         public Status Status { get; set; }
         public int? IdKnifeMoldCategory { get; set; }

@@ -7,6 +7,6 @@ namespace Hiver.ViewModels.Catalog.ProductCategories
 {
     public class GetPublicProductCategoryPagingRequest : PagingRequestBase
     {
-
+        public string Keyword { get; set; }
     }
 }

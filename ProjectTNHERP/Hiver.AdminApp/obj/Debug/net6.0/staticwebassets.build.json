@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NWTzcqqUr3W/NTMtWCu/o0yIpo0qdzte1OJCU4wiL+w=",
+  "Hash": "rJqjqX1bznugsDS4NDFRGvRCf77t67lOYx+GUWlzqOY=",
   "Source": "Hiver.AdminApp",
   "BasePath": "_content/Hiver.AdminApp",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Hiver.AdminApp\\wwwroot",
       "Source": "Hiver.AdminApp",
-      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
+      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
       "BasePath": "_content/Hiver.AdminApp",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\css\\styles.css",
+      "Identity": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\css\\styles.css",
       "SourceId": "Hiver.AdminApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
+      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
       "BasePath": "_content/Hiver.AdminApp",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\js\\scripts.js",
+      "Identity": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\js\\scripts.js",
       "SourceId": "Hiver.AdminApp",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
+      "ContentRoot": "D:\\Project Code\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
       "BasePath": "_content/Hiver.AdminApp",
       "RelativePath": "js/scripts.js",
       "AssetKind": "All",
