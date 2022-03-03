@@ -20,6 +20,13 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var roles = await _roleService.GetAll();
+            return Ok(roles);
+        }
+
+        [HttpGet("paging")]
         public async Task<IActionResult> GetAllPaging([FromQuery] GetRolePagingRequest request)
         {
             var roles = await _roleService.GetRolesPaging(request);

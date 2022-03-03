@@ -25,6 +25,11 @@ namespace Hiver.ApiIntegration.Menu
             _httpClientFactory = httpClientFactory;
         }
 
+        public Task<List<MenuViewModel>> GetAllMenuPaging(GetMenuPagingRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<MenuViewModel>> GetChildrenMenu(int? parentId = null, int? menuOrder = null)
         {
             var data = await GetListAsync<MenuViewModel>($"/api/menus/GetChildrenMenus?parentId={parentId}&menuOrder={menuOrder}");

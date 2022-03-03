@@ -50,7 +50,12 @@
       "ProjectGuid": "be14034c-4a66-4ac3-bfaf-9ed2a51e07bb",
       "DisplayName": "Hiver.WebApp",
       "ColorIndex": 8
+    },
+    "73649f46-57b7-4d88-8d43-8e87ba72c856": {
+      "ProjectGuid": "73649f46-57b7-4d88-8d43-8e87ba72c856",
+      "DisplayName": "Hiver.AdminApp",
+      "ColorIndex": 9
     }
   },
-  "NextColorIndex": 9
+  "NextColorIndex": 10
 }

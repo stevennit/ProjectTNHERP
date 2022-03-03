@@ -28,13 +28,29 @@ namespace Hiver.ApiIntegration
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<ApiResult<List<RoleVm>>> GetAllPaging()
+        public async Task<ApiResult<List<RoleVm>>> GetAll()
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.GetAsync($"/api/roles");
+            var body = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
+            {
+                List<RoleVm> myDeserializedObjList = (List<RoleVm>)JsonConvert.DeserializeObject(body, typeof(List<RoleVm>));
+                return new ApiSuccessResult<List<RoleVm>>(myDeserializedObjList);
+            }
+            return JsonConvert.DeserializeObject<ApiErrorResult<List<RoleVm>>>(body);
+        }
+
+        public async Task<ApiResult<List<RoleVm>>> GetAllPaging(GetRolePagingRequest request)
+        {
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var response = await client.GetAsync($"/api/roles/{request}");
             var body = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
             {

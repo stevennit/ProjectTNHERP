@@ -40,6 +40,7 @@ namespace Hiver.BackendApi.Auth
 
             var res = _roleService.roleCheck(nameUser,request);
 
+
             if (res.Result.IsSuccessed == true || nameUser == "admin")
             {
                 base.OnActionExecuting(context);
@@ -49,7 +50,7 @@ namespace Hiver.BackendApi.Auth
                 context.Result = new BadRequestObjectResult(new ApiErrorResult<string>("Bạn không có quyền truy cập"));
                 return;
             }
-                
+
         }
     }
 }

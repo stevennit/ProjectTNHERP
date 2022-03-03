@@ -13,7 +13,7 @@ namespace Hiver.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductsController : Controller
+    public class ProductsController : ControllerBase
     {
         private readonly IProductService _productService;
 

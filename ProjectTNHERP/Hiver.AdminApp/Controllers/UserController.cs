@@ -42,6 +42,12 @@ namespace Hiver.AdminApp.Controllers
                 PageSize = pageSize
             };
             var data = await _userApiClient.GetUsersPagings(request);
+
+            if (data.IsSuccessed == false)
+            {
+                ViewBag.SuccessMsg = data.Message;
+                return View();
+            }
             ViewBag.Keyword = keyword;
 
             if (TempData["result"] != null)
@@ -183,15 +189,15 @@ namespace Hiver.AdminApp.Controllers
         private async Task<RoleAssignRequest> GetRoleAssignRequest(Guid id)
         {
             var userObj = await _userApiClient.GetById(id);
-            var roleObj = await _roleApiClient.GetAllPaging();
+            var roleObj = await _roleApiClient.GetAll();
             var roleAssignRequest = new RoleAssignRequest();
             foreach (var role in roleObj.ResultObj)
             {
                 roleAssignRequest.Roles.Add(new SelectItem()
                 {
                     Id = role.Id.ToString(),
-                    Name = role.ControllerName,
-                    Selected = userObj.ResultObj.Roles.Contains(role.ControllerName)
+                    Name = role.Name,
+                    Selected = userObj.ResultObj.Roles.Contains(role.Id)
                 });
             }
             return roleAssignRequest;

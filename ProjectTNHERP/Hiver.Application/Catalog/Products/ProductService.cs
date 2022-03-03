@@ -305,10 +305,10 @@ namespace Hiver.Application.Catalog.Products
 
             foreach (var productCategoryName in remove)
             {
-                var findproductcategory = _context.ProductCategories.FirstOrDefault(x => x.Name == productCategoryName);
+                var findtablecategory = _context.ProductCategories.FirstOrDefault(x => x.Name == productCategoryName);
 
                 var resul = await _context.ProductAndProductCategories.FirstAsync(
-                    x => x.IdProduct == product.Id && x.IdProductCategory == findproductcategory.Id);
+                    x => x.IdProduct == product.Id && x.IdProductCategory == findtablecategory.Id);
 
                 _context.ProductAndProductCategories.Remove(resul);
             }

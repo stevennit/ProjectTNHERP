@@ -8,7 +8,7 @@ namespace Hiver.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class KnifeMoldController : Controller
+    public class KnifeMoldController : ControllerBase
     {
         private readonly IKnifeMoldService _tableService;
 

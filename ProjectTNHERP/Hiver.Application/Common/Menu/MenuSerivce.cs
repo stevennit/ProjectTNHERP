@@ -1,5 +1,6 @@
 ﻿using Hiver.Data.EF;
 using Hiver.Utilities.Exceptions;
+using Hiver.ViewModels.Catalog.Menus;
 using Hiver.ViewModels.Common;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -57,6 +58,29 @@ namespace Hiver.Application.Common.Menu
                 ).ToListAsync();
         }
 
-        
+        public async Task<ApiResult<PagedResult<MenuVm>>> GetUsersPagings(GetMenuPagingRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult<bool>> RegisterUser(MenuCreateRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult<bool>> UpdateUser(Guid id, MenuUpdateRequest request)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult<MenuVm>> GetById(Guid id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task<ApiResult<bool>> Delete(Guid id)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -13,5 +13,7 @@ namespace Hiver.Application.System.Roles
 
         Task<ApiResult<bool>> roleCheck(string userName, RoleCheckVm request);
 
+        Task<List<RoleVm>> GetAll();
+
     }
 }

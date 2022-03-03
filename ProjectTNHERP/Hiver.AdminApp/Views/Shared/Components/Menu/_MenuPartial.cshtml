@@ -4,40 +4,32 @@
 {
     if (menu.Children.Any())
     {
-    <li class="nav-item">
-        <a href="#" class="nav-link">
-            <i class="nav-icon fas fa-copy"></i>
-            <p>
-                @menu.MenuName
-                <i class="fas fa-angle-left right"></i>
-                <span class="badge badge-info right">6</span>
-            </p>
+    <li class="has-sub">
+        <a href="javascript:;">
+            <b class="caret"></b>
+			<i class="@menu.IconClass"></i>
+			<span>@menu.MenuName</span>
         </a>
-        <ul class="nav nav-treeview">
+        <ul class="sub-menu">
             <partial name="Components/Menu/_MenuPartial" model="menu.Children" />
         </ul>
     </li>
     }
     else
     {
-        <li class="nav-item">
+        <li class="has-sub">
             @{
                 if (string.IsNullOrEmpty(menu.Url))   //Add either onclick event or href.
                 {
-                    <a class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
-                        <p>
-                            @menu.MenuName
-                        </p>
+                    <a class="javascript:;">
+                        <span>@menu.MenuName</span>
                     </a>
                 }
                 else
                 {
-                    <a href="@menu.Url" class="nav-link">
-                        <i class="nav-icon far fa-image"></i>
-                        <p>
-                            @menu.MenuName
-                        </p>
+                    <a href="@menu.Url" class="javascript:;">
+			            <i class="@menu.IconClass"></i>
+                        <span>@menu.MenuName</span>
                     </a>
                 }
             }

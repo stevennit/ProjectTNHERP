@@ -1,4 +1,5 @@
-﻿using Hiver.Data.Entities;
+﻿using Hiver.Data.EF;
+using Hiver.Data.Entities;
 using Hiver.ViewModels.Common;
 using Hiver.ViewModels.System.Users;
 using Microsoft.AspNetCore.Http;
@@ -20,14 +21,16 @@ namespace Hiver.Application.System.Users
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
         private readonly IConfiguration _config;
+        private readonly HiverDbContext _context;
 
         public UserService(UserManager<AppUser> userManager,
             SignInManager<AppUser> signInManager,
-            IConfiguration config)
+            IConfiguration config, HiverDbContext context)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _config = config;
+            _context = context;
         }
 
         public async Task<ApiResult<string>> Authencate(LoginRequest request)
@@ -81,7 +84,7 @@ namespace Hiver.Application.System.Users
             {
                 return new ApiErrorResult<UserVm>("User không tồn tại");
             }
-            var roles = await _userManager.GetRolesAsync(user);
+            var roles = await _context.UserRoles.Where(x => x.UserId == user.Id).Select(x => x.RoleId).ToListAsync();
 
             var userVm = new UserVm()
             {
@@ -164,29 +167,53 @@ namespace Hiver.Application.System.Users
         public async Task<ApiResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var user = await _userManager.FindByIdAsync(id.ToString());
+
             if (user == null)
             {
                 return new ApiErrorResult<bool>("Tài khoản không tồn tại");
             }
-            var removedRoles = request.Roles.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+            var removedselect = request.Roles.Where(x => x.Selected == false).Select(x => x.Id).ToList();
 
-            foreach (var roleName in removedRoles)
+            foreach (var item in removedselect)
             {
-                if (await _userManager.IsInRoleAsync(user, roleName) == true)
-                {
-                    await _userManager.RemoveFromRoleAsync(user, roleName);
-                }
-            }
-            await _userManager.RemoveFromRolesAsync(user, removedRoles);
+                var findtable = _context.Roles.FirstOrDefault(x => x.Id.ToString() == item);
 
-            var addedRoles = request.Roles.Where(x => x.Selected).Select(x => x.Name).ToList();
+                var resul = await _context.UserRoles.FirstOrDefaultAsync(
+                    x => x.UserId == user.Id && x.RoleId == findtable.Id);
+
+                if (resul != null)
+                {
+                    _context.UserRoles.Remove(resul);
+                }    
+            }
+            await _userManager.RemoveFromRolesAsync(user, removedselect);
+
+            var addedRoles = request.Roles.Where(x => x.Selected).Select(x => x.Id).ToList();
+
             foreach (var roleName in addedRoles)
             {
-                if (await _userManager.IsInRoleAsync(user, roleName) == false)
+                var findtable = _context.Roles.FirstOrDefault(x => x.Id.ToString() == roleName);
+
+                if (findtable == null)
                 {
-                    await _userManager.AddToRoleAsync(user, roleName);
+                    return new ApiErrorResult<bool>("Id Quyền hạn không đúng");
                 }
+
+                var resul = new UserRoleVm()
+                {
+                    UserId = user.Id,
+                    RoleId = findtable.Id
+                };
+
+                var check = _context.UserRoles.Where(x => x.UserId == resul.UserId && x.RoleId == resul.RoleId);
+                
+                if (check.Any() == false)
+                {
+                    _context.UserRoles.Add(resul);
+                }
+
             }
+            await _context.SaveChangesAsync();
 
             return new ApiSuccessResult<bool>();
         }

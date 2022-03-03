@@ -25,6 +25,21 @@ namespace Hiver.Application.System.Roles
             _context = context;
         }
 
+        public async Task<List<RoleVm>> GetAll()
+        {
+            var roles = await _roleManager.Roles
+                .Select(x => new RoleVm()
+                {
+                    Id = x.Id,
+                    ControllerName = x.Description,
+                    ActionName = x.ActionName,
+                    Description = x.Description,
+                    Name = x.Name
+                }).ToListAsync();
+
+            return roles;
+        }
+
         public async Task<ApiResult<PagedResult<RoleVm>>> GetRolesPaging(GetRolePagingRequest request)
         {
             var query = _roleManager.Roles;

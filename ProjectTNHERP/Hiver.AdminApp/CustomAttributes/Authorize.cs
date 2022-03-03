@@ -9,54 +9,17 @@ using System.Threading.Tasks;
 
 namespace Hiver.AdminApp.CustomAttributes
 {
-    public class AuthorizeAttribute : TypeFilterAttribute
+    public class AuthorizeAttribute
     {
-        public AuthorizeAttribute(params string[] claim) : base(typeof(AuthorizeFilter))
+        public AuthorizeAttribute(AuthorizationFilterContext context)
         {
-            Arguments = new object[] { claim };
-        }
-    }
 
-    public class AuthorizeFilter : IAuthorizationFilter
-    {
-        readonly string[] _claim;
-
-        public AuthorizeFilter(params string[] claim)
-        {
-            _claim = claim; // Get Claim Current Controller
-        }
-
-        public void OnAuthorization(AuthorizationFilterContext context)
-        {
-            var IsAuthenticated = context.HttpContext.User.Identity.IsAuthenticated;
-            if (IsAuthenticated)
-            {
-                var claimsIndentity = context.HttpContext.User.Identity as ClaimsIdentity;
-
-                // Get the claims values
-                var nameRole = claimsIndentity.Claims.Where(c => c.Type == ClaimTypes.Role)
-                                   .Select(c => c.Value).ToList();
-
-                //var nameGroupRole = claimsPrincipal.
-
-                bool flagClaim = false;
-
-                foreach (var item in _claim)
-                {
-                    foreach (var itemrole in nameRole)
-                    {
-                        if (item == itemrole)
-                            flagClaim = true;
-                    }
-                }
-                if (!flagClaim)
-
-                    if (context.HttpContext.Request.IsAjaxRequest())
-                        context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized; //Set HTTP 401
-                    else
-                        context.Result = new RedirectResult("~/Home/NoPermission");
-            }
+            if (context.HttpContext.Request.IsAjaxRequest())
+                context.HttpContext.Response.StatusCode = (int)HttpStatusCode.Unauthorized; //Set HTTP 401
+            else
+                context.Result = new RedirectResult("~/Home/NoPermission");
             return;
         }
     }
+
 }
