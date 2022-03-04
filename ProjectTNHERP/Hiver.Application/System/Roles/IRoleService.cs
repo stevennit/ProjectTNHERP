@@ -15,5 +15,13 @@ namespace Hiver.Application.System.Roles
 
         Task<List<RoleVm>> GetAll();
 
+        Task<ApiResult<bool>> Create(RoleCreateRequest request);
+
+        Task<ApiResult<bool>> Update(Guid id, RoleUpdateRequest request);
+
+        Task<ApiResult<RoleVm>> GetById(Guid id);
+
+        Task<ApiResult<bool>> Delete(Guid id);
+
     }
 }

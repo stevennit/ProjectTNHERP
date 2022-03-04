@@ -77,9 +77,10 @@ namespace Hiver.AdminApp.Controllers
                 return View();
 
             var result = await _userApiClient.RegisterUser(request);
+
             if (result.IsSuccessed)
             {
-                TempData["result"] = "Thêm mới người dùng thành công";
+                TempData["result"] = "Tạo tài khoản thành công";
                 return RedirectToAction("Index");
             }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IJV/A1xVJh54Bg+h40P1S3m1JtTu/JP3rLrGgkWMGxY=",
+  "Hash": "N4IJ1Hltnqy+TrGPPTmskyYUiWv2TdLTwIMD39LBvQA=",
   "Source": "Hiver.BackendApi",
   "BasePath": "_content/Hiver.BackendApi",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\NewFolder\\2.PNG",
+      "SourceId": "Hiver.BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
+      "BasePath": "_content/Hiver.BackendApi",
+      "RelativePath": "NewFolder/2.PNG",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\NewFolder\\2.PNG"
+    }
+  ]
 }

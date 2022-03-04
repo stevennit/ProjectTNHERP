@@ -13,8 +13,11 @@ namespace Hiver.Data.Configurations
         {
             builder.ToTable("AppRoles");
 
+            builder.HasKey(x => new { x.ControllerName , x.ActionName });
 
-            builder.Property(x => x.Description).HasMaxLength(200).IsRequired();
+
+            builder.Property(x => x.Description).HasMaxLength(200);
+            builder.Property(x => x.Name).IsRequired();
 
         }
     }

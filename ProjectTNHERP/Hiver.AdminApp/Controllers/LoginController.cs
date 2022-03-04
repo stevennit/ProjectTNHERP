@@ -44,7 +44,8 @@ namespace Hiver.AdminApp.Controllers
                 return View(ModelState);
 
             var result = await _userApiClient.Authenticate(request);
-            if (result.ResultObj == null)
+
+            if (result.IsSuccessed == false)
             {
                 ModelState.AddModelError("", result.Message);
                 return View();

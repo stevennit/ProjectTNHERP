@@ -25,6 +25,46 @@ namespace Hiver.Application.System.Roles
             _context = context;
         }
 
+        public async Task<ApiResult<bool>> Create(RoleCreateRequest request)
+        {
+            var table = await _roleManager.Roles.Where(x => x.ControllerName == request.ControllerName 
+                && x.ActionName == request.ActionName).FirstOrDefaultAsync();
+
+            if (table != null)
+            {
+                return new ApiErrorResult<bool>("Đã tồn tại");
+            }
+
+            table = new AppRole()
+            {
+                ControllerName = request.ControllerName,
+                ActionName = request.ActionName,
+                Description = request.Description,
+                Name = request.Name
+            };
+            var result = await _roleManager.CreateAsync(table);
+
+            if (result.Succeeded)
+            {
+                return new ApiSuccessResult<bool>();
+            }
+            return new ApiErrorResult<bool>("Tạo không thành công");
+        }
+
+        public async Task<ApiResult<bool>> Delete(Guid id)
+        {
+            var user = await _roleManager.FindByIdAsync(id.ToString());
+            if (user == null)
+            {
+                return new ApiErrorResult<bool>("Id không tồn tại");
+            }
+            var reult = await _roleManager.DeleteAsync(user);
+            if (reult.Succeeded)
+                return new ApiSuccessResult<bool>();
+
+            return new ApiErrorResult<bool>("Xóa không thành công");
+        }
+
         public async Task<List<RoleVm>> GetAll()
         {
             var roles = await _roleManager.Roles
@@ -38,6 +78,25 @@ namespace Hiver.Application.System.Roles
                 }).ToListAsync();
 
             return roles;
+        }
+
+        public async Task<ApiResult<RoleVm>> GetById(Guid id)
+        {
+            var table = await _roleManager.FindByIdAsync(id.ToString());
+            if (table == null)
+            {
+                return new ApiErrorResult<RoleVm>("Idhông tồn tại");
+            }
+
+            var tableVm = new RoleVm()
+            {
+                ControllerName = table.ControllerName,
+                ActionName = table.ActionName,
+                Description = table.Description,
+                Name = table.Name,
+                Id = table.Id
+            };
+            return new ApiSuccessResult<RoleVm>(tableVm);
         }
 
         public async Task<ApiResult<PagedResult<RoleVm>>> GetRolesPaging(GetRolePagingRequest request)
@@ -59,6 +118,8 @@ namespace Hiver.Application.System.Roles
                     Id = x.Id,
                     ControllerName = x.ControllerName,
                     ActionName = x.ActionName,
+                    Description = x.Description,
+                    Name = x.Name
                 }).ToListAsync();
 
             //4. Select and projection
@@ -100,6 +161,21 @@ namespace Hiver.Application.System.Roles
             return new ApiSuccessResult<bool>();
         }
 
-        
+        public async Task<ApiResult<bool>> Update(Guid id, RoleUpdateRequest request)
+        {
+            var table = await _roleManager.FindByIdAsync(id.ToString());
+
+            table.ControllerName = request.ControllerName;
+            table.ActionName = request.ActionName;
+            table.Description = request.Description;
+            table.Name = request.Name;
+
+            var result = await _roleManager.UpdateAsync(table);
+            if (result.Succeeded)
+            {
+                return new ApiSuccessResult<bool>();
+            }
+            return new ApiErrorResult<bool>("Cập nhật không thành công");
+        }
     }
 }

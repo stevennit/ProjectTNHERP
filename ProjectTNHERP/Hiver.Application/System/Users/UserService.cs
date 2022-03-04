@@ -138,6 +138,7 @@ namespace Hiver.Application.System.Users
         public async Task<ApiResult<bool>> Register(RegisterRequest request)
         {
             var user = await _userManager.FindByNameAsync(request.UserName);
+
             if (user != null)
             {
                 return new ApiErrorResult<bool>("Tài khoản đã tồn tại");

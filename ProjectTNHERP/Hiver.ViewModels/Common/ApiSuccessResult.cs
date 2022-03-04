@@ -16,5 +16,6 @@ namespace Hiver.ViewModels.Common
         {
             IsSuccessed = true;
         }
+
     }
 }

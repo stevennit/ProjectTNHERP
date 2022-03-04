@@ -3,6 +3,7 @@ using Hiver.BackendApi.Auth;
 using Hiver.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace Hiver.BackendApi.Controllers
@@ -33,11 +34,51 @@ namespace Hiver.BackendApi.Controllers
             return Ok(roles);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> RoleCheck([FromBody]RoleCheckVm request)
-        //{
-        //    var rel = await _roleService.roleCheck(request);
-        //    return Ok(rel);
-        //}
+        [HttpPost]
+        [ServiceFilter(typeof(AuthAttribute))]
+        public async Task<IActionResult> Create([FromBody] RoleCreateRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _roleService.Create(request);
+            if (!result.IsSuccessed)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        [ServiceFilter(typeof(AuthAttribute))]
+        //PUT: http://localhost/api/users/id
+        [HttpPut("{id}")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] RoleUpdateRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _roleService.Update(id, request);
+            if (!result.IsSuccessed)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+
+        [HttpGet("{id}")]
+        [ServiceFilter(typeof(AuthAttribute))]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var table = await _roleService.GetById(id);
+            return Ok(table);
+        }
+
+        [HttpDelete("{id}")]
+        [ServiceFilter(typeof(AuthAttribute))]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var result = await _roleService.Delete(id);
+            return Ok(result);
+        }
     }
 }

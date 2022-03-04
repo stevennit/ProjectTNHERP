@@ -89,22 +89,25 @@ namespace Hiver.ApiIntegration
             return JsonConvert.DeserializeObject<ApiErrorResult<PagedResult<UserVm>>>(body);
         }
 
-        public async Task<ApiResult<bool>> RegisterUser(RegisterRequest registerRequest)
+        public async Task<ApiResult<bool>> RegisterUser(RegisterRequest request)
         {
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
-            var json = JsonConvert.SerializeObject(registerRequest);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+
+            var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
+
             var response = await client.PostAsync($"/api/users", httpContent);
-
             var result = await response.Content.ReadAsStringAsync();
-
             if (response.IsSuccessStatusCode)
                 return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(result);
 
             return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(result);
+
         }
 
         public async Task<ApiResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)

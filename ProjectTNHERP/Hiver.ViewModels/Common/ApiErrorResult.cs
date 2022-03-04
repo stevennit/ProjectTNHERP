@@ -10,6 +10,7 @@ namespace Hiver.ViewModels.Common
 
         public ApiErrorResult()
         {
+
         }
 
         public ApiErrorResult(string message)
