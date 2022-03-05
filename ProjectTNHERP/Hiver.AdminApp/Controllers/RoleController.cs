@@ -1,6 +1,8 @@
-﻿using Hiver.ApiIntegration;
+﻿using Hiver.AdminApp.Models;
+using Hiver.ApiIntegration;
 using Hiver.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Configuration;
 using System;
 using System.Threading.Tasks;
@@ -46,6 +48,10 @@ namespace Hiver.AdminApp.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+            RoleSelectModel nameRole = new RoleSelectModel();
+            ViewData["NameRole"] = new SelectList(nameRole.RoleNameList, "Value", "Text");
+            ViewData["PositionRole"] = new SelectList(nameRole.RolePositionList, "Value", "Text");
+            //ViewBag.NameRole = nameRole;
             return View();
         }
 

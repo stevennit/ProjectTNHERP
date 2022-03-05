@@ -163,19 +163,36 @@ namespace Hiver.Application.System.Roles
 
         public async Task<ApiResult<bool>> Update(Guid id, RoleUpdateRequest request)
         {
-            var table = await _roleManager.FindByIdAsync(id.ToString());
+            var tablerole = await _context.Roles.FindAsync(id);
 
-            table.ControllerName = request.ControllerName;
-            table.ActionName = request.ActionName;
-            table.Description = request.Description;
-            table.Name = request.Name;
-
-            var result = await _roleManager.UpdateAsync(table);
-            if (result.Succeeded)
+            var table = await _context.Roles.Where(x => x.Id != tablerole.Id).Select(x => new RoleVm()
             {
-                return new ApiSuccessResult<bool>();
+                ActionName = x.ActionName,
+                ControllerName = x.ControllerName,
+                Description = x.Description,
+                Id = id,
+                Name = x.Name
+            }).ToListAsync();
+
+            foreach(var role in table)
+            {
+                if(String.Compare(role.ControllerName,request.ControllerName,true) == 0 && String.Compare(role.ActionName, request.ActionName, true) == 0)
+                {
+                    return new ApiErrorResult<bool>("Quyền hạn đã trùng khớp không thể cập nhập");
+                }    
             }
-            return new ApiErrorResult<bool>("Cập nhật không thành công");
+
+            tablerole.ControllerName = request.ControllerName;
+            tablerole.ActionName = request.ActionName;
+            tablerole.Description = request.Description;
+            tablerole.Name = request.Name;
+
+
+            _context.Roles.Update(tablerole);
+
+            await _context.SaveChangesAsync();
+
+            return new ApiSuccessResult<bool>();
         }
     }
 }
