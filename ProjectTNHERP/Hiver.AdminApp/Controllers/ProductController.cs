@@ -54,6 +54,13 @@ namespace Hiver.AdminApp.Controllers
         }
 
         [HttpGet]
+        public async Task<IActionResult> Details(int id)
+        {
+            var result = await _productApiClient.GetById(id);
+            return View(result);
+        }
+
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
@@ -120,7 +127,7 @@ namespace Hiver.AdminApp.Controllers
                 Name = product.Name,
                 Height = product.Height,
                 ModifyBy = product.ModifyBy,
-                ModifyDate = System.DateTime.Now,
+                ModifyDate = product.ModifyDate,
                 Symbol = product.Symbol,
                 //Status = product.Status,
                 Width = product.Width
@@ -134,6 +141,9 @@ namespace Hiver.AdminApp.Controllers
         {
             if (!ModelState.IsValid)
                 return View(request);
+
+            request.ModifyDate = System.DateTime.Now;
+            request.ModifyBy = User.Identity.Name;
 
             var result = await _productApiClient.UpdateProduct(request);
             if (result)

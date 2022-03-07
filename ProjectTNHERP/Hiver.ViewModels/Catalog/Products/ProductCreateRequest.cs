@@ -10,15 +10,12 @@ namespace Hiver.ViewModels.Catalog.Products
 {
     public class ProductCreateRequest : HiverTableCreate
     {
-        [Required(ErrorMessage = "Ký hiệu không được để trống")]
         [Display(Name = "Ký hiệu")]
         public string Symbol { get; set; }
 
-        [Required(ErrorMessage = "Chiều rộng không được để trống")]
         [Display(Name = "Chiều rộng")]
         public Double Width { get; set; }
 
-        [Required(ErrorMessage = "chiều cao không được để trống")]
         [Display(Name = "Chiều cao")]
         public Double Height { get; set; }
 

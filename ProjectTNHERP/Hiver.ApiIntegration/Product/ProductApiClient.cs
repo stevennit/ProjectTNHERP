@@ -103,7 +103,23 @@ namespace Hiver.ApiIntegration.Product
                 requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
             }
 
-            //requestContent.Add(new StringContent(request.Id.ToString()), "id");
+            requestContent.Add(new StringContent(request.Name.ToString()), "name");
+            requestContent.Add(new StringContent(request.Symbol.ToString()), "symbol");
+            requestContent.Add(new StringContent(request.Height.ToString()), "height");
+            requestContent.Add(new StringContent(request.Width.ToString()), "width");
+
+            if (request.Description != null)
+            {
+                requestContent.Add(new StringContent(request.Description.ToString()), "description");
+            }
+
+            if (request.Detail != null)
+            {
+                requestContent.Add(new StringContent(request.Detail.ToString()), "detail");
+            }
+
+            requestContent.Add(new StringContent(request.ModifyDate.ToString()), "createDate");
+            requestContent.Add(new StringContent(request.ModifyBy.ToString()), "createBy");
 
             var response = await client.PutAsync($"/api/products/" + request.Id, requestContent);
             return response.IsSuccessStatusCode;

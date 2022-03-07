@@ -2,12 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FluentValidation;
 using FluentValidation.AspNetCore;
 using Hiver.ApiIntegration;
 using Hiver.ApiIntegration.Menu;
 using Hiver.ApiIntegration.Product;
 using Hiver.ApiIntegration.ProductCategory;
+using Hiver.ViewModels.Catalog.Products;
 using Hiver.ViewModels.System.Users;
+using Hiver.ViewModels.Validator;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -42,6 +45,10 @@ namespace Hiver.AdminApp
 
             services.AddControllersWithViews()
                      .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+
+            services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
+            services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
+            services.AddTransient<IValidator<ProductCreateRequest>, ProductCreateValidator>();
 
             services.AddSession(options =>
             {
