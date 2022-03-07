@@ -11,10 +11,9 @@ namespace Hiver.Data.Entities
         public Double Width { get; set; }
         public Double Height { get; set; }
         public string Detail { get; set; }
-        public int ViewCount { set; get; }
+        public int? ViewCount { set; get; }
 
         public Status Status { get; set; }
-
 
         public List<ProductAndProductCategory> ProductAndProductCategories { get; set; }
         public List<OrderSellDetail> OrderSellDetails { get; set; }

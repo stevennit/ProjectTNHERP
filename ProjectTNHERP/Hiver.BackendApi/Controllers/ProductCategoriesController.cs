@@ -23,20 +23,27 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpGet("paging")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> GetAllPaging([FromQuery] GetPublicProductCategoryPagingRequest request)
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetAllProductCategoryPagingRequest request)
         {
-            var products = await _productCategoryService.GetAllPaging(request);
-            return Ok(products);
+            var table = await _productCategoryService.GetAllPaging(request);
+            return Ok(table);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var table = await _productCategoryService.GetAll();
+            return Ok(table);
         }
 
         [HttpGet("{Id}")]
         //[ServiceFilter(typeof(AuthAttribute))]
         public async Task<IActionResult> GetById(int Id)
         {
-            var product = await _productCategoryService.GetById(Id);
-            if (product == null)
+            var table = await _productCategoryService.GetById(Id);
+            if (table == null)
                 return BadRequest("Không tìm thấy sản phẩm");
-            return Ok(product);
+            return Ok(table);
         }
 
         [HttpPost]

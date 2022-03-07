@@ -49,7 +49,25 @@ namespace Hiver.Application.Catalog.ProductCategories
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<PagedResult<ProductCategoryViewModel>> GetAllPaging(GetPublicProductCategoryPagingRequest request)
+        public async Task<List<ProductCategoryVm>> GetAll()
+        {
+            var table = _context.ProductCategories;
+
+            return await table.Select(x => new ProductCategoryVm()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Description = x.Description,
+                Image = x.Image,
+                CreateBy = x.CreateBy,
+                CreateDate = x.CreateDate,
+                ModifyBy = x.ModifyBy,
+                ModifyDate = x.ModifyDate,
+                Status = x.Status
+            }).ToListAsync();
+        }
+
+        public async Task<PagedResult<ProductCategoryVm>> GetAllPaging(GetAllProductCategoryPagingRequest request)
         {
             // 1.Select join
             var query = from c in _context.ProductCategories
@@ -59,7 +77,7 @@ namespace Hiver.Application.Catalog.ProductCategories
 
             var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
                 .Take(request.PageSize)
-                .Select(x => new ProductCategoryViewModel()
+                .Select(x => new ProductCategoryVm()
                 {
                     Id = x.c.Id,
                     Name = x.c.Name,
@@ -73,7 +91,7 @@ namespace Hiver.Application.Catalog.ProductCategories
                 }).ToListAsync();
 
             //3. Select and projection
-            var pagedResult = new PagedResult<ProductCategoryViewModel>()
+            var pagedResult = new PagedResult<ProductCategoryVm>()
             {
                 TotalRecords = totalRow,
                 PageSize = request.PageSize,
@@ -83,13 +101,13 @@ namespace Hiver.Application.Catalog.ProductCategories
             return pagedResult;
         }
 
-        public async Task<ProductCategoryViewModel> GetById(int Id)
+        public async Task<ProductCategoryVm> GetById(int Id)
         {
             var query = from c in _context.ProductCategories
                         where  c.Id == Id
                         select new { c };
 
-            return await query.Select(x => new ProductCategoryViewModel()
+            return await query.Select(x => new ProductCategoryVm()
             {
                 Id = x.c.Id,
                 Name = x.c.Name,

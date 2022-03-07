@@ -126,8 +126,8 @@ namespace Hiver.Application.Catalog.Products
                 Description = request.Description,
                 Detail = request.Detail,
                 CreateBy = request.CreateBy,
-                CreateDate = DateTime.UtcNow,
-                Status = (Utilities.Enums.Status)request.Status
+                CreateDate = DateTime.Now
+                //Status = (Utilities.Enums.Status)request.Status
             };
 
             //Save image
@@ -148,7 +148,7 @@ namespace Hiver.Application.Catalog.Products
             }
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
-            return Convert.ToInt32(product.Id);
+            return product.Id;
         }
 
         public async Task<int> Delete(int productId)
@@ -179,7 +179,7 @@ namespace Hiver.Application.Catalog.Products
             product.Detail = request.Detail;
             product.ModifyDate = DateTime.Now;
             product.ModifyBy = request.ModifyBy;
-            product.Status = request.Status;
+            //product.Status = request.Status;
 
             //Save image
             if (request.ThumbnailImage != null)

@@ -13,9 +13,5 @@
 	  <ProjectReference Include="..\Hiver.ViewModels\Hiver.ViewModels.csproj" />
 	</ItemGroup>
 
-	<ItemGroup>
-	  <Folder Include="ProductCategory\" />
-	</ItemGroup>
-
 
 </Project>

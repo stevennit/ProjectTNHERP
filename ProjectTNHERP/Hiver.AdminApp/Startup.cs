@@ -5,6 +5,8 @@ using System.Threading.Tasks;
 using FluentValidation.AspNetCore;
 using Hiver.ApiIntegration;
 using Hiver.ApiIntegration.Menu;
+using Hiver.ApiIntegration.Product;
+using Hiver.ApiIntegration.ProductCategory;
 using Hiver.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
@@ -50,6 +52,9 @@ namespace Hiver.AdminApp
 
             services.AddTransient<IUserApiClient, UserApiClient>();
             services.AddTransient<IRoleApiClient, RoleApiClient>();
+
+            services.AddTransient<IProductApiClient, ProductApiClient>();
+            services.AddTransient<IProductCategoryApiClient, ProductCategoryApiClient>();
 
             services.AddTransient<IMenuApiClient, MenuApiClient>();
 

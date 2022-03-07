@@ -67,8 +67,8 @@ namespace Hiver.BackendApi
 
             services.AddTransient<IMenuService, MenuSerivce>();
 
-            //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
-            //services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
+            services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
+            services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
 
             services.AddControllers()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());

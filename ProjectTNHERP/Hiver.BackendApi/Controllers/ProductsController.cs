@@ -44,11 +44,11 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpPost]
         [Consumes("multipart/form-data")]
-        //[ServiceFilter(typeof(AuthAttribute))]
+        [ServiceFilter(typeof(AuthAttribute))]
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             if (!ModelState.IsValid)
-            {
+            {   
                 return BadRequest(ModelState);
             }
 

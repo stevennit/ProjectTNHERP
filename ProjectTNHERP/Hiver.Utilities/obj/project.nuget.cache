@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "XQBD4ielyW/7fL9OAcUHe/gVWIbXtIvM3TQAapwjURxDJYYeVdWLS2l34nIoQ+rGfh4BFrUdKF+SewFtatUg4A==",
+  "success": true,
+  "projectFilePath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.Utilities\\Hiver.Utilities.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.14\\microsoft.aspnetcore.http.features.5.0.14.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -15,7 +15,7 @@ namespace Hiver.ViewModels.Catalog.Products
        
 
         public Status Status { get; set; }
-        public int ViewCount { get; set; }
+        public int? ViewCount { get; set; }
 
         public string ThumbnailImage { get; set; }
 

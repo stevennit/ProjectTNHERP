@@ -57,7 +57,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
                             ActionName = "GetAllPaging",
-                            ConcurrencyStamp = "9fcb18b3-c0bc-4a45-bf28-7dc0e8782682",
+                            ConcurrencyStamp = "15f7e91d-d3ae-4eb0-b41c-ee21e5b63425",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem tất cả tài khoản",
                             Name = "admin"
@@ -66,7 +66,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
                             ActionName = "GetById",
-                            ConcurrencyStamp = "e5a5032d-4973-433f-aa13-c587f470b260",
+                            ConcurrencyStamp = "9ed996b4-5156-49f8-9788-fccab2bfc1aa",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem chi tiết tài khoản",
                             Name = "admin"
@@ -75,7 +75,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "d91bf3b9-80ae-4134-9300-83f74f700e1f",
+                            ConcurrencyStamp = "006297a5-b430-4b19-a1fb-3c22e9a83aa7",
                             ControllerName = "Register",
                             Description = "Tài khoản - Đăng ký tài khoản",
                             Name = "admin"
@@ -84,7 +84,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
                             ActionName = "Update",
-                            ConcurrencyStamp = "39e7ad45-b255-4e9b-8321-f4b5f7fda2b3",
+                            ConcurrencyStamp = "4c306abb-ed37-40a5-929f-9f1f4abe5712",
                             ControllerName = "Users",
                             Description = "Tài khoản - Cập nhập tài khoản",
                             Name = "admin"
@@ -93,7 +93,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "820c528e-14ab-4417-b834-47077d8be08c",
+                            ConcurrencyStamp = "99abe4be-1461-4a09-bc37-b7c07bc56b32",
                             ControllerName = "Delete",
                             Description = "Tài khoản - Xóa tài khoản",
                             Name = "admin"
@@ -170,7 +170,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aa3f3727-23c7-4dc6-9dee-2e0a05e25152",
+                            ConcurrencyStamp = "560b5402-1b76-4dea-95cd-bd54482bbeed",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -179,7 +179,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEE0pgFnvpunRLWBpIaUnH0py6AMvlb/57v7xdB+QiWLQT2SNw1pq+wUYZBCmAC4w4g==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOoguSr5iRyJzi48W6Hb27YYdiaMgurLf3xhrN4yzu8b8amukhlNdn0FyTqHJmeX4Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -189,7 +189,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c74a8258-1741-4e9d-b02e-589fc72a8bd0",
+                            ConcurrencyStamp = "8eff4296-b468-42d5-b612-4839d6573f2e",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -198,7 +198,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEcNg1pkrTW5CLYBaHqDLjSYCcQJxxnoLOxQMPz8tRrd1OiwaqmY+bqU5SbzGcvSPQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEDXYm9PHUHvvoSwDuNFjywFqEcOK5RIGnsj8qqLfvxLjDlV+dVTPi9kgf1Hxq6kCYQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -208,7 +208,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c7950f4e-ea35-40b1-8249-2fefd7cdb8f1",
+                            ConcurrencyStamp = "c0cf2930-35dc-43e8-b4c8-cad591cd2602",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -217,7 +217,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEKdi13ZB5Vl9zbiLrpOwoYtUZlyo6nPKXpf3C3aCYf/6o/nm/Nz0T+v15MylmUmItQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBehYT3P5d4ptO6zwIJKr5dPUakbeaVZMFrWSt38DzGCqpIgNYWK8CJrDl8Q/VqsfA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -925,8 +925,10 @@ namespace Hiver.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int>("ViewCount")
-                        .HasColumnType("int");
+                    b.Property<int?>("ViewCount")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(0);
 
                     b.Property<double>("Width")
                         .HasColumnType("float");
