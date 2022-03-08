@@ -61,15 +61,18 @@ namespace Hiver.BackendApi.Controllers
             return CreatedAtAction(nameof(GetById), new { id = Id }, table);
         }
 
-        [HttpPut]
+        [HttpPut("{Id}")]
         [Consumes("multipart/form-data")]
-        //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
+        [ServiceFilter(typeof(AuthAttribute))]
+        public async Task<IActionResult> Update([FromRoute] int Id,[FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
+
+            request.Id = Id;
+
             var affectedResult = await _productService.Update(request);
             if (affectedResult == 0)
                 return BadRequest();

@@ -18,5 +18,7 @@ namespace Hiver.ViewModels.Catalog.Products
 
         public IFormFile ThumbnailImage { get; set; }
 
+        public IList<int> ProductCategories { get; set; }
+
     }
 }

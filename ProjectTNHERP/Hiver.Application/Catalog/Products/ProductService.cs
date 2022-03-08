@@ -185,6 +185,7 @@ namespace Hiver.Application.Catalog.Products
             if (request.ThumbnailImage != null)
             {
                 var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.IdTable == request.Id);
+                
                 if (thumbnailImage != null)
                 {
                     thumbnailImage.FileSize = request.ThumbnailImage.Length;
@@ -282,6 +283,7 @@ namespace Hiver.Application.Catalog.Products
                 productImage.FileSize = request.ImageFile.Length;
             }
             _context.ProductImages.Update(productImage);
+
             return await _context.SaveChangesAsync();
         }
         public async Task<int> RemoveImage(int imageId)
@@ -301,31 +303,48 @@ namespace Hiver.Application.Catalog.Products
             {
                 return new ApiErrorResult<bool>("Sản phẩm không tồn tại");
             }
-            var remove = request.ProductCategory.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+            var remove = request.ProductCategory.Where(x => x.Selected == false).Select(x => x.Id).ToList();
 
             foreach (var productCategoryName in remove)
             {
-                var findtablecategory = _context.ProductCategories.FirstOrDefault(x => x.Name == productCategoryName);
+                var findtablecategory = _context.ProductCategories.FirstOrDefault(x => x.Id.ToString() == productCategoryName);
 
                 var resul = await _context.ProductAndProductCategories.FirstAsync(
                     x => x.IdProduct == product.Id && x.IdProductCategory == findtablecategory.Id);
 
-                _context.ProductAndProductCategories.Remove(resul);
+                if (resul != null)
+                {
+                    _context.ProductAndProductCategories.Remove(resul);
+                }
+                
             }
 
-            var add = request.ProductCategory.Where(x => x.Selected).Select(x => x.Name).ToList();
+            var add = request.ProductCategory.Where(x => x.Selected).Select(x => x.Id).ToList();
 
             foreach (var productCategoryName in add)
             {
-                var findproductcategory = _context.ProductCategories.FirstOrDefault(x => x.Name == productCategoryName);
+                var findtable = _context.ProductCategories.FirstOrDefault(x => x.Id.ToString() == productCategoryName);
+
+
+                if (findtable == null)
+                {
+                    return new ApiErrorResult<bool>("Id Quyền hạn không đúng");
+                }
 
                 var resul = new ProductAndProductCategory()
                 {
                     IdProduct = product.Id,
-                    IdProductCategory = findproductcategory.Id
+                    IdProductCategory = findtable.Id
                 };
 
-                _context.ProductAndProductCategories.Add(resul);
+                var check = _context.ProductAndProductCategories.Where(x => x.IdProduct == resul.IdProduct && x.IdProductCategory == resul.IdProductCategory);
+
+                if (check.Any() == false)
+                {
+                    _context.ProductAndProductCategories.Add(resul);
+                }
+
+                
             }
 
             await _context.SaveChangesAsync();

@@ -13,6 +13,5 @@ namespace Hiver.ViewModels.Catalog.ProductCategories
 
         public Status Status { get; set; }
 
-        public IFormFile ThumbnailImage { get; set; }
     }
 }

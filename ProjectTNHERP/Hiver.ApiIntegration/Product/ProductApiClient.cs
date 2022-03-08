@@ -85,7 +85,6 @@ namespace Hiver.ApiIntegration.Product
                 .Session
                 .GetString(SystemConstants.AppSettings.Token);
 
-
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration[SystemConstants.AppSettings.BaseAddress]);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
@@ -118,10 +117,10 @@ namespace Hiver.ApiIntegration.Product
                 requestContent.Add(new StringContent(request.Detail.ToString()), "detail");
             }
 
-            requestContent.Add(new StringContent(request.ModifyDate.ToString()), "createDate");
-            requestContent.Add(new StringContent(request.ModifyBy.ToString()), "createBy");
+            requestContent.Add(new StringContent(request.ModifyDate.ToString()), "modifydate");
+            requestContent.Add(new StringContent(request.ModifyBy.ToString()), "modifyby");
 
-            var response = await client.PutAsync($"/api/products/" + request.Id, requestContent);
+            var response = await client.PutAsync($"/api/products/" + request.Id,requestContent);
             return response.IsSuccessStatusCode;
         }
 

@@ -49,6 +49,7 @@ namespace Hiver.AdminApp
             services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
             services.AddTransient<IValidator<ProductCreateRequest>, ProductCreateValidator>();
+            services.AddTransient<IValidator<ProductUpdateRequest>, ProductUpdateValidator>();
 
             services.AddSession(options =>
             {

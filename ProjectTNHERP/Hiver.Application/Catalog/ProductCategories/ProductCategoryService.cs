@@ -30,6 +30,7 @@ namespace Hiver.Application.Catalog.ProductCategories
                 Description = request.Description,
                 Image = request.Image,
                 CreateBy = request.CreateBy,
+                CreateDate = request.CreateDate,
                 Status = request.Status
             };
 

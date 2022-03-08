@@ -39,6 +39,7 @@ namespace Hiver.AdminApp.Controllers
             ViewBag.Keyword = keyword;
 
             var categories = await _categoryApiClient.GetAll();
+
             ViewBag.Categories = categories.Select(x => new SelectListItem()
             {
                 Text = x.Name,
@@ -132,6 +133,7 @@ namespace Hiver.AdminApp.Controllers
                 //Status = product.Status,
                 Width = product.Width
             };
+
             return View(editVm);
         }
 
@@ -168,7 +170,7 @@ namespace Hiver.AdminApp.Controllers
                 {
                     Id = role.Id.ToString(),
                     Name = role.Name,
-                    Selected = productObj.ProductCategories.Contains(role.Name)
+                    Selected = productObj.ProductCategories.Contains(role.Id)
                 });
             }
             return categoryAssignRequest;

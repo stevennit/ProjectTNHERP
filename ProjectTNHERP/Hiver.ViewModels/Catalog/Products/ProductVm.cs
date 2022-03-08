@@ -1,5 +1,7 @@
 ﻿using Hiver.Utilities.Enums;
 using Hiver.Utilities.Table;
+using Hiver.ViewModels.Catalog.ProductImages;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -19,7 +21,7 @@ namespace Hiver.ViewModels.Catalog.Products
 
         public string ThumbnailImage { get; set; }
 
-        public List<string> ProductCategories { get; set; } = new List<string>();
+        public IList<int> ProductCategories { get; set; }
 
     }
 }
