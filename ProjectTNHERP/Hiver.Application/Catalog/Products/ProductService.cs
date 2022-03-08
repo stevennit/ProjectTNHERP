@@ -44,7 +44,7 @@ namespace Hiver.Application.Catalog.Products
             if (!string.IsNullOrEmpty(request.Keyword))
                 query = query.Where(x => x.t2.Name.Contains(request.Keyword));
 
-            if (request.CategoryId != null || request.CategoryId != 0)
+            if (request.CategoryId != null)
             {
                 query = query.Where(p => p.t2.Id == request.CategoryId);
             }

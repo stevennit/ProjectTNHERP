@@ -130,8 +130,10 @@ namespace Hiver.AdminApp.Controllers
                 ModifyBy = product.ModifyBy,
                 ModifyDate = product.ModifyDate,
                 Symbol = product.Symbol,
-                //Status = product.Status,
-                Width = product.Width
+                Status = product.Status,
+                Width = product.Width,
+                ViewCount = product.ViewCount,
+                ProductCategories = product.ProductCategories
             };
 
             return View(editVm);

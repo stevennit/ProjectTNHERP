@@ -14,7 +14,8 @@ namespace Hiver.ViewModels.Catalog.Products
         public Double Height { get; set; }
         public string Detail { get; set; }
 
-        //public Status Status { get; set; }
+        public Status Status { get; set; }
+        public int? ViewCount { get; set; }
 
         public IFormFile ThumbnailImage { get; set; }
 
