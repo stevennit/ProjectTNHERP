@@ -58,6 +58,8 @@ namespace Hiver.AdminApp.Controllers
         public async Task<IActionResult> Details(int id)
         {
             var result = await _productApiClient.GetById(id);
+
+
             return View(result);
         }
 
@@ -172,7 +174,7 @@ namespace Hiver.AdminApp.Controllers
                 {
                     Id = role.Id.ToString(),
                     Name = role.Name,
-                    Selected = productObj.ProductCategories.Contains(role.Id)
+                    Selected = productObj.ProductCategories.Contains(role)
                 });
             }
             return categoryAssignRequest;

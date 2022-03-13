@@ -25,6 +25,7 @@ using Hiver.Application.Catalog.Products;
 using Hiver.Application.Catalog.ProductCategories;
 using Hiver.Application.Catalog.Customers;
 using Hiver.Application.Catalog.KnifeMolds;
+using Hiver.BackendApi.Helper;
 
 namespace Hiver.BackendApi
 {
@@ -67,11 +68,17 @@ namespace Hiver.BackendApi
 
             services.AddTransient<IMenuService, MenuSerivce>();
 
+
+            
             services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
 
             services.AddControllers()
                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+
+
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
+
 
             services.AddSwaggerGen(c =>
             {

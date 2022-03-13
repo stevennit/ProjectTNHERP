@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Hiver.ViewModels.Catalog.ProductImages
 {
-    public class ProductImageViewModel : HiverTableImageFull
+    public class ProductImageVm : HiverTableImageFull
     {
         
     }

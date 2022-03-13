@@ -1,7 +1,9 @@
-﻿using Hiver.Application.Common;
+﻿using AutoMapper;
+using Hiver.Application.Common;
 using Hiver.Data.EF;
 using Hiver.Data.Entities;
 using Hiver.Utilities.Exceptions;
+using Hiver.ViewModels.Catalog.ProductCategories;
 using Hiver.ViewModels.Catalog.ProductImages;
 using Hiver.ViewModels.Catalog.Products;
 using Hiver.ViewModels.Common;
@@ -22,11 +24,14 @@ namespace Hiver.Application.Catalog.Products
         private readonly HiverDbContext _context;
         private readonly IStorageService _storageService;
         private const string USER_CONTENT_FOLDER_NAME = "files";
+        private readonly IMapper _mapper;
 
-        public ProductService(HiverDbContext context, IStorageService storageService)
+        public ProductService(HiverDbContext context, IStorageService storageService,
+            IMapper mapper)
         {
             _context = context;
             _storageService = storageService;
+            _mapper = mapper;
         }
 
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
@@ -44,7 +49,7 @@ namespace Hiver.Application.Catalog.Products
             if (!string.IsNullOrEmpty(request.Keyword))
                 query = query.Where(x => x.t2.Name.Contains(request.Keyword));
 
-            if (request.CategoryId != null)
+            if (request.CategoryId != null && request.CategoryId != 0)
             {
                 query = query.Where(p => p.t2.Id == request.CategoryId);
             }
@@ -52,7 +57,7 @@ namespace Hiver.Application.Catalog.Products
             //3. Paging
             int totalRow = await query.CountAsync();
 
-            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
+            var data = await query.Skip((request.PageIndex -1) * request.PageSize)
                 .Take(request.PageSize)
                 .Select(x => new ProductVm()
                 {
@@ -68,8 +73,7 @@ namespace Hiver.Application.Catalog.Products
                     ModifyDate = x.t0.ModifyDate,
                     ModifyBy = x.t0.ModifyBy,
                     Status = x.t0.Status,
-                    ViewCount = x.t0.ViewCount,
-                    ThumbnailImage = x.t3.ImagePath
+                    ViewCount = x.t0.ViewCount
                 }).ToListAsync();
 
             //4. Select and projection
@@ -89,8 +93,6 @@ namespace Hiver.Application.Catalog.Products
 
             if (product == null) throw new HiverException($"Không tìm được sản phẩm : {Id}");
 
-            var image = await _context.ProductImages.Where(x => x.IdTable == Id && x.IsDefault == true).FirstOrDefaultAsync();
-
             var productViewModel = new ProductVm()
             {
                 Id = product.Id,
@@ -106,9 +108,19 @@ namespace Hiver.Application.Catalog.Products
                 ModifyBy = product.ModifyBy,
                 Status = product.Status,
                 ViewCount = product.ViewCount,
-                ThumbnailImage = image != null ? image.ImagePath : "no-image.jpg"
+                ProductCategories = GetPorductCategory(product.Id).Result
             };
             return productViewModel;
+        }
+
+        public async Task<List<ProductCategoryVm>> GetPorductCategory(int Id)
+        {
+            var rel = await (from a in _context.ProductCategories
+                      join b in _context.ProductAndProductCategories on a.Id equals b.IdProductCategory
+                      where b.IdProduct == Id select a).ToListAsync();
+
+            List<ProductCategoryVm> categoryVm = _mapper.Map<List<ProductCategoryVm>>(rel);
+            return categoryVm;
         }
 
         public async Task<int> Create(ProductCreateRequest request)
@@ -234,13 +246,13 @@ namespace Hiver.Application.Catalog.Products
             return productImage.Id;
         }
 
-        public async Task<ProductImageViewModel> GetImageById(int imageId)
+        public async Task<ProductImageVm> GetImageById(int imageId)
         {
             var image = await _context.ProductImages.FindAsync(imageId);
             if (image == null)
                 throw new HiverException($"Không tìm thấy ảnh {imageId}");
 
-            var viewModel = new ProductImageViewModel()
+            var viewModel = new ProductImageVm()
             {
                 Caption = image.Caption,
                 DateCreated = image.DateCreated,
@@ -254,10 +266,10 @@ namespace Hiver.Application.Catalog.Products
             return viewModel;
         }
 
-        public async Task<List<ProductImageViewModel>> GetListImages(int tableId)
+        public async Task<List<ProductImageVm>> GetListImages(int tableId)
         {
             return await _context.ProductImages.Where(x => x.IdTable == tableId)
-                .Select(i => new ProductImageViewModel()
+                .Select(i => new ProductImageVm()
                 {
                     Caption = i.Caption,
                     DateCreated = i.DateCreated,

@@ -1,5 +1,6 @@
 ﻿using Hiver.Utilities.Enums;
 using Hiver.Utilities.Table;
+using Hiver.ViewModels.Catalog.ProductCategories;
 using Hiver.ViewModels.Catalog.ProductImages;
 using Microsoft.AspNetCore.Http;
 using System;
@@ -19,9 +20,9 @@ namespace Hiver.ViewModels.Catalog.Products
         public Status Status { get; set; }
         public int? ViewCount { get; set; }
 
-        public string ThumbnailImage { get; set; }
+        public List<ProductImageVm> ProductImages { get; set; }
 
-        public IList<int> ProductCategories { get; set; }
+        public List<ProductCategoryVm> ProductCategories { get; set; }
 
     }
 }

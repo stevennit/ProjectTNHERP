@@ -11,8 +11,8 @@ namespace Hiver.Application.Catalog.Products
     public interface IProductService
     {
         Task<int> AddImage(int tableId, ProductImageCreateRequest request);
-        Task<ProductImageViewModel> GetImageById(int imageId);
-        Task<List<ProductImageViewModel>> GetListImages(int tableId);
+        Task<ProductImageVm> GetImageById(int imageId);
+        Task<List<ProductImageVm>> GetListImages(int tableId);
         Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
         Task<int> RemoveImage(int imageId);
         Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request);
