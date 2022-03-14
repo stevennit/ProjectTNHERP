@@ -67,8 +67,6 @@ namespace Hiver.BackendApi
             services.AddScoped<AuthAttribute>();
 
             services.AddTransient<IMenuService, MenuSerivce>();
-
-
             
             services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();

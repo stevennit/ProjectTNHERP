@@ -9,9 +9,9 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiv
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\ref\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.AssemblyReference.cache
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\Hiver.Utilities.deps.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\Hiver.Utilities.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\ref\Hiver.Utilities.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\Hiver.Utilities.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.AssemblyReference.cache
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.GeneratedMSBuildEditorConfig.editorconfig
@@ -19,6 +19,6 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Ut
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.AssemblyInfo.cs
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.CoreCompileInputs.cache
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\ref\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\refint\Hiver.Utilities.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.AssemblyReference.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\ref\Hiver.Utilities.dll

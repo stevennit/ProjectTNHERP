@@ -1,4 +1,5 @@
-﻿using Hiver.ViewModels.Catalog.ProductImages;
+﻿using Hiver.ViewModels.Catalog.ProductCategories;
+using Hiver.ViewModels.Catalog.ProductImages;
 using Hiver.ViewModels.Catalog.Products;
 using Hiver.ViewModels.Common;
 using System;
@@ -12,7 +13,8 @@ namespace Hiver.Application.Catalog.Products
     {
         Task<int> AddImage(int tableId, ProductImageCreateRequest request);
         Task<ProductImageVm> GetImageById(int imageId);
-        Task<List<ProductImageVm>> GetListImages(int tableId);
+        Task<List<ProductCategoryVm>> GetListProductCategory(int tableId);
+        Task<List<ProductImageVm>> GetListProductImages(int tableId);
         Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
         Task<int> RemoveImage(int imageId);
         Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request);

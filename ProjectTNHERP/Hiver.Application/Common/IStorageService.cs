@@ -10,8 +10,8 @@ namespace Hiver.Application.Common
     {
         string GetFileUrl(string fileName);
 
-        Task SaveFileAsync(Stream mediaBinaryStream, string fileName);
+        Task SaveFileAsync(Stream mediaBinaryStream,string folderName, string fileName);
 
-        Task DeleteFileAsync(string fileName);
+        Task DeleteFileAsync(string folderNamestring,string fileName);
     }
 }

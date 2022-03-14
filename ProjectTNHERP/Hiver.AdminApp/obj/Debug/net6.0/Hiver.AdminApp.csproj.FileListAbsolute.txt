@@ -551,6 +551,7 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hive
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\ref\Hiver.AdminApp.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.genruntimeconfig.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\AutoMapper.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.Development.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.Production.json
@@ -559,7 +560,6 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.Adm
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.deps.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.runtimeconfig.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\ref\Hiver.AdminApp.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
@@ -849,6 +849,7 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\Syst
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Xml.XPath.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Xml.XPath.XDocument.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\WindowsBase.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\AutoMapper.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\FluentValidation.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
@@ -1092,7 +1093,7 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\staticweb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\scopedcss\bundle\Hiver.AdminApp.styles.css
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.csproj.CopyComplete
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\ref\Hiver.AdminApp.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\refint\Hiver.AdminApp.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.genruntimeconfig.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\AutoMapper.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\ref\Hiver.AdminApp.dll

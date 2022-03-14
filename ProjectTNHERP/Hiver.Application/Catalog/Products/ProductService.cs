@@ -23,7 +23,7 @@ namespace Hiver.Application.Catalog.Products
     {
         private readonly HiverDbContext _context;
         private readonly IStorageService _storageService;
-        private const string USER_CONTENT_FOLDER_NAME = "files";
+        private const string USER_CONTENT_FOLDER_NAME = "files/images/product";
         private readonly IMapper _mapper;
 
         public ProductService(HiverDbContext context, IStorageService storageService,
@@ -42,9 +42,8 @@ namespace Hiver.Application.Catalog.Products
                         from t1 in temp1.DefaultIfEmpty()
                         join t2 in _context.ProductCategories on t1.IdProductCategory equals t2.Id into temp2
                         from t2 in temp2.DefaultIfEmpty()
-                        join t3 in _context.ProductImages on t0.Id equals t3.IdTable into temp3
-                        from t3 in temp3.DefaultIfEmpty()
-                        select new { t0, t1, t2 ,t3};
+                        select new { t0, t1, t2};
+
             //2. filter
             if (!string.IsNullOrEmpty(request.Keyword))
                 query = query.Where(x => x.t2.Name.Contains(request.Keyword));
@@ -56,6 +55,9 @@ namespace Hiver.Application.Catalog.Products
 
             //3. Paging
             int totalRow = await query.CountAsync();
+
+
+            //4.Get Image Product
 
             var data = await query.Skip((request.PageIndex -1) * request.PageSize)
                 .Take(request.PageSize)
@@ -108,12 +110,13 @@ namespace Hiver.Application.Catalog.Products
                 ModifyBy = product.ModifyBy,
                 Status = product.Status,
                 ViewCount = product.ViewCount,
-                ProductCategories = GetPorductCategory(product.Id).Result
+                ProductCategories = GetListProductCategory(product.Id).Result,
+                ProductImages = GetListProductImages(product.Id).Result
             };
             return productViewModel;
         }
 
-        public async Task<List<ProductCategoryVm>> GetPorductCategory(int Id)
+        public async Task<List<ProductCategoryVm>> GetListProductCategory(int Id)
         {
             var rel = await (from a in _context.ProductCategories
                       join b in _context.ProductAndProductCategories on a.Id equals b.IdProductCategory
@@ -121,6 +124,14 @@ namespace Hiver.Application.Catalog.Products
 
             List<ProductCategoryVm> categoryVm = _mapper.Map<List<ProductCategoryVm>>(rel);
             return categoryVm;
+        }
+
+        public async Task<List<ProductImageVm>> GetListProductImages(int tableId)
+        {
+            var rel = await _context.ProductImages.Where(x => x.IdTable == tableId).ToListAsync();
+
+            List<ProductImageVm> tableVm = _mapper.Map<List<ProductImageVm>>(rel);
+            return tableVm;
         }
 
         public async Task<int> Create(ProductCreateRequest request)
@@ -171,7 +182,7 @@ namespace Hiver.Application.Catalog.Products
             var images = _context.ProductImages.Where(i => i.IdTable == productId);
             foreach (var image in images)
             {
-                await _storageService.DeleteFileAsync(image.ImagePath);
+                await _storageService.DeleteFileAsync(USER_CONTENT_FOLDER_NAME,image.ImagePath);
             }
 
             _context.Products.Remove(product);
@@ -218,10 +229,9 @@ namespace Hiver.Application.Catalog.Products
 
         private async Task<string> SaveFile(IFormFile file)
         {
-            var originalFileName = USER_CONTENT_FOLDER_NAME +  ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+            var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
             var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            var fullfilename = USER_CONTENT_FOLDER_NAME + fileName;
-            await _storageService.SaveFileAsync(file.OpenReadStream(), fullfilename);
+            await _storageService.SaveFileAsync(file.OpenReadStream(), USER_CONTENT_FOLDER_NAME, fileName);
             return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
         }
 
@@ -266,22 +276,6 @@ namespace Hiver.Application.Catalog.Products
             return viewModel;
         }
 
-        public async Task<List<ProductImageVm>> GetListImages(int tableId)
-        {
-            return await _context.ProductImages.Where(x => x.IdTable == tableId)
-                .Select(i => new ProductImageVm()
-                {
-                    Caption = i.Caption,
-                    DateCreated = i.DateCreated,
-                    FileSize = i.FileSize,
-                    Id = i.Id,
-                    ImagePath = i.ImagePath,
-                    IsDefault = i.IsDefault,
-                    IdTable = i.IdTable,
-                    SortOrder = i.SortOrder
-                }).ToListAsync();
-        }
-
         public async Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request)
         {
             var productImage = await _context.ProductImages.FindAsync(imageId);
@@ -301,9 +295,11 @@ namespace Hiver.Application.Catalog.Products
         public async Task<int> RemoveImage(int imageId)
         {
             var productImage = await _context.ProductImages.FindAsync(imageId);
+
             if (productImage == null)
                 throw new HiverException($"Không tìm được ảnh {imageId}");
             _context.ProductImages.Remove(productImage);
+
             return await _context.SaveChangesAsync();
         }
 

@@ -21,7 +21,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
     {
         private readonly HiverDbContext _context;
         private readonly IStorageService _storageService;
-        private const string USER_CONTENT_FOLDER_NAME = "files";
+        private const string USER_CONTENT_FOLDER_NAME = "files/images/knifemold";
 
         public KnifeMoldService(HiverDbContext context, IStorageService storageService)
         {
@@ -95,7 +95,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
 
             foreach (var image in images)
             {
-                await _storageService.DeleteFileAsync(image.ImagePath);
+                await _storageService.DeleteFileAsync(USER_CONTENT_FOLDER_NAME, image.ImagePath);
             }
 
             _context.KnifeMolds.Remove(table);
@@ -270,10 +270,9 @@ namespace Hiver.Application.Catalog.KnifeMolds
 
         private async Task<string> SaveFile(IFormFile file)
         {
-            var originalFileName = USER_CONTENT_FOLDER_NAME + ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
+            var originalFileName = ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
             var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
-            var fullfilename = USER_CONTENT_FOLDER_NAME + fileName;
-            await _storageService.SaveFileAsync(file.OpenReadStream(), fullfilename);
+            await _storageService.SaveFileAsync(file.OpenReadStream(), USER_CONTENT_FOLDER_NAME, fileName);
             return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
         }
     }

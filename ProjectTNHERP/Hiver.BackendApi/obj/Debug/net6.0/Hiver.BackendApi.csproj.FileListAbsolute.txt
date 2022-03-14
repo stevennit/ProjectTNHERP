@@ -280,6 +280,8 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hi
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\ref\Hiver.BackendApi.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hiver.BackendApi.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hiver.BackendApi.genruntimeconfig.cache
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\AutoMapper.dll
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\appsettings.Development.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\appsettings.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\libman.json
@@ -288,8 +290,9 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\Hiver.B
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\Hiver.BackendApi.deps.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\Hiver.BackendApi.runtimeconfig.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\Hiver.BackendApi.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\ref\Hiver.BackendApi.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\Hiver.BackendApi.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\AutoMapper.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\elFinder.NetCore.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\FluentValidation.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
@@ -559,8 +562,7 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\staticw
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\scopedcss\bundle\Hiver.BackendApi.styles.css
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hiver.BackendApi.csproj.CopyComplete
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hiver.BackendApi.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\ref\Hiver.BackendApi.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\refint\Hiver.BackendApi.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hiver.BackendApi.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\Hiver.BackendApi.genruntimeconfig.cache
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\AutoMapper.dll
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.BackendApi\obj\Debug\net6.0\ref\Hiver.BackendApi.dll

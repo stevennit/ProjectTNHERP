@@ -8,6 +8,5 @@ namespace Hiver.ViewModels.Catalog.ProductImages
 {
     public class ProductImageVm : HiverTableImageFull
     {
-        
     }
 }

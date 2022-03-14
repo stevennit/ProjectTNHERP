@@ -71,6 +71,7 @@ namespace Hiver.AdminApp.Controllers
 
         [HttpPost]
         [Consumes("multipart/form-data")]
+        [DisableRequestSizeLimit]
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             if (!ModelState.IsValid)

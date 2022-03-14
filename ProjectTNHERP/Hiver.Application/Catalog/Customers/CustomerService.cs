@@ -20,7 +20,7 @@ namespace Hiver.Application.Catalog.Customers
     {
         private readonly HiverDbContext _context;
         private readonly IStorageService _storageService;
-        private const string USER_CONTENT_FOLDER_NAME = "files";
+        private const string USER_CONTENT_FOLDER_NAME = "/Files/Images/Customer";
         public CustomerService(HiverDbContext context, IStorageService storageService)
         {
             _context = context;
@@ -56,7 +56,7 @@ namespace Hiver.Application.Catalog.Customers
                 var originalFileName = USER_CONTENT_FOLDER_NAME + ContentDispositionHeaderValue.Parse(file.ContentDisposition).FileName.Trim('"');
                 var fileName = $"{Guid.NewGuid()}{Path.GetExtension(originalFileName)}";
                 var fullfilename = USER_CONTENT_FOLDER_NAME + fileName;
-                await _storageService.SaveFileAsync(file.OpenReadStream(), fullfilename);
+                await _storageService.SaveFileAsync(file.OpenReadStream(), USER_CONTENT_FOLDER_NAME, fullfilename);
                 return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
             }
             return "";
