@@ -37,45 +37,41 @@ namespace Hiver.Application.Catalog.Products
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //1. Select join
-            var query = from t0 in _context.Products
-                        join t1 in _context.ProductAndProductCategories on t0.Id equals t1.IdProduct into temp1
-                        from t1 in temp1.DefaultIfEmpty()
-                        join t2 in _context.ProductCategories on t1.IdProductCategory equals t2.Id into temp2
-                        from t2 in temp2.DefaultIfEmpty()
-                        select new { t0, t1, t2};
-
+            var query = from p in _context.Products
+                        join pic in _context.ProductAndProductCategories on p.Id equals pic.IdProduct into ppic
+                        from pic in ppic.DefaultIfEmpty()
+                        join c in _context.ProductCategories on pic.IdProductCategory equals c.Id into picc
+                        from c in picc.DefaultIfEmpty()
+                        select new { p, pic, c };
             //2. filter
             if (!string.IsNullOrEmpty(request.Keyword))
-                query = query.Where(x => x.t2.Name.Contains(request.Keyword));
+                query = query.Where(x => x.p.Name.Contains(request.Keyword));
 
             if (request.CategoryId != null && request.CategoryId != 0)
             {
-                query = query.Where(p => p.t2.Id == request.CategoryId);
+                query = query.Where(p => p.pic.IdProductCategory == request.CategoryId);
             }
 
             //3. Paging
             int totalRow = await query.CountAsync();
 
-
-            //4.Get Image Product
-
-            var data = await query.Skip((request.PageIndex -1) * request.PageSize)
+            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
                 .Take(request.PageSize)
                 .Select(x => new ProductVm()
                 {
-                    Id = x.t0.Id,
-                    Name = x.t0.Name,
-                    Symbol = x.t0.Symbol,
-                    Width = x.t0.Width,
-                    Height = x.t0.Height,
-                    Description = x.t0.Description,
-                    Detail = x.t0.Detail,
-                    CreateDate = x.t0.CreateDate,
-                    CreateBy = x.t0.CreateBy,
-                    ModifyDate = x.t0.ModifyDate,
-                    ModifyBy = x.t0.ModifyBy,
-                    Status = x.t0.Status,
-                    ViewCount = x.t0.ViewCount
+                    Id = x.p.Id,
+                    Name = x.p.Name,
+                    CreateDate = x.p.CreateDate,
+                    Detail = x.p.Detail,
+                    CreateBy = x.p.CreateBy,
+                    Description = x.p.Description,
+                    Height = x.p.Height,
+                    ModifyBy = x.p.ModifyBy,
+                    ModifyDate = x.p.ModifyDate,
+                    Status = x.p.Status,
+                    Symbol = x.p.Symbol,
+                    ViewCount = x.p.ViewCount,
+                    Width = x.p.Width,
                 }).ToListAsync();
 
             //4. Select and projection

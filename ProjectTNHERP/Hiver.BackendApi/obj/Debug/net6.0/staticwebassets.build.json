@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6u8GPclZXyOnYLwfrwNKhnu4IwaYZ+3xmrIZNgHE7d8=",
+  "Hash": "zDoXtp/5C3w8wIMSe/DGyg4OF/IBGUA3IZaEUBiCJis=",
   "Source": "Hiver.BackendApi",
   "BasePath": "_content/Hiver.BackendApi",
   "Mode": "Default",
@@ -16,6 +16,40 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\files\\images\\product\\36d7defa-ecfa-418b-9b8e-29f9bcbf1c69.png",
+      "SourceId": "Hiver.BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
+      "BasePath": "_content/Hiver.BackendApi",
+      "RelativePath": "files/images/product/36d7defa-ecfa-418b-9b8e-29f9bcbf1c69.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\images\\product\\36d7defa-ecfa-418b-9b8e-29f9bcbf1c69.png"
+    },
+    {
+      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\files\\images\\product\\e885a7f9-06a4-4a5a-bd6d-36d666035d82.jpg",
+      "SourceId": "Hiver.BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
+      "BasePath": "_content/Hiver.BackendApi",
+      "RelativePath": "files/images/product/e885a7f9-06a4-4a5a-bd6d-36d666035d82.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\images\\product\\e885a7f9-06a4-4a5a-bd6d-36d666035d82.jpg"
+    },
     {
       "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\NewFolder\\2.PNG",
       "SourceId": "Hiver.BackendApi",

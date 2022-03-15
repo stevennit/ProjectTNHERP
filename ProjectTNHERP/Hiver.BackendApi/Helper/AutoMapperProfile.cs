@@ -2,6 +2,7 @@
 using Hiver.Data.Entities;
 using Hiver.ViewModels.Catalog.ProductCategories;
 using Hiver.ViewModels.Catalog.ProductImages;
+using Hiver.ViewModels.Catalog.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,9 +14,10 @@ namespace Hiver.BackendApi.Helper
     {
         public AutoMapperProfile()
         {
-            CreateMap<ProductCategory, ProductCategoryVm>();
+            CreateMap<ProductCategoryVm, ProductCategory>();
 
             CreateMap<ProductImage, ProductImageVm>();
+            CreateMap<Product, ProductVm>();
         }
     }
 }
