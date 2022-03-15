@@ -45,11 +45,12 @@ namespace Hiver.Application.Catalog.Products
                         select new { p, pic, c };
             //2. filter
             if (!string.IsNullOrEmpty(request.Keyword))
+
                 query = query.Where(x => x.p.Name.Contains(request.Keyword));
 
             if (request.CategoryId != null && request.CategoryId != 0)
             {
-                query = query.Where(p => p.pic.IdProductCategory == request.CategoryId);
+                query = query.Where(p => p.c.Id == request.CategoryId);
             }
 
             //3. Paging

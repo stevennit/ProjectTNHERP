@@ -32,7 +32,8 @@ namespace Hiver.AdminApp.Controllers
             {
                 Keyword = keyword,
                 PageIndex = pageIndex,
-                PageSize = pageSize
+                PageSize = pageSize,
+                CategoryId = categoryId
             };
             var data = await _productApiClient.GetPagings(request);
 

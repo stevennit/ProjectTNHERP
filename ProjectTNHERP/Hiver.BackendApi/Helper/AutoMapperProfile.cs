@@ -14,7 +14,7 @@ namespace Hiver.BackendApi.Helper
     {
         public AutoMapperProfile()
         {
-            CreateMap<ProductCategoryVm, ProductCategory>();
+            CreateMap<ProductCategory, ProductCategoryVm>();
 
             CreateMap<ProductImage, ProductImageVm>();
             CreateMap<Product, ProductVm>();

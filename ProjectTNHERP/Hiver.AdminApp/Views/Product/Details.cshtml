@@ -32,7 +32,7 @@
 
         <div class="card-body">
            <div class="row">
-               <div class="col-md-8">
+               <div class="col-md-6">
                     <dl class="row">
                         <dt class="col-sm-2">
                             @Html.DisplayNameFor(model => model.Id)
@@ -87,22 +87,20 @@
                         </dd>
                     </dl>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <!-- begin superbox -->
-                    <div class="superbox">
-                    @foreach(var item in Model.ProductImages)
-                    {
-                        
-				            <div class="superbox-list">
-					            <a href="javascript:;" class="superbox-img">
-					            <img src="@(Configuration["BaseAddress"] + item.ImagePath)" />
-					            <span style="background: url('@(Configuration["BaseAddress"] + item.ImagePath)');"></span>
-					            </a>
-				            </div>
-			           
-                    }
+                    <div class="superbox" data-offset="50">
+                         @foreach(var item in Model.ProductImages)
+                            {
+					            <div class="superbox-list">
+					                <a href="javascript:;" class="superbox-img">
+					                <img data-img="@(Configuration["BaseAddress"] + item.ImagePath)" />
+					                <span style="background: url(@(Configuration["BaseAddress"] + item.ImagePath));"></span>
+					                </a>
+				                </div>
+                            }
                      </div>
-                   <a href="#modal-message" class="btn btn-sm btn-primary" data-toggle="modal">Demo</a>
+                <a href="#modal-message" class="btn btn-sm btn-primary" data-toggle="modal">Demo</a>
 					<div class="modal modal-message fade" id="modal-message" style="display: none;" aria-hidden="true">
 	                    <div class="modal-dialog">
 		                    <div class="modal-content">
@@ -112,22 +110,12 @@
 			                    </div>
 			                    <div class="modal-body">
                                     <div class="row">
-                                        <div class="col-5">
-                                            @foreach(var item in Model.ProductImages)
-                                            {
-				                                <div class="superbox-list">
-					                                <a href="javascript:;" class="superbox-img">
-					                                <img src="@(Configuration["BaseAddress"] + item.ImagePath)" />
-					                                <span style="background: url('@(Configuration["BaseAddress"] + item.ImagePath)');"></span>
-					                                </a>
-				                                </div>
-                                            }
+                                        <div class="col-6">
+                                            
                                         </div>
                                         <div class="col-7"></div>
                                     </div>
-				                    <div class="superbox" data-offset="50">
-					                    
-				                    </div>
+				                   
 			                    </div>
 		                    </div>
 	                    </div>
