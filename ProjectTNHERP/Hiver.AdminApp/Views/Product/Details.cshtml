@@ -10,6 +10,10 @@
 @section Css {
     <!-- ================== BEGIN PAGE LEVEL CSS STYLE ================== -->
 	<link href="/assets/plugins/superbox/superbox.min.css" rel="stylesheet" />
+
+	<link href="/lib/css/lightbox.min.css" rel="stylesheet" />
+	
+
 	<!-- ================== END PAGE LEVEL CSS STYLE ================== -->
 }
 
@@ -17,7 +21,12 @@
 
     <script src="/assets/plugins/superbox/jquery.superbox.min.js"></script>
 	<script src="/assets/js/demo/gallery-v2.demo.js"></script>
+
+	<script type="text/javascript" src="/lib/js/lightbox.min.js"></script>
+
 }
+
+
 
 <div class="container-fluid">
     <h1 class="mt-4">Chi tiết</h1>
@@ -109,14 +118,14 @@
 				                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
 			                    </div>
 			                    <div class="modal-body">
-                                    <div class="row">
-                                        <div class="col-6">
-                                            
-                                        </div>
-                                        <div class="col-7"></div>
-                                    </div>
-				                   
-			                    </div>
+                                   <div class="gallery-image">
+                                       <a href="/images/hill1.jpg" data-lightbox="roadtrip"><img src="/images/luna1.jpg" /></a>
+                                        <a href="/images/luna2.jpg" data-lightbox="roadtrip"><img src="/images/luna2.jpg" /></a>
+                                        <a href="/images/luna3.jpg" data-lightbox="roadtrip"><img src="/images/luna3.jpg" /></a>
+                                   </div>
+								</div>
+							    <!-- End Model Body -->
+			                </div>
 		                    </div>
 	                    </div>
                     </div>

@@ -1097,3 +1097,4 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\refint\Hi
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.genruntimeconfig.cache
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\ref\Hiver.AdminApp.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\libman.json

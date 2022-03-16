@@ -11,16 +11,17 @@
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
 	<link href="/assets/css/default/app.min.css" rel="stylesheet" />
 	<!-- ================== END BASE CSS STYLE ================== -->
+	<link href="/css/styles.css" rel="stylesheet" />
 
 	@RenderSection("Css", required: false)
 
 </head>
-<body class="sb-nav-fixed">
-   @* <!-- begin #page-loader -->
+<body>
+   <!-- begin #page-loader -->
 	<div id="page-loader" class="fade show">
 		<span class="spinner"></span>
 	</div>
-	<!-- end #page-loader -->*@
+	<!-- end #page-loader -->
 
 	<!-- begin #page-container -->
 	<div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
@@ -44,6 +45,7 @@
 			<!-- end panel -->
 		</div>
 		<!-- end #content -->
+
 
 		<!-- begin scroll to top btn -->
 		<a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
