@@ -20,7 +20,7 @@ namespace Hiver.Application.Catalog.Customers
     {
         private readonly HiverDbContext _context;
         private readonly IStorageService _storageService;
-        private const string USER_CONTENT_FOLDER_NAME = "/Files/Images/Customer";
+        private const string USER_CONTENT_FOLDER_NAME = "/Files/Images/Partner";
         public CustomerService(HiverDbContext context, IStorageService storageService)
         {
             _context = context;
@@ -28,7 +28,7 @@ namespace Hiver.Application.Catalog.Customers
         }
         public async Task<int> Create(CustomerCreateRequest request)
         {
-            var table = new Customer()
+            var table = new Partner()
             {
                 Name = request.Name,
                 Gender = request.Gender,
@@ -75,14 +75,9 @@ namespace Hiver.Application.Catalog.Customers
 
         public async Task<PagedResult<CustomerVm>> GetAllPaging(GetCustomerPagingRequest request)
         {
-            //1. Select join
-            var query = from t0 in _context.Customers
-                        join t1 in _context.CustomerCompanies on t0.IdCustomerCompany equals t1.Id into temp1
-                        from t1 in temp1.DefaultIfEmpty()
-                        select new { t0, t1 };
-            //2. filter
+            //1. ƯQ filter
             if (!string.IsNullOrEmpty(request.Keyword))
-                query = query.Where(x => x.t1.Name.Contains(request.Keyword));
+                query = _context.Customers.Where(x => x.Name.Contains(request.Keyword));
 
             //3. Paging
             int totalRow = await query.CountAsync();

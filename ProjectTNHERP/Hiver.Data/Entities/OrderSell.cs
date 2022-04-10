@@ -12,7 +12,7 @@ namespace Hiver.Data.Entities
         public Status Status { get; set; }
 
         public int IdCustomer { get; set; }
-        public Customer Customer { get; set; }
+        public Partner Customer { get; set; }
 
         public List<OrderSellDetail> OrderSellDetails { get; set; }
 

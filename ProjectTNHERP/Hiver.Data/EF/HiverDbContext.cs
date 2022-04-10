@@ -26,8 +26,8 @@ namespace Hiver.Data.EF
 
             
 
-            modelBuilder.ApplyConfiguration(new CustomerCompanyConfiguration());
-            modelBuilder.ApplyConfiguration(new CustomerConfiguration());
+            modelBuilder.ApplyConfiguration(new PartnerCategoryConfiguration());
+            modelBuilder.ApplyConfiguration(new PartnerConfiguration());
 
             modelBuilder.ApplyConfiguration(new ProductionConfiguration());
             modelBuilder.ApplyConfiguration(new ProductionDetailConfiguration());
@@ -75,8 +75,8 @@ namespace Hiver.Data.EF
 
         public DbSet<Menu> Menus { set; get; }
 
-        public DbSet<Customer> Customers { set; get; }
-        public DbSet<CustomerCompany> CustomerCompanies { set; get; }
+        public DbSet<Partner> Customers { set; get; }
+        public DbSet<PartnerCategory> CustomerCompanies { set; get; }
 
         public DbSet<Production> Productions { set; get; }
         public DbSet<ProductionDetail> ProductionDetails { get; set; }
