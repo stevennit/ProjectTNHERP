@@ -10,7 +10,7 @@ namespace Hiver.Utilities.Table
     {
         public int Id { get; set; }
 
-        public int IdTable { get; set; }
+        public Guid IdTable { get; set; }
 
         public string ImagePath { get; set; }
 

@@ -29,20 +29,15 @@ namespace Hiver.Data.EF
             modelBuilder.ApplyConfiguration(new PartnerCategoryConfiguration());
             modelBuilder.ApplyConfiguration(new PartnerConfiguration());
 
+            modelBuilder.ApplyConfiguration(new LSXConfiguration());
             modelBuilder.ApplyConfiguration(new ProductionConfiguration());
-            modelBuilder.ApplyConfiguration(new ProductionDetailConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductionStockConfiguration());
 
             modelBuilder.ApplyConfiguration(new KnifeMoldCategoryConfiguration());
             modelBuilder.ApplyConfiguration(new KnifeMoldConfiguration());
             modelBuilder.ApplyConfiguration(new KnifeMoldImageConfiguration());
-            modelBuilder.ApplyConfiguration(new KnifeMoldUsingConfiguration());
 
-            modelBuilder.ApplyConfiguration(new OrderByConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderByStockConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderByDetailAndProductionDetailConfiguration());
             modelBuilder.ApplyConfiguration(new OrderSellConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderSellProductConfiguration());
-            modelBuilder.ApplyConfiguration(new OrderSellDetailAndProductionDetailConfiguration());
 
             modelBuilder.ApplyConfiguration(new ProductAndProductCategoryConfiguration());
             modelBuilder.ApplyConfiguration(new ProductCategoryConfiguration());
@@ -53,8 +48,7 @@ namespace Hiver.Data.EF
             modelBuilder.ApplyConfiguration(new StockConfiguration());
             modelBuilder.ApplyConfiguration(new StockImageConfiguration());
 
-            modelBuilder.ApplyConfiguration(new SupplierCompanyConfiguration());
-            modelBuilder.ApplyConfiguration(new SupplierConfiguration());
+            modelBuilder.ApplyConfiguration(new UnitConfiguration());
 
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
@@ -78,20 +72,15 @@ namespace Hiver.Data.EF
         public DbSet<Partner> Customers { set; get; }
         public DbSet<PartnerCategory> CustomerCompanies { set; get; }
 
+        public DbSet<LSX> LSXs { set; get; }
         public DbSet<Production> Productions { set; get; }
-        public DbSet<ProductionDetail> ProductionDetails { get; set; }
+        public DbSet<ProductionStock> ProductionStocks { set; get; }
 
         public DbSet<KnifeMoldCategory> KnifeMoldCategories { set; get; }
         public DbSet<KnifeMold> KnifeMolds { set; get; }
         public DbSet<KnifeMoldImage> KnifeMoldImages { set; get; }
-        public DbSet<KnifeMoldUsing> KnifeMoldUsings { set; get; }
 
-        public DbSet<OrderBy> OrderBies { set; get; }
-        public DbSet<OrderByDetail> OrderByDetails { set; get; }
-        public DbSet<OrderByDetailAndProductionDetail> OrderByDetailAndProductionDetails { set; get; }
         public DbSet<OrderSell> OrderSells { set; get; }
-        public DbSet<OrderSellDetail> OrderSellProducts { set; get; }
-        public DbSet<OrderSellDetailAndProductionDetail> OrderSellDetailAndProductionDetails { set; get; }
 
         public DbSet<ProductAndProductCategory> ProductAndProductCategories { set; get; }
         public DbSet<ProductCategory> ProductCategories { set; get; }
@@ -102,8 +91,7 @@ namespace Hiver.Data.EF
         public DbSet<StockCategory> StockCategories { set; get; }
         public DbSet<StockImage> StockImages { set; get; }
 
-        public DbSet<Supplier> Suppliers { set; get; }
-        public DbSet<SupplierCompany> SupplierCompanies { set; get; }
+        public DbSet<Unit> Units { set; get; }
 
     }
 }

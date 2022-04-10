@@ -15,9 +15,9 @@ namespace Hiver.Data.Entities
 
         public Status Status { get; set; }
 
-        public int? IdKnifeMoldCategory { get; set; }
+        public Guid? IdKnifeMoldCategory { get; set; }
         public KnifeMoldCategory KnifeMoldCategory { get; set; }
         public List<KnifeMoldImage> KnifeMoldImages { get; set; }
-        public List<OrderByDetail> OrderByDetails { get; set; }
+        public List<Production> Productions { get; set; }
     }
 }

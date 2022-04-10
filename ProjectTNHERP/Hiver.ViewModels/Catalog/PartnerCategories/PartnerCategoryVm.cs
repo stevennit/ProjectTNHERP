@@ -3,7 +3,7 @@ using Hiver.Utilities.Table;
 using System;
 using System.Collections.Generic;
 
-namespace Hiver.ViewModels.Catalog.CustomerCompanies
+namespace Hiver.ViewModels.Catalog.PartnerCategories
 {
     public class PartnerCategoryVm : HiverTableFull
     {
@@ -13,6 +13,6 @@ namespace Hiver.ViewModels.Catalog.CustomerCompanies
         public string Image { get; set; }
         public DateTime? DoB { get; set; }
         public Status Status { get; set; }
-        public List<string> Customer { set; get; }
+        public List<string> Partner { set; get; }
     }
 }

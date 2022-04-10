@@ -9,7 +9,7 @@ namespace Hiver.Utilities.Table
 {
     public class HiverTableUpdate
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
 
         [Required(ErrorMessage = "Tên không được trống")]
         [Display(Name = "Tên")]

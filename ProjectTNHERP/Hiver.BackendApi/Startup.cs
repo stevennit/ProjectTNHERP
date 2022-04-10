@@ -23,9 +23,10 @@ using Hiver.BackendApi.Auth;
 using Hiver.Application.Common.Menu;
 using Hiver.Application.Catalog.Products;
 using Hiver.Application.Catalog.ProductCategories;
-using Hiver.Application.Catalog.Customers;
 using Hiver.Application.Catalog.KnifeMolds;
 using Hiver.BackendApi.Helper;
+using Hiver.Application.Catalog.Partners;
+using Hiver.Application.Catalog.PartnerCategories;
 
 namespace Hiver.BackendApi
 {
@@ -61,7 +62,8 @@ namespace Hiver.BackendApi
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IProductCategoryService, ProductCategoryService>();
-            services.AddTransient<ICustomerService, CustomerService>();
+            services.AddTransient<IPartnerService, PartnerService>();
+            services.AddTransient<IPartnerCategoryService, PartnerCategoryService>();
             services.AddTransient<IKnifeMoldService, KnifeMoldService>();
 
             services.AddScoped<AuthAttribute>();

@@ -19,7 +19,7 @@ namespace Hiver.ViewModels.Catalog.PartnerCategories
 
         public Status Status { get; set; }
 
-        public List<string> Customer { set; get; }
+        public List<string> Partner { set; get; }
 
     }
 }

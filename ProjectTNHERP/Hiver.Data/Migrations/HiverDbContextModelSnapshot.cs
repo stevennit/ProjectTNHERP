@@ -57,7 +57,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
                             ActionName = "GetAllPaging",
-                            ConcurrencyStamp = "15f7e91d-d3ae-4eb0-b41c-ee21e5b63425",
+                            ConcurrencyStamp = "32f740db-0503-415c-aa67-301ed3146c0f",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem tất cả tài khoản",
                             Name = "admin"
@@ -66,7 +66,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
                             ActionName = "GetById",
-                            ConcurrencyStamp = "9ed996b4-5156-49f8-9788-fccab2bfc1aa",
+                            ConcurrencyStamp = "72254431-7f38-457f-947f-910bd23f6748",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem chi tiết tài khoản",
                             Name = "admin"
@@ -75,7 +75,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "006297a5-b430-4b19-a1fb-3c22e9a83aa7",
+                            ConcurrencyStamp = "08122348-6990-4ccc-96c4-3e2ef93d6ef6",
                             ControllerName = "Register",
                             Description = "Tài khoản - Đăng ký tài khoản",
                             Name = "admin"
@@ -84,7 +84,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
                             ActionName = "Update",
-                            ConcurrencyStamp = "4c306abb-ed37-40a5-929f-9f1f4abe5712",
+                            ConcurrencyStamp = "61116c40-2ce0-4917-add5-f216a9509072",
                             ControllerName = "Users",
                             Description = "Tài khoản - Cập nhập tài khoản",
                             Name = "admin"
@@ -93,7 +93,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "99abe4be-1461-4a09-bc37-b7c07bc56b32",
+                            ConcurrencyStamp = "a71a2b0f-da0a-428a-86a7-003de39d4ae3",
                             ControllerName = "Delete",
                             Description = "Tài khoản - Xóa tài khoản",
                             Name = "admin"
@@ -170,7 +170,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "560b5402-1b76-4dea-95cd-bd54482bbeed",
+                            ConcurrencyStamp = "8f61da11-9887-49d3-a50d-2acbcc4ab5c2",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -179,7 +179,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEOoguSr5iRyJzi48W6Hb27YYdiaMgurLf3xhrN4yzu8b8amukhlNdn0FyTqHJmeX4Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEPeIEtOXy5VBzGQqvThAa81VBhFNe35Md1/MFhwtY4z15j7ITGbKaWV8FH38A35iTA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -189,7 +189,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8eff4296-b468-42d5-b612-4839d6573f2e",
+                            ConcurrencyStamp = "57a1b735-6fd4-464e-8440-07b49a391732",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -198,7 +198,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDXYm9PHUHvvoSwDuNFjywFqEcOK5RIGnsj8qqLfvxLjDlV+dVTPi9kgf1Hxq6kCYQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEEEFK6BNGCGR7gSThTwQ18wncR0pRd645magNK8mEKQPU1TACsu6xSaisHGnjhu1vQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -208,7 +208,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "c0cf2930-35dc-43e8-b4c8-cad591cd2602",
+                            ConcurrencyStamp = "5269e26a-fbcc-4473-aa4a-68ba3ab05a1c",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -217,7 +217,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEBehYT3P5d4ptO6zwIJKr5dPUakbeaVZMFrWSt38DzGCqpIgNYWK8CJrDl8Q/VqsfA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEE4Nz3kYconYLdtloD4QO+SyPuiCU3xjsERg9pqRk4cR1iLOrVr/6dlKGnKGqKVT+A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -225,146 +225,19 @@ namespace Hiver.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.Customer", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CreateBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreateDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Detail")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("DoB")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("xml");
-
-                    b.Property<int?>("Gender")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("IdCustomerCompany")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Image")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Mobile")
-                        .HasColumnType("xml");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdCustomerCompany");
-
-                    b.ToTable("Customers", (string)null);
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.CustomerCompany", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("xml");
-
-                    b.Property<string>("CreateBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<DateTime?>("DoB")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(50)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("Image")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Mobile")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("CustomerCompanies", (string)null);
-                });
-
             modelBuilder.Entity("Hiver.Data.Entities.KnifeMold", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Column")
                         .HasColumnType("int");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -377,8 +250,8 @@ namespace Hiver.Data.Migrations
                     b.Property<double>("Height")
                         .HasColumnType("float");
 
-                    b.Property<int?>("IdKnifeMoldCategory")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("IdKnifeMoldCategory")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
@@ -387,7 +260,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -411,18 +283,14 @@ namespace Hiver.Data.Migrations
 
             modelBuilder.Entity("Hiver.Data.Entities.KnifeMoldCategory", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -439,7 +307,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -471,11 +338,10 @@ namespace Hiver.Data.Migrations
                     b.Property<long>("FileSize")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("IdTable")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdTable")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -492,38 +358,33 @@ namespace Hiver.Data.Migrations
                     b.ToTable("KnifeMoldImages", (string)null);
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.KnifeMoldUsing", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.LSX", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime?>("DateUsingEnd")
-                        .IsRequired()
-                        .HasColumnType("Date");
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
 
-                    b.Property<DateTime?>("DateUsingStart")
-                        .IsRequired()
-                        .HasColumnType("Date");
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdProductionDetail")
-                        .HasColumnType("int");
+                    b.Property<string>("ModifyBy")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("UserUsingEnd")
-                        .HasColumnType("int");
+                    b.Property<DateTime?>("ModifyDate")
+                        .HasColumnType("datetime2");
 
-                    b.Property<int?>("UserUsingStart")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("int");
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdProductionDetail");
-
-                    b.ToTable("KnifeMoldUsings", (string)null);
+                    b.ToTable("LSXs", (string)null);
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.Menu", b =>
@@ -617,155 +478,19 @@ namespace Hiver.Data.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.OrderBy", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CreateBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Detail")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("IdSupplier")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdSupplier");
-
-                    b.ToTable("OrderBies", (string)null);
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderByDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CreateBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<int>("IdOrderBy")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdStock")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("KnifeMoldId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int?>("OrderById")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Qty")
-                        .HasColumnType("int");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.Property<int?>("StockId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("KnifeMoldId");
-
-                    b.HasIndex("OrderById");
-
-                    b.HasIndex("StockId");
-
-                    b.ToTable("OrderByDetails", (string)null);
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderByDetailAndProductionDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("IdOrderByDetail")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdProductionDetail")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdOrderByDetail");
-
-                    b.HasIndex("IdProductionDetail");
-
-                    b.ToTable("OrderByDetailAndProductionDetails", (string)null);
-                });
-
             modelBuilder.Entity("Hiver.Data.Entities.OrderSell", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -775,8 +500,8 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("IdCustomer")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("IdPartnerCategory")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
@@ -785,7 +510,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -795,40 +519,58 @@ namespace Hiver.Data.Migrations
                         .HasDefaultValue(1);
 
                     b.HasKey("Id");
-
-                    b.HasIndex("IdCustomer");
 
                     b.ToTable("OrderSells", (string)null);
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.OrderSellDetail", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.Partner", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CompanyTaxCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("DateDelivery")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
 
-                    b.Property<int>("IdOrderSell")
+                    b.Property<string>("Detail")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("DoB")
+                        .HasColumnType("Date");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<int?>("Gender")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdProduct")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("IdPartnerCategory")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Image")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Mobile")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
@@ -837,10 +579,81 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<Guid?>("PartnerCategoryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<int>("Status")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasDefaultValue(1);
+
+                    b.Property<string>("Tel")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Qty")
-                        .HasColumnType("int");
+                    b.HasKey("Id");
+
+                    b.HasIndex("PartnerCategoryId");
+
+                    b.ToTable("Partners", (string)null);
+                });
+
+            modelBuilder.Entity("Hiver.Data.Entities.PartnerCategory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Address")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CompanyTaxCode")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Country")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<DateTime?>("DoB")
+                        .HasColumnType("Date");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(50)
+                        .IsUnicode(false)
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<string>("Image")
+                        .HasMaxLength(250)
+                        .HasColumnType("nvarchar(250)");
+
+                    b.Property<string>("Mobile")
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
+
+                    b.Property<string>("ModifyBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("ModifyDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.Property<int>("Status")
                         .ValueGeneratedOnAdd()
@@ -849,50 +662,22 @@ namespace Hiver.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdOrderSell");
-
-                    b.HasIndex("IdProduct");
-
-                    b.ToTable("OrderSellDetails", (string)null);
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderSellDetailAndProductionDetail", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("IdOrderSellDetail")
-                        .HasColumnType("int");
-
-                    b.Property<int>("IdProductionDetail")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("IdOrderSellDetail");
-
-                    b.HasIndex("IdProductionDetail");
-
-                    b.ToTable("OrderSellDetailAndProductionDetails", (string)null);
+                    b.ToTable("PartnerCategories", (string)null);
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.Product", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -912,7 +697,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -940,11 +724,11 @@ namespace Hiver.Data.Migrations
 
             modelBuilder.Entity("Hiver.Data.Entities.ProductAndProductCategory", b =>
                 {
-                    b.Property<int>("IdProduct")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("IdProduct")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<int>("IdProductCategory")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("IdProductCategory")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("IdProduct", "IdProductCategory");
 
@@ -955,18 +739,14 @@ namespace Hiver.Data.Migrations
 
             modelBuilder.Entity("Hiver.Data.Entities.ProductCategory", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -984,7 +764,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -1016,11 +795,10 @@ namespace Hiver.Data.Migrations
                     b.Property<long>("FileSize")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("IdTable")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdTable")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -1039,16 +817,34 @@ namespace Hiver.Data.Migrations
 
             modelBuilder.Entity("Hiver.Data.Entities.Production", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("Core")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CreateBy")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("CreateDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("DateEnd")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Depreciation")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Description")
-                        .IsRequired()
                         .HasMaxLength(250)
                         .HasColumnType("nvarchar(250)");
+
+                    b.Property<Guid?>("KnifeMoldId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("LSXId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
@@ -1057,6 +853,18 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid?>("OrderSellId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<decimal?>("Qty")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("QtyRequest")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Status")
@@ -1067,91 +875,62 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Title")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("UserManager")
-                        .IsRequired()
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<Guid?>("UnitId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("KnifeMoldId");
+
+                    b.HasIndex("LSXId");
+
+                    b.HasIndex("OrderSellId");
+
+                    b.HasIndex("ProductId");
 
                     b.ToTable("Productions", (string)null);
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.ProductionDetail", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.ProductionStock", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<Guid?>("ProductionId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("EndWork")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("Expanded")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
-
-                    b.Property<int>("IdProduction")
-                        .HasColumnType("int");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<decimal>("PercentComplete")
+                    b.Property<decimal>("Qty")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int>("QtyComplate")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("StockId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("StartWork")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.Property<bool>("Summary")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bit")
-                        .HasDefaultValue(true);
-
-                    b.Property<string>("UserUsing")
-                        .HasMaxLength(50)
-                        .HasColumnType("nvarchar(50)");
+                    b.Property<Guid?>("UnitId")
+                        .HasColumnType("uniqueidentifier");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdProduction");
+                    b.HasIndex("ProductionId");
 
-                    b.ToTable("ProductionDetails", (string)null);
+                    b.HasIndex("StockId");
+
+                    b.ToTable("ProductionStocks", (string)null);
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.Stock", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
+                        .HasColumnType("uniqueidentifier");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                    b.Property<string>("Code")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -1161,8 +940,8 @@ namespace Hiver.Data.Migrations
                     b.Property<string>("Detail")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("IdStockCategory")
-                        .HasColumnType("int");
+                    b.Property<Guid?>("IdStockCategory")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ModifyBy")
                         .HasColumnType("nvarchar(max)");
@@ -1171,7 +950,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -1193,18 +971,14 @@ namespace Hiver.Data.Migrations
 
             modelBuilder.Entity("Hiver.Data.Entities.StockCategory", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("CreateBy")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
@@ -1222,7 +996,6 @@ namespace Hiver.Data.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -1254,11 +1027,10 @@ namespace Hiver.Data.Migrations
                     b.Property<long>("FileSize")
                         .HasColumnType("bigint");
 
-                    b.Property<int>("IdTable")
-                        .HasColumnType("int");
+                    b.Property<Guid>("IdTable")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ImagePath")
-                        .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("nvarchar(200)");
 
@@ -1275,141 +1047,18 @@ namespace Hiver.Data.Migrations
                     b.ToTable("StockImages", (string)null);
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.Supplier", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.Unit", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("CreateBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Detail")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("DoB")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("xml");
-
-                    b.Property<int?>("Gender")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("IdSupplierCompany")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Image")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Message")
-                        .HasColumnType("xml");
-
-                    b.Property<string>("Mobile")
-                        .HasColumnType("xml");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("IdSupplierCompany");
-
-                    b.ToTable("Suppliers", (string)null);
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.SupplierCompany", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<string>("Address")
-                        .HasColumnType("xml");
-
-                    b.Property<string>("Country")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("CreateBy")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("CreateDate")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DateWorkEnd")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime?>("DateWorkFirst")
-                        .IsRequired()
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<DateTime?>("DoB")
-                        .HasColumnType("Date");
-
-                    b.Property<string>("Email")
-                        .HasMaxLength(50)
-                        .IsUnicode(false)
-                        .HasColumnType("varchar(50)");
-
-                    b.Property<string>("Image")
-                        .HasMaxLength(250)
-                        .HasColumnType("nvarchar(250)");
-
-                    b.Property<string>("Mobile")
-                        .HasMaxLength(20)
-                        .HasColumnType("nvarchar(20)");
-
-                    b.Property<string>("ModifyBy")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("ModifyDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
-
-                    b.Property<int>("Status")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasDefaultValue(1);
-
-                    b.HasKey("Id");
-
-                    b.ToTable("SupplierCompanies", (string)null);
+                    b.ToTable("Units", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<System.Guid>", b =>
@@ -1509,16 +1158,6 @@ namespace Hiver.Data.Migrations
                     b.ToTable("AppUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.Customer", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.CustomerCompany", "CustomerCompany")
-                        .WithMany("Customer")
-                        .HasForeignKey("IdCustomerCompany")
-                        .OnDelete(DeleteBehavior.SetNull);
-
-                    b.Navigation("CustomerCompany");
-                });
-
             modelBuilder.Entity("Hiver.Data.Entities.KnifeMold", b =>
                 {
                     b.HasOne("Hiver.Data.Entities.KnifeMoldCategory", "KnifeMoldCategory")
@@ -1540,113 +1179,13 @@ namespace Hiver.Data.Migrations
                     b.Navigation("KnifeMold");
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.KnifeMoldUsing", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.Partner", b =>
                 {
-                    b.HasOne("Hiver.Data.Entities.ProductionDetail", "ProductionDetail")
-                        .WithMany("KnifeMoldUsings")
-                        .HasForeignKey("IdProductionDetail")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Hiver.Data.Entities.PartnerCategory", "PartnerCategory")
+                        .WithMany("Partner")
+                        .HasForeignKey("PartnerCategoryId");
 
-                    b.Navigation("ProductionDetail");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderBy", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.Supplier", "Supplier")
-                        .WithMany("OrderBies")
-                        .HasForeignKey("IdSupplier")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Supplier");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderByDetail", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.KnifeMold", null)
-                        .WithMany("OrderByDetails")
-                        .HasForeignKey("KnifeMoldId");
-
-                    b.HasOne("Hiver.Data.Entities.OrderBy", "OrderBy")
-                        .WithMany("OrderByDetails")
-                        .HasForeignKey("OrderById");
-
-                    b.HasOne("Hiver.Data.Entities.Stock", "Stock")
-                        .WithMany("OrderByStocks")
-                        .HasForeignKey("StockId");
-
-                    b.Navigation("OrderBy");
-
-                    b.Navigation("Stock");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderByDetailAndProductionDetail", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.OrderByDetail", "OrderByDetail")
-                        .WithMany("OrderByDetailAndProductionDetails")
-                        .HasForeignKey("IdOrderByDetail")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Hiver.Data.Entities.ProductionDetail", "ProductionDetail")
-                        .WithMany("OrderByDetailAndProductionDetails")
-                        .HasForeignKey("IdProductionDetail")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("OrderByDetail");
-
-                    b.Navigation("ProductionDetail");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderSell", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.Customer", "Customer")
-                        .WithMany("OrderSells")
-                        .HasForeignKey("IdCustomer")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderSellDetail", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.OrderSell", "OrderSell")
-                        .WithMany("OrderSellDetails")
-                        .HasForeignKey("IdOrderSell")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Hiver.Data.Entities.Product", "Product")
-                        .WithMany("OrderSellDetails")
-                        .HasForeignKey("IdProduct")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("OrderSell");
-
-                    b.Navigation("Product");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderSellDetailAndProductionDetail", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.OrderSellDetail", "OrderSellDetail")
-                        .WithMany("OrderSellDetailAndProductionDetails")
-                        .HasForeignKey("IdOrderSellDetail")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Hiver.Data.Entities.ProductionDetail", "ProductionDetail")
-                        .WithMany("OrderSellDetailAndProductionDetails")
-                        .HasForeignKey("IdProductionDetail")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("OrderSellDetail");
-
-                    b.Navigation("ProductionDetail");
+                    b.Navigation("PartnerCategory");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.ProductAndProductCategory", b =>
@@ -1679,15 +1218,37 @@ namespace Hiver.Data.Migrations
                     b.Navigation("Product");
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.ProductionDetail", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.Production", b =>
                 {
-                    b.HasOne("Hiver.Data.Entities.Production", "Production")
-                        .WithMany("ProductionDetails")
-                        .HasForeignKey("IdProduction")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                    b.HasOne("Hiver.Data.Entities.KnifeMold", null)
+                        .WithMany("Productions")
+                        .HasForeignKey("KnifeMoldId");
 
-                    b.Navigation("Production");
+                    b.HasOne("Hiver.Data.Entities.LSX", null)
+                        .WithMany("Productions")
+                        .HasForeignKey("LSXId");
+
+                    b.HasOne("Hiver.Data.Entities.OrderSell", "OrderSell")
+                        .WithMany("Productions")
+                        .HasForeignKey("OrderSellId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
+                    b.HasOne("Hiver.Data.Entities.Product", null)
+                        .WithMany("Productions")
+                        .HasForeignKey("ProductId");
+
+                    b.Navigation("OrderSell");
+                });
+
+            modelBuilder.Entity("Hiver.Data.Entities.ProductionStock", b =>
+                {
+                    b.HasOne("Hiver.Data.Entities.Production", null)
+                        .WithMany("ProductionStocks")
+                        .HasForeignKey("ProductionId");
+
+                    b.HasOne("Hiver.Data.Entities.Stock", null)
+                        .WithMany("ProductionStocks")
+                        .HasForeignKey("StockId");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.Stock", b =>
@@ -1710,30 +1271,11 @@ namespace Hiver.Data.Migrations
                     b.Navigation("Stock");
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.Supplier", b =>
-                {
-                    b.HasOne("Hiver.Data.Entities.SupplierCompany", "SupplierCompany")
-                        .WithMany("Suppliers")
-                        .HasForeignKey("IdSupplierCompany");
-
-                    b.Navigation("SupplierCompany");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.Customer", b =>
-                {
-                    b.Navigation("OrderSells");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.CustomerCompany", b =>
-                {
-                    b.Navigation("Customer");
-                });
-
             modelBuilder.Entity("Hiver.Data.Entities.KnifeMold", b =>
                 {
                     b.Navigation("KnifeMoldImages");
 
-                    b.Navigation("OrderByDetails");
+                    b.Navigation("Productions");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.KnifeMoldCategory", b =>
@@ -1741,33 +1283,28 @@ namespace Hiver.Data.Migrations
                     b.Navigation("KnifeMold");
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.OrderBy", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.LSX", b =>
                 {
-                    b.Navigation("OrderByDetails");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.OrderByDetail", b =>
-                {
-                    b.Navigation("OrderByDetailAndProductionDetails");
+                    b.Navigation("Productions");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.OrderSell", b =>
                 {
-                    b.Navigation("OrderSellDetails");
+                    b.Navigation("Productions");
                 });
 
-            modelBuilder.Entity("Hiver.Data.Entities.OrderSellDetail", b =>
+            modelBuilder.Entity("Hiver.Data.Entities.PartnerCategory", b =>
                 {
-                    b.Navigation("OrderSellDetailAndProductionDetails");
+                    b.Navigation("Partner");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.Product", b =>
                 {
-                    b.Navigation("OrderSellDetails");
-
                     b.Navigation("ProductAndProductCategories");
 
                     b.Navigation("ProductImages");
+
+                    b.Navigation("Productions");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.ProductCategory", b =>
@@ -1777,21 +1314,12 @@ namespace Hiver.Data.Migrations
 
             modelBuilder.Entity("Hiver.Data.Entities.Production", b =>
                 {
-                    b.Navigation("ProductionDetails");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.ProductionDetail", b =>
-                {
-                    b.Navigation("KnifeMoldUsings");
-
-                    b.Navigation("OrderByDetailAndProductionDetails");
-
-                    b.Navigation("OrderSellDetailAndProductionDetails");
+                    b.Navigation("ProductionStocks");
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.Stock", b =>
                 {
-                    b.Navigation("OrderByStocks");
+                    b.Navigation("ProductionStocks");
 
                     b.Navigation("StockImages");
                 });
@@ -1799,16 +1327,6 @@ namespace Hiver.Data.Migrations
             modelBuilder.Entity("Hiver.Data.Entities.StockCategory", b =>
                 {
                     b.Navigation("Stocks");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.Supplier", b =>
-                {
-                    b.Navigation("OrderBies");
-                });
-
-            modelBuilder.Entity("Hiver.Data.Entities.SupplierCompany", b =>
-                {
-                    b.Navigation("Suppliers");
                 });
 #pragma warning restore 612, 618
         }

@@ -7,15 +7,21 @@ namespace Hiver.Data.Entities
 {
     public class PartnerCategory : HiverTableFull
     {
+
+        public string Code { get; set; }
         public string Mobile { get; set; }
         public string Email { get; set; }
         public string Address { get; set; }
         public string Image { get; set; }
 
+        // Mã số thuế
+        public string CompanyTaxCode { get; set; }
+        public string Country { get; set; }
+
         public DateTime? DoB { get; set; }
 
         public Status Status { get; set; }
 
-        public List<Partner> Customer { set; get; }
+        public List<Partner> Partner { set; get; }
     }
 }

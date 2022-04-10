@@ -1,5 +1,5 @@
-﻿using Hiver.Application.Catalog.Customers;
-using Hiver.ViewModels.Catalog.Customers;
+﻿using Hiver.Application.Catalog.Partners;
+using Hiver.ViewModels.Catalog.Partners;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
@@ -9,9 +9,9 @@ namespace Hiver.BackendApi.Controllers
     [ApiController]
     public class CustomerController : ControllerBase
     {
-        private readonly ICustomerService _customerService;
+        private readonly IPartnerService _customerService;
 
-        public CustomerController(ICustomerService customerService)
+        public CustomerController(IPartnerService customerService)
         {
             _customerService = customerService;
         }
@@ -19,7 +19,7 @@ namespace Hiver.BackendApi.Controllers
         [HttpPost]
         [Consumes("multipart/form-data")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Create([FromForm] CustomerCreateRequest request)
+        public async Task<IActionResult> Create([FromForm] PartnerCreateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -45,19 +45,19 @@ namespace Hiver.BackendApi.Controllers
             return Ok(tables);
         }
 
-        //http://localhost/api/users/paging?pageIndex=1&pageSize=10&keyword=
-        [HttpGet("paging")]
-        //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> GetAllPaging([FromQuery] GetCustomerPagingRequest request)
-        {
-            var tables = await _customerService.GetAllPaging(request);
-            return Ok(tables);
-        }
+        ////http://localhost/api/users/paging?pageIndex=1&pageSize=10&keyword=
+        //[HttpGet("paging")]
+        ////[ServiceFilter(typeof(AuthAttribute))]
+        //public async Task<IActionResult> GetAllPaging([FromQuery] GetPartnerPagingRequest request)
+        //{
+        //    var tables = await _customerService.GetAllPaging(request);
+        //    return Ok(tables);
+        //}
 
         [HttpPut]
         [Consumes("multipart/form-data")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Update([FromForm] CustomerUpdateRequest request)
+        public async Task<IActionResult> Update([FromForm] PartnerUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {

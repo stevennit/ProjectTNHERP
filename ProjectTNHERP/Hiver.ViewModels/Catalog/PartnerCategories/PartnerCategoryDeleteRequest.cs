@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Hiver.ViewModels.Catalog.CustomerCompanies
+namespace Hiver.ViewModels.Catalog.PartnerCategories
 {
     public class PartnerCategoryDeleteRequest
     {

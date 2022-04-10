@@ -16,7 +16,8 @@ namespace Hiver.Data.Configutions
 
             builder.Property(x => x.Id).UseIdentityColumn();
 
-            builder.Property(x => x.ImagePath).HasMaxLength(200).IsRequired(true);
+
+            builder.Property(x => x.ImagePath).HasMaxLength(200);
             builder.Property(x => x.Caption).HasMaxLength(200);
 
             builder.HasOne(x => x.Stock).WithMany(x => x.StockImages).HasForeignKey(x => x.IdTable);

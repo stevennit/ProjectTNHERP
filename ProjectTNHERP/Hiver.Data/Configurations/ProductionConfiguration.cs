@@ -11,14 +11,13 @@ namespace Hiver.Data.Configutions
         {
             builder.ToTable("Productions");
 
-            builder.HasKey(x => x.Id);
-            builder.Property(x => x.Id).UseIdentityColumn();
+            builder.HasOne(x => x.OrderSell).WithMany(x => x.Productions).HasForeignKey(x => x.OrderSellId).OnDelete(DeleteBehavior.SetNull);
 
-            builder.Property(x => x.UserManager).IsRequired().HasMaxLength(50);
+            builder.HasKey(x => x.Id);
+
             builder.Property(x => x.Description).HasMaxLength(250);
 
             builder.Property(x => x.Status).HasDefaultValue(Status.Active);
-            builder.Property(x => x.Description).IsRequired();
         }
     }
 }
