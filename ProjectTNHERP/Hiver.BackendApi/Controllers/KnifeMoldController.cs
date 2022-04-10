@@ -2,6 +2,7 @@
 using Hiver.ViewModels.Catalog.KnifeMoldImages;
 using Hiver.ViewModels.Catalog.KnifeMolds;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace Hiver.BackendApi.Controllers
@@ -29,7 +30,7 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpGet("{Id}")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> GetById(int Id)
+        public async Task<IActionResult> GetById(Guid Id)
         {
             var tables = await _tableService.GetById(Id);
             if (tables == null)
@@ -48,7 +49,7 @@ namespace Hiver.BackendApi.Controllers
             }
 
             var Id = await _tableService.Create(request);
-            if (Id == 0)
+            if (Id == Guid.Empty)
                 return BadRequest();
 
             var table = await _tableService.GetById(Id);
@@ -66,17 +67,17 @@ namespace Hiver.BackendApi.Controllers
                 return BadRequest(ModelState);
             }
             var affectedResult = await _tableService.Update(request);
-            if (affectedResult == 0)
+            if (affectedResult == System.Guid.Empty)
                 return BadRequest();
             return Ok();
         }
 
         [HttpDelete]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(Guid Id)
         {
             var affectedResult = await _tableService.Delete(Id);
-            if (affectedResult == 0)
+            if (affectedResult == Guid.Empty)
                 return BadRequest();
             return Ok();
         }
@@ -84,7 +85,7 @@ namespace Hiver.BackendApi.Controllers
         //Images
         [HttpPost("{productId}/images")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> CreateImage(int Id, [FromForm] KnifeMoldImageCreateRequest request)
+        public async Task<IActionResult> CreateImage(Guid Id, [FromForm] KnifeMoldImageCreateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -131,7 +132,7 @@ namespace Hiver.BackendApi.Controllers
 
         //[ServiceFilter(typeof(AuthAttribute))]
         [HttpGet("{productId}/images/{imageId}")]
-        public async Task<IActionResult> GetImageById(int productId, int imageId)
+        public async Task<IActionResult> GetImageById(Guid productId, int imageId)
         {
             var image = await _tableService.GetImageById(imageId);
             if (image == null)

@@ -34,7 +34,7 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpGet("{Id}")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> GetById(int Id)
+        public async Task<IActionResult> GetById(Guid Id)
         {
             var product = await _productService.GetById(Id);
             if (product == null)
@@ -53,7 +53,7 @@ namespace Hiver.BackendApi.Controllers
             }
 
             var Id = await _productService.Create(request);
-            if (Id == 0)
+            if (Id == Guid.Empty)
                 return BadRequest();
 
             var table = await _productService.GetById(Id);
@@ -64,7 +64,7 @@ namespace Hiver.BackendApi.Controllers
         [HttpPut("{Id}")]
         [Consumes("multipart/form-data")]
         [ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Update([FromRoute] int Id,[FromForm] ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromRoute] Guid Id,[FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -74,17 +74,17 @@ namespace Hiver.BackendApi.Controllers
             request.Id = Id;
 
             var affectedResult = await _productService.Update(request);
-            if (affectedResult == 0)
+            if (affectedResult == Guid.Empty)
                 return BadRequest();
             return Ok();
         }
 
         [HttpDelete]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(Guid Id)
         {
             var affectedResult = await _productService.Delete(Id);
-            if (affectedResult == 0)
+            if (affectedResult == Guid.Empty)
                 return BadRequest();
             return Ok();
         }
@@ -92,7 +92,7 @@ namespace Hiver.BackendApi.Controllers
         //Images
         [HttpPost("{productId}/images")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> CreateImage(int productId, [FromForm] ProductImageCreateRequest request)
+        public async Task<IActionResult> CreateImage(Guid productId, [FromForm] ProductImageCreateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -140,7 +140,7 @@ namespace Hiver.BackendApi.Controllers
 
         //[ServiceFilter(typeof(AuthAttribute))]
         [HttpGet("{productId}/images/{imageId}")]
-        public async Task<IActionResult> GetImageById(int productId, int imageId)
+        public async Task<IActionResult> GetImageById(Guid productId, int imageId)
         {
             var image = await _productService.GetImageById(imageId);
             if (image == null)
@@ -149,7 +149,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpPut("{id}/productassign")]
-        public async Task<IActionResult> RoleAssign(int id, [FromBody] ProductAssignCategoryRequest request)
+        public async Task<IActionResult> RoleAssign(Guid id, [FromBody] ProductAssignCategoryRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

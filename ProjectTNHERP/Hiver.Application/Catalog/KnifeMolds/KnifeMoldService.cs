@@ -29,7 +29,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
             _storageService = storageService;
         }
 
-        public async Task<int> AddImage(int tableId, KnifeMoldImageCreateRequest request)
+        public async Task<int> AddImage(Guid tableId, KnifeMoldImageCreateRequest request)
         {
             var tableImage = new KnifeMoldImage()
             {
@@ -50,7 +50,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
             return tableImage.Id;
         }
 
-        public async Task<int> Create(KnifeMoldCreateRequest request)
+        public async Task<Guid> Create(KnifeMoldCreateRequest request)
         {
             var table = new KnifeMold()
             {
@@ -83,10 +83,10 @@ namespace Hiver.Application.Catalog.KnifeMolds
             }
             _context.KnifeMolds.Add(table);
             await _context.SaveChangesAsync();
-            return Convert.ToInt32(table.Id);
+            return table.Id;
         }
 
-        public async Task<int> Delete(int Id)
+        public async Task<Guid> Delete(Guid Id)
         {
             var table = await _context.KnifeMolds.FindAsync(Id);
             if (table == null) throw new HiverException($"Không tìm được sản phẩm : {Id}");
@@ -100,7 +100,9 @@ namespace Hiver.Application.Catalog.KnifeMolds
 
             _context.KnifeMolds.Remove(table);
 
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+
+            return table.Id;
         }
 
         public async Task<PagedResult<KnifeMoldVm>> GetAllPaging(GetAllKnifeMoldPagingRequest request)
@@ -116,7 +118,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
             if (!string.IsNullOrEmpty(request.Keyword))
                 query = query.Where(x => x.t2.Name.Contains(request.Keyword));
 
-            if (request.CategoryId != null || request.CategoryId != 0)
+            if (request.CategoryId != null)
             {
                 query = query.Where(p => p.t2.Id == request.CategoryId);
             }
@@ -153,7 +155,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
             return pagedResult;
         }
 
-        public async Task<KnifeMoldVm> GetById(int Id)
+        public async Task<KnifeMoldVm> GetById(Guid Id)
         {
             var table = await _context.KnifeMolds.FindAsync(Id);
 
@@ -199,7 +201,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
             return viewModel;
         }
 
-        public async Task<List<KnifeMoldImageVm>> GetListImages(int tableId)
+        public async Task<List<KnifeMoldImageVm>> GetListImages(Guid tableId)
         {
             return await _context.KnifeMoldImages.Where(x => x.IdTable == tableId)
                 .Select(i => new KnifeMoldImageVm()
@@ -224,7 +226,7 @@ namespace Hiver.Application.Catalog.KnifeMolds
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<int> Update(KnifeMoldUpdateRequest request)
+        public async Task<Guid> Update(KnifeMoldUpdateRequest request)
         {
             var table = await _context.Products.FindAsync(request.Id);
 
@@ -248,8 +250,8 @@ namespace Hiver.Application.Catalog.KnifeMolds
                     _context.KnifeMoldImages.Update(thumbnailImage);
                 }
             }
-
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+            return table.Id;
         }
 
         public async Task<int> UpdateImage(int imageId, KnifeMoldImageUpdateRequest request)
@@ -275,5 +277,6 @@ namespace Hiver.Application.Catalog.KnifeMolds
             await _storageService.SaveFileAsync(file.OpenReadStream(), USER_CONTENT_FOLDER_NAME, fileName);
             return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
         }
+
     }
 }

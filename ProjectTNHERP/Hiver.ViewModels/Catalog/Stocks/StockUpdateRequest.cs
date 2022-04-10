@@ -11,6 +11,7 @@ namespace Hiver.ViewModels.Catalog.Stocks
     public class StockUpdateRequest : HiverTableUpdate
     {
         public string Symbol { get; set; }
+        public string Code { get; set; }
         public string Detail { get; set; }
 
         public Status Status { get; set; }

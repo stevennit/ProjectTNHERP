@@ -11,16 +11,16 @@ namespace Hiver.Application.Catalog.KnifeMolds
 {
     public interface IKnifeMoldService
     {
-        Task<int> AddImage(int tableId, KnifeMoldImageCreateRequest request);
+        Task<int> AddImage(Guid tableId, KnifeMoldImageCreateRequest request);
         Task<KnifeMoldImageVm> GetImageById(int imageId);
-        Task<List<KnifeMoldImageVm>> GetListImages(int tableId);
+        Task<List<KnifeMoldImageVm>> GetListImages(Guid tableId);
         Task<int> UpdateImage(int imageId, KnifeMoldImageUpdateRequest request);
         Task<int> RemoveImage(int imageId);
         Task<PagedResult<KnifeMoldVm>> GetAllPaging(GetAllKnifeMoldPagingRequest request);
-        Task<KnifeMoldVm> GetById(int Id);
-        Task<int> Create(KnifeMoldCreateRequest request);
-        Task<int> Update(KnifeMoldUpdateRequest request);
-        Task<int> Delete(int Id);
+        Task<KnifeMoldVm> GetById(Guid Id);
+        Task<Guid> Create(KnifeMoldCreateRequest request);
+        Task<Guid> Update(KnifeMoldUpdateRequest request);
+        Task<Guid> Delete(Guid Id);
 
     }
 }

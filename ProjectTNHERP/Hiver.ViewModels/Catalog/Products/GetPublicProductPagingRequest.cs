@@ -7,6 +7,6 @@ namespace Hiver.ViewModels.Catalog.Products
 {
     public class GetPublicProductPagingRequest : PagingRequestBase
     {
-        public int? ProductCategoryId { get; set; }
+        public Guid? ProductCategoryId { get; set; }
     }
 }

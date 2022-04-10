@@ -12,6 +12,7 @@ namespace Hiver.ViewModels.Catalog.Products
     public class ProductVm : HiverTableFull
     {
         public string Symbol { get; set; }
+        public string Code { get; set; }
         public Double Width { get; set; }
         public Double Height { get; set; }
         public string Detail { get; set; }

@@ -14,6 +14,7 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\Hiv
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\ref\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Debug\net6.0\Hiver.Utilities.pdb
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.AssemblyReference.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.GeneratedMSBuildEditorConfig.editorconfig
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.AssemblyInfoInputs.cache
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.AssemblyInfo.cs
@@ -21,4 +22,3 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiv
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\ref\Hiver.Utilities.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.pdb
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.AssemblyReference.cache

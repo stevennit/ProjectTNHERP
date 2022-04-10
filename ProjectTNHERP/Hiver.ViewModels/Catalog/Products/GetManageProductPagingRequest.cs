@@ -9,6 +9,6 @@ namespace Hiver.ViewModels.Catalog.Products
     {
         public string Keyword { get; set; }
 
-        public int? CategoryId { get; set; }
+        public Guid? CategoryId { get; set; }
     }
 }

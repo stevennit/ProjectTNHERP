@@ -22,7 +22,7 @@ namespace Hiver.Application.Catalog.ProductCategories
             _context = context;
         }
 
-        public async Task<int> Create(ProductCategoryCreateRequest request)
+        public async Task<Guid> Create(ProductCategoryCreateRequest request)
         {
             var table = new ProductCategory()
             {
@@ -40,14 +40,15 @@ namespace Hiver.Application.Catalog.ProductCategories
             return table.Id;
         }
 
-        public async Task<int> Delete(int Id)
+        public async Task<Guid> Delete(Guid Id)
         {
             var table = await _context.ProductCategories.FindAsync(Id);
             if (table == null) throw new HiverException($"Không tìm thấy loại tem: {Id}");
 
             _context.ProductCategories.Remove(table);
+            await _context.SaveChangesAsync();
 
-            return await _context.SaveChangesAsync();
+            return table.Id;
         }
 
         public async Task<List<ProductCategoryVm>> GetAll()
@@ -102,7 +103,7 @@ namespace Hiver.Application.Catalog.ProductCategories
             return pagedResult;
         }
 
-        public async Task<ProductCategoryVm> GetById(int Id)
+        public async Task<ProductCategoryVm> GetById(Guid Id)
         {
             var query = from c in _context.ProductCategories
                         where  c.Id == Id
@@ -123,7 +124,7 @@ namespace Hiver.Application.Catalog.ProductCategories
             }).FirstOrDefaultAsync();
         }
 
-        public async Task<int> Update(ProductCategoryUpdateRequest request)
+        public async Task<Guid> Update(ProductCategoryUpdateRequest request)
         {
             var table = await _context.ProductCategories.FindAsync(request.Id);
 
@@ -136,7 +137,9 @@ namespace Hiver.Application.Catalog.ProductCategories
             table.ModifyBy = request.ModifyBy;
             table.Status = request.Status;
 
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+
+            return table.Id;
         }
 
     }

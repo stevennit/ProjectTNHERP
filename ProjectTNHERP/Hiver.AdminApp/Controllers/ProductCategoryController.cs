@@ -17,7 +17,7 @@ namespace Hiver.AdminApp.Controllers
         {
             _productCategoryApiClient = productCategoryApiClient;
         }
-        public async Task<IActionResult> Index(string keyword, int? categoryId, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string keyword, Guid? categoryId, int pageIndex = 1, int pageSize = 10)
         {
 
             var request = new GetAllProductCategoryPagingRequest()

@@ -553,10 +553,10 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.Adm
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.genruntimeconfig.cache
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\ref\Hiver.AdminApp.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\libman.json
-D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\libman.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.Development.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.Production.json
+D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\libman.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.staticwebassets.runtime.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.exe
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.AdminApp.deps.json

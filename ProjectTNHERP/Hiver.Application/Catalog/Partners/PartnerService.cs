@@ -27,7 +27,7 @@ namespace Hiver.Application.Catalog.Partners
             _context = context;
             _storageService = storageService;
         }
-        public async Task<int> Create(PartnerCreateRequest request)
+        public async Task<Guid> Create(PartnerCreateRequest request)
         {
             var table = new Partner()
             {
@@ -44,7 +44,7 @@ namespace Hiver.Application.Catalog.Partners
                 Status = request.Status.ToString() != null ? request.Status : (Utilities.Enums.Status.Active)
             };
 
-            _context.Customers.Add(table);
+            _context.Partners.Add(table);
             await _context.SaveChangesAsync();
 
             return table.Id;
@@ -64,60 +64,61 @@ namespace Hiver.Application.Catalog.Partners
         }
 
 
-        public async Task<int> Delete(int Id)
+        public async Task<Guid> Delete(Guid Id)
         {
-            var table = await _context.Customers.FindAsync(Id);
+            var table = await _context.Partners.FindAsync(Id);
             if (table == null) throw new HiverException($"Không tìm được nhà cung cấp : {Id}");
 
-            _context.Customers.Remove(table);
+            _context.Partners.Remove(table);
 
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+
+            return table.Id;
         }
 
-        //public async Task<PagedResult<PartnerVm>> GetAllPaging(GetPartnerPagingRequest request)
-        //{
-        //    //1. ƯQ filter
-        //    if (!string.IsNullOrEmpty(request.Keyword))
-        //        query = _context.Customers.Where(x => x.Name.Contains(request.Keyword));
-
-        //    //3. Paging
-        //    int totalRow = await query.CountAsync();
-
-        //    var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
-        //        .Take(request.PageSize)
-        //        .Select(x => new PartnerVm()
-        //        {
-        //            Id = x.t0.Id,
-        //            Name = x.t0.Name,
-        //            Gender = x.t0.Gender,
-        //            Mobile = x.t0.Mobile,
-        //            Email = x.t0.Email,
-        //            Description = x.t0.Description,
-        //            Detail = x.t0.Detail,
-        //            Image = x.t0.Image,
-        //            CreateDate = x.t0.CreateDate,
-        //            CreateBy = x.t0.CreateBy,
-        //            ModifyDate = x.t0.ModifyDate,
-        //            ModifyBy = x.t0.ModifyBy,
-        //            Status = x.t0.Status,
-        //            CustomerCompany = x.t1.Name
-
-        //        }).ToListAsync();
-
-        //    //4. Select and projection
-        //    var pagedResult = new PagedResult<PartnerVm>()
-        //    {
-        //        TotalRecords = totalRow,
-        //        PageSize = request.PageSize,
-        //        PageIndex = request.PageIndex,
-        //        Items = data
-        //    };
-        //    return pagedResult;
-        //}
-
-        public async Task<PartnerVm> GetById(int Id)
+        public async Task<PagedResult<PartnerVm>> GetAllPaging(GetPartnerPagingRequest request)
         {
-            var table = await _context.Customers.FindAsync(Id);
+
+            var query = from a in _context.PartnerCategories select a;
+            //1. ƯQ filter
+            if (!string.IsNullOrEmpty(request.Keyword))
+               query = query.Where(x => x.Name.Contains(request.Keyword));
+
+            //3. Paging
+            int totalRow = await query.CountAsync();
+
+            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
+                .Take(request.PageSize)
+                .Select(x => new PartnerVm()
+                {
+                    Id = x.Id,
+                    Name = x.Name,
+                    Mobile = x.Mobile,
+                    Email = x.Email,
+                    Description = x.Description,
+                    Image = x.Image,
+                    CreateDate = x.CreateDate,
+                    CreateBy = x.CreateBy,
+                    ModifyDate = x.ModifyDate,
+                    ModifyBy = x.ModifyBy,
+                    Status = x.Status
+
+                }).ToListAsync();
+
+            //4. Select and projection
+            var pagedResult = new PagedResult<PartnerVm>()
+            {
+                TotalRecords = totalRow,
+                PageSize = request.PageSize,
+                PageIndex = request.PageIndex,
+                Items = data
+            };
+            return pagedResult;
+        }
+
+        public async Task<PartnerVm> GetById(Guid Id)
+        {
+            var table = await _context.Partners.FindAsync(Id);
 
             if (table == null) throw new HiverException($"Không tìm được sản phẩm : {Id}");
 
@@ -138,9 +139,9 @@ namespace Hiver.Application.Catalog.Partners
             return tableViewModel;
         }
 
-        public async Task<int> Update(PartnerUpdateRequest request)
+        public async Task<Guid> Update(PartnerUpdateRequest request)
         {
-            var table = await _context.Customers.FindAsync(request.Id);
+            var table = await _context.Partners.FindAsync(request.Id);
 
             table.Name = request.Name;
             table.Gender = request.Gender;
@@ -152,11 +153,11 @@ namespace Hiver.Application.Catalog.Partners
             table.ModifyBy = request.ModifyBy;
             table.Status = request.Status;
 
-            _context.Customers.Update(table);
+            _context.Partners.Update(table);
 
             await _context.SaveChangesAsync();
 
-            return Convert.ToInt32(table.Id);
+            return table.Id;
         }
     }
 }

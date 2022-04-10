@@ -10,6 +10,7 @@ namespace Hiver.ViewModels.Catalog.Stocks
     public class StockVm
     {
         public string Symbol { get; set; }
+        public string Code { get; set; }
         public string Detail { get; set; }
 
         public Status Status { get; set; }

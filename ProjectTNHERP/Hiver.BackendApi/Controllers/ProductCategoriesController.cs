@@ -38,7 +38,7 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpGet("{Id}")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> GetById(int Id)
+        public async Task<IActionResult> GetById(Guid Id)
         {
             var table = await _productCategoryService.GetById(Id);
             if (table == null)
@@ -56,7 +56,7 @@ namespace Hiver.BackendApi.Controllers
                 return BadRequest(ModelState);
             }
             var Id = await _productCategoryService.Create(request);
-            if (Id == 0)
+            if (Id == Guid.Empty)
                 return BadRequest();
 
             var table = await _productCategoryService.GetById(Id);
@@ -67,7 +67,7 @@ namespace Hiver.BackendApi.Controllers
         [HttpPut("{productCategoryId}")]
         [Consumes("multipart/form-data")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Update([FromRoute] int productCategoryId,[FromForm] ProductCategoryUpdateRequest request)
+        public async Task<IActionResult> Update([FromRoute] Guid productCategoryId,[FromForm] ProductCategoryUpdateRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -76,17 +76,17 @@ namespace Hiver.BackendApi.Controllers
             request.Id = productCategoryId;
 
             var affectedResult = await _productCategoryService.Update(request);
-            if (affectedResult == 0)
+            if (affectedResult == Guid.Empty)
                 return BadRequest();
             return Ok();
         }
 
         [HttpDelete]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(Guid Id)
         {
             var affectedResult = await _productCategoryService.Delete(Id);
-            if (affectedResult == 0)
+            if (affectedResult == Guid.Empty)
                 return BadRequest();
             return Ok();
         }

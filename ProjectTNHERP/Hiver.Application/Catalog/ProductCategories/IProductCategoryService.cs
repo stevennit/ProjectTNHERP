@@ -13,9 +13,9 @@ namespace Hiver.Application.Catalog.ProductCategories
 
         Task<PagedResult<ProductCategoryVm>> GetAllPaging(GetAllProductCategoryPagingRequest request);
         Task<List<ProductCategoryVm>> GetAll();
-        Task<ProductCategoryVm> GetById(int Id);
-        Task<int> Create(ProductCategoryCreateRequest request);
-        Task<int> Update(ProductCategoryUpdateRequest request);
-        Task<int> Delete(int productId);
+        Task<ProductCategoryVm> GetById(Guid Id);
+        Task<Guid> Create(ProductCategoryCreateRequest request);
+        Task<Guid> Update(ProductCategoryUpdateRequest request);
+        Task<Guid> Delete(Guid productId);
     }
 }

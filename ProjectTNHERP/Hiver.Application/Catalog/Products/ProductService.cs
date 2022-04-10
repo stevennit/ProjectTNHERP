@@ -48,7 +48,7 @@ namespace Hiver.Application.Catalog.Products
 
                 query = query.Where(x => x.p.Name.Contains(request.Keyword));
 
-            if (request.CategoryId != null && request.CategoryId != 0)
+            if (request.CategoryId != null)
             {
                 query = query.Where(p => p.c.Id == request.CategoryId);
             }
@@ -86,7 +86,7 @@ namespace Hiver.Application.Catalog.Products
             return pagedResult;
         }
 
-        public async Task<ProductVm> GetById(int Id)
+        public async Task<ProductVm> GetById(Guid Id)
         {
             var product = await _context.Products.FindAsync(Id);
 
@@ -113,7 +113,7 @@ namespace Hiver.Application.Catalog.Products
             return productViewModel;
         }
 
-        public async Task<List<ProductCategoryVm>> GetListProductCategory(int Id)
+        public async Task<List<ProductCategoryVm>> GetListProductCategory(Guid Id)
         {
             var rel = await (from a in _context.ProductCategories
                       join b in _context.ProductAndProductCategories on a.Id equals b.IdProductCategory
@@ -123,7 +123,7 @@ namespace Hiver.Application.Catalog.Products
             return categoryVm;
         }
 
-        public async Task<List<ProductImageVm>> GetListProductImages(int tableId)
+        public async Task<List<ProductImageVm>> GetListProductImages(Guid tableId)
         {
             var rel = await _context.ProductImages.Where(x => x.IdTable == tableId).ToListAsync();
 
@@ -131,7 +131,7 @@ namespace Hiver.Application.Catalog.Products
             return tableVm;
         }
 
-        public async Task<int> Create(ProductCreateRequest request)
+        public async Task<Guid> Create(ProductCreateRequest request)
         {
             var checkSymbol = _context.Products.Where(x => x.Symbol == request.Symbol).FirstOrDefault();
 
@@ -171,7 +171,7 @@ namespace Hiver.Application.Catalog.Products
             return product.Id;
         }
 
-        public async Task<int> Delete(int productId)
+        public async Task<Guid> Delete(Guid productId)
         {
             var product = await _context.Products.FindAsync(productId);
             if (product == null) throw new HiverException($"Không tìm được sản phẩm : {productId}");
@@ -184,10 +184,12 @@ namespace Hiver.Application.Catalog.Products
 
             _context.Products.Remove(product);
 
-            return await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
+
+            return product.Id;
         }
 
-        public async Task<int> Update(ProductUpdateRequest request)
+        public async Task<Guid> Update(ProductUpdateRequest request)
         {
             var product = await _context.Products.FindAsync(request.Id);
 
@@ -213,15 +215,8 @@ namespace Hiver.Application.Catalog.Products
                     _context.ProductImages.Update(thumbnailImage);
                 }
             }
-
-            return await _context.SaveChangesAsync();
-        }
-
-        public async Task AddViewcount(int productId)
-        {
-            var product = await _context.Products.FindAsync(productId);
-            product.ViewCount += 1;
             await _context.SaveChangesAsync();
+            return product.Id;
         }
 
         private async Task<string> SaveFile(IFormFile file)
@@ -232,7 +227,7 @@ namespace Hiver.Application.Catalog.Products
             return "/" + USER_CONTENT_FOLDER_NAME + "/" + fileName;
         }
 
-        public async Task<int> AddImage(int tableId, ProductImageCreateRequest request)
+        public async Task<int> AddImage(Guid tableId, ProductImageCreateRequest request)
         {
             var productImage = new ProductImage()
             {
@@ -300,7 +295,7 @@ namespace Hiver.Application.Catalog.Products
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<ApiResult<bool>> ProductAssignCategory(int id, ProductAssignCategoryRequest request)
+        public async Task<ApiResult<bool>> ProductAssignCategory(Guid id, ProductAssignCategoryRequest request)
         {
             var product = await _context.Products.FindAsync(id);
 
@@ -348,8 +343,6 @@ namespace Hiver.Application.Catalog.Products
                 {
                     _context.ProductAndProductCategories.Add(resul);
                 }
-
-                
             }
 
             await _context.SaveChangesAsync();

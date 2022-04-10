@@ -69,8 +69,8 @@ namespace Hiver.Data.EF
 
         public DbSet<Menu> Menus { set; get; }
 
-        public DbSet<Partner> Customers { set; get; }
-        public DbSet<PartnerCategory> CustomerCompanies { set; get; }
+        public DbSet<Partner> Partners { set; get; }
+        public DbSet<PartnerCategory> PartnerCategories { set; get; }
 
         public DbSet<LSX> LSXs { set; get; }
         public DbSet<Production> Productions { set; get; }

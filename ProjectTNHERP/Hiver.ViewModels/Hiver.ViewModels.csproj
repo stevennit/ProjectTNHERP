@@ -10,6 +10,8 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Catalog\Unit\" />
+	  <Folder Include="Catalog\ProductionStocks\" />
 	  <Folder Include="Mapper\" />
 	  <Folder Include="Utilities\" />
 	</ItemGroup>

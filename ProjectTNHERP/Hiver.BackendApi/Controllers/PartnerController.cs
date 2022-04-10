@@ -1,19 +1,20 @@
 ﻿using Hiver.Application.Catalog.Partners;
 using Hiver.ViewModels.Catalog.Partners;
 using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Threading.Tasks;
 
 namespace Hiver.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomerController : ControllerBase
+    public class PartnerController : ControllerBase
     {
-        private readonly IPartnerService _customerService;
+        private readonly IPartnerService _partnerService;
 
-        public CustomerController(IPartnerService customerService)
+        public PartnerController(IPartnerService partnerService)
         {
-            _customerService = customerService;
+            _partnerService = partnerService;
         }
 
         [HttpPost]
@@ -26,33 +27,33 @@ namespace Hiver.BackendApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            var Id = await _customerService.Create(request);
-            if (Id == 0)
+            var Id = await _partnerService.Create(request);
+            if (Id == System.Guid.Empty)
                 return BadRequest();
 
-            var table = await _customerService.GetById(Id);
+            var table = await _partnerService.GetById(Id);
 
             return CreatedAtAction(nameof(GetById), new { id = Id }, table);
         }
 
         [HttpGet("{Id}")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> GetById(int Id)
+        public async Task<IActionResult> GetById(Guid Id)
         {
-            var tables = await _customerService.GetById(Id);
+            var tables = await _partnerService.GetById(Id);
             if (tables == null)
                 return BadRequest("Không tìm thấy khách hàng");
             return Ok(tables);
         }
 
-        ////http://localhost/api/users/paging?pageIndex=1&pageSize=10&keyword=
-        //[HttpGet("paging")]
-        ////[ServiceFilter(typeof(AuthAttribute))]
-        //public async Task<IActionResult> GetAllPaging([FromQuery] GetPartnerPagingRequest request)
-        //{
-        //    var tables = await _customerService.GetAllPaging(request);
-        //    return Ok(tables);
-        //}
+        //http://localhost/api/users/paging?pageIndex=1&pageSize=10&keyword=
+        [HttpGet("paging")]
+        //[ServiceFilter(typeof(AuthAttribute))]
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetPartnerPagingRequest request)
+        {
+            var tables = await _partnerService.GetAllPaging(request);
+            return Ok(tables);
+        }
 
         [HttpPut]
         [Consumes("multipart/form-data")]
@@ -63,8 +64,8 @@ namespace Hiver.BackendApi.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var affectedResult = await _customerService.Update(request);
-            if (affectedResult == 0)
+            var affectedResult = await _partnerService.Update(request);
+            if (affectedResult == System.Guid.Empty)
                 return BadRequest();
 
             return Ok();
@@ -72,10 +73,10 @@ namespace Hiver.BackendApi.Controllers
 
         [HttpDelete]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Delete(int Id)
+        public async Task<IActionResult> Delete(Guid Id)
         {
-            var affectedResult = await _customerService.Delete(Id);
-            if (affectedResult == 0)
+            var affectedResult = await _partnerService.Delete(Id);
+            if (affectedResult == Guid.Empty)
                 return BadRequest();
             return Ok();
         }

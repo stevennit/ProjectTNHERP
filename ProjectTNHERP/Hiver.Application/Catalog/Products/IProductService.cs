@@ -11,20 +11,19 @@ namespace Hiver.Application.Catalog.Products
 {
     public interface IProductService
     {
-        Task<int> AddImage(int tableId, ProductImageCreateRequest request);
+        Task<int> AddImage(Guid tableId, ProductImageCreateRequest request);
         Task<ProductImageVm> GetImageById(int imageId);
-        Task<List<ProductCategoryVm>> GetListProductCategory(int tableId);
-        Task<List<ProductImageVm>> GetListProductImages(int tableId);
+        Task<List<ProductCategoryVm>> GetListProductCategory(Guid tableId);
+        Task<List<ProductImageVm>> GetListProductImages(Guid tableId);
         Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
         Task<int> RemoveImage(int imageId);
         Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request);
-        Task<ProductVm> GetById(int Id);
-        Task<int> Create(ProductCreateRequest request);
-        Task<int> Update(ProductUpdateRequest request);
-        Task<int> Delete(int productId);
-        Task AddViewcount(int productId);
+        Task<ProductVm> GetById(Guid Id);
+        Task<Guid> Create(ProductCreateRequest request);
+        Task<Guid> Update(ProductUpdateRequest request);
+        Task<Guid> Delete(Guid productId);
 
-        Task<ApiResult<bool>> ProductAssignCategory(int id, ProductAssignCategoryRequest request);
+        Task<ApiResult<bool>> ProductAssignCategory(Guid id, ProductAssignCategoryRequest request);
 
     }
 }

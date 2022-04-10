@@ -10,11 +10,11 @@ namespace Hiver.Application.Catalog.Partners
 {
     public interface IPartnerService
     {
-        //Task<PagedResult<PartnerVm>> GetAllPaging(GetPartnerPagingRequest request);
-        Task<PartnerVm> GetById(int Id);
-        Task<int> Create(PartnerCreateRequest request);
-        Task<int> Update(PartnerUpdateRequest request);
-        Task<int> Delete(int Id);
+        Task<PagedResult<PartnerVm>> GetAllPaging(GetPartnerPagingRequest request);
+        Task<PartnerVm> GetById(Guid Id);
+        Task<Guid> Create(PartnerCreateRequest request);
+        Task<Guid> Update(PartnerUpdateRequest request);
+        Task<Guid> Delete(Guid Id);
 
     }
 }

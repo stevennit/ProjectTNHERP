@@ -12,6 +12,7 @@ namespace Hiver.ViewModels.Catalog.Products
     {
         [Display(Name = "Ký hiệu")]
         public string Symbol { get; set; }
+        public string Code { get; set; }
 
         [Display(Name = "Chiều rộng")]
         public Double Width { get; set; }
