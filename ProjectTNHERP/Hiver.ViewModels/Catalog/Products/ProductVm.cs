@@ -23,7 +23,7 @@ namespace Hiver.ViewModels.Catalog.Products
 
         public List<ProductImageVm> ProductImages { get; set; }
 
-        public List<ProductCategoryVm> ProductCategories { get; set; }
+        public List<Guid> ProductCategories { get; set; }
 
     }
 }

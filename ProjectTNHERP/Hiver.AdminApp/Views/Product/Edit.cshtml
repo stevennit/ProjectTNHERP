@@ -4,7 +4,12 @@
     ViewData["Title"] = "Cập nhật sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+@section Css {
+    <link href="../assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
+}
+
 @section Scripts{
+    <script src="../assets/plugins/select2/dist/js/select2.min.js"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/21.0.0/classic/ckeditor.js"></script>
     <script>
         ClassicEditor
@@ -17,6 +22,8 @@
             .catch(err => {
                 console.error(err.stack);
             });
+
+        $(".multiple-select2").select2({ placeholder: "Select a state" });
     </script>
 }
 <div class="container-fluid">
@@ -65,20 +72,25 @@
                         <textarea id="txt_details" asp-for="Detail" rows="5" class="form-control"></textarea>
                         <span asp-validation-for="Detail" class="text-danger"></span>
                     </div>
-                   <div class="form-group">
+                    <div class="form-group">
                         <label asp-for="Status" class="control-label"></label>
                         <input type="checkbox" data-val="true" data-val-required="The isActive field is required." id="isActive" name="isActive" value="true" /><br />
                         <span asp-validation-for="Status" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="ViewCount" class="control-label"></label>
-                        <input asp-for="ViewCount" type="number" class="form-control">
-                        <span asp-validation-for="ViewCount" class="text-danger"></span>
-                    </div>
-                    <div class="form-group">
                         <label asp-for="ProductCategories" class="control-label"></label>
+                        @foreach (var item in Model.ProductCategories)
+                        {
+                            <select class="multiple-select2 form-control" multiple>
+                                <optgroup label="Alaskan/Hawaiian Time Zone">
+                                    <option value="AK">Alaska</option>
+                                    <option value="HI">Hawaii</option>
+                                </optgroup>
+                            </select>
+                        }
+                        @*
                         <input asp-for="ProductCategories" class="form-control">
-                        <span asp-validation-for="ProductCategories" class="text-danger"></span>
+                        <span asp-validation-for="ProductCategories" class="text-danger"></span>*@
                     </div>
                     <div class="form-group">
                         <label asp-for="ThumbnailImage" class="control-label"></label>

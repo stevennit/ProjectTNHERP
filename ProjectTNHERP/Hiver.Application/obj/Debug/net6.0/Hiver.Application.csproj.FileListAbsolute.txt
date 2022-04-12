@@ -1,22 +1,3 @@
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.deps.json
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.pdb
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Data.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Utilities.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.ViewModels.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Data.pdb
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Utilities.pdb
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.ViewModels.pdb
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.csproj.AssemblyReference.cache
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.GeneratedMSBuildEditorConfig.editorconfig
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.AssemblyInfoInputs.cache
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.AssemblyInfo.cs
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.csproj.CoreCompileInputs.cache
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.csproj.CopyComplete
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\refint\Hiver.Application.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.pdb
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\ref\Hiver.Application.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.deps.json
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\ref\Hiver.Application.dll
@@ -36,3 +17,22 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\H
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\ref\Hiver.Application.dll
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.deps.json
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\ref\Hiver.Application.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Application.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Data.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.ViewModels.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Data.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.Utilities.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\bin\Debug\net6.0\Hiver.ViewModels.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.csproj.AssemblyReference.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.AssemblyInfoInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.AssemblyInfo.cs
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.csproj.CoreCompileInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.csproj.CopyComplete
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\ref\Hiver.Application.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Application\obj\Debug\net6.0\Hiver.Application.pdb

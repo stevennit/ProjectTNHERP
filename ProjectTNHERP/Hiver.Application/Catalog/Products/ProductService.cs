@@ -113,13 +113,12 @@ namespace Hiver.Application.Catalog.Products
             return productViewModel;
         }
 
-        public async Task<List<ProductCategoryVm>> GetListProductCategory(Guid Id)
+        public async Task<List<Guid>> GetListProductCategory(Guid Id)
         {
             var rel = await (from a in _context.ProductCategories
                       join b in _context.ProductAndProductCategories on a.Id equals b.IdProductCategory
-                      where b.IdProduct == Id select a).ToListAsync();
-
-            List<ProductCategoryVm> categoryVm = _mapper.Map<List<ProductCategoryVm>>(rel);
+                      where b.IdProduct == Id select a.Id).ToListAsync();
+            List<Guid> categoryVm = new List<Guid>(rel);
             return categoryVm;
         }
 
@@ -295,7 +294,7 @@ namespace Hiver.Application.Catalog.Products
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<ApiResult<bool>> ProductAssignCategory(Guid id, ProductAssignCategoryRequest request)
+        public async Task<ApiResult<bool>> ProductAssignCategory(Guid id, CategoryAssignRequest request)
         {
             var product = await _context.Products.FindAsync(id);
 
@@ -303,23 +302,22 @@ namespace Hiver.Application.Catalog.Products
             {
                 return new ApiErrorResult<bool>("Sản phẩm không tồn tại");
             }
-            var remove = request.ProductCategory.Where(x => x.Selected == false).Select(x => x.Id).ToList();
+            var remove = request.ProductCategories.Where(x => x.Selected == false).Select(x => x.Id).ToList();
 
             foreach (var productCategoryName in remove)
             {
                 var findtablecategory = _context.ProductCategories.FirstOrDefault(x => x.Id.ToString() == productCategoryName);
 
-                var resul = await _context.ProductAndProductCategories.FirstAsync(
-                    x => x.IdProduct == product.Id && x.IdProductCategory == findtablecategory.Id);
+                var resul = await _context.ProductAndProductCategories.Where(
+                    x => x.IdProduct == product.Id && x.IdProductCategory == findtablecategory.Id).FirstOrDefaultAsync();
 
                 if (resul != null)
                 {
                     _context.ProductAndProductCategories.Remove(resul);
                 }
-                
             }
 
-            var add = request.ProductCategory.Where(x => x.Selected).Select(x => x.Id).ToList();
+            var add = request.ProductCategories.Where(x => x.Selected).Select(x => x.Id).ToList();
 
             foreach (var productCategoryName in add)
             {

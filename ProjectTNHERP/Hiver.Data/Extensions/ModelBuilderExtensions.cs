@@ -135,7 +135,7 @@ namespace Hiver.Data.Extensions
                    ParentID = 2,
                    MenuName = "Nguyên Liệu",
                    Description = null,
-                   Url = "/",
+                   Url = "/Store",
                    IconClass = null,
                    MenuVisible = 3,
                    IsVisible = true,
@@ -146,7 +146,7 @@ namespace Hiver.Data.Extensions
                    ParentID = 2,
                    MenuName = "Thành Phẩm",
                    Description = null,
-                   Url = "/",
+                   Url = "/Product",
                    IconClass = null,
                    MenuVisible = 4,
                    IsVisible = true,
@@ -157,15 +157,49 @@ namespace Hiver.Data.Extensions
                    ParentID = -1,
                    MenuName = "Kinh Doanh",
                    Description = null,
-                   Url = "/",
+                   Url = "/Sale",
+                   IconClass = null,
+                   MenuVisible = 4,
+                   IsVisible = true,
+               },
+               new Menu
+               {
+                   MenuID = 6,
+                   ParentID = -1,
+                   MenuName = "Khách Hàng",
+                   Description = null,
+                   Url = "/Customer",
                    IconClass = null,
                    MenuVisible = 5,
+                   IsVisible = true,
+               },
+               new Menu
+               {
+                   MenuID = 7,
+                   ParentID = -1,
+                   MenuName = "Nhà Cung Cấp",
+                   Description = null,
+                   Url = "/Supplier",
+                   IconClass = null,
+                   MenuVisible = 4,
                    IsVisible = true,
                }
            );
             #endregion
 
-
+            #region Data ProductCategory
+            modelBuilder.Entity<ProductCategory>().HasData(
+              new ProductCategory
+              {
+                  Id = new Guid("f9cb0cac-5219-42f7-8182-a7b01d122c4b"),
+                  Name = "Tem Loại 1"
+              }, new ProductCategory
+              {
+                  Id = new Guid("fee35eb7-a414-4ec1-8ce0-7d11fc10ff3d"),
+                  Name = "Tem Loại 2"
+              }
+            );
+            #endregion
         }
     }
 }

@@ -8,141 +8,141 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Hiver.AdminApp
 build_property.RootNamespace = Hiver.AdminApp
-build_property.ProjectDir = D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\
+build_property.ProjectDir = D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = true
-build_property.MSBuildProjectDirectory = D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp
+build_property.MSBuildProjectDirectory = D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Home/Index.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Home/NoPermission.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Home/NoPermission.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOb1Blcm1pc3Npb24uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Home/Privacy.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Login/Index.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/ProductCategory/Details.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/ProductCategory/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/ProductCategory/Index.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/ProductCategory/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdENhdGVnb3J5XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/CategoryAssign.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/CategoryAssign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDYXRlZ29yeUFzc2lnbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Create.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Delete.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Details.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Edit.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Index.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Create.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Delete.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Details.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Edit.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Index.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Role/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Components/Menu/_MenuPartial.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Components/Menu/_MenuPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTWVudVxfTWVudVBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Components/Navigation/Default.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Components/Navigation/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTmF2aWdhdGlvblxEZWZhdWx0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Components/Pager/Default.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Components/Pager/Default.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcUGFnZXJcRGVmYXVsdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/CustomLayout/_LeftMenu.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/CustomLayout/_LeftMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEN1c3RvbUxheW91dFxfTGVmdE1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/CustomLayout/_TopMenu.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/CustomLayout/_TopMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEN1c3RvbUxheW91dFxfVG9wTWVudS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Error.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/_Layout.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Create.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Delete.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Details.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Edit.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Index.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/RoleAssign.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/User/RoleAssign.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxSb2xlQXNzaWduLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/_ViewImports.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Project Code/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/_ViewStart.cshtml]
+[D:/Project/ProjectTNHERP/ProjectTNHERP/Hiver.AdminApp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope =

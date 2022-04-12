@@ -57,7 +57,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
                             ActionName = "GetAllPaging",
-                            ConcurrencyStamp = "32f740db-0503-415c-aa67-301ed3146c0f",
+                            ConcurrencyStamp = "d4992de3-2243-4d36-8252-eaf6e1ce2e8b",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem tất cả tài khoản",
                             Name = "admin"
@@ -66,7 +66,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("44694fab-619c-4bcc-a8a1-4247a17905f5"),
                             ActionName = "GetById",
-                            ConcurrencyStamp = "72254431-7f38-457f-947f-910bd23f6748",
+                            ConcurrencyStamp = "3e1cb968-f534-4daf-8d78-3a52d55628ae",
                             ControllerName = "Users",
                             Description = "Tài khoản - Xem chi tiết tài khoản",
                             Name = "admin"
@@ -75,7 +75,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("80b0a1ac-d287-4ba3-92c4-51cbcea55920"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "08122348-6990-4ccc-96c4-3e2ef93d6ef6",
+                            ConcurrencyStamp = "7d9e996f-5dd7-482a-b376-90758d671a36",
                             ControllerName = "Register",
                             Description = "Tài khoản - Đăng ký tài khoản",
                             Name = "admin"
@@ -84,7 +84,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("2629553d-758a-460b-92cf-5c34b76a97a7"),
                             ActionName = "Update",
-                            ConcurrencyStamp = "61116c40-2ce0-4917-add5-f216a9509072",
+                            ConcurrencyStamp = "8f7df327-02db-4cd0-b664-26a3770b1d58",
                             ControllerName = "Users",
                             Description = "Tài khoản - Cập nhập tài khoản",
                             Name = "admin"
@@ -93,7 +93,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("7feb5851-4244-4538-a6bd-3b98c18afeee"),
                             ActionName = "admin",
-                            ConcurrencyStamp = "a71a2b0f-da0a-428a-86a7-003de39d4ae3",
+                            ConcurrencyStamp = "5fe29536-0363-4b66-89f4-fd118d3c06dd",
                             ControllerName = "Delete",
                             Description = "Tài khoản - Xóa tài khoản",
                             Name = "admin"
@@ -170,7 +170,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "8f61da11-9887-49d3-a50d-2acbcc4ab5c2",
+                            ConcurrencyStamp = "52569db3-7a74-4fc6-847e-0d48c0a98d4b",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@gmail.com",
                             EmailConfirmed = true,
@@ -179,7 +179,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "admin@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEPeIEtOXy5VBzGQqvThAa81VBhFNe35Md1/MFhwtY4z15j7ITGbKaWV8FH38A35iTA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKZozGu5hMX4gEDYysvlFYPx4Cyb+Kiz3fj3maaU6wg1olN2Uc9BNdEO1ZlLFrBX2A==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -189,7 +189,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("a3335a51-c19b-4ec8-9dec-39ef33e69bf7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "57a1b735-6fd4-464e-8440-07b49a391732",
+                            ConcurrencyStamp = "3d0a12e0-748d-4854-b070-e43b2289c644",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "it@gmail.com",
                             EmailConfirmed = true,
@@ -198,7 +198,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "it@gmail.com",
                             NormalizedUserName = "it",
-                            PasswordHash = "AQAAAAEAACcQAAAAEEEFK6BNGCGR7gSThTwQ18wncR0pRd645magNK8mEKQPU1TACsu6xSaisHGnjhu1vQ==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENYEW4fBaDCPuJ/iTcJjb0M3iqWDauu085FmmCriT5EacjpsQfx0xNUUAJ6i6IcC5g==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -208,7 +208,7 @@ namespace Hiver.Data.Migrations
                         {
                             Id = new Guid("171f3098-762c-4b02-85c5-a687f6601de4"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "5269e26a-fbcc-4473-aa4a-68ba3ab05a1c",
+                            ConcurrencyStamp = "fe7cae9b-016e-4d16-82b6-3e16ca274844",
                             Dob = new DateTime(2020, 1, 31, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "kho@gmail.com",
                             EmailConfirmed = true,
@@ -217,7 +217,7 @@ namespace Hiver.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "kho@gmail.com",
                             NormalizedUserName = "kho",
-                            PasswordHash = "AQAAAAEAACcQAAAAEE4Nz3kYconYLdtloD4QO+SyPuiCU3xjsERg9pqRk4cR1iLOrVr/6dlKGnKGqKVT+A==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEFoSlpCWCcs/HMoyWArHuV0bEM9zFlG0Uj/c8WVKp5lVUVUtAU5y8vbUq9j2z5UAIQ==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -456,7 +456,7 @@ namespace Hiver.Data.Migrations
                             MenuName = "Nguyên Liệu",
                             MenuVisible = 3,
                             ParentID = 2,
-                            Url = "/"
+                            Url = "/Store"
                         },
                         new
                         {
@@ -465,16 +465,34 @@ namespace Hiver.Data.Migrations
                             MenuName = "Thành Phẩm",
                             MenuVisible = 4,
                             ParentID = 2,
-                            Url = "/"
+                            Url = "/Product"
                         },
                         new
                         {
                             MenuID = 5,
                             IsVisible = true,
                             MenuName = "Kinh Doanh",
+                            MenuVisible = 4,
+                            ParentID = -1,
+                            Url = "/Sale"
+                        },
+                        new
+                        {
+                            MenuID = 6,
+                            IsVisible = true,
+                            MenuName = "Khách Hàng",
                             MenuVisible = 5,
                             ParentID = -1,
-                            Url = "/"
+                            Url = "/Customer"
+                        },
+                        new
+                        {
+                            MenuID = 7,
+                            IsVisible = true,
+                            MenuName = "Nhà Cung Cấp",
+                            MenuVisible = 4,
+                            ParentID = -1,
+                            Url = "/Supplier"
                         });
                 });
 
@@ -775,6 +793,20 @@ namespace Hiver.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("ProductCategories", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("f9cb0cac-5219-42f7-8182-a7b01d122c4b"),
+                            Name = "Tem Loại 1",
+                            Status = 0
+                        },
+                        new
+                        {
+                            Id = new Guid("fee35eb7-a414-4ec1-8ce0-7d11fc10ff3d"),
+                            Name = "Tem Loại 2",
+                            Status = 0
+                        });
                 });
 
             modelBuilder.Entity("Hiver.Data.Entities.ProductImage", b =>

@@ -149,7 +149,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpPut("{id}/productassign")]
-        public async Task<IActionResult> RoleAssign(Guid id, [FromBody] ProductAssignCategoryRequest request)
+        public async Task<IActionResult> RoleAssign(Guid id, [FromBody] CategoryAssignRequest request)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);

@@ -134,7 +134,7 @@ namespace Hiver.ApiIntegration.Product
             return data;
         }
 
-        public async Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request)
+        public async Task<ApiResult<bool>> CategoryAssign(Guid id, CategoryAssignRequest request)
         {
             var client = _httpClientFactory.CreateClient();
             client.BaseAddress = new Uri(_configuration["BaseAddress"]);
@@ -145,7 +145,7 @@ namespace Hiver.ApiIntegration.Product
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PutAsync($"/api/products/{id}/categories", httpContent);
+            var response = await client.PutAsync($"/api/products/{id}/productassign", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
                 return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(result);
@@ -153,7 +153,7 @@ namespace Hiver.ApiIntegration.Product
             return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(result);
         }
 
-        public async Task<ProductVm> GetById(int id)
+        public async Task<ProductVm> GetById(Guid id)
         {
             var data = await GetAsync<ProductVm>($"/api/products/{id}");
 
@@ -172,7 +172,7 @@ namespace Hiver.ApiIntegration.Product
             return data;
         }
 
-        public async Task<bool> DeleteProduct(int id)
+        public async Task<bool> DeleteProduct(Guid id)
         {
             return await Delete($"/api/products/" + id);
         }

@@ -21,7 +21,7 @@ namespace Hiver.ViewModels.Catalog.Products
 
         public IFormFile ThumbnailImage { get; set; }
 
-        public List<ProductCategoryVm> ProductCategories { get; set; }
+        public List<Guid> ProductCategories { get; set; }
 
     }
 }

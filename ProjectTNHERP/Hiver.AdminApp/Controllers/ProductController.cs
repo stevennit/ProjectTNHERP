@@ -57,11 +57,9 @@ namespace Hiver.AdminApp.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Details(int id)
+        public async Task<IActionResult> Details(Guid id)
         {
             var result = await _productApiClient.GetById(id);
-
-
             return View(result);
         }
 
@@ -94,7 +92,7 @@ namespace Hiver.AdminApp.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> CategoryAssign(int id)
+        public async Task<IActionResult> CategoryAssign(Guid id)
         {
             var roleAssignRequest = await GetCategoryAssignRequest(id);
             return View(roleAssignRequest);
@@ -121,7 +119,7 @@ namespace Hiver.AdminApp.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Edit(int id)
+        public async Task<IActionResult> Edit(Guid id)
         {
 
             var product = await _productApiClient.GetById(id);
@@ -165,7 +163,7 @@ namespace Hiver.AdminApp.Controllers
             return View(request);
         }
 
-        private async Task<CategoryAssignRequest> GetCategoryAssignRequest(int id)
+        private async Task<CategoryAssignRequest> GetCategoryAssignRequest(Guid id)
         {
 
             var productObj = await _productApiClient.GetById(id);
@@ -177,14 +175,14 @@ namespace Hiver.AdminApp.Controllers
                 {
                     Id = role.Id.ToString(),
                     Name = role.Name,
-                    Selected = productObj.ProductCategories.Contains(role)
+                    Selected = productObj.ProductCategories.Contains(role.Id)
                 });
             }
             return categoryAssignRequest;
         }
 
         [HttpGet]
-        public IActionResult Delete(int id)
+        public IActionResult Delete(Guid id)
         {
             return View(new ProductDeleteRequest()
             {
