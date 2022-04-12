@@ -10,7 +10,63 @@
         setTimeout(function () {
             $('#msgAlert').fadeOut('slow');
         }, 2000);
+
+        /* Formatting function for row details - modify as you need */
+        function format(d) {
+            // `d` is the original data object for the row
+            return '<table cellpadding="5" cellspacing="0" border="0" style="padding-left:50px;">' +
+                '<tr>' +
+                '<td>Full name:</td>' +
+                '<td>' + d.name + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Extension number:</td>' +
+                '<td>' + d.extn + '</td>' +
+                '</tr>' +
+                '<tr>' +
+                '<td>Extra info:</td>' +
+                '<td>And any further details here (images etc)...</td>' +
+                '</tr>' +
+                '</table>';
+        }
+
+        $(document).ready(function () {
+            var table = $('#example').DataTable({
+                "ajax": "https://localhost:5001/products/",
+                "columns": [
+                    {
+                        "className": 'dt-control',
+                        "orderable": false,
+                        "data": null,
+                        "defaultContent": ''
+                    },
+                    { "data": "name" },
+                    { "data": "position" },
+                    { "data": "office" },
+                    { "data": "salary" }
+                ],
+                "order": [[1, 'asc']]
+            });
+
+            // Add event listener for opening and closing details
+            $('#example tbody').on('click', 'td.dt-control', function () {
+                var tr = $(this).closest('tr');
+                var row = table.row(tr);
+
+                if (row.child.isShown()) {
+                    // This row is already open - close it
+                    row.child.hide();
+                    tr.removeClass('shown');
+                }
+                else {
+                    // Open this row
+                    row.child(format(row.data())).show();
+                    tr.addClass('shown');
+                }
+            });
+        });
     </script>
+
 }
 <div class="container-fluid">
     <h1 class="mt-4">Danh sách sản phẩm</h1>
@@ -59,19 +115,19 @@
                     <thead>
                         <tr>
                             <th>
-                                Mã SP
+                                Mã
                             </th>
                             <th>
                                 Tên
                             </th>
                             <th>
-                                Giá nhập
+                                Kích Thước
                             </th>
                             <th>
-                                Giá bán
+                                Ngày Tạo
                             </th>
                             <th>
-                                Số lượng tồn
+                                Người Tạo
                             </th>
 
                             <th></th>
@@ -82,16 +138,16 @@
                         {
                             <tr>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Id)
+                                    @Html.DisplayFor(modelItem => item.Code)
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Name)
                                 </td>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Symbol)
+                                    @Html.DisplayFor(modelItem => item.CreateDate)
                                 </td>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Detail)
+                                    @Html.DisplayFor(modelItem => item.CreateBy)
                                 </td>
                                 <td>
                                     @Html.ActionLink("Sửa", "Edit", new { id = item.Id }) |

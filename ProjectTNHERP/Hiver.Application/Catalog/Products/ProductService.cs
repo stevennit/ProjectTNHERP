@@ -62,6 +62,7 @@ namespace Hiver.Application.Catalog.Products
                 {
                     Id = x.p.Id,
                     Name = x.p.Name,
+                    Code = x.p.Code,
                     CreateDate = x.p.CreateDate,
                     Detail = x.p.Detail,
                     CreateBy = x.p.CreateBy,
@@ -96,6 +97,7 @@ namespace Hiver.Application.Catalog.Products
             {
                 Id = product.Id,
                 Name = product.Name,
+                Code = product.Code,
                 Symbol = product.Symbol,
                 Width = product.Width,
                 Height = product.Height,
@@ -139,6 +141,7 @@ namespace Hiver.Application.Catalog.Products
             var product = new Product()
             {
                 Name = request.Name,
+                Code = request.Code,
                 Symbol = request.Symbol,
                 Width = request.Width,
                 Height = request.Height,
