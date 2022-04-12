@@ -8,6 +8,14 @@ using Hiver.ApiIntegration;
 using Hiver.ApiIntegration.Menu;
 using Hiver.ApiIntegration.Product;
 using Hiver.ApiIntegration.ProductCategory;
+using Hiver.Application.Catalog.KnifeMolds;
+using Hiver.Application.Catalog.PartnerCategories;
+using Hiver.Application.Catalog.Partners;
+using Hiver.Application.Catalog.ProductCategories;
+using Hiver.Application.Catalog.Products;
+using Hiver.Application.Common;
+using Hiver.Data.EF;
+using Hiver.Utilities.Constants;
 using Hiver.ViewModels.Catalog.Products;
 using Hiver.ViewModels.System.Users;
 using Hiver.ViewModels.Validator;
@@ -16,6 +24,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -37,6 +46,9 @@ namespace Hiver.AdminApp
         {
             services.AddHttpClient();
 
+            services.AddDbContext<HiverDbContext>(options =>
+                options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
+
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
             {
@@ -44,13 +56,25 @@ namespace Hiver.AdminApp
                 options.AccessDeniedPath = "/User/Forbidden/";
             });
 
-            services.AddControllersWithViews()
+            services.AddControllersWithViews().AddJsonOptions(options => options.JsonSerializerOptions.PropertyNamingPolicy = null)
                      .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
 
             services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
             services.AddTransient<IValidator<ProductCreateRequest>, ProductCreateValidator>();
             services.AddTransient<IValidator<ProductUpdateRequest>, ProductUpdateValidator>();
+
+
+            //Declare DI
+            services.AddTransient<IStorageService, FileStorageService>();
+
+            services.AddTransient<IProductService, ProductService>();
+            services.AddTransient<IProductCategoryService, ProductCategoryService>();
+            services.AddTransient<IPartnerService, PartnerService>();
+            services.AddTransient<IPartnerCategoryService, PartnerCategoryService>();
+            services.AddTransient<IKnifeMoldService, KnifeMoldService>();
+
+            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 
             services.AddSession(options =>
             {
@@ -113,8 +137,15 @@ namespace Hiver.AdminApp
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
+                    name: "areas",
+                    pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+                  );
+
+                endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+                
             });
         }
     }

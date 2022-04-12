@@ -34,6 +34,8 @@ namespace Hiver.Application.Catalog.Products
             _mapper = mapper;
         }
 
+
+
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //1. Select join
@@ -349,6 +351,12 @@ namespace Hiver.Application.Catalog.Products
             await _context.SaveChangesAsync();
 
             return new ApiSuccessResult<bool>();
+        }
+
+        public List<ProductVm> GetAll()
+        {
+            List<ProductVm> tableVm = _mapper.Map<List<ProductVm>>(_context.Products.ToList());
+            return tableVm;
         }
     }
 }

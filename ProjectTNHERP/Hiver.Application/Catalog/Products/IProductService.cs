@@ -18,6 +18,7 @@ namespace Hiver.Application.Catalog.Products
         Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
         Task<int> RemoveImage(int imageId);
         Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request);
+        List<ProductVm> GetAll();
         Task<ProductVm> GetById(Guid Id);
         Task<Guid> Create(ProductCreateRequest request);
         Task<Guid> Update(ProductUpdateRequest request);
