@@ -13,7 +13,7 @@ namespace Hiver.ViewModels.Catalog.Stocks
         public string Code { get; set; }
         public string Detail { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public int? IdStockCategory { set; get; }
         public List<string> OrderByStocks { set; get; }

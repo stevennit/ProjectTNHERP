@@ -45,7 +45,7 @@ namespace Hiver.BackendApi.Controllers
         [HttpPost]
         [Consumes("multipart/form-data")]
         //[ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
+        public async Task<IActionResult> Create([FromForm] ProductVm request)
         {
             if (!ModelState.IsValid)
             {   
@@ -64,7 +64,7 @@ namespace Hiver.BackendApi.Controllers
         [HttpPut("{Id}")]
         [Consumes("multipart/form-data")]
         [ServiceFilter(typeof(AuthAttribute))]
-        public async Task<IActionResult> Update([FromRoute] Guid Id,[FromForm] ProductUpdateRequest request)
+        public async Task<IActionResult> Update([FromRoute] Guid Id,[FromForm] ProductVm request)
         {
             if (!ModelState.IsValid)
             {

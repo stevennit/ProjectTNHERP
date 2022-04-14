@@ -7,7 +7,6 @@ namespace Hiver.Data.Entities
 {
     public class Product : HiverTableFull
     {
-        public string Symbol { get; set; }
         // Mã Thành Phẩm - Nguyên Liệu
         public string Code { get; set; }
         public Double Width { get; set; }
@@ -15,7 +14,7 @@ namespace Hiver.Data.Entities
         public string Detail { get; set; }
         public int? ViewCount { set; get; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public List<ProductAndProductCategory> ProductAndProductCategories { get; set; }
         public List<Production> Productions { get; set; }

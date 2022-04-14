@@ -17,7 +17,7 @@ namespace Hiver.ViewModels.Catalog.KnifeMolds
         public int Row { get; set; }
         public string Detail { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public int? IdKnifeMoldCategory { get; set; }
         public IFormFile ThumbnailImage { get; set; }

@@ -9,7 +9,7 @@ namespace Hiver.Data.Entities
     {
         public string Image { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public List<ProductAndProductCategory> ProductAndProductCategories { get; set; }
     }

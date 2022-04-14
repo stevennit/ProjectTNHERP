@@ -16,9 +16,9 @@ namespace Hiver.Data.Configutions
 
             builder.Property(x => x.Name).HasMaxLength(200);
             builder.Property(x => x.Description).HasMaxLength(250);
-            builder.Property(x => x.Symbol).HasMaxLength(50);
+            builder.Property(x => x.Code).HasMaxLength(50);
 
-            builder.Property(x => x.Status).HasDefaultValue(Status.Active);
+            builder.Property(x => x.Status).HasDefaultValue(true);
         }
     }
 }

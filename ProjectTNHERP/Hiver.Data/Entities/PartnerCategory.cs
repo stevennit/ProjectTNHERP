@@ -20,7 +20,7 @@ namespace Hiver.Data.Entities
 
         public DateTime? DoB { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public List<Partner> Partner { set; get; }
     }

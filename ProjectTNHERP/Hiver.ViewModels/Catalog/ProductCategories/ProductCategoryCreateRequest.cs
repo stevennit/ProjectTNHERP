@@ -11,7 +11,7 @@ namespace Hiver.ViewModels.Catalog.ProductCategories
     {
         public string Image { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
     }
 }

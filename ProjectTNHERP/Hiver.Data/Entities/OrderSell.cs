@@ -11,7 +11,7 @@ namespace Hiver.Data.Entities
         public string Code { get; set; }
         public string Detail { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public Guid? IdPartnerCategory { get; set; }
 

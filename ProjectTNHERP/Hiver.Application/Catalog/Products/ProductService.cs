@@ -33,9 +33,6 @@ namespace Hiver.Application.Catalog.Products
             _storageService = storageService;
             _mapper = mapper;
         }
-
-
-
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
         {
             List<ProductVm> table = new List<ProductVm>();
@@ -92,7 +89,6 @@ namespace Hiver.Application.Catalog.Products
                 Id = product.Id,
                 Name = product.Name,
                 Code = product.Code,
-                Symbol = product.Symbol,
                 Width = product.Width,
                 Height = product.Height,
                 Description = product.Description,
@@ -126,24 +122,19 @@ namespace Hiver.Application.Catalog.Products
             return tableVm;
         }
 
-        public async Task<Guid> Create(ProductCreateRequest request)
+        public async Task<Guid> Create(ProductVm request)
         {
-            var checkSymbol = _context.Products.Where(x => x.Symbol == request.Symbol).FirstOrDefault();
-
-            if (checkSymbol != null) throw new HiverException($"Ký hiệu này đã tồn tại  : {request.Symbol}");
-
             var product = new Product()
             {
                 Name = request.Name,
                 Code = request.Code,
-                Symbol = request.Symbol,
                 Width = request.Width,
                 Height = request.Height,
                 Description = request.Description,
                 Detail = request.Detail,
                 CreateBy = request.CreateBy,
-                CreateDate = DateTime.Now
-                //Status = (Utilities.Enums.Status)request.Status
+                CreateDate = DateTime.Now,
+                Status = request.Status
             };
 
             //Save image
@@ -185,25 +176,24 @@ namespace Hiver.Application.Catalog.Products
             return product.Id;
         }
 
-        public async Task<Guid> Update(ProductUpdateRequest request)
+        public async Task<Guid> Update(ProductVm request)
         {
             var product = await _context.Products.FindAsync(request.Id);
 
             product.Name = request.Name;
-            product.Symbol = request.Symbol;
             product.Width = request.Width;
             product.Height = request.Height;
             product.Description = request.Description;
             product.Detail = request.Detail;
             product.ModifyDate = DateTime.Now;
             product.ModifyBy = request.ModifyBy;
-            //product.Status = request.Status;
-
+            product.Status = request.Status;
             //Save image
+
             if (request.ThumbnailImage != null)
             {
                 var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.IdTable == request.Id);
-                
+
                 if (thumbnailImage != null)
                 {
                     thumbnailImage.FileSize = request.ThumbnailImage.Length;

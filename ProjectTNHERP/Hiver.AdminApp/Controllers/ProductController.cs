@@ -77,7 +77,6 @@ namespace Hiver.AdminApp.Controllers
             if (!ModelState.IsValid)
                 return View(request);
 
-            request.CreateDate = System.DateTime.Now;
             request.CreateBy = User.Identity.Name;
 
             var result = await _productApiClient.CreateProduct(request);
@@ -123,16 +122,16 @@ namespace Hiver.AdminApp.Controllers
         {
 
             var product = await _productApiClient.GetById(id);
-            var editVm = new ProductUpdateRequest()
+            var editVm = new ProductVm()
             {
                 Id = product.Id,
+                Code = product.Code,
                 Description = product.Description,
                 Detail = product.Detail,
                 Name = product.Name,
                 Height = product.Height,
                 ModifyBy = product.ModifyBy,
                 ModifyDate = product.ModifyDate,
-                Symbol = product.Symbol,
                 Status = product.Status,
                 Width = product.Width,
                 ViewCount = product.ViewCount,
@@ -149,7 +148,6 @@ namespace Hiver.AdminApp.Controllers
             if (!ModelState.IsValid)
                 return View(request);
 
-            request.ModifyDate = System.DateTime.Now;
             request.ModifyBy = User.Identity.Name;
 
             var result = await _productApiClient.UpdateProduct(request);
@@ -191,12 +189,12 @@ namespace Hiver.AdminApp.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(Guid request)
+        public async Task<IActionResult> Delete(ProductVm request)
         {
             if (!ModelState.IsValid)
                 return View();
 
-            var result = await _productApiClient.DeleteProduct(request);
+            var result = await _productApiClient.DeleteProduct(request.Id);
             if (result)
             {
                 TempData["result"] = "Xóa sản phẩm thành công";

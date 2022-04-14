@@ -20,8 +20,8 @@ namespace Hiver.Application.Catalog.Products
         Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request);
         List<ProductVm> GetAll();
         Task<ProductVm> GetById(Guid Id);
-        Task<Guid> Create(ProductCreateRequest request);
-        Task<Guid> Update(ProductUpdateRequest request);
+        Task<Guid> Create(ProductVm request);
+        Task<Guid> Update(ProductVm request);
         Task<Guid> Delete(Guid productId);
 
         Task<ApiResult<bool>> ProductAssignCategory(Guid id, CategoryAssignRequest request);

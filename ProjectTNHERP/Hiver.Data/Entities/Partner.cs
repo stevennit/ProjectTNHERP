@@ -20,7 +20,7 @@ namespace Hiver.Data.Entities
         public string Tel { get; set; }
 
         public DateTime? DoB { get; set; }
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
 
         public Guid? IdPartnerCategory { get; set; }

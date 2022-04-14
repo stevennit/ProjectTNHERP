@@ -11,7 +11,7 @@ namespace Hiver.Data.Entities
 
         public decimal? Qty { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         // Lõi thành phẩm
         public string Core { get; set; }

@@ -41,7 +41,7 @@ namespace Hiver.Application.Catalog.Partners
                 DoB = request.DoB,
                 CreateDate = request.CreateDate.ToString() != null ? request.CreateDate : DateTime.Now,
                 CreateBy = request.CreateBy,
-                Status = request.Status.ToString() != null ? request.Status : (Utilities.Enums.Status.Active)
+                Status = request.Status
             };
 
             _context.Partners.Add(table);

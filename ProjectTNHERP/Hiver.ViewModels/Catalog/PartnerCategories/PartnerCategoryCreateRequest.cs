@@ -17,7 +17,7 @@ namespace Hiver.ViewModels.Catalog.PartnerCategories
 
         public DateTime? DoB { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public List<string> Partner { set; get; }
 

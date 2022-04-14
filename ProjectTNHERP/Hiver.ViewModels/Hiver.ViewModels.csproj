@@ -4,6 +4,15 @@
     <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Mapper\**" />
+    <Compile Remove="Utilities\**" />
+    <EmbeddedResource Remove="Mapper\**" />
+    <EmbeddedResource Remove="Utilities\**" />
+    <None Remove="Mapper\**" />
+    <None Remove="Utilities\**" />
+  </ItemGroup>
+
 	<ItemGroup>
 		<PackageReference Include="FluentValidation.AspNetCore" Version="10.3.6" />
 		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.14" />
@@ -12,8 +21,6 @@
 	<ItemGroup>
 	  <Folder Include="Catalog\Unit\" />
 	  <Folder Include="Catalog\ProductionStocks\" />
-	  <Folder Include="Mapper\" />
-	  <Folder Include="Utilities\" />
 	</ItemGroup>
 
 	<ItemGroup>

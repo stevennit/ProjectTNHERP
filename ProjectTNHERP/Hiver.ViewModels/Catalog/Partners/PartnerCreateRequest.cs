@@ -19,7 +19,7 @@ namespace Hiver.ViewModels.Catalog.Partners
 
         public DateTime? DoB { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public int? IdPartnerCategory { get; set; }
 

@@ -7,13 +7,12 @@ namespace Hiver.Data.Entities
 {
     public class Stock : HiverTableFull
     {
-        public string Symbol { get; set; }
         public string Detail { get; set; }
 
         // Mã Thành Phẩm - Nguyên Liệu
         public string Code { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public Guid? IdStockCategory { set; get; }
         public StockCategory StockCategory { set; get; }

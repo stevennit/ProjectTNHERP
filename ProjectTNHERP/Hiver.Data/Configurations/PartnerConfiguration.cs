@@ -21,7 +21,7 @@ namespace Hiver.Data.Configutions
 
             builder.Property(x => x.DoB).HasColumnType("Date");
 
-            builder.Property(x => x.Status).HasDefaultValue(Status.Active);
+            builder.Property(x => x.Status).HasDefaultValue(true);
         }
     }
 }

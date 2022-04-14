@@ -44,21 +44,22 @@ namespace Hiver.ApiIntegration.Product
 
             var requestContent = new MultipartFormDataContent();
 
-            //if (request.ThumbnailImage != null)
-            //{
-            //    byte[] data;
-            //    using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-            //    {
-            //        data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-            //    }
-            //    ByteArrayContent bytes = new ByteArrayContent(data);
-            //    requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
-            //}
+            if (request.ThumbnailImage != null)
+            {
+                byte[] data;
+                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
+                {
+                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
+                }
+                ByteArrayContent bytes = new ByteArrayContent(data);
+                requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
+            }
 
             requestContent.Add(new StringContent(request.Name.ToString()), "name");
-            requestContent.Add(new StringContent(request.Symbol.ToString()), "symbol");
+            requestContent.Add(new StringContent(request.Code.ToString()), "code");
             requestContent.Add(new StringContent(request.Height.ToString()), "height");
             requestContent.Add(new StringContent(request.Width.ToString()), "width");
+            requestContent.Add(new StringContent(request.Status.ToString()), "status");
 
             if(request.Description != null)
             {
@@ -91,21 +92,22 @@ namespace Hiver.ApiIntegration.Product
 
             var requestContent = new MultipartFormDataContent();
 
-            //if (request.ThumbnailImage != null)
-            //{
-            //    byte[] data;
-            //    using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-            //    {
-            //        data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-            //    }
-            //    ByteArrayContent bytes = new ByteArrayContent(data);
-            //    requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
-            //}
+            if (request.ThumbnailImage != null)
+            {
+                byte[] data;
+                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
+                {
+                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
+                }
+                ByteArrayContent bytes = new ByteArrayContent(data);
+                requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
+            }
 
             requestContent.Add(new StringContent(request.Name.ToString()), "name");
-            requestContent.Add(new StringContent(request.Symbol.ToString()), "symbol");
+            requestContent.Add(new StringContent(request.Code.ToString()), "code");
             requestContent.Add(new StringContent(request.Height.ToString()), "height");
             requestContent.Add(new StringContent(request.Width.ToString()), "width");
+            requestContent.Add(new StringContent(request.Status.ToString()), "status");
 
             if (request.Description != null)
             {

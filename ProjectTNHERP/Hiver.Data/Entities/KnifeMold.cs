@@ -13,7 +13,7 @@ namespace Hiver.Data.Entities
         public int Row { get; set; }
         public string Detail { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public Guid? IdKnifeMoldCategory { get; set; }
         public KnifeMoldCategory KnifeMoldCategory { get; set; }

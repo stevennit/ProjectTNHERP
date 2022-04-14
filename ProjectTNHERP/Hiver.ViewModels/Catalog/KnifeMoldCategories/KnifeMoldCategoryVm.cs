@@ -12,7 +12,7 @@ namespace Hiver.ViewModels.Catalog.KnifeMoldCategories
     {
         public string Image { get; set; }
 
-        public Status Status { get; set; }
+        public bool Status { get; set; }
 
         public List<string> KnifeMold { get; set; } = new List<string>();
     }

@@ -1,21 +1,10 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Hiver.ApiIntegration;
 using Hiver.ApiIntegration.Menu;
 using Hiver.ApiIntegration.Product;
 using Hiver.ApiIntegration.ProductCategory;
-using Hiver.Application.Catalog.KnifeMolds;
-using Hiver.Application.Catalog.PartnerCategories;
-using Hiver.Application.Catalog.Partners;
-using Hiver.Application.Catalog.ProductCategories;
-using Hiver.Application.Catalog.Products;
-using Hiver.Application.Common;
-using Hiver.Data.EF;
-using Hiver.Utilities.Constants;
 using Hiver.ViewModels.Catalog.Products;
 using Hiver.ViewModels.System.Users;
 using Hiver.ViewModels.Validator;
@@ -23,8 +12,6 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -58,9 +45,7 @@ namespace Hiver.AdminApp
 
             services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
             services.AddTransient<IValidator<RegisterRequest>, RegisterRequestValidator>();
-            services.AddTransient<IValidator<ProductCreateRequest>, ProductCreateValidator>();
-            services.AddTransient<IValidator<ProductUpdateRequest>, ProductUpdateValidator>();
-
+            services.AddTransient<IValidator<ProductVm>, ProductValidator>();
 
             services.AddSession(options =>
             {
