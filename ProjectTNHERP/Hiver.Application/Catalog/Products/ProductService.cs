@@ -38,45 +38,37 @@ namespace Hiver.Application.Catalog.Products
 
         public async Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request)
         {
-            //1. Select join
-            var query = from p in _context.Products
-                        join pic in _context.ProductAndProductCategories on p.Id equals pic.IdProduct into ppic
-                        from pic in ppic.DefaultIfEmpty()
-                        join c in _context.ProductCategories on pic.IdProductCategory equals c.Id into picc
-                        from c in picc.DefaultIfEmpty()
-                        select new { p, pic, c };
-            //2. filter
-            if (!string.IsNullOrEmpty(request.Keyword))
-
-                query = query.Where(x => x.p.Name.Contains(request.Keyword));
-
+            List<ProductVm> table = new List<ProductVm>();
+            
             if (request.CategoryId != null)
             {
-                query = query.Where(p => p.c.Id == request.CategoryId);
+                var checkCategory = await _context.ProductCategories.Where(x => x.Id == request.CategoryId).FirstOrDefaultAsync();
+
+                var checkTable2 = await _context.ProductAndProductCategories
+                    .Where(x => x.IdProductCategory == checkCategory.Id).ToListAsync();
+
+                foreach (var item in checkTable2)
+                {
+                   var restable = _mapper.Map<ProductVm>(await _context.Products.Where(x => x.Id == item.IdProduct).FirstOrDefaultAsync());
+                    table.Add(restable);
+                }
+
+            }
+            else
+            {
+                //1. Select join
+                table = _mapper.Map<List<ProductVm>>(await _context.Products.ToListAsync());
             }
 
-            //3. Paging
-            int totalRow = await query.CountAsync();
+            //2. filter
+            if (!string.IsNullOrEmpty(request.Keyword))
+                table = table.Where(x => x.Code.Contains(request.Keyword)).ToList();
 
-            var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
-                .Take(request.PageSize)
-                .Select(x => new ProductVm()
-                {
-                    Id = x.p.Id,
-                    Name = x.p.Name,
-                    Code = x.p.Code,
-                    CreateDate = x.p.CreateDate,
-                    Detail = x.p.Detail,
-                    CreateBy = x.p.CreateBy,
-                    Description = x.p.Description,
-                    Height = x.p.Height,
-                    ModifyBy = x.p.ModifyBy,
-                    ModifyDate = x.p.ModifyDate,
-                    Status = x.p.Status,
-                    Symbol = x.p.Symbol,
-                    ViewCount = x.p.ViewCount,
-                    Width = x.p.Width,
-                }).ToListAsync();
+            //3. Paging
+            int totalRow = table.Count();
+
+            var data = (table.Skip((request.PageIndex - 1) * request.PageSize)
+                .Take(request.PageSize)).ToList();
 
             //4. Select and projection
             var pagedResult = new PagedResult<ProductVm>()

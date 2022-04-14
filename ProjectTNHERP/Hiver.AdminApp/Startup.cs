@@ -46,9 +46,6 @@ namespace Hiver.AdminApp
         {
             services.AddHttpClient();
 
-            services.AddDbContext<HiverDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString(SystemConstants.MainConnectionString)));
-
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
                 .AddCookie(options =>
             {
@@ -64,17 +61,6 @@ namespace Hiver.AdminApp
             services.AddTransient<IValidator<ProductCreateRequest>, ProductCreateValidator>();
             services.AddTransient<IValidator<ProductUpdateRequest>, ProductUpdateValidator>();
 
-
-            //Declare DI
-            services.AddTransient<IStorageService, FileStorageService>();
-
-            services.AddTransient<IProductService, ProductService>();
-            services.AddTransient<IProductCategoryService, ProductCategoryService>();
-            services.AddTransient<IPartnerService, PartnerService>();
-            services.AddTransient<IPartnerCategoryService, PartnerCategoryService>();
-            services.AddTransient<IKnifeMoldService, KnifeMoldService>();
-
-            services.AddAutoMapper(typeof(AutoMapperProfile).Assembly);
 
             services.AddSession(options =>
             {

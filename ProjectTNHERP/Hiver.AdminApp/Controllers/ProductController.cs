@@ -72,7 +72,7 @@ namespace Hiver.AdminApp.Controllers
         [HttpPost]
         [Consumes("multipart/form-data")]
         [DisableRequestSizeLimit]
-        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
+        public async Task<IActionResult> Create([FromForm] ProductVm request)
         {
             if (!ModelState.IsValid)
                 return View(request);
@@ -144,7 +144,7 @@ namespace Hiver.AdminApp.Controllers
 
         [HttpPost]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Edit([FromForm] ProductUpdateRequest request)
+        public async Task<IActionResult> Edit([FromForm] ProductVm request)
         {
             if (!ModelState.IsValid)
                 return View(request);
@@ -184,19 +184,19 @@ namespace Hiver.AdminApp.Controllers
         [HttpGet]
         public IActionResult Delete(Guid id)
         {
-            return View(new ProductDeleteRequest()
+            return View(new ProductVm()
             {
                 Id = id
             });
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete(ProductDeleteRequest request)
+        public async Task<IActionResult> Delete(Guid request)
         {
             if (!ModelState.IsValid)
                 return View();
 
-            var result = await _productApiClient.DeleteProduct(request.Id);
+            var result = await _productApiClient.DeleteProduct(request);
             if (result)
             {
                 TempData["result"] = "Xóa sản phẩm thành công";

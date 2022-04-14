@@ -12,9 +12,9 @@ namespace Hiver.ApiIntegration.Product
     {
         Task<PagedResult<ProductVm>> GetPagings(GetManageProductPagingRequest request);
 
-        Task<bool> CreateProduct(ProductCreateRequest request);
+        Task<bool> CreateProduct(ProductVm request);
 
-        Task<bool> UpdateProduct(ProductUpdateRequest request);
+        Task<bool> UpdateProduct(ProductVm request);
 
         Task<ApiResult<bool>> CategoryAssign(Guid id, CategoryAssignRequest request);
 

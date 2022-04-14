@@ -31,7 +31,7 @@ namespace Hiver.ApiIntegration.Product
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<bool> CreateProduct(ProductCreateRequest request)
+        public async Task<bool> CreateProduct(ProductVm request)
         {
             var sessions = _httpContextAccessor
                 .HttpContext
@@ -44,16 +44,16 @@ namespace Hiver.ApiIntegration.Product
 
             var requestContent = new MultipartFormDataContent();
 
-            if (request.ThumbnailImage != null)
-            {
-                byte[] data;
-                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-                {
-                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-                }
-                ByteArrayContent bytes = new ByteArrayContent(data);
-                requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
-            }
+            //if (request.ThumbnailImage != null)
+            //{
+            //    byte[] data;
+            //    using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
+            //    {
+            //        data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
+            //    }
+            //    ByteArrayContent bytes = new ByteArrayContent(data);
+            //    requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
+            //}
 
             requestContent.Add(new StringContent(request.Name.ToString()), "name");
             requestContent.Add(new StringContent(request.Symbol.ToString()), "symbol");
@@ -78,7 +78,7 @@ namespace Hiver.ApiIntegration.Product
             return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> UpdateProduct(ProductUpdateRequest request)
+        public async Task<bool> UpdateProduct(ProductVm request)
         {
             var sessions = _httpContextAccessor
                 .HttpContext
@@ -91,16 +91,16 @@ namespace Hiver.ApiIntegration.Product
 
             var requestContent = new MultipartFormDataContent();
 
-            if (request.ThumbnailImage != null)
-            {
-                byte[] data;
-                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-                {
-                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-                }
-                ByteArrayContent bytes = new ByteArrayContent(data);
-                requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
-            }
+            //if (request.ThumbnailImage != null)
+            //{
+            //    byte[] data;
+            //    using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
+            //    {
+            //        data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
+            //    }
+            //    ByteArrayContent bytes = new ByteArrayContent(data);
+            //    requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
+            //}
 
             requestContent.Add(new StringContent(request.Name.ToString()), "name");
             requestContent.Add(new StringContent(request.Symbol.ToString()), "symbol");
