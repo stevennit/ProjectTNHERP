@@ -110,19 +110,23 @@ namespace Hiver.Application.Catalog.Products
             var rel = await (from a in _context.ProductCategories
                       join b in _context.ProductAndProductCategories on a.Id equals b.IdProductCategory
                       where b.IdProduct == Id select a.Id).ToListAsync();
+
             List<Guid> categoryVm = new List<Guid>(rel);
             return categoryVm;
         }
 
-        public async Task<List<ProductImageVm>> GetListProductImages(Guid tableId)
+        public async Task<List<int>> GetListProductImages(Guid tableId)
         {
-            var rel = await _context.ProductImages.Where(x => x.IdTable == tableId).ToListAsync();
+            var rel = await (from a in _context.Products
+                             join b in _context.ProductImages on a.Id equals b.IdTable
+                             where b.IdTable == tableId
+                             select b.Id).ToListAsync();
 
-            List<ProductImageVm> tableVm = _mapper.Map<List<ProductImageVm>>(rel);
+            List<int> tableVm = new List<int>(rel);
             return tableVm;
         }
 
-        public async Task<Guid> Create(ProductVm request)
+        public async Task<Guid> Create(ProductCreateRequest request)
         {
             var product = new Product()
             {
@@ -176,7 +180,7 @@ namespace Hiver.Application.Catalog.Products
             return product.Id;
         }
 
-        public async Task<Guid> Update(ProductVm request)
+        public async Task<Guid> Update(ProductUpdateRequest request)
         {
             var product = await _context.Products.FindAsync(request.Id);
 

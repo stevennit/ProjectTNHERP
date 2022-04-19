@@ -95,25 +95,7 @@
                                     @Html.DisplayFor(modelItem => item.CreateBy)
                                 </td>
                                 <td>
-                                    <a href="#modal-message" class="btn btn-sm btn-primary" data-toggle="modal">Demo</a>
-                                    <div class="modal modal-message fade" id="modal-message">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h4 class="modal-title">Modal Message Header</h4>
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                                </div>
-                                                <div class="modal-body">
-                                                    @await Html.PartialAsync("_ProductEdit", item)
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <a href="javascript:;" class="btn btn-white" data-dismiss="modal">Close</a>
-                                                    <a href="javascript:;" class="btn btn-primary">Save Changes</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @*@Html.ActionLink("Sửa", "Edit", new { id = item.Id }) |*@
+                                    @Html.ActionLink("Sửa", "Edit", new { id = item.Id }) |
                                     @Html.ActionLink("Xem", "Details", new { id = item.Id }) |
                                     @Html.ActionLink("Xóa", "Delete", new { id = item.Id }) |
                                     @Html.ActionLink("Gán danh mục", "CategoryAssign", new { id = item.Id })

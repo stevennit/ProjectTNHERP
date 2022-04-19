@@ -31,7 +31,7 @@ namespace Hiver.ApiIntegration.Product
             _httpClientFactory = httpClientFactory;
         }
 
-        public async Task<bool> CreateProduct(ProductVm request)
+        public async Task<bool> CreateProduct(ProductCreateRequest request)
         {
             var sessions = _httpContextAccessor
                 .HttpContext
@@ -79,7 +79,7 @@ namespace Hiver.ApiIntegration.Product
             return response.IsSuccessStatusCode;
         }
 
-        public async Task<bool> UpdateProduct(ProductVm request)
+        public async Task<bool> UpdateProduct(ProductUpdateRequest request)
         {
             var sessions = _httpContextAccessor
                 .HttpContext

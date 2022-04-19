@@ -27,30 +27,25 @@
     </script>
 }
 <div class="container-fluid">
-    <h1 class="mt-4">Cập nhật sản phẩm</h1>
-    <ol class="breadcrumb mb-4">
+    <h1>Cập nhật sản phẩm</h1>
+    <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
-        <li class="breadcrumb-item active">Cập nhật sản phẩm</li>
+        <li class="breadcrumb-item active">Cập nhật sản phẩm  <a class="label label-success" asp-action="Index" asp-controller="Product">Về danh sách</a></li>
     </ol>
-    <div class="card mb-4">
-        <div class="card-header">
-            <a class="btn btn-success" asp-action="Index" asp-controller="Product">Về danh sách</a>
-        </div>
-
-        <div class="card-body">
-            <div class="col-md-8">
+    <div class="row">
+        <div class="col-md-8">
                 <form asp-action="Edit" enctype="multipart/form-data" method="post">
                     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <input type="hidden" asp-for="Id" />
                     <div class="form-group">
-                        <label asp-for="Name" class="control-label"></label>
-                        <input asp-for="Name" class="form-control" />
-                        <span asp-validation-for="Name" class="text-danger"></span>
+                        <label asp-for="Code" class="control-label"></label>
+                        <input asp-for="Code" class="form-control" readonly />
+                        <span asp-validation-for="Code" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <label asp-for="Symbol" class="control-label"></label>
-                        <input asp-for="Symbol" class="form-control" />
-                        <span asp-validation-for="Symbol" class="text-danger"></span>
+                        <label asp-for="Name" class="control-label"></label>
+                        <input asp-for="Name" class="form-control" readonly/>
+                        <span asp-validation-for="Name" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="Height" class="control-label"></label>
@@ -74,34 +69,13 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Status" class="control-label"></label>
-                        <input type="checkbox" data-val="true" data-val-required="The isActive field is required." id="isActive" name="isActive" value="true" /><br />
-                        <span asp-validation-for="Status" class="text-danger"></span>
+                        @Html.CheckBoxFor(m => m.Status)
                     </div>
-                    <div class="form-group">
-                        <label asp-for="ProductCategories" class="control-label"></label>
-                        @foreach (var item in Model.ProductCategories)
-                        {
-                            <select class="multiple-select2 form-control" multiple>
-                                <optgroup label="Alaskan/Hawaiian Time Zone">
-                                    <option value="AK">Alaska</option>
-                                    <option value="HI">Hawaii</option>
-                                </optgroup>
-                            </select>
-                        }
-                        @*
-                        <input asp-for="ProductCategories" class="form-control">
-                        <span asp-validation-for="ProductCategories" class="text-danger"></span>*@
-                    </div>
-                    <div class="form-group">
-                        <label asp-for="ThumbnailImage" class="control-label"></label>
-                        <input asp-for="ThumbnailImage" type="file" class="form-control" />
-                        <span asp-validation-for="ThumbnailImage" class="text-danger"></span>
-                    </div>
+                    
                     <div class="form-group">
                         <input type="submit" value="Cập nhật" class="btn btn-primary" />
                     </div>
                 </form>
             </div>
-        </div>
     </div>
 </div>

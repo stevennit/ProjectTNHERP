@@ -72,7 +72,7 @@ namespace Hiver.AdminApp.Controllers
         [HttpPost]
         [Consumes("multipart/form-data")]
         [DisableRequestSizeLimit]
-        public async Task<IActionResult> Create([FromForm] ProductVm request)
+        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             if (!ModelState.IsValid)
                 return View(request);
@@ -143,7 +143,7 @@ namespace Hiver.AdminApp.Controllers
 
         [HttpPost]
         [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Edit([FromForm] ProductVm request)
+        public async Task<IActionResult> Edit([FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
                 return View(request);
