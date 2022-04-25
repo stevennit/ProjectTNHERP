@@ -9,7 +9,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Session" Version="2.2.0" />
     <PackageReference Include="Microsoft.IdentityModel.Logging" Version="6.16.0" />
     <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.16.0" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.2" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="6.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.3.0" />
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.16.0" />
 	  <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
   </ItemGroup>
@@ -21,6 +22,22 @@
     <ProjectReference Include="..\Hiver.ViewModels\Hiver.ViewModels.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="wwwroot\assets\libs\choices.js\src\" />
+    <Folder Include="wwwroot\assets\libs\flatpickr\types\" />
+    <Folder Include="wwwroot\assets\libs\flatpickr\utils\" />
+    <Folder Include="wwwroot\assets\libs\gmaps\docs\" />
+    <Folder Include="wwwroot\assets\libs\gmaps\examples\" />
+    <Folder Include="wwwroot\assets\libs\gmaps\test\" />
+    <Folder Include="wwwroot\assets\libs\gridjs\src\" />
+    <Folder Include="wwwroot\assets\libs\moment\src\" />
+    <Folder Include="wwwroot\assets\libs\particles.js\demo\" />
+    <Folder Include="wwwroot\assets\libs\rater-js\example\" />
+    <Folder Include="wwwroot\assets\libs\rater-js\test\" />
+    <Folder Include="wwwroot\assets\libs\swiper\angular\angular\src\" />
+    <Folder Include="wwwroot\assets\libs\swiper\angular\esm2015\angular\src\" />
+    <Folder Include="wwwroot\assets\libs\swiper\types\modules\" />
+    <Folder Include="wwwroot\assets\libs\toastify-js\example\" />
+    <Folder Include="wwwroot\assets\libs\toastify-js\src\" />
     <Folder Include="wwwroot\lib\" />
   </ItemGroup>
 </Project>
