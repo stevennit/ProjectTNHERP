@@ -1,4 +1,6 @@
 using System;
+using AspNetCoreHero.ToastNotification;
+using AspNetCoreHero.ToastNotification.Extensions;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Hiver.ApiIntegration;
@@ -73,6 +75,8 @@ namespace Hiver.AdminApp
 
             services.AddCors();
 
+            services.AddNotyf(config => { config.DurationInSeconds = 10; config.IsDismissable = true; config.Position = NotyfPosition.TopRight; });
+
 #endif
         }
 
@@ -97,6 +101,8 @@ namespace Hiver.AdminApp
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseNotyf();
 
             app.UseCors(builder =>
                   builder.AllowAnyOrigin()

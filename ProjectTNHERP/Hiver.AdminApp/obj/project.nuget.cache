@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "UxpneIQ0ynnRD1MKnIBpAITJFcpdVvoozaxJuUXSXeQaQK8+WA9lapFPNapygH9tawR4ocaEZgc7RbyYQvgRdg==",
+  "dgSpecHash": "+rdbnLXMy6vxPYh7xn4pWQJ7PzEdbU7D3bDfYIHUv9xSJe87PGxNAbNrwevGZgK/pce1xBe41TL4AZKvYNH47Q==",
   "success": true,
   "projectFilePath": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\Hiver.AdminApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\aspnetcorehero.toastnotification\\1.1.0\\aspnetcorehero.toastnotification.1.1.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\fluentvalidation\\10.3.6\\fluentvalidation.10.3.6.nupkg.sha512",

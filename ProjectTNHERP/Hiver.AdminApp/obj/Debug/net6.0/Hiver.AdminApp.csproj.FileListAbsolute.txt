@@ -580,6 +580,8 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hive
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.Application.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Hiver.Data.pdb
 D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Threading.Channels.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.Development.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\appsettings.Production.json
@@ -724,7 +726,6 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\Syst
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Text.Encodings.Web.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Text.Json.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Text.RegularExpressions.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Threading.Channels.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Threading.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Threading.Overlapped.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\refs\System.Threading.Tasks.Dataflow.dll
@@ -926,6 +927,7 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
@@ -945,6 +947,9 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\NuGet.Pac
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\NuGet.ProjectModel.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\NuGet.Protocol.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\NuGet.Versioning.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\System.Composition.AttributedModel.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\System.Composition.Convention.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\System.Composition.Hosting.dll
@@ -1123,7 +1128,6 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win-arm64\lib\net6.0\dotnet-aspnet-codegenerator-design.exe
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
@@ -1154,7 +1158,5 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.Adm
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\ref\Hiver.AdminApp.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\obj\Debug\net6.0\Hiver.AdminApp.genruntimeconfig.cache
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Microsoft.OpenApi.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\AspNetCoreHero.ToastNotification.Views.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.AdminApp\bin\Debug\net6.0\AspNetCoreHero.ToastNotification.dll

@@ -5,15 +5,21 @@
     ViewData["Title"] = "Danh sách sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+
+@section Css{
+    <!-- nouisliderribute css -->
+    <link rel="stylesheet" href="assets/libs/nouislider/nouislider.min.css">
+
+    <!-- gridjs css -->
+    <link rel="stylesheet" href="assets/libs/gridjs/theme/mermaid.min.css">
+}
+
 @section Scripts{
-    <script>
-        setTimeout(function () {
-            $('#msgAlert').fadeOut('slow');
-        }, 2000);
-    </script>
+
 
 }
-<div class="container-fluid">
+
+<div class="row">
     <h1 class="mt-4">Danh sách sản phẩm</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
@@ -48,31 +54,26 @@
 
         <div class="card-body">
             <div class="row">
-                @if (ViewBag.SuccessMsg != null)
-                {
-                    <div id="msgAlert" class="alert alert-success" role="alert">
-                        @ViewBag.SuccessMsg
-                    </div>
-                }
+               
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered">
                     <thead>
                         <tr>
                             <th>
-                                Mã
+                                Mã SP
                             </th>
                             <th>
                                 Tên
                             </th>
                             <th>
-                                Kích Thước
+                                Giá nhập
                             </th>
                             <th>
-                                Ngày Tạo
+                                Giá bán
                             </th>
                             <th>
-                                Người Tạo
+                                Số lượng tồn
                             </th>
 
                             <th></th>
@@ -95,10 +96,9 @@
                                     @Html.DisplayFor(modelItem => item.CreateBy)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Sửa", "Edit", new { id = item.Id }) |
                                     @Html.ActionLink("Xem", "Details", new { id = item.Id }) |
                                     @Html.ActionLink("Xóa", "Delete", new { id = item.Id }) |
-                                    @Html.ActionLink("Gán danh mục", "CategoryAssign", new { id = item.Id })
+                                    @Html.ActionLink("Gán danh mục", "CategoryAssign", new { id = item.Id }) |
                                 </td>
                             </tr>
                         }

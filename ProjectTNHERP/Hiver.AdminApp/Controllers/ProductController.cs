@@ -1,4 +1,5 @@
-﻿using Hiver.ApiIntegration.Product;
+﻿using AspNetCoreHero.ToastNotification.Abstractions;
+using Hiver.ApiIntegration.Product;
 using Hiver.ApiIntegration.ProductCategory;
 using Hiver.ViewModels.Catalog.ProductCategories;
 using Hiver.ViewModels.Catalog.Products;
@@ -17,14 +18,18 @@ namespace Hiver.AdminApp.Controllers
         private readonly IProductApiClient _productApiClient;
         private readonly IConfiguration _configuration;
         private readonly IProductCategoryApiClient _categoryApiClient;
+        private readonly INotyfService _notyf;
 
         public ProductController(IProductApiClient productApiClient, 
             IProductCategoryApiClient categoryApiClient,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            INotyfService notyf
+            )
         {
             _configuration = configuration;
             _productApiClient = productApiClient;
             _categoryApiClient = categoryApiClient;
+            _notyf = notyf;
         }
 
         public async Task<IActionResult> Index(string keyword, Guid? categoryId, int pageIndex = 1, int pageSize = 10)
@@ -82,7 +87,7 @@ namespace Hiver.AdminApp.Controllers
             var result = await _productApiClient.CreateProduct(request);
             if (result)
             {
-                TempData["result"] = "Thêm mới sản phẩm thành công";
+                _notyf.Success("Thêm mới sản phẩm thành công");
                 return RedirectToAction("Index");
             }
 
@@ -153,7 +158,7 @@ namespace Hiver.AdminApp.Controllers
             var result = await _productApiClient.UpdateProduct(request);
             if (result)
             {
-                TempData["result"] = "Cập nhật sản phẩm thành công";
+                _notyf.Success("Cập nhật sản phẩm thành công");
                 return RedirectToAction("Index");
             }
 
