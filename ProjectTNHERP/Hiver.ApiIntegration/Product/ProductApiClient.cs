@@ -162,6 +162,13 @@ namespace Hiver.ApiIntegration.Product
             return data;
         }
 
+        public async Task<ProductImageFirst> GetProductImageFirst(Guid id)
+        {
+            var data = await GetAsync<ProductImageFirst>($"/api/products/{id}/productimage");
+
+            return data;
+        }
+
         public async Task<List<ProductVm>> GetFeaturedProducts(int take)
         {
             var data = await GetListAsync<ProductVm>($"/api/products/featured/{take}");

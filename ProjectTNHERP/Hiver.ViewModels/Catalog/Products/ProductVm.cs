@@ -20,9 +20,7 @@ namespace Hiver.ViewModels.Catalog.Products
         public bool Status { get; set; }
         public int? ViewCount { get; set; }
 
-        public IFormFile ThumbnailImage { get; set; }
-
-        public List<int> ProductImages { get; set; }
+        public string Image { get; set; }
 
         public List<Guid> ProductCategories { get; set; }
 

@@ -25,5 +25,7 @@ namespace Hiver.ApiIntegration.Product
         Task<List<ProductVm>> GetLatestProducts(int take);
 
         Task<bool> DeleteProduct(Guid id);
+
+        Task<ProductImageFirst> GetProductImageFirst(Guid id);
     }
 }

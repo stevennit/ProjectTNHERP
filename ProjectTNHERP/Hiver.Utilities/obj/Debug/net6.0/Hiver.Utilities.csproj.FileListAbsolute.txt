@@ -21,3 +21,4 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Ut
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\ref\Hiver.Utilities.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Debug\net6.0\Hiver.Utilities.csproj.AssemblyReference.cache

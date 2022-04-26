@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YpKjyi5O85GIwVezhHFyaPunrZZyuon1BWNsyIIj2PQ=",
+  "Hash": "+1CMQX5nSjxkAWczEgMkAU6PYwX4iiakovXnFvq7Jq4=",
   "Source": "Hiver.AdminApp",
   "BasePath": "_content/Hiver.AdminApp",
   "Mode": "Default",
@@ -43110,6 +43110,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
+    },
+    {
+      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\image\\No-Image.jpg",
+      "SourceId": "Hiver.AdminApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
+      "BasePath": "_content/Hiver.AdminApp",
+      "RelativePath": "image/No-Image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\No-Image.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\image\\no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg",
+      "SourceId": "Hiver.AdminApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\",
+      "BasePath": "_content/Hiver.AdminApp",
+      "RelativePath": "image/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg"
     },
     {
       "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.AdminApp\\wwwroot\\images\\.DS_Store",

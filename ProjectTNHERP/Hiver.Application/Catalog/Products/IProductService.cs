@@ -13,8 +13,6 @@ namespace Hiver.Application.Catalog.Products
     {
         Task<int> AddImage(Guid tableId, ProductImageCreateRequest request);
         Task<ProductImageVm> GetImageById(int imageId);
-        Task<List<Guid>> GetListProductCategory(Guid tableId);
-        Task<List<int>> GetListProductImages(Guid tableId);
         Task<int> UpdateImage(int imageId,ProductImageUpdateRequest request);
         Task<int> RemoveImage(int imageId);
         Task<PagedResult<ProductVm>> GetAllPaging(GetManageProductPagingRequest request);
@@ -25,6 +23,8 @@ namespace Hiver.Application.Catalog.Products
         Task<Guid> Delete(Guid productId);
 
         Task<ApiResult<bool>> ProductAssignCategory(Guid id, CategoryAssignRequest request);
+
+        Task<ProductImageFirst> GetProductImage(Guid tableId);
 
     }
 }

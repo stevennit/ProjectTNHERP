@@ -148,6 +148,16 @@ namespace Hiver.BackendApi.Controllers
             return Ok(image);
         }
 
+        //[ServiceFilter(typeof(AuthAttribute))]
+        [HttpGet("{productId}/productimage")]
+        public async Task<IActionResult> GetProductImage(Guid productId)
+        {
+            var image = await _productService.GetProductImage(productId);
+            if (image == null)
+                return BadRequest("Không tìm thấy ảnh");
+            return Ok(image);
+        }
+
         [HttpPut("{id}/productassign")]
         public async Task<IActionResult> RoleAssign(Guid id, [FromBody] CategoryAssignRequest request)
         {

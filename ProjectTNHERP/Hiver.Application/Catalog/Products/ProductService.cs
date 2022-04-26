@@ -47,16 +47,16 @@ namespace Hiver.Application.Catalog.Products
                 foreach (var item in checkTable2)
                 {
                    var restable = _mapper.Map<ProductVm>(await _context.Products.Where(x => x.Id == item.IdProduct).FirstOrDefaultAsync());
+
+                    var resImage = await _context.ProductImages.Where(x => x.IdTable == restable.Id).FirstOrDefaultAsync();
+                    restable.Image = resImage.ImagePath;
                     table.Add(restable);
                 }
-
             }
             else
             {
-                //1. Select join
                 table = _mapper.Map<List<ProductVm>>(await _context.Products.ToListAsync());
             }
-
             //2. filter
             if (!string.IsNullOrEmpty(request.Keyword))
                 table = table.Where(x => x.Code.Contains(request.Keyword)).ToList();
@@ -99,31 +99,18 @@ namespace Hiver.Application.Catalog.Products
                 ModifyBy = product.ModifyBy,
                 Status = product.Status,
                 ViewCount = product.ViewCount,
-                ProductCategories = GetListProductCategory(product.Id).Result,
-                ProductImages = GetListProductImages(product.Id).Result
             };
             return productViewModel;
         }
 
-        public async Task<List<Guid>> GetListProductCategory(Guid Id)
-        {
-            var rel = await (from a in _context.ProductCategories
-                      join b in _context.ProductAndProductCategories on a.Id equals b.IdProductCategory
-                      where b.IdProduct == Id select a.Id).ToListAsync();
 
-            List<Guid> categoryVm = new List<Guid>(rel);
-            return categoryVm;
-        }
-
-        public async Task<List<int>> GetListProductImages(Guid tableId)
+        public async Task<ProductImageFirst> GetProductImage(Guid tableId)
         {
             var rel = await (from a in _context.Products
                              join b in _context.ProductImages on a.Id equals b.IdTable
-                             where b.IdTable == tableId
-                             select b.Id).ToListAsync();
-
-            List<int> tableVm = new List<int>(rel);
-            return tableVm;
+                             where b.IdTable == tableId && b.IsDefault == true
+                             select new ProductImageFirst() { ImagePath = b.ImagePath }).FirstOrDefaultAsync();
+            return rel;
         }
 
         public async Task<Guid> Create(ProductCreateRequest request)

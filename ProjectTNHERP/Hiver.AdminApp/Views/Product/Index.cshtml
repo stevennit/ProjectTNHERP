@@ -6,6 +6,8 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+
 @section Css{
     <!-- nouisliderribute css -->
     <link rel="stylesheet" href="assets/libs/nouislider/nouislider.min.css">
@@ -49,7 +51,7 @@
 
         <div class="card-body">
             <div class="row">
-               
+
             </div>
             <div class="table-responsive">
                 <table class="table table-bordered">
@@ -59,7 +61,7 @@
                                 Sản phẩm
                             </th>
                             <th>
-                               Ngày tạo
+                                Ngày tạo
                             </th>
                             <th>
                                 Người tạo
@@ -79,7 +81,11 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 me-3">
                                             <div class="avatar-sm bg-light rounded p-1">
-                                            <img src="assets/images/products/img-1.png" alt="" class="img-fluid d-block"></div>
+                                                
+                                                @await Component.InvokeAsync("ProductImageFirst", item.Id)
+
+                                            </div>
+
                                         </div>
                                         <div class="flex-grow-1">
                                             <h5 class="fs-14 mb-1">
@@ -87,7 +93,6 @@
                                             </h5><p class="text-muted mb-0">Mã SP : <span class="fw-medium">@Html.DisplayFor(modelItem => item.Code)</span></p>
                                         </div>
                                     </div>
-                                    
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.CreateDate)
