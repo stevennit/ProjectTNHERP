@@ -20,18 +20,13 @@
 }
 
 <div class="row">
-    <h1 class="mt-4">Danh sách sản phẩm</h1>
-    <ol class="breadcrumb mb-4">
-        <li class="breadcrumb-item"><a href="/">Trang chủ</a></li>
-        <li class="breadcrumb-item active">Danh sách sản phẩm</li>
-    </ol>
     <div class="card mb-12">
         <div class="card-header">
             <div class="row">
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-3 col-xs-12">
                     <a class="btn btn-success" asp-action="Create" asp-controller="Product">Tạo mới</a>
                 </div>
-                <div class="col-md-6 col-xs-12">
+                <div class="col-md-9 col-xs-12">
                     <form asp-action="Index" method="get">
                         <div class="row">
                             <div class="col-md-4">
@@ -42,7 +37,7 @@
                                     <option>--Chọn danh mục--</option>
                                 </select>
                             </div>
-                            <div class="cold-md-3">
+                            <div class="col-md-3">
                                 <button type="submit" class="btn btn-primary">Tìm</button>
                                 <button type="button" onclick="window.location.href='/Product/Index'" class="btn btn-dark">Reset</button>
                             </div>
@@ -61,19 +56,16 @@
                     <thead>
                         <tr>
                             <th>
-                                Mã SP
+                                Sản phẩm
                             </th>
                             <th>
-                                Tên
+                               Ngày tạo
                             </th>
                             <th>
-                                Giá nhập
+                                Người tạo
                             </th>
                             <th>
-                                Giá bán
-                            </th>
-                            <th>
-                                Số lượng tồn
+                                Hành động
                             </th>
 
                             <th></th>
@@ -84,10 +76,18 @@
                         {
                             <tr>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.Code)
-                                </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Name)
+                                    <div class="d-flex align-items-center">
+                                        <div class="flex-shrink-0 me-3">
+                                            <div class="avatar-sm bg-light rounded p-1">
+                                            <img src="assets/images/products/img-1.png" alt="" class="img-fluid d-block"></div>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h5 class="fs-14 mb-1">
+                                                <a href="/Product/Details/@item.Id" class="text-dark">@Html.DisplayFor(modelItem => item.Name)</a>
+                                            </h5><p class="text-muted mb-0">Mã SP : <span class="fw-medium">@Html.DisplayFor(modelItem => item.Code)</span></p>
+                                        </div>
+                                    </div>
+                                    
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.CreateDate)
@@ -96,9 +96,9 @@
                                     @Html.DisplayFor(modelItem => item.CreateBy)
                                 </td>
                                 <td>
-                                    @Html.ActionLink("Xem", "Details", new { id = item.Id }) |
-                                    @Html.ActionLink("Xóa", "Delete", new { id = item.Id }) |
-                                    @Html.ActionLink("Gán danh mục", "CategoryAssign", new { id = item.Id }) |
+                                    @Html.ActionLink("Xem", "Details", new { id = item.Id }, new { @class = "text-reset text-decoration-underline" }) |
+                                    @Html.ActionLink("Xóa", "Delete", new { id = item.Id }, new { @class = "text-reset text-decoration-underline" })
+                                    @*@Html.ActionLink("Gán danh mục", "CategoryAssign", new { id = item.Id })*@
                                 </td>
                             </tr>
                         }
