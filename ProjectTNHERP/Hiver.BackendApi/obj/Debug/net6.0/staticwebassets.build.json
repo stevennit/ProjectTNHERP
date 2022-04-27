@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "7Idz/0k/e4CiQum6ZYRusfGmraeBZgpluG2IFPWBj2M=",
+  "Hash": "PwsJce1RhC5EHTvDOPnR3uHgNdRfSBj5bWBHvXMYXjM=",
   "Source": "Hiver.BackendApi",
   "BasePath": "_content/Hiver.BackendApi",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\images\\product\\e885a7f9-06a4-4a5a-bd6d-36d666035d82.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\image\\No-Image.jpg",
+      "SourceId": "Hiver.BackendApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\",
+      "BasePath": "_content/Hiver.BackendApi",
+      "RelativePath": "image/No-Image.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\image\\No-Image.jpg"
     },
     {
       "Identity": "D:\\Project\\ProjectTNHERP\\ProjectTNHERP\\Hiver.BackendApi\\wwwroot\\NewFolder\\2.PNG",

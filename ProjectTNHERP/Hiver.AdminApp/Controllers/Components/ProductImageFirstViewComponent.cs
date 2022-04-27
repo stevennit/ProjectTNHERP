@@ -28,10 +28,6 @@ namespace Hiver.AdminApp.Controllers.Components
         {
             var res = _productApiClient.GetProductImageFirst(IdProduct);
 
-            if (res == null)
-            {
-                return null;
-            }    
             return res.Result;
         }
     }

@@ -109,7 +109,12 @@ namespace Hiver.Application.Catalog.Products
             var rel = await (from a in _context.Products
                              join b in _context.ProductImages on a.Id equals b.IdTable
                              where b.IdTable == tableId && b.IsDefault == true
-                             select new ProductImageFirst() { ImagePath = b.ImagePath }).FirstOrDefaultAsync();
+                             select new ProductImageFirst() { ImagePath = b.ImagePath}).FirstOrDefaultAsync();
+            if(rel == null)
+            {
+                ProductImageFirst ds = new ProductImageFirst() { ImagePath = "/image/No-Image.jpg" };
+                return ds;
+            }
             return rel;
         }
 

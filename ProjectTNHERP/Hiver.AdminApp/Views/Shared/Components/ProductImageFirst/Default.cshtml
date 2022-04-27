@@ -1,5 +1,5 @@
-﻿@using Hiver.ViewModels.Common;
-@model Hiver.ViewModels.Catalog.Products.ProductImageFirst
+﻿@model Hiver.ViewModels.Catalog.Products.ProductImageFirst
 
-<img src="@Model.ImagePath" alt="" class="img-fluid d-block">
-@*<img src="@(Configuration["BaseAddress"] + @item.Image)" alt="" class="img-fluid d-block">*@
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+
+<img src="@(Configuration["BaseAddress"] + @Model.ImagePath)" alt="" class="img-fluid d-block">

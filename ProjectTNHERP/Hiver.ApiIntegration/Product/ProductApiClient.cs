@@ -158,7 +158,6 @@ namespace Hiver.ApiIntegration.Product
         public async Task<ProductVm> GetById(Guid id)
         {
             var data = await GetAsync<ProductVm>($"/api/products/{id}");
-
             return data;
         }
 

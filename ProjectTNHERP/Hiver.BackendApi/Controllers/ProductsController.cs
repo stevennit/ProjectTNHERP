@@ -154,7 +154,7 @@ namespace Hiver.BackendApi.Controllers
         {
             var image = await _productService.GetProductImage(productId);
             if (image == null)
-                return BadRequest("Không tìm thấy ảnh");
+                return BadRequest("Không tìm thấy sản phẩm");
             return Ok(image);
         }
 
