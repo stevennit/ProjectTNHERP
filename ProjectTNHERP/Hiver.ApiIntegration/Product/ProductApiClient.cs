@@ -130,8 +130,8 @@ namespace Hiver.ApiIntegration.Product
         {
             var data = await GetAsync<PagedResult<ProductVm>>(
                 $"/api/products/paging?pageIndex={request.PageIndex}" +
-                $"&pageSize={request.PageSize}" +
-                $"&keyword={request.Keyword}&categoryId={request.CategoryId}");
+                $"&pageSize={request.PageSize}" + $"&name={request.Name}" + 
+                $"&code={request.Code}&categoryId={request.CategoryId}");
 
             return data;
         }

@@ -7,8 +7,10 @@ namespace Hiver.ViewModels.Catalog.Products
 {
     public class GetManageProductPagingRequest : PagingRequestBase
     {
-        public string Keyword { get; set; }
+        public string Code { get; set; }
+        public string Name { get; set; }
 
         public Guid? CategoryId { get; set; }
+
     }
 }

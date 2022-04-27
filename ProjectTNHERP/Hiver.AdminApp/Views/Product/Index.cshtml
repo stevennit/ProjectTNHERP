@@ -1,6 +1,8 @@
 ﻿@using Hiver.ViewModels.Common;
 @model PagedResult<Hiver.ViewModels.Catalog.Products.ProductVm>
 
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration;
+
 @{
     ViewData["Title"] = "Danh sách sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -30,10 +32,13 @@
                 <div class="col-md-9 col-xs-12">
                     <form asp-action="Index" method="get">
                         <div class="row">
-                            <div class="col-md-4">
-                                <input type="text" value="@ViewBag.Keyword" name="keyword" class="form-control" />
+                            <div class="col-md-3">
+                                <input type="text" value="@ViewBag.Code" name="code" placeholder="Tìm theo mã" class="form-control" />
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-3">
+                                <input type="text" value="@ViewBag.Name" name="name" placeholder="Tìm theo tên" class="form-control" />
+                            </div>
+                            <div class="col-md-3">
                                 <select name="categoryId" onchange="this.form.submit()" asp-items="@ViewBag.Categories" class="form-control">
                                     <option>--Chọn danh mục--</option>
                                 </select>
@@ -80,9 +85,10 @@
                                     <div class="d-flex align-items-center">
                                         <div class="flex-shrink-0 me-3">
                                             <div class="avatar-sm bg-light rounded p-1">
-                                                
-                                                @await Component.InvokeAsync("ProductImageFirst", item.Id)
 
+                                                @*@await Component.InvokeAsync("ProductImageFirst", item.Id)*@
+
+                                                <img src="@(Configuration["BaseAddress"] + item.Image)" alt="" class="img-fluid d-block">
                                             </div>
 
                                         </div>

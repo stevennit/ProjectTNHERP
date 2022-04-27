@@ -32,18 +32,20 @@ namespace Hiver.AdminApp.Controllers
             _notyf = notyf;
         }
 
-        public async Task<IActionResult> Index(string keyword, Guid? categoryId, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string code,string name, Guid? categoryId, int pageIndex = 1, int pageSize = 10)
         {
             var request = new GetManageProductPagingRequest()
             {
-                Keyword = keyword,
+                Code = code,
+                Name = name,
                 PageIndex = pageIndex,
                 PageSize = pageSize,
                 CategoryId = categoryId
             };
             var data = await _productApiClient.GetPagings(request);
 
-            ViewBag.Keyword = keyword;
+            ViewBag.Code = code;
+            ViewBag.Name = name;
 
             var categories = await _categoryApiClient.GetAll();
 
@@ -131,12 +133,12 @@ namespace Hiver.AdminApp.Controllers
             {
                 Id = product.Id,
                 Code = product.Code,
+                CreateBy = product.CreateBy,
+                CreateDate = product.CreateDate,
                 Description = product.Description,
                 Detail = product.Detail,
                 Name = product.Name,
                 Height = product.Height,
-                ModifyBy = product.ModifyBy,
-                ModifyDate = product.ModifyDate,
                 Status = product.Status,
                 Width = product.Width,
                 ViewCount = product.ViewCount,

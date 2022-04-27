@@ -37,29 +37,37 @@ namespace Hiver.Application.Catalog.Products
         {
             List<ProductVm> table = new List<ProductVm>();
             
-            if (request.CategoryId != null)
-            {
-                var checkCategory = await _context.ProductCategories.Where(x => x.Id == request.CategoryId).FirstOrDefaultAsync();
-
-                var checkTable2 = await _context.ProductAndProductCategories
-                    .Where(x => x.IdProductCategory == checkCategory.Id).ToListAsync();
-
-                foreach (var item in checkTable2)
-                {
-                   var restable = _mapper.Map<ProductVm>(await _context.Products.Where(x => x.Id == item.IdProduct).FirstOrDefaultAsync());
-
-                    var resImage = await _context.ProductImages.Where(x => x.IdTable == restable.Id).FirstOrDefaultAsync();
-                    restable.Image = resImage.ImagePath;
-                    table.Add(restable);
-                }
-            }
-            else
-            {
-                table = _mapper.Map<List<ProductVm>>(await _context.Products.ToListAsync());
-            }
+            table = await (from a in _context.Products
+                            join b in _context.ProductAndProductCategories on a.Id equals b.IdProduct into pic
+                            from b in pic.DefaultIfEmpty()
+                            join c in _context.ProductCategories on b.IdProductCategory equals c.Id into ppic
+                            from c in ppic.DefaultIfEmpty()
+                            join d in _context.ProductImages on a.Id equals d.IdTable into pppic
+                            from d in pppic.DefaultIfEmpty()
+                            where c.Id == request.CategoryId
+                            select new ProductVm()
+                            {
+                                Id = a.Id,
+                                Description = a.Description,
+                                Height = a.Height,
+                                Detail = a.Detail,
+                                ModifyBy = a.ModifyBy,
+                                ModifyDate = a.ModifyDate,
+                                Status = a.Status,
+                                Width = a.Width,
+                                CreateDate = a.CreateDate,
+                                CreateBy = a.CreateBy,
+                                Code = a.Code,
+                                Name = a.Name,
+                                Image = d.ImagePath != null ? d.ImagePath : "/image/No-Image.jpg"
+                            }).Distinct().ToListAsync();
+            
             //2. filter
-            if (!string.IsNullOrEmpty(request.Keyword))
-                table = table.Where(x => x.Code.Contains(request.Keyword)).ToList();
+            if (!string.IsNullOrEmpty(request.Code))
+                table = table.Where(x => x.Code.ToLower().Contains(request.Code.ToLower())).ToList();
+
+            if (!string.IsNullOrEmpty(request.Name))
+                table = table.Where(x => x.Name.ToLower().Contains(request.Name.ToLower())).ToList();
 
             //3. Paging
             int totalRow = table.Count();
