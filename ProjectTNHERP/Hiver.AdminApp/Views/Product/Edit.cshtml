@@ -1,34 +1,49 @@
-﻿@model Hiver.ViewModels.Catalog.Products.ProductVm
+﻿@model Hiver.ViewModels.Catalog.Products.ProductUpdateRequest
 
 @{
     ViewData["Title"] = "Cập nhật sản phẩm";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section Css {
-    <!--Swiper slider css-->
-    <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
-
-    <!-- quill css -->
-    <link href="assets/libs/quill/quill.core.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/quill/quill.bubble.css" rel="stylesheet" type="text/css" />
-    <link href="assets/libs/quill/quill.snow.css" rel="stylesheet" type="text/css" />
+    <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
+    <link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap-datepicker/dist/css/bootstrap-datepicker3.css" rel="stylesheet" />
+    <link href="/assets/plugins/ion-rangeslider/css/ion.rangeSlider.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap-colorpicker/dist/css/bootstrap-colorpicker.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/tag-it/css/jquery.tagit.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <link href="/assets/plugins/select2/dist/css/select2.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" rel="stylesheet" />
+    <link href="/assets/plugins/bootstrap-colorpalette/css/bootstrap-colorpalette.css" rel="stylesheet" />
+    <link href="/assets/plugins/jquery-simplecolorpicker/jquery.simplecolorpicker.css" rel="stylesheet" />
+    <link href="/assets/plugins/jquery-simplecolorpicker/jquery.simplecolorpicker-fontawesome.css" rel="stylesheet" />
+    <link href="/assets/plugins/jquery-simplecolorpicker/jquery.simplecolorpicker-glyphicons.css" rel="stylesheet" />
+    <!-- ================== END PAGE LEVEL STYLE ================== -->
 }
 
 @section Scripts{
-    <!--Swiper slider js-->
-    <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ecommerce product details init -->
-    <script src="/assets/js/pages/ecommerce-product-details.init.js"></script>
-
-    <!-- ckeditor -->
-    <script src="/assets/libs/ckeditor/ckeditor5-build-classic/build/ckeditor.js"></script>
-
-    <!-- quill js -->
-    <script src="/assets/libs/quill/quill.min.js"></script>
-
-    <!-- init js -->
-    <script src="/assets/js/pages/form-editor.init.js"></script>
+    <!-- ================== BEGIN PAGE LEVEL JS ================== -->
+    <script src="/assets/plugins/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="/assets/plugins/moment/min/moment.min.js"></script>
+    <script src="/assets/plugins/bootstrap-datepicker/dist/js/bootstrap-datepicker.js"></script>
+    <script src="/assets/plugins/ion-rangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="/assets/plugins/bootstrap-colorpicker/dist/js/bootstrap-colorpicker.min.js"></script>
+    <script src="/assets/plugins/jquery.maskedinput/src/jquery.maskedinput.js"></script>
+    <script src="/assets/plugins/bootstrap-timepicker/js/bootstrap-timepicker.min.js"></script>
+    <script src="/assets/plugins/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"></script>
+    <script src="/assets/plugins/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="/assets/plugins/tag-it/js/tag-it.min.js"></script>
+    <script src="/assets/plugins/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="/assets/plugins/select2/dist/js/select2.min.js"></script>
+    <script src="/assets/plugins/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="/assets/plugins/bootstrap-show-password/dist/bootstrap-show-password.js"></script>
+    <script src="/assets/plugins/bootstrap-colorpalette/js/bootstrap-colorpalette.js"></script>
+    <script src="/assets/plugins/jquery-simplecolorpicker/jquery.simplecolorpicker.js"></script>
+    <script src="/assets/plugins/clipboard/dist/clipboard.min.js"></script>
+    <script src="/assets/js/demo/form-plugins.demo.js"></script>
+    <!-- ================== END PAGE LEVEL JS ================== -->
 }
 
 
@@ -100,17 +115,14 @@
                             <div class="mt-xl-0 mt-5">
                                 <div class="d-flex">
                                     <div class="flex-grow-1">
-                                        <h4>@Model.Name</h4>
+                                        <input asp-for="Id" hidden />
+                                        <input asp-for="Code" class="form-control" hidden />
                                         <div class="hstack gap-3 flex-wrap">
                                             Code : <span class="text-body fw-medium">@Model.Code</span>
-                                            <div class="vr"></div>
-                                            <div class="text-muted">
-                                                Người tạo : <span class="text-body fw-medium">@Model.CreateBy</span>
-                                            </div>
-                                            <div class="vr"></div>
-                                            <div class="text-muted">
-                                                Ngày tạo : <span class="text-body fw-medium">@Model.CreateDate</span>
-                                            </div>
+                                        </div>
+                                        <br />
+                                        <div class="hstack gap-3 flex-wrap">
+                                            Name : <input asp-for="Name" class="form-control" />
                                         </div>
                                     </div>
 
@@ -121,70 +133,34 @@
                                     </div>
                                 </div>
 
-                                <div class="row mt-4">
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="p-2 border border-dashed rounded">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm me-2">
-                                                    <div class="avatar-title rounded bg-transparent text-success fs-24">
-                                                        <i class="ri-money-dollar-circle-fill"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted mb-1">Số lần sản xuất :</p>
-                                                    <h5 class="mb-0">120,000</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end col -->
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="p-2 border border-dashed rounded">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm me-2">
-                                                    <div class="avatar-title rounded bg-transparent text-success fs-24">
-                                                        <i class="ri-file-copy-2-fill"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted mb-1"> Số lần NG:</p>
-                                                    <h5 class="mb-0">2,234</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end col -->
-                                    <div class="col-lg-4 col-sm-6">
-                                        <div class="p-2 border border-dashed rounded">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar-sm me-2">
-                                                    <div class="avatar-title rounded bg-transparent text-success fs-24">
-                                                        <i class="ri-stack-fill"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="flex-grow-1">
-                                                    <p class="text-muted mb-1">Chỉ số đơn hàng :</p>
-                                                    <h5 class="mb-0">30%</h5>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
                                 <div class="row">
                                     <div class="col-xl-6">
-                                        <div class=" mt-4 ">
+                                        <div class=" mt-4">
                                             <h5 class="fs-14 text-danger"><i class="mdi mdi-move-resize mdi-36px"></i>  Kích thước :</h5>
-                                            <input type="text" asp-for="@Model.Width" name="with" value="@Model.Width" />
-                                            <input type="text" asp-for="@Model.Height" name="height" value="@Model.Height" />
+                                            <div class="row">
+                                                <div class="col-6">Chiều Rộng : <input asp-for="Width" class="form-control" /></div>
+                                                <div class="col-6">Chiều Dài : <input asp-for="Height" class="form-control" /></div>
+                                            </div>
+
+
                                         </div>
                                     </div>
                                     <!-- end col -->
 
                                     <div class="col-xl-6">
                                         <div class=" mt-4">
-                                            <h5 class="fs-14 text-danger"><i class="mdi mdi-format-color-fill mdi-36px"></i> Màu : (3 màu)</h5>
-                                            <input type="text" name="name" value="" />
+                                            <h5 class="fs-14 text-danger"><i class="mdi mdi-format-color-fill mdi-36px"></i> Màu :</h5>
+                                            <div class="mb-3">
+                                                <div class="form-group row">
+                                                    <label class="col-lg-4 col-form-label">Inverse Theme</label>
+                                                    <div class="col-lg-8">
+                                                        <ul id="jquery-tagIt-inverse" class="inverse">
+                                                            <li>Tag1</li>
+                                                            <li>Tag2</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <!-- end col -->

@@ -12,6 +12,9 @@ namespace Hiver.Data.Entities
         public Double Width { get; set; }
         public Double Height { get; set; }
         public string Detail { get; set; }
+        public string Color { get; set; }
+        public int QtyProduction { get; set; }
+        public int QtyNG { get; set; }
         public int? ViewCount { set; get; }
 
         public bool Status { get; set; }

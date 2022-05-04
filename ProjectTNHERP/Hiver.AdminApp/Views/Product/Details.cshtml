@@ -5,16 +5,9 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 @section Css {
-    <!--Swiper slider css-->
-    <link href="/assets/libs/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css" />
 }
 
 @section Scripts{
-    <!--Swiper slider js-->
-    <script src="/assets/libs/swiper/swiper-bundle.min.js"></script>
-
-    <!-- ecommerce product details init -->
-    <script src="/assets/js/pages/ecommerce-product-details.init.js"></script>
 }
 
 
@@ -110,7 +103,7 @@
                             </div>
 
                             <div class="row mt-4">
-                                <div class="col-lg-4 col-sm-6">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="p-2 border border-dashed rounded">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar-sm me-2">
@@ -120,13 +113,13 @@
                                             </div>
                                             <div class="flex-grow-1">
                                                 <p class="text-muted mb-1">Số lần sản xuất :</p>
-                                                <h5 class="mb-0">120,000</h5>
+                                                @*<h5 class="mb-0">@Model.QtyProduction</h5>*@
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end col -->
-                                <div class="col-lg-4 col-sm-6">
+                                <div class="col-lg-6 col-sm-6">
                                     <div class="p-2 border border-dashed rounded">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar-sm me-2">
@@ -136,27 +129,12 @@
                                             </div>
                                             <div class="flex-grow-1">
                                                 <p class="text-muted mb-1"> Số lần NG:</p>
-                                                <h5 class="mb-0">2,234</h5>
+                                                @*<h5 class="mb-0">@Model.QtyNG</h5>*@
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- end col -->
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="p-2 border border-dashed rounded">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar-sm me-2">
-                                                <div class="avatar-title rounded bg-transparent text-success fs-24">
-                                                    <i class="ri-stack-fill"></i>
-                                                </div>
-                                            </div>
-                                            <div class="flex-grow-1">
-                                                <p class="text-muted mb-1">Chỉ số đơn hàng :</p>
-                                                <h5 class="mb-0">30%</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
                             <div class="row">

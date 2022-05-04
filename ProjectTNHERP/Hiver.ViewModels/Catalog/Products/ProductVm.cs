@@ -15,8 +15,10 @@ namespace Hiver.ViewModels.Catalog.Products
         public Double Width { get; set; }
         public Double Height { get; set; }
         public string Detail { get; set; }
-       
 
+        public string Color { get; set; }
+        public int QtyProduction { get; set; }
+        public int QtyNG { get; set; }
         public bool Status { get; set; }
         public int? ViewCount { get; set; }
 

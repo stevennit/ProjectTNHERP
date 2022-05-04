@@ -97,6 +97,9 @@ namespace Hiver.Application.Catalog.Products
                 Id = product.Id,
                 Name = product.Name,
                 Code = product.Code,
+                Color = product.Color,
+                QtyNG = product.QtyNG,
+                QtyProduction = product.QtyProduction,
                 Width = product.Width,
                 Height = product.Height,
                 Description = product.Description,
@@ -194,17 +197,17 @@ namespace Hiver.Application.Catalog.Products
             product.Status = request.Status;
             //Save image
 
-            if (request.ThumbnailImage != null)
-            {
-                var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.IdTable == request.Id);
+            //if (request.ThumbnailImage != null)
+            //{
+            //    var thumbnailImage = await _context.ProductImages.FirstOrDefaultAsync(i => i.IsDefault == true && i.IdTable == request.Id);
 
-                if (thumbnailImage != null)
-                {
-                    thumbnailImage.FileSize = request.ThumbnailImage.Length;
-                    thumbnailImage.ImagePath = await this.SaveFile(request.ThumbnailImage);
-                    _context.ProductImages.Update(thumbnailImage);
-                }
-            }
+            //    if (thumbnailImage != null)
+            //    {
+            //        thumbnailImage.FileSize = request.ThumbnailImage.Length;
+            //        thumbnailImage.ImagePath = await this.SaveFile(request.ThumbnailImage);
+            //        _context.ProductImages.Update(thumbnailImage);
+            //    }
+            //}
             await _context.SaveChangesAsync();
             return product.Id;
         }

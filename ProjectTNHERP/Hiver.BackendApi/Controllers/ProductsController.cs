@@ -62,7 +62,7 @@ namespace Hiver.BackendApi.Controllers
         }
 
         [HttpPut("{Id}")]
-        [Consumes("multipart/form-data")]
+        //[Consumes("multipart/form-data")]
         [ServiceFilter(typeof(AuthAttribute))]
         public async Task<IActionResult> Update([FromRoute] Guid Id,[FromForm] ProductUpdateRequest request)
         {

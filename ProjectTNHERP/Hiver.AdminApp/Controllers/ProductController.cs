@@ -129,12 +129,10 @@ namespace Hiver.AdminApp.Controllers
         {
 
             var product = await _productApiClient.GetById(id);
-            var editVm = new ProductVm()
+            var editVm = new ProductUpdateRequest()
             {
                 Id = product.Id,
                 Code = product.Code,
-                CreateBy = product.CreateBy,
-                CreateDate = product.CreateDate,
                 Description = product.Description,
                 Detail = product.Detail,
                 Name = product.Name,
@@ -149,19 +147,21 @@ namespace Hiver.AdminApp.Controllers
         }
 
         [HttpPost]
-        [Consumes("multipart/form-data")]
+        //[Consumes("multipart/form-data")]
         public async Task<IActionResult> Edit([FromForm] ProductUpdateRequest request)
         {
             if (!ModelState.IsValid)
                 return View(request);
 
             request.ModifyBy = User.Identity.Name;
+            request.ModifyDate = DateTime.Now;
+
 
             var result = await _productApiClient.UpdateProduct(request);
             if (result)
             {
                 _notyf.Success("Cập nhật sản phẩm thành công");
-                return RedirectToAction("Index");
+                return RedirectToAction("Details", new { id = request.Id});
             }
 
             ModelState.AddModelError("", "Cập nhật sản phẩm thất bại");
