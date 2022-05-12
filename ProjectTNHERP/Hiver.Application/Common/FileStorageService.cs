@@ -9,14 +9,11 @@ namespace Hiver.Application.Common
 {
     public class FileStorageService : IStorageService
     {
-        private readonly string _userContentFolder;
-
         private static string USER_CONTENT_FOLDER_NAME = "user-content";
         private readonly IWebHostEnvironment _webHostEnvironment;
 
         public FileStorageService(IWebHostEnvironment webHostEnvironment)
         {
-            //_userContentFolder = Path.Combine(webHostEnvironment.WebRootPath, USER_CONTENT_FOLDER_NAME);
             _webHostEnvironment = webHostEnvironment;
         }
 

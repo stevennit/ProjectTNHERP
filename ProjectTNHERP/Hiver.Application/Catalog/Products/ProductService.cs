@@ -59,8 +59,8 @@ namespace Hiver.Application.Catalog.Products
                                 CreateBy = a.CreateBy,
                                 Code = a.Code,
                                 Name = a.Name,
-                                Image = d.ImagePath != null ? d.ImagePath : "/image/No-Image.jpg"
-                            }).Distinct().ToListAsync();
+                                Image = d.ImagePath != null ? d.ImagePath : "/wwwwroot/image/No-Image.jpg"
+                            }).Distinct().OrderByDescending(x => x.CreateDate).ToListAsync();
             
             //2. filter
             if (!string.IsNullOrEmpty(request.Code))

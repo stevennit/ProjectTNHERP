@@ -18,7 +18,6 @@ D:\Project Code\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Da
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\Hiver.Data.deps.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\Hiver.Data.runtimeconfig.json
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\Hiver.Data.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\ref\Hiver.Data.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\Hiver.Data.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\Hiver.Utilities.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\bin\Debug\net6.0\Hiver.Utilities.pdb
@@ -29,6 +28,7 @@ D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Data.As
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Data.csproj.CoreCompileInputs.cache
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Data.csproj.CopyComplete
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Data.dll
-D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\ref\Hiver.Data.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\refint\Hiver.Data.dll
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Data.pdb
 D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\Hiver.Data.genruntimeconfig.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Data\obj\Debug\net6.0\ref\Hiver.Data.dll

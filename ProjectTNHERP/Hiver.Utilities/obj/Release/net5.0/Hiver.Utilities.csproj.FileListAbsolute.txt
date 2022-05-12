@@ -1,0 +1,12 @@
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Release\net5.0\Hiver.Utilities.deps.json
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Release\net5.0\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\bin\Release\net5.0\Hiver.Utilities.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.csproj.AssemblyReference.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.AssemblyInfoInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.AssemblyInfo.cs
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.csproj.CoreCompileInputs.cache
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\refint\Hiver.Utilities.dll
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\Hiver.Utilities.pdb
+D:\Project\ProjectTNHERP\ProjectTNHERP\Hiver.Utilities\obj\Release\net5.0\ref\Hiver.Utilities.dll

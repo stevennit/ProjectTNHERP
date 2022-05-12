@@ -28,7 +28,7 @@ namespace Hiver.AdminApp
         }
 
         public IConfiguration Configuration { get; }
-        readonly string CorsPolicy = "_corsPolicy";
+        //readonly string CorsPolicy = "_corsPolicy";
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -104,11 +104,11 @@ namespace Hiver.AdminApp
 
             app.UseNotyf();
 
-            app.UseCors(builder =>
-                  builder.AllowAnyOrigin()
-                  .AllowAnyHeader()
-                  .AllowAnyMethod()
-                );
+            //app.UseCors(builder =>
+            //      builder.AllowAnyOrigin()
+            //      .AllowAnyHeader()
+            //      .AllowAnyMethod()
+            //    );
 
             app.UseSession();
             app.UseEndpoints(endpoints =>

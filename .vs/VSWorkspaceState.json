@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProjectTNHERP",
+    "\\ProjectTNHERP\\Hiver.AdminApp",
+    "\\ProjectTNHERP\\Hiver.AdminApp\\Views",
+    "\\ProjectTNHERP\\Hiver.AdminApp\\Views\\Product"
   ],
-  "SelectedNode": "\\ProjectTNHERP.sln",
+  "SelectedNode": "\\ProjectTNHERP\\Hiver.AdminApp\\Views\\Product\\Details.cshtml",
   "PreviewInSolutionExplorer": false
 }

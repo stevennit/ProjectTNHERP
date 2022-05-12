@@ -58,7 +58,7 @@ namespace Hiver.Application.Common.Menu
                 ).ToListAsync();
         }
 
-        public async Task<ApiResult<PagedResult<MenuVm>>> GetUsersPagings(GetMenuPagingRequest request)
+        public Task<ApiResult<PagedResult<MenuVm>>> GetUsersPagings(GetMenuPagingRequest request)
         {
             throw new NotImplementedException();
         }

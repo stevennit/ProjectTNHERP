@@ -1,4 +1,6 @@
-﻿<!doctype html>
+﻿
+
+<!doctype html>
 <html lang="en" data-layout="vertical" data-topbar="light" data-sidebar="dark" data-sidebar-size="sm-hover" data-layout-mode="light" data-layout-width="fluid" data-layout-position="fixed" data-layout-style="default">
 
 <head>
@@ -41,14 +43,6 @@
             </div>
             <!-- end navbar-header --><!-- begin header-nav -->
             <ul class="navbar-nav navbar-right">
-                <li class="navbar-form">
-                    <form action="" method="POST" name="search">
-                        <div class="form-group">
-                            <input type="text" class="form-control" placeholder="Enter keyword" />
-                            <button type="submit" class="btn btn-search"><i class="fa fa-search"></i></button>
-                        </div>
-                    </form>
-                </li>
                 <li class="dropdown">
                     <a href="#" data-toggle="dropdown" class="dropdown-toggle f-s-14">
                         <i class="fa fa-bell"></i>
@@ -107,22 +101,22 @@
                             </div>
                         </a>
                         <div class="dropdown-footer text-center">
-                            <a href="javascript:;">View more</a>
+                            <a href="javascript:;">Xem tất cả</a>
                         </div>
                     </div>
                 </li>
                 <li class="dropdown navbar-user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img src="/assets/img/user/user-13.jpg" alt="" />
-                        <span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>
+                        <span class="d-none d-md-inline">@User.Identity.Name</span> <b class="caret"></b>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="javascript:;" class="dropdown-item">Edit Profile</a>
-                        <a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
-                        <a href="javascript:;" class="dropdown-item">Calendar</a>
-                        <a href="javascript:;" class="dropdown-item">Setting</a>
+                        <a href="javascript:;" class="dropdown-item">Chỉnh thông tin</a>
+                        <a href="javascript:;" class="dropdown-item">Cài đặt (Đang phát triển)</a>
                         <div class="dropdown-divider"></div>
-                        <a href="javascript:;" class="dropdown-item">Log Out</a>
+                        <form method="post" asp-controller="User" asp-action="Logout">
+                            <button type="submit" class="dropdown-item">Đăng xuất</button>
+                        </form>
                     </div>
                 </li>
             </ul>
